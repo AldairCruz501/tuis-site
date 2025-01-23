@@ -1,0 +1,69 @@
+.nosotros-title {
+    color: #6149B7!important;
+}
+
+.nosotros-paragraph {
+    color: #0C71C3!important;
+}
+
+.nosotros-mission-shadow {
+    background-color: #298697;
+    top: 30px;
+    right: 20px;
+    z-index: 1;
+}
+
+.nosotros-mission {
+    background-color: #39C2D7;
+    color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    width: 100%;
+}
+
+
+.nosotros-history-shadow {
+    background-color: #C06000;
+    top: 30px;
+    left: 12px;
+    z-index: 1;
+}
+
+.nosotros-history {
+    background-color: #FF8C00;
+    color: #FFFFFF;
+    left: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+@media (max-width: 992px) {
+    .nosotros-mission-shadow,
+    .nosotros-history-shadow{
+        display: none;
+    }
+    .nosotros-history {
+        left: 0px;
+        margin: auto;
+    }
+}
+
+.dotted-line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .dotted-line {
+    border-top: 5px dotted #0C71C3; 
+    width: 100%; 
+  }
+
+  .title-services {
+    color: rgba(12, 113, 195, 0.1) !important;;
+  }
+
+  .section-tuis {
+    background-color: #6149B7;
+  }

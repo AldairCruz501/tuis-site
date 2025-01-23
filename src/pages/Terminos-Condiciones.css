@@ -1,0 +1,100 @@
+.conditions-title,
+.conditions-subtitle,
+.link-conditions {
+    color: #0C71C3 !important;
+    text-decoration: none;
+}
+
+.privacy-whatsapp-subtitle {
+    color: #25D366; 
+    font-family: Helvetica, sans-serif;
+}
+
+.privacy-telegram-subtitle {
+    color: #0088CC; 
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.privacy-messenger-subtitle {
+    color: #00B2FF; 
+    font-family: Arial, sans-serif
+}
+
+.privacy-facebook-subtitle {
+    color: #4267B2; 
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.privacy-instagram-subtitle {
+    color: #E1306C; 
+    font-family: 'Lobster Two', sans-serif !important;
+}
+
+.privacy-snapchat-subtitle {
+    color: #CCCA00; 
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.privacy-twitter-subtitle {
+    color: #1da1f2; 
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.privacy-x-subtitle {
+    color: #000000; 
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.privacy-icon-whatsapp {
+    color: #25D366; 
+}
+
+.privacy-icon-telegram {
+    color: #0088CC;
+}
+
+.privacy-icon-messenger {
+    color: #00B2FF;
+}
+
+.privacy-icon-facebook {
+    color: #4267B2; 
+}
+
+.privacy-icon-instagram {
+    color: #E1306C;
+}
+
+.privacy-icon-snapchat {
+    color: #CCCA00; 
+}
+
+
+.privacy-icon-twitter {
+    color: #1da1f2; 
+}
+
+.privacy-icon-x {
+    color: #000000; 
+}
+
+
+
+
+
+.list-style {
+    list-style-type: lower-alpha;
+}
+
+.link-conditions-tuis {
+    color: #6149B7;
+}
+
+.link-conditions:hover,
+.link-conditions-tuis:hover {
+    color: #FF8500;
+}
+
+.text-justify {
+    text-align: justify;
+  }

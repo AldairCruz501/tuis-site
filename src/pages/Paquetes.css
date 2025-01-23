@@ -1,0 +1,49 @@
+.hero-bg {
+    background-image: url(../public/img/paquetes-tuis-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+}
+
+  .hero-tuis-title {
+    font-size: 6.5rem !important;
+    color: #6149B7 !important;
+  }
+
+  @media (max-width: 545px) {
+    .hero-tuis-title {
+      font-size: 3.5rem !important;
+    }
+  }
+
+  .hero-tuis-subtitle {
+    color: #0C71C3 !important;
+  }
+
+  .btn-hero {
+    background-color: transparent;
+    border-color: #FFFFFF;
+  }
+
+  .btn-hero:hover {
+    background-color: #6149B7;
+    border-color: #FF8500;
+  }
+  
+  .planes-container {
+    background-color: #6149B7;
+  }
+
+  .paq-button {
+    background-color: #6149B7
+  }
+
+  .link-ift {
+    color: #0C71C3;
+  }
+
+  .link-ift:hover,
+  .link-btn:hover {
+    color: #FF8500 !important;
+  }

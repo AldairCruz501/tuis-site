@@ -1,0 +1,83 @@
+/* Estilo general del header */
+.header-color {
+    background-color: #6149B7;
+    color: #fff;
+  }
+
+  .border-nav {
+    border-color: #6149B7 !important;
+  }
+  
+  @media (min-width: 320px) and (max-width: 768px) {
+  .logo-header {
+      max-width: 6rem;
+      height: auto;
+      margin-left: 0;
+      display: block;
+    }
+  }
+
+  @media (min-width: 320px) {
+    .logo-header {
+      max-width: 6rem;
+      height: auto;
+      margin-left: 0;
+      display: none;
+    }
+  }
+  
+  /* Logo dentro del encabezado */
+  .logo-header {
+    max-width: 6rem;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .toggle-color {
+    border-color: #fff;
+  }
+
+  .toggle-color span{
+    background-color: transparent !important;
+  }
+  
+  /* Barra de navegación */
+  .navbar {
+    background-color: transparent; 
+  }
+  
+  /* Links de navegación */
+  .nav-link {
+    color: #ffffff !important;
+    font-size: 21px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover,
+  .item-nav:hover {
+    color: #FF8500 !important;
+  }
+  
+  /* Dropdown (desplegable) */
+  .navbar .dropdown-menu {
+    background-color: #6149B7;
+    border-color: #FF8500;
+  } 
+
+  .navbar .dropdown-item {
+    color: #ffffff !important;
+    font-size: 18px;
+  }
+  
+  .navbar .dropdown-item:hover {
+    background-color: #FF8500; 
+    color: #fff !important;
+  }
+  
+  @media (min-width: 992px) {
+    .d-lg-flex {
+      gap: 1rem;
+    }
+  }

@@ -1,0 +1,305 @@
+.button {
+    background-color: #FF8500;
+    border-color: #FF8500;
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateY(50px); /* Ajusta el desplazamiento inicial hacia abajo */
+    animation: slideUp 1s ease-in-out forwards; /* Aplica la animación */
+    animation-delay: 0.5s; /* Retardo para que sea más suave */
+}
+
+.button:hover {
+    background-color: #6149B7;
+    border-color: #6149B7;
+}
+
+.animated-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Posiciona el botón más arriba */
+    height: 100%;
+    padding-top: 10%; /* Ajusta la altura para posicionarlo más arriba */
+  }
+
+  @keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Empieza desde más abajo */
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(-250px); /* Termina más arriba */
+      }
+  }
+
+  @media (min-width: 769px) and (max-width: 1580px) {
+    @keyframes slideUp {
+      0% {
+          opacity: 0;
+          transform: translateY(50px); /* Empieza desde más abajo */
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(-80px); /* Termina más arriba */
+        }
+    }
+  }
+
+
+  @media (max-width: 768px) 
+  {
+    .button {
+      display: none;
+    }
+  }
+
+  .carousel-control-prev span,
+  .carousel-control-next span {
+    background-color:#6149B7 !important;
+  }
+
+  @media (max-width: 585px) 
+  {
+    .carousel-control-prev span,
+    .carousel-control-next span  {
+      width: 10px;
+      height: 10px;
+      color:#6149B7 !important;
+    }
+  }
+
+  .button-sm {
+    color: #6149B7;
+  }
+
+  .carousel-info {
+    background-color: #FF8500;
+  }
+
+  .button-info {
+    background-color: #6149B7 !important;
+  }
+
+  .button-info:hover {
+    background-color: #FF8500 !important;
+    border-color: #6149B7 !important;
+    color: #6149B7 !important;
+  }
+
+  .tuisty-container {
+    background-color: #6149B7;
+  }
+   
+  .wave {
+    left: 0;
+    height: 150px;
+    background: url("wave.svg") repeat-x;
+    background-size: contain;
+    background-color: #6149B7;
+  }
+
+  @media (min-width: 450px) and (max-width: 674px) {
+    .wave {
+      height: 100px;
+    }
+  }
+
+  @media (min-width: 405px) and (max-width: 449px) {
+    .wave {
+      height: 90px;
+    }
+  }
+
+  @media (min-width: 360px) and (max-width: 404px) {
+    .wave {
+      height: 80px;
+    }
+  }
+  
+  @media (max-width: 359px) {
+    .wave {
+      height: 70px;
+    }
+  }
+  
+  /* Títulos y listas */
+  .plan-title {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .features-list {
+    padding: 0;
+    padding-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .features-list li {
+    margin: 10px 0;
+  }
+  
+  .icon {
+    padding: 10px; 
+    margin: 0 5px;
+  }
+  
+  .facebook-color {
+    background-color: #3B5998;
+  }
+  
+  .x-color {
+    background-color: #000000;
+  }
+  
+  .whatsapp-color {
+    background-color: #25d366;
+  }
+  
+  .instagram-color {
+    background-color: #DD2A7B;
+  }
+
+  .snapchat-color {
+    background-color: #FFFC00;
+  }
+  
+
+  .telegram-color {
+    background-color: #24A1DE;
+  }
+
+  .contract-button {
+    margin-top: 10px;
+    background-color: #0C71C3 !important;
+  }
+
+  .contract-button:hover {
+    background-color: #fff !important;
+    color: #0C71C3 !important;
+    border-color: #0C71C3 !important;
+  }
+
+  /* Sección inferior */
+  .tuisty-container-white {
+    background-color: #fff;
+  }
+  
+  
+  .payment-icons img {
+    margin: 10px;
+    width: 60px;
+    height: auto;
+  }
+  
+  .buy-button {
+    margin-top: 20px;
+    background-color: #6149B7 !important;
+  }
+
+  .buy-button:hover {
+    background-color: #FFFFFF !important;
+    color: #6149B7 !important;
+    border-color: #6149B7 !important;
+  }
+
+  
+  .wave-two {
+    left: 0;
+    height: 150px;
+    background: url("wave-two.svg") repeat-x;
+    background-size: contain;
+  }
+  @media (min-width: 450px) and (max-width: 674px) {
+    .wave-two {
+      height: 100px;
+    }
+  }
+
+  @media (min-width: 405px) and (max-width: 449px) {
+    .wave-two {
+      height: 90px;
+    }
+  }
+
+  @media (min-width: 360px) and (max-width: 404px) {
+    .wave-two {
+      height: 80px;
+    }
+  }
+  
+  @media (max-width: 359px) {
+    .wave-two {
+      height: 70px;
+    }
+  }
+
+  .bg-gb{
+    background-color: #FF8500;
+  }
+  
+  .link-btn:hover {
+    color: #FF8500 !important;
+  }
+
+  .social-fb {
+    color: #3B5998;
+  }
+
+  .social-wp {
+    color: #25d366;
+  }
+
+  .social-ins {
+    color: #DD2A7B;
+  }
+
+  .social-sp {
+    color: #000000;
+  }
+
+  .social-tel {
+    color: #24A1DE;
+  }
+
+  .img-animation {
+    animation: moves 3s;
+  }
+
+  @keyframes moves {
+    to {
+      transform: translateX(-300px);
+    }
+  }
+
+  .card-efect {
+    overflow: hidden;
+  }
+
+  .card-efect:hover .card {
+    -webkit-transform:scale(-1);transform:scale(0.95);
+  }
+
+  .tuisty-animation {
+    transform: translateX(-50px);
+    animation:  move 3s;
+  }
+
+  @keyframes move {
+    to {
+      transform: translateX(80px);
+    }
+  }
+
+  .tuisty-title {
+    color: #6149B7;
+  }
+
+  .btn-tuisty {
+    background-color: #FF8500 !important;
+    border-color: #FF8500 !important;
+  }
+
+  .tuisty-text {
+    font-size: 14px;
+    font-weight: bold;
+  }
