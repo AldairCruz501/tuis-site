@@ -92,7 +92,7 @@
   .wave {
     left: 0;
     height: 150px;
-    background: url("wave.svg") repeat-x;
+    background: url("/img/wave.svg") repeat-x;
     background-size: contain;
     background-color: #6149B7;
   }
@@ -206,7 +206,7 @@
   .wave-two {
     left: 0;
     height: 150px;
-    background: url("wave-two.svg") repeat-x;
+    background: url("/img/wave-two.svg") repeat-x;
     background-size: contain;
   }
   @media (min-width: 450px) and (max-width: 674px) {
