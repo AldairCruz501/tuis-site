@@ -15,7 +15,7 @@ function Paquetes() {
     
         useEffect(() => {
           const fetchData = async () => {
-            await new Promise((resolve) => setTimeout(resolve, 1000));
+            await new Promise((resolve) => setTimeout(resolve, 2000));
             setLoading(false);
           };
     
@@ -203,7 +203,7 @@ function Paquetes() {
                                     </p>
                                 </div>
                                 <div className="mb-1">
-                                    <Link to="/" className="fs-6 text-white fw-bold text-decoration-none link-btn" target="_blank">Conoce Términos y condiciones</Link>
+                                    <Link to="/terminos-y-condiciones" className="fs-6 text-white fw-bold text-decoration-none link-btn" target="_blank">Conoce Términos y condiciones</Link>
                                 </div>
                                 <div className="mb-1">
                                     <Link to="/politica-uso-justo" className="fs-6 text-white fw-bold text-decoration-none link-btn" target="_blank">Políticas de uso justo</Link>

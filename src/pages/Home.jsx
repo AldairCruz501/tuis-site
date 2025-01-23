@@ -21,7 +21,7 @@ function Home() {
 
     useEffect(() => {
       const fetchData = async () => {
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+        await new Promise((resolve) => setTimeout(resolve, 2000));
         setLoading(false);
       };
 
@@ -214,8 +214,8 @@ function Home() {
                         Conoces nuestros planes personalizados diseñados exclusivamente para los <span className='fw-bold fst-italic fs-4'>tuisters</span>
                         </p>
                       </div>
-                      <JackInTheBox>
-                        <Row className="row-cols-1 row-cols-md-2 row-cols-lg-4  text-center">
+                      <Row className="row-cols-1 row-cols-md-2 row-cols-lg-4  text-center">
+                        <JackInTheBox>
                           <Col className='card-efect'>
                               <Card className="mb-4 rounded-3 shadow-sm card">
                                 <Card.Header className="py-3">
@@ -252,6 +252,8 @@ function Home() {
                                 </Card.Body>
                               </Card>
                           </Col>
+                        </JackInTheBox>
+                        <JackInTheBox delay={500}>
                           <Col className='card-efect'>
                             <Card className="mb-4 rounded-3 shadow-sm card">
                               <Card.Header className="py-3">
@@ -288,6 +290,8 @@ function Home() {
                               </Card.Body>
                             </Card>
                           </Col>
+                        </JackInTheBox>
+                        <JackInTheBox delay={1000}>
                           <Col className='card-efect'>
                             <Card className="mb-4 rounded-3 shadow-sm card">
                               <div className='text-center rounded-top  p-2 bg-primary'>
@@ -343,6 +347,8 @@ function Home() {
                               </Card.Body>
                             </Card>
                           </Col>
+                        </JackInTheBox>
+                        <JackInTheBox delay={1500}>
                           <Col className='card-efect'>
                             <Card className="mb-4 rounded-3 shadow-sm card">
                               <Card.Header className="py-3">
@@ -379,8 +385,8 @@ function Home() {
                               </Card.Body>
                             </Card>
                           </Col>
-                        </Row>
-                      </JackInTheBox>
+                        </JackInTheBox>
+                      </Row>
                       <div className="p-3 pb-md-4 mx-auto text-center">
                         <div className="mb-1">
                           <Link to="/terminos-y-condiciones" onClick={handleScrollToTop} className="fs-6 text-white fw-bold text-decoration-none link-btn">Conoce Términos y condiciones</Link>
