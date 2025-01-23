@@ -103,8 +103,8 @@ function Paquetes() {
                                 Conoces nuestros planes personalizados diseñados exclusivamente para los <span className='fw-bold fst-italic fs-4'>tuisters</span>
                                 </p>
                             </div>
-                            <JackInTheBox>
-                                <Row className='row-cols-1 row-cols-md-2 row-cols-lg-5'>
+                            <Row className='row-cols-1 row-cols-md-2 row-cols-lg-5'>
+                                <JackInTheBox>
                                     <Col className="text-center">
                                         <img
                                             src="img/basicos.png"
@@ -121,6 +121,8 @@ function Paquetes() {
                                             Ver Paquetes
                                         </Button>
                                     </Col>
+                                </JackInTheBox>
+                                <JackInTheBox delay={500}>
                                     <Col className="text-center">
                                         <img
                                             src="img/mensuales.png"
@@ -137,6 +139,8 @@ function Paquetes() {
                                             Ver Paquetes
                                         </Button>
                                     </Col>
+                                </JackInTheBox>
+                                <JackInTheBox delay={1000}>
                                     <Col className="text-center">
                                         <img
                                             src="img/trimestrales.png"
@@ -153,6 +157,8 @@ function Paquetes() {
                                             Ver Paquetes
                                         </Button>
                                     </Col>
+                                </JackInTheBox>
+                                <JackInTheBox delay={1500}>
                                     <Col className="text-center">
                                         <img
                                             src="img/semestrales.png"
@@ -169,6 +175,8 @@ function Paquetes() {
                                             Ver Paquetes
                                         </Button>
                                     </Col>
+                                </JackInTheBox>
+                                <JackInTheBox delay={2000}>
                                     <Col className="text-center">
                                         <img
                                             src="img/anuales.png"
@@ -185,8 +193,8 @@ function Paquetes() {
                                             Ver Paquetes
                                         </Button>
                                     </Col>
-                                </Row>
-                            </JackInTheBox>
+                                </JackInTheBox>
+                            </Row>
                             <div className="p-3 pb-md-4 mx-auto text-center">
                                 <div className="mb-3"> 
                                     <p className='fs-5 text-white fw-bold'>
