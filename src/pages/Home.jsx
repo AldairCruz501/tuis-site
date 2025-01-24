@@ -219,7 +219,7 @@ function Home() {
                           <Col className='card-efect'>
                               <Card className="mb-4 rounded-3 shadow-sm card">
                                 <Card.Header className="py-3">
-                                  <h4 className="my-0 fw-bold text-primary text-uppercase fs-2">Tuisty Semanal Ilimitado</h4>
+                                  <h4 className="my-0 fw-bold plan-title text-uppercase fs-4">Tuisty Semanal Ilimitado</h4>
                                 </Card.Header>
                                 <div className='text-center p-3 bg-gb'>
                                   <h4 className="my-0 fw-bold text-white text-uppercase display-5">3gb</h4>
@@ -228,7 +228,7 @@ function Home() {
                                 <Card.Body>
                                   <div className='border-tuisty border-2 border-bottom'>
                                   <h1 className="card-title pricing-card-title fw-bold display-3">
-                                    $59 <small className="text-body-secondary fw-light fs-2">/7 días</small>
+                                    $59<small className="text-body-secondary fw-light fs-3">/7 días</small>
                                   </h1>
                                   </div>
                                   <div className='border-tuisty border-2 border-bottom mt-4'>
@@ -328,7 +328,7 @@ function Home() {
                           <Col className='card-efect'>
                               <Card className="mb-4 rounded-3 shadow-sm card">
                                 <Card.Header className="py-3">
-                                  <h4 className="my-0 fw-bold text-primary text-uppercase fs-2">Tuisty Estándar Ilimitado</h4>
+                                  <h4 className="my-0 fw-bold plan-title text-uppercase fs-4">Tuisty Estándar Ilimitado</h4>
                                 </Card.Header>
                                 <div className='text-center p-3 bg-gb'>
                                   <h4 className="my-0 fw-bold text-white text-uppercase display-5">6gb</h4>
@@ -337,7 +337,7 @@ function Home() {
                                 <Card.Body>
                                   <div className='border-tuisty border-2 border-bottom'>
                                   <h1 className="card-title pricing-card-title fw-bold display-3">
-                                    $129 <small className="text-body-secondary fw-light fs-2">/15 días</small>
+                                    $129<small className="text-body-secondary fw-light fs-3">/15 días</small>
                                   </h1>
                                   </div>
                                   <div className='border-tuisty border-2 border-bottom mt-4'>
@@ -437,7 +437,7 @@ function Home() {
                           <Col className='card-efect'>
                               <Card className="mb-4 rounded-3 shadow-sm card">
                                 <Card.Header className="py-3">
-                                  <h4 className="my-0 fw-bold text-primary text-uppercase fs-2">Tuisty Escencial Ilimitado</h4>
+                                  <h4 className="my-0 fw-bold plan-title text-uppercase fs-4">Tuisty Escencial Ilimitado</h4>
                                 </Card.Header>
                                 <div className='text-center p-3 bg-gb'>
                                   <h4 className="my-0 fw-bold text-white text-uppercase display-5">20gb</h4>
@@ -446,7 +446,7 @@ function Home() {
                                 <Card.Body>
                                   <div className='border-tuisty border-2 border-bottom'>
                                   <h1 className="card-title pricing-card-title fw-bold display-3">
-                                    $149 <small className="text-body-secondary fw-light fs-2">/15 días</small>
+                                    $149<small className="text-body-secondary fw-light fs-3">/15 días</small>
                                   </h1>
                                   </div>
                                   <div className='border-tuisty border-2 border-bottom mt-4'>
@@ -546,7 +546,7 @@ function Home() {
                         <Col className='card-efect'>
                               <Card className="mb-4 rounded-3 shadow-sm card">
                                 <Card.Header className="py-3">
-                                  <h4 className="my-0 fw-bold text-primary text-uppercase fs-2">Tuisty Prime Ilimitado</h4>
+                                  <h4 className="my-0 fw-bold plan-title text-uppercase fs-4">Tuisty Prime Ilimitado</h4>
                                 </Card.Header>
                                 <div className='text-center p-3 bg-gb'>
                                   <h4 className="my-0 fw-bold text-white text-uppercase display-5">15gb</h4>
@@ -555,7 +555,7 @@ function Home() {
                                 <Card.Body>
                                   <div className='border-tuisty border-2 border-bottom'>
                                   <h1 className="card-title pricing-card-title fw-bold display-3">
-                                    $229 <small className="text-body-secondary fw-light fs-2">/30 días</small>
+                                    $229<small className="text-body-secondary fw-light fs-3">/30 días</small>
                                   </h1>
                                   </div>
                                   <div className='border-tuisty border-2 border-bottom mt-4'>
