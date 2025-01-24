@@ -3,9 +3,9 @@ import './Home.css'
 import { useEffect, useState } from "react";
 import NavbarComponent from '../components/Navbar';
 import FooterComponent from '../components/Footer';
-import { Carousel, Container, Card, Button, Row, Col } from 'react-bootstrap';
+import { Carousel, Container, Card, Button, Row, Col, Accordion } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faSnapchat, faTelegram, faWhatsapp, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faSnapchat, faTelegram, faWhatsapp, faXTwitter, faFacebookMessenger } from '@fortawesome/free-brands-svg-icons';
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate, Link } from 'react-router-dom';
 import { Slide, JackInTheBox } from 'react-awesome-reveal';
@@ -219,171 +219,436 @@ function Home() {
                           <Col className='card-efect'>
                               <Card className="mb-4 rounded-3 shadow-sm card">
                                 <Card.Header className="py-3">
-                                  <h4 className="my-0 fw-bold text-primary text-uppercase fs-2">Estándar</h4>
+                                  <h4 className="my-0 fw-bold text-primary text-uppercase fs-2">Tuisty Semanal Ilimitado</h4>
                                 </Card.Header>
                                 <div className='text-center p-3 bg-gb'>
-                                  <h4 className="my-0 fw-bold text-white text-uppercase display-5">6gb</h4>
+                                  <h4 className="my-0 fw-bold text-white text-uppercase display-5">3gb</h4>
                                   <h5 className="my-0 fw-bold text-white text-uppercase fs-4">Navegación</h5>
                                   </div>
                                 <Card.Body>
-                                  <div className='border-primary border-2 border-bottom'>
-                                  <h1 className="card-title pricing-card-title fw-bold">
-                                    $129 <small className="text-body-secondary fw-light">/15 días</small>
+                                  <div className='border-tuisty border-2 border-bottom'>
+                                  <h1 className="card-title pricing-card-title fw-bold display-3">
+                                    $59 <small className="text-body-secondary fw-light fs-2">/7 días</small>
                                   </h1>
                                   </div>
-                                  <ul className="list-unstyled mt-3 mb-4 fw-bold">
-                                    <li>22,000 Minutos</li>
-                                    <li>1,500 SMS</li>
-                                  </ul>
-                                  <div className='pb-5'>
+                                  <div className='border-tuisty border-2 border-bottom mt-4'>
+                                    <h4 className="fw-bold fs-6">
+                                    Redes Sociales Nacionales ilimitadas:
+                                    </h4>
+                                    <div className='d-flex justify-content-center pt-3 mb-3'>
+                                      <span className='rounded'>
+                                        <FontAwesomeIcon icon={faFacebook} className='fs-3 social-fb m-1' />
+                                      </span>
+                                      <span className='rounded'>
+                                        <FontAwesomeIcon icon={faXTwitter} className='fs-3 m-1' />
+                                      </span>
+                                      <span className='rounded'>
+                                        <FontAwesomeIcon icon={faWhatsapp} className='fs-3 social-wp m-1'/>
+                                      </span>
+                                      <span className='rounded '>
+                                        <FontAwesomeIcon icon={faInstagram} className='fs-3 social-ins m-1' />
+                                      </span>
+                                      <span className='rounded'>
+                                        <FontAwesomeIcon icon={faSnapchat} className='fs-3 social-sp m-1' />
+                                      </span>
+                                      <span className='rounded'>
+                                        <FontAwesomeIcon icon={faTelegram} className='fs-3 social-tel m-1' />
+                                      </span>
+                                    </div>
                                   </div>
-                                  <div className='pb-4'>
+                                  <div className='border-2 mt-4'>
+                                    <h4 className="fw-bold fs-6">
+                                      Llamadas y SMS ilimitadas a:
+                                    </h4>
+                                    <div className='d-flex justify-content-center pt-3 mb-3'>
+                                      <img src="/img/canada.png" alt="" className='w-25 mx-1'/>
+                                      <img src="/img/estados-unidos.png" alt="" className='w-25 mx-1'/>
+                                      <img src="/img/mexico.png" alt="" className='w-25 mx-1'/>
+                                    </div>
                                   </div>
-                                  <div className='pb-5'>
-                                  </div>
-                                  <Button 
+                                  <Accordion defaultActiveKey={null} flush>
+                                    <Accordion.Item eventKey='0'>
+                                      <Accordion.Header>
+                                        <h4 className="fw-bold fs-6 text-center">
+                                          Conoce Más
+                                      </h4>
+                                      </Accordion.Header>
+                                      <Accordion.Body>
+                                        <div className='border-tuisty-in border-2 border-bottom mt-4'>
+                                          <h4 className="fw-bold fs-6">
+                                            Redes Sociales Internacionales Ilimitadas:
+                                          </h4>
+                                          <div className='d-flex justify-content-center pt-3 mb-3'>
+                                            <span className='rounded'>
+                                              <FontAwesomeIcon icon={faWhatsapp} className='fs-3 social-wp m-1'/>
+                                            </span>
+                                            <span className='rounded '>
+                                              <FontAwesomeIcon icon={faFacebookMessenger} className='fs-3 social-mess m-1' />
+                                            </span>
+                                            <span className='rounded'>
+                                              <FontAwesomeIcon icon={faTelegram} className='fs-3 social-tel m-1' />
+                                            </span>
+                                          </div>
+                                        </div>
+                                        <div className='border-tuisty-in border-2 border-bottom pt-4 pb-3'>
+                                          <h4 className="fw-bold fs-6 internet-title text-uppercase">
+                                            Si Comparte Internet
+                                          </h4>
+                                        </div>
+                                        <div className='border-tuisty-in border-2 border-bottom pt-4 pb-1'>
+                                          <h4 className="fw-bold fs-6">
+                                            Formato de Chip:
+                                          </h4>
+                                          <ul className="list-unstyled mt-0">
+                                            <li>SIM</li>
+                                            <li>eSIM</li>
+                                          </ul>
+                                        </div>
+                                        <div className='border-tuisty-in border-2 border-bottom pt-4 pb-3'>
+                                          <h4 className="fw-bold fs-6 text-uppercase folio-title">
+                                            Folio: <span className='text-secondary fw-bold'>1640092</span>
+                                          </h4>
+                                        </div>
+                                      </Accordion.Body>
+                                    </Accordion.Item>
+                                  </Accordion>
+                                  {/* <Button 
                                     className='buy-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill fs-4 border-light'
                                     onClick={() => {
                                       //Este botón redirecciona al carrito de compras
                                     }}
                                   >
                                     Comprar
-                                  </Button>
+                                  </Button> */}
                                 </Card.Body>
                               </Card>
                           </Col>
                         </JackInTheBox>
                         <JackInTheBox delay={500}>
                           <Col className='card-efect'>
-                            <Card className="mb-4 rounded-3 shadow-sm card">
-                              <Card.Header className="py-3">
-                                <h4 className="my-0 fw-bold text-primary text-uppercase fs-2">Esencial</h4>
-                              </Card.Header>
-                              <div className='text-center p-3 bg-gb'>
-                                <h4 className="my-0 fw-bold text-white text-uppercase display-5">20gb</h4>
-                                <h5 className="my-0 fw-bold text-white text-uppercase fs-4">Navegación</h5>
-                                </div>
-                              <Card.Body>
-                                <div className='border-primary border-2 border-bottom'>
-                                <h1 className="card-title pricing-card-title fw-bold">
-                                  $149 <small className="text-body-secondary fw-light">/15 días</small>
-                                </h1>
-                                </div>
-                                <ul className="list-unstyled mt-3 mb-4 fw-bold">
-                                  <li>22,600 Minutos</li>
-                                  <li>1,500 SMS</li>
-                                </ul>
-                                <div className='pb-5'>
-                                </div>
-                                <div className='pb-4'>
-                                </div>
-                                <div className='pb-5'>
-                                </div>
-                                <Button 
-                                  className='buy-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill fs-4 border-light'
-                                  onClick={() => {
-                                    //Este botón redirecciona al carrito de compras
-                                  }}
-                                >
-                                  Comprar
-                                </Button>
-                              </Card.Body>
-                            </Card>
+                              <Card className="mb-4 rounded-3 shadow-sm card">
+                                <Card.Header className="py-3">
+                                  <h4 className="my-0 fw-bold text-primary text-uppercase fs-2">Tuisty Estándar Ilimitado</h4>
+                                </Card.Header>
+                                <div className='text-center p-3 bg-gb'>
+                                  <h4 className="my-0 fw-bold text-white text-uppercase display-5">6gb</h4>
+                                  <h5 className="my-0 fw-bold text-white text-uppercase fs-4">Navegación</h5>
+                                  </div>
+                                <Card.Body>
+                                  <div className='border-tuisty border-2 border-bottom'>
+                                  <h1 className="card-title pricing-card-title fw-bold display-3">
+                                    $129 <small className="text-body-secondary fw-light fs-2">/15 días</small>
+                                  </h1>
+                                  </div>
+                                  <div className='border-tuisty border-2 border-bottom mt-4'>
+                                    <h4 className="fw-bold fs-6">
+                                    Redes Sociales Nacionales ilimitadas:
+                                    </h4>
+                                    <div className='d-flex justify-content-center pt-3 mb-3'>
+                                      <span className='rounded'>
+                                        <FontAwesomeIcon icon={faFacebook} className='fs-3 social-fb m-1' />
+                                      </span>
+                                      <span className='rounded'>
+                                        <FontAwesomeIcon icon={faXTwitter} className='fs-3 m-1' />
+                                      </span>
+                                      <span className='rounded'>
+                                        <FontAwesomeIcon icon={faWhatsapp} className='fs-3 social-wp m-1'/>
+                                      </span>
+                                      <span className='rounded '>
+                                        <FontAwesomeIcon icon={faInstagram} className='fs-3 social-ins m-1' />
+                                      </span>
+                                      <span className='rounded'>
+                                        <FontAwesomeIcon icon={faSnapchat} className='fs-3 social-sp m-1' />
+                                      </span>
+                                      <span className='rounded'>
+                                        <FontAwesomeIcon icon={faTelegram} className='fs-3 social-tel m-1' />
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div className='border-2 mt-4'>
+                                    <h4 className="fw-bold fs-6">
+                                      Llamadas y SMS ilimitadas a:
+                                    </h4>
+                                    <div className='d-flex justify-content-center pt-3 mb-3'>
+                                      <img src="/img/canada.png" alt="" className='w-25 mx-1'/>
+                                      <img src="/img/estados-unidos.png" alt="" className='w-25 mx-1'/>
+                                      <img src="/img/mexico.png" alt="" className='w-25 mx-1'/>
+                                    </div>
+                                  </div>
+                                  <Accordion defaultActiveKey={null} flush>
+                                    <Accordion.Item eventKey='0'>
+                                      <Accordion.Header>
+                                        <h4 className="fw-bold fs-6 text-center">
+                                          Conoce Más
+                                      </h4>
+                                      </Accordion.Header>
+                                      <Accordion.Body>
+                                        <div className='border-tuisty-in border-2 border-bottom mt-4'>
+                                          <h4 className="fw-bold fs-6">
+                                            Redes Sociales Internacionales Ilimitadas:
+                                          </h4>
+                                          <div className='d-flex justify-content-center pt-3 mb-3'>
+                                            <span className='rounded'>
+                                              <FontAwesomeIcon icon={faWhatsapp} className='fs-3 social-wp m-1'/>
+                                            </span>
+                                            <span className='rounded '>
+                                              <FontAwesomeIcon icon={faFacebookMessenger} className='fs-3 social-mess m-1' />
+                                            </span>
+                                            <span className='rounded'>
+                                              <FontAwesomeIcon icon={faTelegram} className='fs-3 social-tel m-1' />
+                                            </span>
+                                          </div>
+                                        </div>
+                                        <div className='border-tuisty-in border-2 border-bottom pt-4 pb-3'>
+                                          <h4 className="fw-bold fs-6 internet-title text-uppercase">
+                                            Si Comparte Internet
+                                          </h4>
+                                        </div>
+                                        <div className='border-tuisty-in border-2 border-bottom pt-4 pb-1'>
+                                          <h4 className="fw-bold fs-6">
+                                            Formato de Chip:
+                                          </h4>
+                                          <ul className="list-unstyled mt-0">
+                                            <li>SIM</li>
+                                            <li>eSIM</li>
+                                          </ul>
+                                        </div>
+                                        <div className='border-tuisty-in border-2 border-bottom pt-4 pb-3'>
+                                          <h4 className="fw-bold fs-6 text-uppercase folio-title">
+                                            Folio: <span className='text-secondary fw-bold'>1640110</span>
+                                          </h4>
+                                        </div>
+                                      </Accordion.Body>
+                                    </Accordion.Item>
+                                  </Accordion>
+                                  {/* <Button 
+                                    className='buy-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill fs-4 border-light'
+                                    onClick={() => {
+                                      //Este botón redirecciona al carrito de compras
+                                    }}
+                                  >
+                                    Comprar
+                                  </Button> */}
+                                </Card.Body>
+                              </Card>
                           </Col>
                         </JackInTheBox>
                         <JackInTheBox delay={1000}>
                           <Col className='card-efect'>
-                            <Card className="mb-4 rounded-3 shadow-sm card">
-                              <div className='text-center rounded-top  p-2 bg-primary'>
-                                <p className="my-0 fw-bold text-white">Más vendido</p>
-                              </div>
-                              <Card.Header className="py-3">
-                                <h4 className="my-0 fw-bold text-primary text-uppercase fs-2">Prime Ilimitado</h4>
-                              </Card.Header>
-                              <div className='text-center p-3 bg-gb'>
-                                <h4 className="my-0 fw-bold text-white text-uppercase display-5">15gb</h4>
-                                <h5 className="my-0 fw-bold text-white text-uppercase fs-4">Navegación</h5>
-                              </div>
-                              <Card.Body>
-                                <div className='border-primary border-2 border-bottom'>
-                                  <h1 className="card-title pricing-card-title fw-bold">
-                                    $229 <small className="text-body-secondary fw-light">/30 días</small>
+                              <Card className="mb-4 rounded-3 shadow-sm card">
+                                <Card.Header className="py-3">
+                                  <h4 className="my-0 fw-bold text-primary text-uppercase fs-2">Tuisty Escencial Ilimitado</h4>
+                                </Card.Header>
+                                <div className='text-center p-3 bg-gb'>
+                                  <h4 className="my-0 fw-bold text-white text-uppercase display-5">20gb</h4>
+                                  <h5 className="my-0 fw-bold text-white text-uppercase fs-4">Navegación</h5>
+                                  </div>
+                                <Card.Body>
+                                  <div className='border-tuisty border-2 border-bottom'>
+                                  <h1 className="card-title pricing-card-title fw-bold display-3">
+                                    $149 <small className="text-body-secondary fw-light fs-2">/15 días</small>
                                   </h1>
-                                </div>
-                                <div className='border-primary border-2 border-bottom pb-2'>
-                                <ul className="list-unstyled mt-3 mb-4 fw-bold">
-                                  <li>44,700 Minutos</li>
-                                  <li>1,500 SMS</li>
-                                </ul>
-                                </div>
-                                <div className='d-flex row-cols-6 d-md-inline-block pt-3 mb-3'>
-                                  <span className='rounded'>
-                                    <FontAwesomeIcon icon={faFacebook} className='fs-3 social-fb m-1' />
-                                  </span>
-                                  <span className='rounded'>
-                                    <FontAwesomeIcon icon={faXTwitter} className='fs-3 m-1' />
-                                  </span>
-                                  <span className='rounded'>
-                                    <FontAwesomeIcon icon={faWhatsapp} className='fs-3 social-wp m-1'/>
-                                  </span>
-                                  <span className='rounded '>
-                                    <FontAwesomeIcon icon={faInstagram} className='fs-3 social-ins m-1' />
-                                  </span>
-                                  <span className='rounded'>
-                                    <FontAwesomeIcon icon={faSnapchat} className='fs-3 social-sp m-1' />
-                                  </span>
-                                  <span className='rounded'>
-                                    <FontAwesomeIcon icon={faTelegram} className='fs-3 social-tel m-1' />
-                                  </span>
-                                </div>
-                                <Button 
-                                  className='buy-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill fs-4 border-light'
-                                  onClick={() => {
-                                    //Este botón redirecciona al carrito de compras
-                                  }}
-                                >
-                                  Comprar
-                                </Button>
-                              </Card.Body>
-                            </Card>
+                                  </div>
+                                  <div className='border-tuisty border-2 border-bottom mt-4'>
+                                    <h4 className="fw-bold fs-6">
+                                    Redes Sociales Nacionales ilimitadas:
+                                    </h4>
+                                    <div className='d-flex justify-content-center pt-3 mb-3'>
+                                      <span className='rounded'>
+                                        <FontAwesomeIcon icon={faFacebook} className='fs-3 social-fb m-1' />
+                                      </span>
+                                      <span className='rounded'>
+                                        <FontAwesomeIcon icon={faXTwitter} className='fs-3 m-1' />
+                                      </span>
+                                      <span className='rounded'>
+                                        <FontAwesomeIcon icon={faWhatsapp} className='fs-3 social-wp m-1'/>
+                                      </span>
+                                      <span className='rounded '>
+                                        <FontAwesomeIcon icon={faInstagram} className='fs-3 social-ins m-1' />
+                                      </span>
+                                      <span className='rounded'>
+                                        <FontAwesomeIcon icon={faSnapchat} className='fs-3 social-sp m-1' />
+                                      </span>
+                                      <span className='rounded'>
+                                        <FontAwesomeIcon icon={faTelegram} className='fs-3 social-tel m-1' />
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div className='border-2 mt-4'>
+                                    <h4 className="fw-bold fs-6">
+                                      Llamadas y SMS ilimitadas a:
+                                    </h4>
+                                    <div className='d-flex justify-content-center pt-3 mb-3'>
+                                      <img src="/img/canada.png" alt="" className='w-25 mx-1'/>
+                                      <img src="/img/estados-unidos.png" alt="" className='w-25 mx-1'/>
+                                      <img src="/img/mexico.png" alt="" className='w-25 mx-1'/>
+                                    </div>
+                                  </div>
+                                  <Accordion defaultActiveKey={null} flush>
+                                    <Accordion.Item eventKey='0'>
+                                      <Accordion.Header>
+                                        <h4 className="fw-bold fs-6 text-center">
+                                          Conoce Más
+                                      </h4>
+                                      </Accordion.Header>
+                                      <Accordion.Body>
+                                        <div className='border-tuisty-in border-2 border-bottom mt-4'>
+                                          <h4 className="fw-bold fs-6">
+                                            Redes Sociales Internacionales Ilimitadas:
+                                          </h4>
+                                          <div className='d-flex justify-content-center pt-3 mb-3'>
+                                            <span className='rounded'>
+                                              <FontAwesomeIcon icon={faWhatsapp} className='fs-3 social-wp m-1'/>
+                                            </span>
+                                            <span className='rounded '>
+                                              <FontAwesomeIcon icon={faFacebookMessenger} className='fs-3 social-mess m-1' />
+                                            </span>
+                                            <span className='rounded'>
+                                              <FontAwesomeIcon icon={faTelegram} className='fs-3 social-tel m-1' />
+                                            </span>
+                                          </div>
+                                        </div>
+                                        <div className='border-tuisty-in border-2 border-bottom pt-4 pb-3'>
+                                          <h4 className="fw-bold fs-6 internet-title text-uppercase">
+                                            Si Comparte Internet
+                                          </h4>
+                                        </div>
+                                        <div className='border-tuisty-in border-2 border-bottom pt-4 pb-1'>
+                                          <h4 className="fw-bold fs-6">
+                                            Formato de Chip:
+                                          </h4>
+                                          <ul className="list-unstyled mt-0">
+                                            <li>SIM</li>
+                                            <li>eSIM</li>
+                                          </ul>
+                                        </div>
+                                        <div className='border-tuisty-in border-2 border-bottom pt-4 pb-3'>
+                                          <h4 className="fw-bold fs-6 text-uppercase folio-title">
+                                            Folio: <span className='text-secondary fw-bold'>1640123</span>
+                                          </h4>
+                                        </div>
+                                      </Accordion.Body>
+                                    </Accordion.Item>
+                                  </Accordion>
+                                  {/* <Button 
+                                    className='buy-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill fs-4 border-light'
+                                    onClick={() => {
+                                      //Este botón redirecciona al carrito de compras
+                                    }}
+                                  >
+                                    Comprar
+                                  </Button> */}
+                                </Card.Body>
+                              </Card>
                           </Col>
                         </JackInTheBox>
                         <JackInTheBox delay={1500}>
-                          <Col className='card-efect'>
-                            <Card className="mb-4 rounded-3 shadow-sm card">
-                              <Card.Header className="py-3">
-                                <h4 className="my-0 fw-bold text-primary text-uppercase fs-2">Estelar</h4>
-                              </Card.Header>
-                              <div className='text-center p-3 bg-gb'>
-                                <h4 className="my-0 fw-bold text-white text-uppercase display-5">100gb</h4>
-                                <h5 className="my-0 fw-bold text-white text-uppercase fs-4">Navegación</h5>
-                                </div>
-                              <Card.Body>
-                                <div className='border-primary border-2 border-bottom'>
-                                <h1 className="card-title pricing-card-title fw-bold">
-                                  $549 <small className="text-body-secondary fw-light">/30 días</small>
-                                </h1>
-                                </div>
-                                <ul className="list-unstyled mt-3 mb-4 fw-bold">
-                                  <li>10,000 Minutos</li>
-                                  <li>1,000 SMS</li>
-                                </ul>
-                                <div className='pb-5'>
-                                </div>
-                                <div className='pb-4'>
-                                </div>
-                                <div className='pb-5'>
-                                </div>
-                                <Button 
-                                  className='buy-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill fs-4 border-light'
-                                  onClick={() => {
-                                    //Este botón redirecciona al carrito de compras
-                                  }}
+                        <Col className='card-efect'>
+                              <Card className="mb-4 rounded-3 shadow-sm card">
+                                <Card.Header className="py-3">
+                                  <h4 className="my-0 fw-bold text-primary text-uppercase fs-2">Tuisty Prime Ilimitado</h4>
+                                </Card.Header>
+                                <div className='text-center p-3 bg-gb'>
+                                  <h4 className="my-0 fw-bold text-white text-uppercase display-5">15gb</h4>
+                                  <h5 className="my-0 fw-bold text-white text-uppercase fs-4">Navegación</h5>
+                                  </div>
+                                <Card.Body>
+                                  <div className='border-tuisty border-2 border-bottom'>
+                                  <h1 className="card-title pricing-card-title fw-bold display-3">
+                                    $229 <small className="text-body-secondary fw-light fs-2">/30 días</small>
+                                  </h1>
+                                  </div>
+                                  <div className='border-tuisty border-2 border-bottom mt-4'>
+                                    <h4 className="fw-bold fs-6">
+                                    Redes Sociales Nacionales ilimitadas:
+                                    </h4>
+                                    <div className='d-flex justify-content-center pt-3 mb-3'>
+                                      <span className='rounded'>
+                                        <FontAwesomeIcon icon={faFacebook} className='fs-3 social-fb m-1' />
+                                      </span>
+                                      <span className='rounded'>
+                                        <FontAwesomeIcon icon={faXTwitter} className='fs-3 m-1' />
+                                      </span>
+                                      <span className='rounded'>
+                                        <FontAwesomeIcon icon={faWhatsapp} className='fs-3 social-wp m-1'/>
+                                      </span>
+                                      <span className='rounded '>
+                                        <FontAwesomeIcon icon={faInstagram} className='fs-3 social-ins m-1' />
+                                      </span>
+                                      <span className='rounded'>
+                                        <FontAwesomeIcon icon={faSnapchat} className='fs-3 social-sp m-1' />
+                                      </span>
+                                      <span className='rounded'>
+                                        <FontAwesomeIcon icon={faTelegram} className='fs-3 social-tel m-1' />
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div className='border-2 mt-4'>
+                                    <h4 className="fw-bold fs-6">
+                                      Llamadas y SMS ilimitadas a:
+                                    </h4>
+                                    <div className='d-flex justify-content-center pt-3 mb-3'>
+                                      <img src="/img/canada.png" alt="" className='w-25 mx-1'/>
+                                      <img src="/img/estados-unidos.png" alt="" className='w-25 mx-1'/>
+                                      <img src="/img/mexico.png" alt="" className='w-25 mx-1'/>
+                                    </div>
+                                  </div>
+                                  <Accordion defaultActiveKey={null} flush>
+                                    <Accordion.Item eventKey='0'>
+                                      <Accordion.Header>
+                                        <h4 className="fw-bold fs-6 text-center">
+                                          Conoce Más
+                                      </h4>
+                                      </Accordion.Header>
+                                      <Accordion.Body>
+                                        <div className='border-tuisty-in border-2 border-bottom mt-4'>
+                                          <h4 className="fw-bold fs-6">
+                                            Redes Sociales Internacionales Ilimitadas:
+                                          </h4>
+                                          <div className='d-flex justify-content-center pt-3 mb-3'>
+                                            <span className='rounded'>
+                                              <FontAwesomeIcon icon={faWhatsapp} className='fs-3 social-wp m-1'/>
+                                            </span>
+                                            <span className='rounded '>
+                                              <FontAwesomeIcon icon={faFacebookMessenger} className='fs-3 social-mess m-1' />
+                                            </span>
+                                            <span className='rounded'>
+                                              <FontAwesomeIcon icon={faTelegram} className='fs-3 social-tel m-1' />
+                                            </span>
+                                          </div>
+                                        </div>
+                                        <div className='border-tuisty-in border-2 border-bottom pt-4 pb-3'>
+                                          <h4 className="fw-bold fs-6 internet-title text-uppercase">
+                                            Si Comparte Internet
+                                          </h4>
+                                        </div>
+                                        <div className='border-tuisty-in border-2 border-bottom pt-4 pb-1'>
+                                          <h4 className="fw-bold fs-6">
+                                            Formato de Chip:
+                                          </h4>
+                                          <ul className="list-unstyled mt-0">
+                                            <li>SIM</li>
+                                            <li>eSIM</li>
+                                          </ul>
+                                        </div>
+                                        <div className='border-tuisty-in border-2 border-bottom pt-4 pb-3'>
+                                          <h4 className="fw-bold fs-6 text-uppercase folio-title">
+                                            Folio: <span className='text-secondary fw-bold'>1644057</span>
+                                          </h4>
+                                        </div>
+                                      </Accordion.Body>
+                                    </Accordion.Item>
+                                  </Accordion>
+                                  {/* <Button 
+                                    className='buy-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill fs-4 border-light'
+                                    onClick={() => {
+                                      //Este botón redirecciona al carrito de compras
+                                    }}
                                   >
-                                  Comprar
-                                </Button>
-                              </Card.Body>
-                            </Card>
+                                    Comprar
+                                  </Button> */}
+                                </Card.Body>
+                              </Card>
                           </Col>
                         </JackInTheBox>
                       </Row>

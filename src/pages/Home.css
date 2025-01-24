@@ -67,8 +67,21 @@
     }
   }
 
-  .button-sm {
+  .button-sm,
+  .internet-title {
     color: #6149B7;
+  }
+
+  .border-tuisty {
+    border-color: #6149B7 !important;
+  }
+
+  .border-tuisty-in {
+    border-color: #FF8500 !important;
+  }
+
+  .folio-title {
+    color: #FF8500;
   }
 
   .carousel-info {
@@ -251,6 +264,10 @@
 
   .social-ins {
     color: #DD2A7B;
+  }
+
+  .social-mess {
+    color: #00B2FF;
   }
 
   .social-sp {
