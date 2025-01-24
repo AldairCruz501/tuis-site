@@ -35,7 +35,7 @@ const PlanesSection = ({ plans }) => {
                                 <Card className='mb-4 rounded-3 shadow-sm card'>
                                     <Card.Header className='py-3'>
                                         <h4 className="my-0 fw-bold plan-title text-uppercase fs-4">
-                                            {plan.name} <span className='tuisty-gb'>{plan.dataPlus}</span><br />ilimitado {plan.durationPlus}
+                                            {plan.name} <span className='tuisty-gb'>{plan.dataPlus}</span><br />Ilimitado {plan.durationPlus}
                                             </h4>
                                     </Card.Header>
                                     <div className='text-center p-3 bg-gb'>
