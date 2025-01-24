@@ -9,6 +9,7 @@ import PaquetesTrimestrales from './pages/paquetes/Paquetes-Trimestrales';
 import PaquetesSemestrales from './pages/paquetes/Paquetes-Semestrales';
 import PaquetesAnuales from './pages/paquetes/Paquetes-Anuales';
 import Cobertura from './pages/Cobertura';
+import Compatibilidad from './pages/Compatibilidad';
 import Nosotros from './pages/Nosotros';
 import AvisoPrivacidad from './pages/Aviso-Privacidad';
 import TerminosCondiciones from './pages/Terminos-Condiciones';
@@ -37,6 +38,7 @@ function App() {
         <Route path='/paquetes/paquetes-semestrales' element={<PaquetesSemestrales/>}/>
         <Route path='/paquetes/paquetes-anuales' element={<PaquetesAnuales/>}/>
         <Route path='/cobertura' element={<Cobertura/>}/>
+        <Route path='/compatibilidad' element={<Compatibilidad/>}/>
         <Route path='/nosotros' element={<Nosotros/>}/>
         <Route path='/aviso-de-privacidad' element={<AvisoPrivacidad/>}/>
         <Route path='/terminos-y-condiciones' element={<TerminosCondiciones/>}/>

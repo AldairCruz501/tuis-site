@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import './Planes-Section.css'
-import { Container, Row, Col, Card, Button, CardBody } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, Accordion } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faXTwitter, faWhatsapp, faInstagram, faSnapchat, faTelegram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faXTwitter, faWhatsapp, faInstagram, faSnapchat, faTelegram, faFacebookMessenger } from '@fortawesome/free-brands-svg-icons';
 import { useNavigate, Link } from 'react-router-dom';
-import { JackInTheBox } from 'react-awesome-reveal';
+import { JackInTheBox, Fade } from 'react-awesome-reveal';
 
 const socialMediaIcons = {
     facebook: faFacebook,
@@ -13,6 +13,7 @@ const socialMediaIcons = {
     instagram: faInstagram,
     snapchat: faSnapchat,
     telegram: faTelegram,
+    messenger: faFacebookMessenger,
   };
   
 
@@ -25,97 +26,156 @@ const PlanesSection = ({ plans }) => {
       };
 
     return (
-        <section id="planes">
-        <div className="tuisty-container pt-5">
-          <Container>
-            <Row className={`${rowColsClass} text-center`}>
-                {plans.map((plan, index) => (
-                    <JackInTheBox key={index} delay={index * 600}>
-                        <Col key={index} className='card-efect'>
-                            <Card className='mb-4 rounded-3 shadow-sm card'>
-                                <Card.Header className='py-3'>
-                                    <h4 className="my-0 fw-bold text-primary text-uppercase fs-2">{plan.name}</h4>
-                                </Card.Header>
-                                <div className='text-center p-3 bg-gb'>
-                                    <h4 className="my-0 fw-bold text-white text-uppercase display-5">{plan.data}</h4>
-                                    <h5 className="my-0 fw-bold text-white text-uppercase fs-4">{plan.usage}</h5>
-                                </div>
-                                <Card.Body>
-                                    <div className='border-primary border-2 border-bottom'>
-                                        <h1 className='card-title pricing-card-title fw-bold display-3 '>
-                                            {plan.price}
-                                        </h1>
+        <section id="planes" className="tuisty-container pt-5"> 
+            <Container>
+                <Row className={`${rowColsClass} text-center`}>
+                    {plans.map((plan, index) => (
+                        <Fade key={index} delay={index * 600}>
+                            <Col key={index} className='card-efect'>
+                                <Card className='mb-4 rounded-3 shadow-sm card'>
+                                    <Card.Header className='py-3'>
+                                        <h4 className="my-0 fw-bold plan-title text-uppercase fs-4">
+                                            {plan.name} <span className='tuisty-gb'>{plan.dataPlus}</span><br />ilimitado {plan.durationPlus}
+                                            </h4>
+                                    </Card.Header>
+                                    <div className='text-center p-3 bg-gb'>
+                                        <h4 className="my-0 fw-bold text-white text-uppercase display-5">{plan.data}</h4>
+                                        <h5 className="my-0 fw-bold text-white text-uppercase fs-4">{plan.usage}</h5>
                                     </div>
-                                    <ul className="list-unstyled mt-3 mb-4 fw-bold">
-                                        <li>{plan.minutes} Minutos</li>
-                                        <li>{plan.sms} SMS</li>
-                                    </ul>
-                                    {plan.socialMedia && (
-                                        <>
-                                            <div className="text-center p-3">
-                                                <h4 className="my-0 fw-bold text-dark fs-5">
-                                                Redes Sociales Ilimitadas*
+                                    <Card.Body>
+                                        <div className='border-tuisty border-2 border-bottom'>
+                                            <h1 className='card-title pricing-card-title fw-bold display-3 '>
+                                                {plan.price}
+                                            </h1>
+                                            <p>
+                                                <small className="text-body-secondary fw-light fs-4">{plan.duration}</small>
+                                            </p>
+                                        </div>
+                                        {plan.socialMedia && (
+                                            <>
+                                                <div className="text-center p-3">
+                                                    <h4 className="my-0 fw-bold text-dark fs-5">
+                                                        Redes Sociales Nacionales ilimitadas:
+                                                    </h4>
+                                                </div>
+                                                <div className="d-flex justify-content-center pt-3 mb-3">
+                                                    {plan.socialMedia.map((platform, idx) => (
+                                                        <span
+                                                            key={idx}
+                                                            className={`rounded mx-1 social-icon-${platform}`}
+                                                        >
+                                                            <FontAwesomeIcon
+                                                            icon={socialMediaIcons[platform]}
+                                                            className="fs-3"
+                                                            />
+                                                        </span>
+                                                    ))}
+                                                </div>
+                                            </>
+                                        )}
+                                            <div className='border-2 mt-4'>
+                                                <h4 className="fw-bold fs-6">
+                                                    Llamadas y SMS ilimitadas a:
                                                 </h4>
+                                                <div className='d-flex justify-content-center pt-3 mb-3'>
+                                                    <img src="/img/canada.png" alt="" className='w-25 mx-1'/>
+                                                    <img src="/img/estados-unidos.png" alt="" className='w-25 mx-1'/>
+                                                    <img src="/img/mexico.png" alt="" className='w-25 mx-1'/>
+                                                </div>
                                             </div>
-                                            <div className="d-flex justify-content-center pt-3 mb-3">
-                                                {plan.socialMedia.map((platform, idx) => (
-                                                    <span
-                                                        key={idx}
-                                                        className={`rounded mx-1 social-icon-${platform}`}
-                                                    >
-                                                        <FontAwesomeIcon
-                                                        icon={socialMediaIcons[platform]}
-                                                        className="fs-3"
-                                                        />
-                                                    </span>
-                                                ))}
-                                            </div>
-                                        </>
-                                    )}
-                                    <Button 
-                                    className="plan-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill border-light fs-4"
-                                    onClick={() => {
-                                        //Este botón redirecciona al carrito de compras
-                                    }}
-                                    >
-                                        Comprar
-                                    </Button>
-                                    <div className='text-center p-3'>
-                                        <p className="my-0 fw-bold text-dark fs-6">Duración: {plan.duration}</p>
-                                        <p className="my-0 text-secondary fs-6">{plan.iftfolio}</p>
-                                    </div>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    </JackInTheBox>
-                ))}
-            </Row>
-            <div className="p-3 pb-md-4 mx-auto text-center">
-                <Button 
-                  className="paq-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill fs-4 mt-3 mb-5 border-3"
-                  onClick={() => {
-                    navigate("/paquetes");
-                    window.scrollTo(0, 0);
-                }}
-                >
-                    Más Paquetes
-                </Button>
-                <div className="mb-3"> 
-                    <p className='fs-5 text-white fw-bold'>
-                    Para más información sobre nuestras tarifas, puedes consultar el Buscador de tarifas del Registro Público de
-                    Telecomunicaciones <a href='https://tarifas.ift.org.mx/ift_visor/' target='_blank' className="fs-6 fw-bold text-decoration-none link-ift">https://tarifas.ift.org.mx/ift_visor/</a>
-                    </p>
+                                            <Accordion defaultActiveKey={null} flush>
+                                                <Accordion.Item eventKey='0'>
+                                                    <Accordion.Header>
+                                                        <h4 className="fw-bold fs-6 text-center">
+                                                            Mostrar Detalles
+                                                        </h4>
+                                                    </Accordion.Header>
+                                                    <Accordion.Body>
+                                                        {plan.socialMediaInter && (
+                                                            <>
+                                                                <div className='border-tuisty-in border-2 border-bottom mt-4'>
+                                                                    <div className="text-center p-3">
+                                                                        <h4 className="my-0 fw-bold text-dark fs-5">
+                                                                            Redes Sociales Internacionales Ilimitadas:
+                                                                        </h4>
+                                                                    </div>
+                                                                    <div className="d-flex justify-content-center pt-3 mb-3">
+                                                                        {plan.socialMediaInter.map((platform, idx) => (
+                                                                            <span
+                                                                                key={idx}
+                                                                                className={`rounded mx-1 social-icon-${platform}`}
+                                                                            >
+                                                                                <FontAwesomeIcon
+                                                                                icon={socialMediaIcons[platform]}
+                                                                                className="fs-3"
+                                                                                />
+                                                                            </span>
+                                                                        ))}
+                                                                    </div>
+                                                                </div>
+                                                            </>
+                                                        )}
+                                                        <div className='border-tuisty-in border-2 border-bottom pt-4 pb-3'>
+                                                            <h4 className="fw-bold fs-6 internet-title text-uppercase">
+                                                                {plan.internet}
+                                                            </h4>
+                                                        </div>
+                                                        <div className='border-tuisty-in border-2 border-bottom pt-4 pb-1'>
+                                                            <h4 className="fw-bold fs-6">
+                                                                Formato de Chip:
+                                                            </h4>
+                                                            <ul className="list-unstyled mt-0">
+                                                                <li>SIM</li>
+                                                                <li>eSIM</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div className='border-tuisty-in border-2 border-bottom pt-4 pb-3'>
+                                                            <h4 className="fw-bold fs-6 text-uppercase folio-title">
+                                                                Folio: <span className='text-secondary fw-bold'>{plan.iftfolio}</span>
+                                                            </h4>
+                                                        </div>
+                                                    </Accordion.Body>
+                                                </Accordion.Item>
+                                            </Accordion>
+                                        {/* <Button 
+                                        className="plan-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill border-light fs-4"
+                                        onClick={() => {
+                                            //Este botón redirecciona al carrito de compras
+                                        }}
+                                        >
+                                            Comprar
+                                        </Button>*/}
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                        </Fade>
+                    ))}
+                </Row>
+                <div className="p-3 pb-md-4 mx-auto text-center">
+                    <Button 
+                    className="paq-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill fs-4 mt-3 mb-5 border-3"
+                    onClick={() => {
+                        navigate("/paquetes");
+                        window.scrollTo(0, 0);
+                    }}
+                    >
+                        Más Paquetes
+                    </Button>
+                    <div className="mb-3"> 
+                        <p className='fs-5 text-white fw-bold'>
+                        Para más información sobre nuestras tarifas, puedes consultar el Buscador de tarifas del Registro Público de
+                        Telecomunicaciones <a href='https://tarifas.ift.org.mx/ift_visor/' target='_blank' className="fs-6 fw-bold text-decoration-none link-ift">https://tarifas.ift.org.mx/ift_visor/</a>
+                        </p>
+                    </div>
+                    <div className="mb-1">
+                    <Link to="/terminos-y-condiciones" onClick={handleScrollToTop} className="fs-6 text-white fw-bold text-decoration-none link-btn">Conoce Términos y condiciones</Link>
+                    </div>
+                    <div className="mb-1"> 
+                    <Link to="/politica-uso-justo" className="fs-6 text-white fw-bold text-decoration-none link-btn" target="_blank">Políticas de uso justo</Link>
+                    </div>
                 </div>
-                <div className="mb-1">
-                  <Link to="/terminos-y-condiciones" onClick={handleScrollToTop} className="fs-6 text-white fw-bold text-decoration-none link-btn">Conoce Términos y condiciones</Link>
-                </div>
-                <div className="mb-1"> 
-                  <Link to="/politica-uso-justo" className="fs-6 text-white fw-bold text-decoration-none link-btn" target="_blank">Políticas de uso justo</Link>
-                </div>
-            </div>
-          </Container>
-        </div>
-      </section>
+            </Container>
+        </section>
     );
 };
 

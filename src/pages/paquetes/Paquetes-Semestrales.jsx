@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import NavbarComponent from '../../components/Navbar';
 import FooterComponent from '../../components/Footer';
 import HeroTuistyXL from '../../components/Hero-Tuisty-XL';
-import PlanTuisty from '../../components/Plan-Tuisty';
 import { heroData, planesData } from "../../data";
 import Loading from '../../components/Loading';
+import PlanesSection from '../../components/Planes-Section';
 
 function PaquetesSemestrales () {
     const { title, subtitle, paragraph, backgroundImage } = heroData.heroPaqueteSemestral;
@@ -34,7 +34,7 @@ function PaquetesSemestrales () {
                         paragraph={paragraph}
                         backgroundImage={backgroundImage}
                     />
-                    <PlanTuisty 
+                    <PlanesSection 
                         plans={plans}
                         termsUrl={termsUrl}
                         policiesUrl={policiesUrl}

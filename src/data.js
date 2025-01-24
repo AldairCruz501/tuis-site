@@ -34,25 +34,14 @@ export const planesData = {
     planesBasicosPage: {
       plans: [
         {
-          name: "Tuisty 4GB + 3 días",
+          name: "Tuisty",
+          dataPlus: "4GB",
           data: "4GB",
           usage: "Navegación",
           price: "$39",
           minutes: "375",
           sms: "125",
-          internet:"No",
-          showSocialMedia: false,
-          duration: "3 días",
-          iftfolio: "1346921"
-        },
-        {
-          name: "Tuisty 3GB + 7 días",
-          data: "3GB",
-          usage: "Navegación",
-          price: "$59",
-          minutes: "10,580",
-          sms: "750",
-          internet:"Si",
+          internet:"No Comparte Internet",
           showSocialMedia: true,
           socialMedia: [
             "facebook",
@@ -62,7 +51,42 @@ export const planesData = {
             "snapchat",
             "telegram",
           ],
+          showSocialMediaInter: true,
+          socialMediaInter: [
+            "whatsapp",
+            "messenger",
+            "telegram",
+          ],
+          duration: "3 días",
+          durationPlus: "3 días",
+          iftfolio: "1346921"
+        },
+        {
+          name: "Tuisty",
+          dataPlus: "3GB",
+          data: "3GB",
+          usage: "Navegación",
+          price: "$59",
+          minutes: "10,580",
+          sms: "750",
+          internet:"Si Comparte Internet",
+          showSocialMedia: true,
+          socialMedia: [
+            "facebook",
+            "twitter",
+            "whatsapp",
+            "instagram",
+            "snapchat",
+            "telegram",
+          ],
+          showSocialMediaInter: true,
+          socialMediaInter: [
+            "whatsapp",
+            "messenger",
+            "telegram",
+          ],
           duration: "7 días",
+          durationPlus: "Semanal",
           iftfolio: "1346922"
         },
       ],
@@ -70,13 +94,14 @@ export const planesData = {
     planesTuistyPage: {
         plans: [
             {
-              name: "Tuisty 3",
+              name: "Tuisty",
+              dataPlus: "3GB",
               data: "3GB",
               usage: "Navegación",
               price: "$129",
               minutes: "44,700",
               sms: "1,500",
-              internet:"Si",
+              internet:"Si Comparte Internet",
               showSocialMedia: true,
               socialMedia: [
                 "facebook",
@@ -86,17 +111,25 @@ export const planesData = {
                 "snapchat",
                 "telegram",
               ],
+              showSocialMediaInter: true,
+              socialMediaInter: [
+                "whatsapp",
+                "messenger",
+                "telegram",
+              ],
               duration: "30 días",
+              durationPlus: "Mensual",
               iftfolio: "1346925"
             },
             {
-              name: "Tuisty 5",
+              name: "Tuisty",
+              dataPlus: "5GB",
               data: "5GB",
               usage: "Navegación",
               price: "$149",
               minutes: "44,700",
               sms: "1,500",
-              internet:"Si",
+              internet:"Si Comparte Internet",
               showSocialMedia: true,
               socialMedia: [
                 "facebook",
@@ -106,17 +139,25 @@ export const planesData = {
                 "snapchat",
                 "telegram",
               ],
+              showSocialMediaInter: true,
+              socialMediaInter: [
+                "whatsapp",
+                "messenger",
+                "telegram",
+              ],
               duration: "30 días",
+              durationPlus: "Mensual",
               iftfolio: "1346926"
             },
             {
-                name: "Tuisty 40",
+                name: "Tuisty",
+                dataPlus: "40GB",
                 data: "40GB",
                 usage: "Navegación",
                 price: "$279",
                 minutes: "44,700",
                 sms: "1,500",
-                internet:"Si",
+                internet:"Si Comparte Internet",
                 showSocialMedia: true,
                 socialMedia: [
                   "facebook",
@@ -126,17 +167,25 @@ export const planesData = {
                   "snapchat",
                   "telegram",
                 ],
+                showSocialMediaInter: true,
+                socialMediaInter: [
+                  "whatsapp",
+                  "messenger",
+                  "telegram",
+                ],
                 duration: "30 días",
+                durationPlus: "Mensual",
                 iftfolio: "1346929"
               },
               {
-                name: "Tuisty 40+",
+                name: "Tuisty",
+                dataPlus: "40GB+",
                 data: "40GB",
                 usage: "Navegación",
                 price: "$349",
                 minutes: "44,700",
                 sms: "1,500",
-                internet:"Si",
+                internet:"Si Comparte Internet",
                 showSocialMedia: true,
                 socialMedia: [
                   "facebook",
@@ -146,7 +195,14 @@ export const planesData = {
                   "snapchat",
                   "telegram",
                 ],
+                showSocialMediaInter: true,
+                socialMediaInter: [
+                  "whatsapp",
+                  "messenger",
+                  "telegram",
+                ],
                 duration: "30 días",
+                durationPlus: "Mensual",
                 iftfolio: "1346930"
               }
           ],
@@ -154,13 +210,14 @@ export const planesData = {
     planesTrimestralesPage: {
       plans: [
           {
-            name: "Tuisty 3",
+            name: "Tuisty",
+            dataPlus: "3GB",
             data: "3GB",
             usage: "Navegación",
             price: "$334",
             minutes: "44,700",
             sms: "1,500",
-            internet:"Si",
+            internet:"Si Comparte Internet",
             showSocialMedia: true,
             socialMedia: [
               "facebook",
@@ -170,17 +227,25 @@ export const planesData = {
               "snapchat",
               "telegram",
             ],
+            showSocialMediaInter: true,
+            socialMediaInter: [
+              "whatsapp",
+              "messenger",
+              "telegram",
+            ],
             duration: "90 días",
+            durationPlus: "Trimestral",
             iftfolio: "0"
           },
           {
-            name: "Tuisty 5",
+            name: "Tuisty",
+            dataPlus: "5GB",
             data: "5GB",
             usage: "Navegación",
             price: "$399",
             minutes: "44,700",
             sms: "1,500",
-            internet:"Si",
+            internet:"Si Comparte Internet",
             showSocialMedia: true,
             socialMedia: [
               "facebook",
@@ -190,17 +255,25 @@ export const planesData = {
               "snapchat",
               "telegram",
             ],
+            showSocialMediaInter: true,
+            socialMediaInter: [
+              "whatsapp",
+              "messenger",
+              "telegram",
+            ],
             duration: "90 días",
+            durationPlus: "Trimestral",
             iftfolio: "1346936"
           },
           {
-            name: "Tuisty 15",
+            name: "Tuisty",
+            dataPlus: "15GB",
             data: "15GB",
             usage: "Navegación",
             price: "$649",
             minutes: "44,700",
             sms: "1,500",
-            internet:"Si",
+            internet:"Si Comparte Internet",
             showSocialMedia: true,
             socialMedia: [
               "facebook",
@@ -210,11 +283,19 @@ export const planesData = {
               "snapchat",
               "telegram",
             ],
+            showSocialMediaInter: true,
+            socialMediaInter: [
+              "whatsapp",
+              "messenger",
+              "telegram",
+            ],
             duration: "90 días",
+            durationPlus: "Trimestral",
             iftfolio: "1346938"
           },
           {
-            name: "Tuisty 40",
+            name: "Tuisty",
+            dataPlus: "40GB",
             data: "40GB",
             usage: "Navegación",
             price: "$749",
@@ -231,6 +312,7 @@ export const planesData = {
               "telegram",
             ],
             duration: "90 días",
+            durationPlus: "Trimestral",
             iftfolio: "1346941"
           },
         ],
@@ -238,7 +320,8 @@ export const planesData = {
     planesSemestralesPage: {
       plans: [
           {
-            name: "Tuisty 3",
+            name: "Tuisty",
+            dataPlus: "3GB",
             data: "3GB",
             usage: "Navegación",
             price: "$669",
@@ -255,11 +338,13 @@ export const planesData = {
               "telegram",
             ],
             duration: "180 días",
+            durationPlus: "Semestral",
             iftfolio: "0"
           },
           {
-            name: "Tuisty 5",
+            name: "Tuisty",
             data: "5GB",
+            dataPlus:"5GB",
             usage: "Navegación",
             price: "$779",
             minutes: "44,700",
@@ -275,11 +360,13 @@ export const planesData = {
               "telegram",
             ],
             duration: "180 días",
+            durationPlus: "Semestral",
             iftfolio: "1346946"
           },
           {
-            name: "Tuisty 15",
+            name: "Tuisty",
             data: "15GB",
+            dataPlus: "15GB",
             usage: "Navegación",
             price: "$1299",
             minutes: "44,700",
@@ -295,11 +382,13 @@ export const planesData = {
               "telegram",
             ],
             duration: "180 días",
+            durationPlus: "Semestral",
             iftfolio: "1346947"
           },
           {
-            name: "Tuisty 40",
+            name: "Tuisty",
             data: "40GB",
+            dataPlus: "40GB",
             usage: "Navegación",
             price: "$1449",
             minutes: "44,700",
@@ -315,6 +404,7 @@ export const planesData = {
               "telegram",
             ],
             duration: "180 días",
+            durationPlus: "Semestral",
             iftfolio: "1346949"
           },
         ],
@@ -322,8 +412,9 @@ export const planesData = {
     planesAnualesPage: {
       plans: [
           {
-            name: "Tuisty 3",
+            name: "Tuisty",
             data: "3GB",
+            dataPlus: "3GB",
             usage: "Navegación",
             price: "$1339",
             minutes: "44,700",
@@ -339,11 +430,13 @@ export const planesData = {
               "telegram",
             ],
             duration: "360 días",
+            durationPlus: "Anual",
             iftfolio: "0"
           },
           {
-            name: "Tuisty 5",
+            name: "Tuisty",
             data: "5GB",
+            dataPlus: "5GB",
             usage: "Navegación",
             price: "$1599",
             minutes: "44,700",
@@ -359,11 +452,13 @@ export const planesData = {
               "telegram",
             ],
             duration: "360 días",
+            durationPlus: "Anual",
             iftfolio: "1346954"
           },
           {
-            name: "Tuisty 15",
+            name: "Tuisty",
             data: "15GB",
+            dataPlus: "15GB",
             usage: "Navegación",
             price: "$2199",
             minutes: "44,700",
@@ -379,11 +474,13 @@ export const planesData = {
               "telegram",
             ],
             duration: "360 días",
+            durationPlus: "Anual",
             iftfolio: "1346956"
           },
           {
-            name: "Tuisty 40",
+            name: "Tuisty",
             data: "40GB",
+            dataPlus: "40GB",
             usage: "Navegación",
             price: "$2669",
             minutes: "44,700",
@@ -399,6 +496,7 @@ export const planesData = {
               "telegram",
             ],
             duration: "360 días",
+            durationPlus: "Anual",
             iftfolio: "1346958"
           },
         ],

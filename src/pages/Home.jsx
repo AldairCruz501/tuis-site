@@ -211,10 +211,10 @@ function Home() {
                       <div className="p-3 pb-md-4 mx-auto text-center">
                         <h1 className="display-4 fw-bold text-white">Planes de Telefonía Móvil Tuis</h1>
                         <p className="fs-5 text-white">
-                        Conoces nuestros planes personalizados diseñados exclusivamente para los <span className='fw-bold fst-italic fs-4'>tuisters</span>
+                          Descubre nuestros planes personalizados, diseñados exclusivamente para los <span className='fw-bold fst-italic fs-4'>tuisters</span>
                         </p>
                       </div>
-                      <Row className="row-cols-1 row-cols-md-2 row-cols-lg-4  text-center">
+                      <Row className="row-cols-1 row-cols-md-2 row-cols-lg-4 text-center">
                         <JackInTheBox>
                           <Col className='card-efect'>
                               <Card className="mb-4 rounded-3 shadow-sm card">
@@ -270,7 +270,7 @@ function Home() {
                                     <Accordion.Item eventKey='0'>
                                       <Accordion.Header>
                                         <h4 className="fw-bold fs-6 text-center">
-                                          Conoce Más
+                                          Mostrar Detalles
                                       </h4>
                                       </Accordion.Header>
                                       <Accordion.Body>
@@ -379,7 +379,7 @@ function Home() {
                                     <Accordion.Item eventKey='0'>
                                       <Accordion.Header>
                                         <h4 className="fw-bold fs-6 text-center">
-                                          Conoce Más
+                                          Mostrar Detalles
                                       </h4>
                                       </Accordion.Header>
                                       <Accordion.Body>
@@ -488,7 +488,7 @@ function Home() {
                                     <Accordion.Item eventKey='0'>
                                       <Accordion.Header>
                                         <h4 className="fw-bold fs-6 text-center">
-                                          Conoce Más
+                                          Mostrar Detalles
                                       </h4>
                                       </Accordion.Header>
                                       <Accordion.Body>
@@ -597,7 +597,7 @@ function Home() {
                                     <Accordion.Item eventKey='0'>
                                       <Accordion.Header>
                                         <h4 className="fw-bold fs-6 text-center">
-                                          Conoce Más
+                                          Mostrar Detalles
                                       </h4>
                                       </Accordion.Header>
                                       <Accordion.Body>
@@ -653,13 +653,28 @@ function Home() {
                         </JackInTheBox>
                       </Row>
                       <div className="p-3 pb-md-4 mx-auto text-center">
+                        <Button 
+                          className="paq-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill fs-4 mt-3 mb-5 border-3"
+                          onClick={() => {
+                              navigate("/paquetes");
+                              window.scrollTo(0, 0);
+                          }}
+                        >
+                          Más Paquetes
+                        </Button>
+                        <div className="mb-3"> 
+                            <p className='fs-5 text-white fw-bold'>
+                            Para más información sobre nuestras tarifas, puedes consultar el Buscador de tarifas del Registro Público de
+                            Telecomunicaciones <a href='https://tarifas.ift.org.mx/ift_visor/' target='_blank' className="fs-6 fw-bold text-decoration-none link-ift">https://tarifas.ift.org.mx/ift_visor/</a>
+                            </p>
+                        </div>
                         <div className="mb-1">
                           <Link to="/terminos-y-condiciones" onClick={handleScrollToTop} className="fs-6 text-white fw-bold text-decoration-none link-btn">Conoce Términos y condiciones</Link>
                         </div>
                         <div className="mb-1"> 
                           <Link to="/politica-uso-justo" className="fs-6 text-white fw-bold text-decoration-none link-btn" target="_blank">Políticas de uso justo</Link>
-                        </div>
                       </div>
+                    </div>
                   </Container>
                 </section>
                 <section>

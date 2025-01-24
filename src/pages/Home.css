@@ -105,10 +105,16 @@
    
   .wave {
     left: 0;
-    height: 150px;
+    height: 160px;
     background: url("/img/wave.svg") repeat-x;
     background-size: contain;
     background-color: #6149B7;
+  }
+
+  @media (min-width: 675px) and (max-width: 718px) {
+    .wave {
+      height: 150px;
+    }
   }
 
   @media (min-width: 450px) and (max-width: 674px) {
@@ -219,10 +225,17 @@
   
   .wave-two {
     left: 0;
-    height: 150px;
+    height: 160px;
     background: url("/img/wave-two.svg") repeat-x;
     background-size: contain;
   }
+
+  @media (min-width: 675px) and (max-width: 718px) {
+    .wave-two {
+      height: 150px;
+    }
+  }
+
   @media (min-width: 450px) and (max-width: 674px) {
     .wave-two {
       height: 100px;

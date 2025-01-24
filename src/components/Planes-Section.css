@@ -10,6 +10,23 @@
     -webkit-transform:scale(-1);transform:scale(0.95);
   }
 
+  .internet-title,
+  .plan-title {
+    color: #6149B7;
+  }
+
+  .border-tuisty {
+    border-color: #6149B7 !important;
+  }
+
+  .border-tuisty-in {
+    border-color: #FF8500 !important;
+  }
+
+  .tuisty-gb {
+    color: #0C71C3;
+  }
+
   .bg-gb{
     background-color: #FF8500;
   }
@@ -34,6 +51,10 @@
     color: #000000; 
   }
   
+  .social-icon-messenger {
+    color: #00B2FF;
+  }
+
   .social-icon-telegram {
     color: #0088CC; 
   }

@@ -33,7 +33,7 @@ function PaquetesTuisty () {
                         subtitle={subtitle}
                         backgroundImage={backgroundImage}
                     />
-                    <PlanesSection 
+                    <PlanesSection
                         plans={plans}
                         termsUrl={termsUrl}
                         policiesUrl={policiesUrl}

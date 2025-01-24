@@ -1,0 +1,46 @@
+.compatibilidad-title {
+    color: #6149B7!important;
+    text-align: center;
+}
+
+.compatibilidad-paragraph {
+    color: #0C71C3!important;
+    text-align: center;
+}
+
+
+
+.card {
+    width: 100%; /* O usar un porcentaje menor como 90% para dejar espacio a los lados */
+    max-width: 1200px; /* Asegúrate de definir un ancho máximo para evitar que sea demasiado grande */
+    margin: 0 auto; /* Centra la tarjeta horizontalmente */
+  }
+
+
+  .btn-custom {
+    background-color: #6048BA;
+    border-color: #6048BA;
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: 70%;
+  }
+
+  .btn-custom:hover {
+    background-color: #4d3c99;
+    border-color: #4d3c99;
+}
+    .container-imei {
+        max-width: 900px; /* Limita el ancho máximo del contenedor */
+        padding: 0px; /* Reduce el padding lateral */
+    }
+
+
+.form-control {
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: #6048BA;
+    box-shadow: 0 0 0 0.2rem rgba(97, 73, 183, 0.25);
+}
+  
