@@ -55,7 +55,7 @@ const PlanesSection = ({ plans }) => {
                                             <>
                                                 <div className="text-center p-3">
                                                     <h4 className="my-0 fw-bold text-dark fs-5">
-                                                        Redes Sociales Nacionales ilimitadas:
+                                                        Redes Sociales Nacionales Ilimitadas:
                                                     </h4>
                                                 </div>
                                                 <div className="d-flex justify-content-center pt-3 mb-3">
