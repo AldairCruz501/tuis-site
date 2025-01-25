@@ -10,7 +10,7 @@ import PlanesSection from '../../components/Planes-Section';
 
 function PaquetesTrimestrales () {
     const { title, subtitle, paragraph, backgroundImage } = heroData.heroPaqueteTrimestral;
-    const { plans, termsUrl, policiesUrl } = planesData.planesTrimestralesPage;
+    const { plans } = planesData.planesTrimestralesPage;
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -34,11 +34,9 @@ function PaquetesTrimestrales () {
                         paragraph={paragraph}
                         backgroundImage={backgroundImage}
                     />
-                    <PlanesSection
-                        plans={plans}
-                        termsUrl={termsUrl}
-                        policiesUrl={policiesUrl}
-                    />
+                <PlanesSection
+                    plans={plans}
+                />
                     <FooterComponent></FooterComponent>
                 </>
             )}

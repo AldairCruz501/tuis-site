@@ -10,7 +10,7 @@ import Loading from '../../components/Loading';
 
 function PaquetesBasicos () {
     const { title, subtitle, backgroundImage, links } = heroData.heroPaqueteBasico;
-    const { plans, termsUrl, policiesUrl } = planesData.planesBasicosPage;
+    const { plans } = planesData.planesBasicosPage;
     const [loading, setLoading] = useState(true);
 
         useEffect(() => {
@@ -36,8 +36,6 @@ function PaquetesBasicos () {
                 />
                 <PlanesSection
                     plans={plans}
-                    termsUrl={termsUrl}
-                    policiesUrl={policiesUrl}
                 />
                 <FooterComponent></FooterComponent>
             </>

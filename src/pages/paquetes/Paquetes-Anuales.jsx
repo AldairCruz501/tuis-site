@@ -9,7 +9,7 @@ import PlanesSection from '../../components/Planes-Section';
 
 function PaquetesAnuales () {
     const { title, subtitle, paragraph, backgroundImage } = heroData.heroPaqueteAnual;
-    const { plans, termsUrl, policiesUrl } = planesData.planesAnualesPage;
+    const { plans } = planesData.planesAnualesPage;
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -33,11 +33,9 @@ function PaquetesAnuales () {
                         paragraph={paragraph}
                         backgroundImage={backgroundImage}
                     />
-                    <PlanesSection 
-                        plans={plans}
-                        termsUrl={termsUrl}
-                        policiesUrl={policiesUrl}
-                    />
+                <PlanesSection
+                    plans={plans}
+                />
                     <FooterComponent></FooterComponent>
                 </>
             )}

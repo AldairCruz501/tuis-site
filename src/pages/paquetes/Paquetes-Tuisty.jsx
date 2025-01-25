@@ -10,7 +10,7 @@ import Loading from '../../components/Loading';
 
 function PaquetesTuisty () {
     const { title, subtitle, backgroundImage} = heroData.heroPaqueteTuisty;
-    const { plans, termsUrl, policiesUrl } = planesData.planesTuistyPage;
+    const { plans } = planesData.planesTuistyPage;
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -33,11 +33,9 @@ function PaquetesTuisty () {
                         subtitle={subtitle}
                         backgroundImage={backgroundImage}
                     />
-                    <PlanesSection
-                        plans={plans}
-                        termsUrl={termsUrl}
-                        policiesUrl={policiesUrl}
-                    />
+                <PlanesSection
+                    plans={plans}
+                />
                     <FooterComponent></FooterComponent>
                 </>
             )}
