@@ -100,7 +100,7 @@ function Paquetes() {
                             <div className="p-3 pb-md-4 mx-auto text-center">
                                 <h1 className="display-4 fw-bold text-white">Planes de Telefonía Móvil Tuis</h1>
                                 <p className="fs-5 text-white">
-                                Conoces nuestros planes personalizados diseñados exclusivamente para los <span className='fw-bold fst-italic fs-4'>tuisters</span>
+                                    Descubre nuestros planes personalizados, diseñados exclusivamente para los <span className='fw-bold fst-italic fs-4'>tuisters</span>
                                 </p>
                             </div>
                             <Row className='row-cols-1 row-cols-md-2 row-cols-lg-5'>
