@@ -17,12 +17,14 @@ const socialMediaIcons = {
   
 
 
-const PlanesSection = ({ plans }) => {
-    const rowColsClass = plans.length === 2 ? "row-cols-1 row-cols-md-2" : "row-cols-1 row-cols-md-2 row-cols-lg-4";
+  const PlanesSection = ({ plans }) => {
+    const rowColsClass = plans.length === 2 
+        ? "row-cols-1 row-cols-md-2 justify-content-md-center row-cols-lg-4"
+        : "row-cols-1 row-cols-md-2 row-cols-lg-4";
     const navigate = useNavigate();
     const handleScrollToTop = () => {
         window.scrollTo(0, 0);
-      };
+    };
 
     return (
         <section id="planes" className="tuisty-container pt-5"> 
@@ -136,24 +138,16 @@ const PlanesSection = ({ plans }) => {
                                                     </Accordion.Body>
                                                 </Accordion.Item>
                                             </Accordion>
-                                        {/* <Button 
-                                        className="plan-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill border-light fs-4"
-                                        onClick={() => {
-                                            //Este botón redirecciona al carrito de compras
-                                        }}
-                                        >
-                                            Comprar
-                                        </Button>*/}
                                     </Card.Body>
                                 </Card>
                             </Col>
                         </Fade>
                     ))}
                 </Row>
-
             </Container>
         </section>
     );
 };
+
 
 export default PlanesSection;

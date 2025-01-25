@@ -38,7 +38,7 @@ function TerminosCondiciones () {
                                 <section className='pt-2'>
                                     <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Términos y Condiciones Generales</h2>
                                     <p className='text-body-secondary fs-5 mt-3 mb-4 text-justify'>
-                                        Tuis by INBTEL (en adelante Tuis) es una marca registrada y licenciada en favor de Altán
+                                        Tuis by INBTEL (En adelante, Tuis) es una marca registrada y licenciada en favor de Altán
                                         redes (en adelante Altán) quien es el Operador del Servicio de Telefonía Móvil y único
                                         responsable frente al Usuario final por la prestación del servicio. 
                                     </p>
@@ -62,8 +62,8 @@ function TerminosCondiciones () {
                                                 </p>
                                                 <p className='text-body-secondary fs-6 text-justify'>
                                                     Las presentes Condiciones generan obligaciones entre Usted y Tuis. Por ello, Usted
-                                                    debera de leer detenidamente su contenido. Si usted no esta de acuerdo con cualquiera
-                                                    de las condiciones o disposiciones establecidas en las presentes Condiciones, debera
+                                                    deberá  de leer detenidamente su contenido.Si usted no está  de acuerdo con cualquiera
+                                                    de las condiciones o disposiciones establecidas en las presentes Condiciones, deberá 
                                                     abstenerse de utilizar la Plataforma, dar de baja su Usuario o cuenta y/o eliminar la
                                                     aplicación, según sea el caso.
                                                 </p>
@@ -74,16 +74,16 @@ function TerminosCondiciones () {
                                                     <ul className='text-body-secondary fs-6 list-style text-justify'>
                                                         <li>
                                                             Los Términos estipulados en el Contrato de Adhesión y el Aviso de Privacidad,
-                                                            los cuales se encuentran disponibles para su consulta la página de internet de
+                                                            los cuales se encuentran disponibles para su consulta en la página de internet de
                                                             <a href="http://www.tuis.com.mx" target='_blank' className='link-conditions-tuis text-decoration-none'>Tuis</a>.
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <p className='text-body-secondary fs-6 text-justify'>
                                                     Tuis se reserva el derecho de cambiar, modificar y/o reemplazar las presentes
-                                                    Condiciones en cualquier momento, al igual que sus planes de contratacio n sin
-                                                    necesidad de previo aviso y dichas modificaciones entrara n en vigor al dí a siguiente a
-                                                    aque l en que hayan sido publicadas en la Plataforma.
+                                                    Condiciones en cualquier momento, al igual que sus planes de contratación sin
+                                                    necesidad de previo aviso y dichas modificaciones entrarán en vigor al día siguiente a
+                                                    aquel en que hayan sido publicadas en la Plataforma.
                                                 </p>
                                                 <p className='text-body-secondary fs-6 text-justify'>
                                                     El acceso o uso continuo de la Plataforma después de que surtan efectos las
@@ -156,7 +156,7 @@ function TerminosCondiciones () {
                                                     Es responsabilidad de usted asegurarse de que su dispositivo sea compatible antes de
                                                     adquirir el servicio. En caso de contratar sin haber verificado previamente dicha
                                                     compatibilidad, el cliente acepta que el servicio podría no funcionar conforme a lo
-                                                    estipulado, y Tuis no asumira responsabilidad alguna por las consecuencias que esto
+                                                    estipulado, y Tuis no asumirá responsabilidad alguna por las consecuencias que esto
                                                     pueda generar.
                                                 </p>
                                                 <p className='text-body-secondary fs-6 text-justify'>
@@ -168,7 +168,7 @@ function TerminosCondiciones () {
                                                     directamente con él, bajo los términos y condiciones aplicables a esa compraventa.
                                                 </p>
                                                 <p className='text-body-secondary fs-6 text-justify'>
-                                                    Tuis subcontrata el servicio de mensajería y paquetería el cual lo acompañara en el
+                                                    Tuis subcontrata el servicio de mensajería y paquetería, el cual lo acompañara en el
                                                     seguimiento desde su compra hasta la entrega de la misma; sin embargo, Tuis no se
                                                     hace responsable por los tiempos de entrega o algún tipo de retraso o percance con la
                                                     entrega de la paquetería.
@@ -208,9 +208,9 @@ function TerminosCondiciones () {
                                                     o solicitud de aclaración, siempre y cuando no haya hecho uso de dichos servicios.
                                                 </p>
                                                 <p className='text-body-secondary fs-6 text-justify'>
-                                                    Usted podra contratar en cualquier momento Servicios Adicionales, para lo cual deberá
+                                                    Usted podrá contratar en cualquier momento Servicios Adicionales, para lo cual deberá
                                                     de encontrarse al corriente con los pagos de los Servicios contratados anteriormente y
-                                                    con las obligaciones contraí das por virtud de la celebracio n del Contrato.
+                                                    con las obligaciones contraídas por virtud de la celebración del Contrato.
                                                 </p>
                                                 <p className='text-body-secondary fs-6 text-justify'>
                                                     El pago a través de tarjetas de crédito, débito o de servicios, es operado por terceros
@@ -257,14 +257,14 @@ function TerminosCondiciones () {
                                                         administrativa, laboral, penal, contractual, extracontractual o cualquier otra que
                                                         pudiera surgir en virtud de alguna falla, suspensión, cancelación o interrupción en la
                                                         prestación de los Servicios y/o Servicios Adicionales proporcionados por Tuis por
-                                                        causas ajenas a éste, entre las que se encuentran de manera enunciativa más no
+                                                        causas ajenas a este, entre las que se encuentran de manera enunciativa más no
                                                         limitativa:
                                                     </p>
                                                     <ul className='text-body-secondary fs-6 list-style text-justify'>
                                                         <li>
                                                             Causas de fuerza mayor y/o caso fortuito que puedan darse por cualquier hecho
-                                                            de la naturaleza o del hombre que sea imprevisible, o que, siendo previsible, éste
-                                                            sea inevitable. Dentro de esta categoría esta incluido de manera enunciativa lo
+                                                            de la naturaleza o del hombre que sea imprevisible, o que, siendo previsible, este
+                                                            sea inevitable. Dentro de esta categoría está incluido de manera enunciativa lo
                                                             siguiente: terremotos, ciclones, tormentas, huracanes, lluvias tropicales,
                                                             tornados, cualquier desastre natural, manifestaciones, huelgas, pandemias,
                                                             endemias, contingencias sanitarias y/o guerras, entre otros.
@@ -302,7 +302,7 @@ function TerminosCondiciones () {
                                             <Accordion.Body>
                                                 <p className='text-body-secondary fs-6 text-justify'>
                                                     Tuis hace de su conocimiento que todos los datos personales que le sean
-                                                    proporcionados sera n tratados de conformidad con lo dispuesto en el 
+                                                    proporcionados serán tratados de conformidad con lo dispuesto en el 
                                                     <Link to="/aviso-de-privacidad" onClick={handleScrollToTop} className='link-conditions-tuis text-decoration-none'> Aviso de Privacidad</Link>
                                                 </p>
                                             </Accordion.Body>
@@ -317,7 +317,7 @@ function TerminosCondiciones () {
                                                     sus productos y servicios, Tuis no acepta ni solicita a los Usuarios, bajo ninguna
                                                     circunstancia que estos le presenten ideas, sugerencias creativas o propuestas que no
                                                     hayan sido solicitadas, con excepción de que Tuis lo manifieste explícitamente; todas las
-                                                    ideas, comentarios, sugerencias (de forma enunciativa mas no limitativa), que usted nos
+                                                    ideas, comentarios, sugerencias (de forma enunciativa más no limitativa), que usted nos
                                                     haga llegar se considerarán de forma automática como información no confidencial y
                                                     podrán ser utilizadas por Tuis sin tener ninguna obligación frente a Usted respecto a la
                                                     forma en que Tuis utilice dichas ideas.
@@ -335,7 +335,7 @@ function TerminosCondiciones () {
                                                     las mismas, usted se somete expresamente a la legislación y competencia de los
                                                     tribunales competentes, renunciando expresamente a cualquier otro fuero que, por
                                                     razón de su domicilio presente o futuro, o por cualquier otra causa, pudiera
-                                                    corresponderle
+                                                    corresponderle.
                                                 </p>
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -353,10 +353,10 @@ function TerminosCondiciones () {
                                                 <p className='text-body-secondary fs-6 text-justify'>
                                                     En caso de que alguna de las promociones no cuente con sus propios términos y
                                                     condiciones, es decir, requisitos para obtener el beneficio que le corresponda a dicha
-                                                    promoción; El Usuario se debera someter a los presentes términos y condiciones.
+                                                    promoción; El Usuario se deberá  someter a los presentes términos y condiciones.
                                                 </p>
                                                 <p className='text-body-secondary fs-6 text-justify'>
-                                                    Todas las promociones y el uso de éstas son de carácter personal, e intransferible; Tuis
+                                                    Todas las promociones y el uso de estas son de carácter personal, e intransferible; Tuis
                                                     se reserva el derecho de otorgar los beneficios, los beneficios no podrán ser canjeados
                                                     por dinero o equipos, de igual forma el uso y/o participación a cualquier promoción lo
                                                     obliga a la aceptación de los presentes términos y condiciones, a la obligación del
@@ -365,7 +365,7 @@ function TerminosCondiciones () {
                                                 <p className='text-body-secondary fs-6 text-justify'>
                                                     El Usuario que actúe, de manera enunciativa más no limitativa con alevosía, ventaja,
                                                     dolo, y/o mala fé al solicitar el servicio de telefonía y/o la adquisición de Servicios, o al
-                                                    participar en las promociones que publique Tuis, sera considerado como fraude, será
+                                                    participar en las promociones que publique Tuis, será considerado como fraude, será
                                                     descalificado y Tuis podra presentar cargos contra este.
                                                 </p>
                                                 <p className='text-body-secondary fs-6 text-justify'>
@@ -374,20 +374,20 @@ function TerminosCondiciones () {
                                                 </p>
                                                 <p className='text-body-secondary fs-6 text-justify'>
                                                     Por lo anterior, el Usuario consiente que Tuis le podrá requerir prueba fehaciente de
-                                                    que los datos que ha proporcionado sean reales, en caso de que Tuis considere que el
-                                                    Usuario cae en falsedad, sera considerado como fraude.
+                                                    que los datos que ha proporcionado sean reales. En caso de que Tuis considere que el
+                                                    Usuario cae en falsedad, será considerado como fraude.
                                                 </p>
                                                 <p className='text-body-secondary fs-6 text-justify'>
                                                     En el supuesto de que el Usuario participante de cualquiera de las promociones de Tuis,
                                                     le sea notificado que es acreedor a un beneficio, previa comunicación con Tuis, el
-                                                    Usuario debera confirmar mediante correo electrónico o a través del número de Atención
+                                                    Usuario deberá  confirmar mediante correo electrónico o a través del número de Atención
                                                     al Cliente de Tuis su participación, en el supuesto de no confirmar dentro de un periodo
                                                     de 24 (veinticuatro) horas perdera el beneficio.
                                                 </p>
                                                 <p className='text-body-secondary fs-6 text-justify'>
-                                                    El Usuario debera consultar la fecha de vigencia de las promociones, en el supuesto de
+                                                    El Usuario deberá  consultar la fecha de vigencia de las promociones, en el supuesto de
                                                     no estar indicada, se entiende que es hasta agotar existencias. Para conocer la
-                                                    disponibilidad de las promociones el Usuario puede comunicarse a trave s de nuestros
+                                                    disponibilidad de las promociones el Usuario puede comunicarse a través de  nuestros
                                                     canales oficiales.
                                                 </p>
                                             </Accordion.Body>
@@ -408,7 +408,7 @@ function TerminosCondiciones () {
                                 <section className='pt-5'>
                                     <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Términos y Condiciones de Redes Sociales Ilimitadas</h2>
                                     <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                        En adelante Tuis estipulan las condiciones generales de uso para Datos incluidos en el
+                                        En adelante, Tuis estipulan las condiciones generales de uso para Datos incluidos en el
                                         Límite Máximo de Tráfico de Redes Sociales “RRSS” Territorio Nacional y Límite
                                         Máximo de Tráfico de RRSS en Roaming Internacional. El servicio de Redes Sociales
                                         Ilimitadas permite al usuario acceder de manera ilimitada a las aplicaciones de redes
@@ -440,7 +440,7 @@ function TerminosCondiciones () {
                                                         <li>Envío de mensajes de texto, notas de voz, fotos, videos, archivos, contactos de la agenda.</li>
                                                         <li>Descargar o guardar fotos y videos.</li>
                                                         <li>Recibir notificaciones desde la aplicación.</li>
-                                                        <li>Compartir una ubicación propia y consultar ubicación de cualquier contacto.</li>
+                                                        <li>Compartir una ubicación propia y consultar la ubicación de  cualquier contacto.</li>
                                                     </ul>
                                                 </div>
                                                 <div>
@@ -455,14 +455,14 @@ function TerminosCondiciones () {
                                                             </a> 
                                                         </li>
                                                         <li>
-                                                            Compartir, reproducir, cargar o descargar videos a trave s de aplicaciones
+                                                            Compartir, reproducir, cargar o descargar videos a través de  aplicaciones
                                                             distintas a la oficial
                                                             <a href='https://www.whatsapp.com/' target='_blank' className='fw-bold privacy-whatsapp-subtitle text-decoration-none mx-1'>
                                                                 WhatsApp <FontAwesomeIcon icon={faWhatsapp} className="fs-6 d-inline-block privacy-icon-whatsapp" />
                                                             </a> 
                                                         </li>
                                                         <li>Redireccionamiento a cualquier link o URL externo a la aplicación oficial.</li>
-                                                        <li>Servicio de llamadas de voz y video llamadas.</li>
+                                                        <li>Servicio de llamadas de voz y videollamadas.</li>
                                                         <li>Transmisión de video en tiempo real; la reproducción de video en tiempo real.</li>
                                                         <li>Compartir ubicación propia o seguir una ubicación en tiempo real.</li>
                                                         <li>Visualizar, descargar, compartir fotos y/o videos en la funcionalidad Canales.</li>
@@ -489,7 +489,7 @@ function TerminosCondiciones () {
                                                         <li>Envío de mensajes de texto, notas de voz, fotos, videos, archivos, contactos de la agenda.</li>
                                                         <li>Descargar o guardar fotos y videos.</li>
                                                         <li>Recibir notificaciones desde la aplicación.</li>
-                                                        <li>Compartir una ubicación propia y consultar ubicación de cualquier contacto.</li>
+                                                        <li>Compartir una ubicación propia y consultar la ubicación de  cualquier contacto.</li>
                                                     </ul>
                                                 </div>
                                                 <div>
@@ -499,14 +499,14 @@ function TerminosCondiciones () {
                                                     <ul className='text-body-secondary fs-6 text-justify'>
                                                         <li>Carga y descarga de fotos fuera de la aplicación oficial.</li>
                                                         <li>
-                                                            Compartir, reproducir, cargar o descargar videos a trave s de aplicaciones
+                                                            Compartir, reproducir, cargar o descargar videos a través de  aplicaciones
                                                             distintas a la oficial
                                                             <a href='https://web.telegram.org/' target='_blank' className='fw-bold privacy-telegram-subtitle text-decoration-none mx-1'>
                                                                 Telegram <FontAwesomeIcon icon={faTelegram} className="fs-6 d-inline-block privacy-icon-telegram" />
                                                             </a> 
                                                         </li>
                                                         <li>Redireccionamiento a cualquier link o URL externo a la aplicación oficial.</li>
-                                                        <li>Servicio de llamadas de voz y video llamadas.</li>
+                                                        <li>Servicio de llamadas de voz y videollamadas.</li>
                                                         <li>Transmisión de video en tiempo real; la reproducción de video en tiempo real.</li>
                                                         <li>Compartir ubicación propia o seguir una ubicación en tiempo real.</li>
                                                         <li>Visualizar, descargar, compartir fotos y/o videos en la funcionalidad Grupos.</li>
@@ -533,7 +533,7 @@ function TerminosCondiciones () {
                                                         <li>Envío de mensajes de texto, notas de voz, fotos, videos, archivos, contactos de la agenda.</li>
                                                         <li>Descargar o guardar fotos y videos.</li>
                                                         <li>Recibir notificaciones desde la aplicación.</li>
-                                                        <li>Compartir una ubicación propia y consultar ubicación de cualquier contacto.</li>
+                                                        <li>Compartir una ubicación propia y consultar la ubicación de  cualquier contacto.</li>
                                                     </ul>
                                                 </div>
                                                 <div>
@@ -543,7 +543,7 @@ function TerminosCondiciones () {
                                                     <ul className='text-body-secondary fs-6 text-justify'>
                                                         <li>Carga y descarga de fotos fuera de la aplicación oficial.</li>
                                                         <li>
-                                                            Compartir, reproducir, cargar o descargar videos a trave s de aplicaciones
+                                                            Compartir, reproducir, cargar o descargar videos a través de  aplicaciones
                                                             distintas a la oficial
                                                             <a href='https://www.messenger.com/?locale=es_ES/' target='_blank' className='fw-bold privacy-messenger-subtitle text-decoration-none mx-1'>
                                                                 Messenger <FontAwesomeIcon icon={faTelegram} className="fs-6 d-inline-block privacy-icon-messenger" />
@@ -551,12 +551,12 @@ function TerminosCondiciones () {
                                                         </li>
                                                         <li>
                                                             Redireccionamiento a cualquier link o URL externo a la aplicación oficial, 
-                                                            aún cuando este haya sido compartido utilizándola a través de algún estado 
+                                                            aun cuando este haya sido compartido utilizándola a través de algún estado 
                                                             o mensaje directo.
                                                         </li>
-                                                        <li>El servicio de llamadas de voz y video llamadas.</li>
+                                                        <li>El Servicio de llamadas de voz y videollamadas.</li>
                                                         <li>Transmisión de video en tiempo real; la reproducción de video en tiempo real.</li>
-                                                        <li>Compartir una ubicación, propia en vivo o seguir ubicación de cualquier contacto en vivo.</li>
+                                                        <li>Compartir una ubicación, propia en vivo o seguir la ubicación de cualquier contacto en vivo.</li>
                                                         <li>Cualquier otra funcionalidad no enlistada como incluida.</li>
                                                     </ul>
                                                 </div>
@@ -589,7 +589,7 @@ function TerminosCondiciones () {
                                                                 Facebook <FontAwesomeIcon icon={faFacebook} className="fs-6 d-inline-block privacy-icon-facebook" />
                                                             </a>. 
                                                         </li>
-                                                        <li>Compartir una ubicación propia y consultar ubicación de cualquier contacto.</li>
+                                                        <li>Compartir una ubicación propia y consultar la ubicación de  cualquier contacto.</li>
                                                     </ul>
                                                 </div>
                                                 <div>
@@ -613,12 +613,12 @@ function TerminosCondiciones () {
                                                         </li>
                                                         <li>
                                                             Redireccionamiento a cualquier link o URL externo a la aplicación, 
-                                                            aún cuando este haya sido compartido utilizándola a través de algún estado 
+                                                            aun cuando este haya sido compartido utilizándola a través de algún estado 
                                                             o mensaje directo.
                                                         </li>
-                                                        <li>El servicio de llamadas de voz y video llamadas.</li>
+                                                        <li>El Servicio de llamadas de voz y videollamadas.</li>
                                                         <li>Transmisión de video en tiempo real; la reproducción de video en tiempo real.</li>
-                                                        <li>Compartir una ubicación, propia en vivo o seguir ubicación de cualquier contacto en vivo.</li>
+                                                        <li>Compartir una ubicación, propia en vivo o seguir la ubicación de cualquier contacto en vivo.</li>
                                                         <li>Cualquier otra funcionalidad no enlistada como incluida.</li>
                                                     </ul>
                                                 </div>
@@ -658,7 +658,7 @@ function TerminosCondiciones () {
                                                                 Instagram <FontAwesomeIcon icon={faInstagram} className="fs-6 d-inline-block privacy-icon-instagram" />
                                                             </a>. 
                                                         </li>
-                                                        <li>Carga y descarga de fotos o videos fuera de la aplicación, aún y cuando estos hayan sido compartidos a través de la misma.</li>
+                                                        <li>Carga y descarga de fotos o videos fuera de la aplicación, aun y cuando estos hayan sido compartidos a través de la misma.</li>
                                                         <li>
                                                             Compartir fotos o videos a través de otras aplicaciones distintas a
                                                             <a href='https://www.instagram.com/?locale=es_LA' target='_blank' className='fw-bold privacy-instagram-subtitle text-decoration-none mx-1'>
@@ -672,7 +672,7 @@ function TerminosCondiciones () {
                                                         </li>
                                                         <li>
                                                             Redireccionamiento a cualquier link o URL externo a la aplicación, 
-                                                            aún cuando este haya sido compartido utilizándola a través de un mensaje, 
+                                                            aun cuando este haya sido compartido utilizándola a través de un mensaje, 
                                                             publicación, historia o video en tiempo real.
                                                         </li>
                                                         <li>Cualquier otra funcionalidad no enlistada como incluida.</li>
@@ -713,7 +713,7 @@ function TerminosCondiciones () {
                                                                 Snaptchat <FontAwesomeIcon icon={faSnapchat} className="fs-6 d-inline-block privacy-icon-snapchat" />
                                                             </a>. 
                                                         </li>
-                                                        <li>Carga y descarga de fotos o videos fuera de la aplicación, aún y cuando estos hayan sido compartidos a través de la misma.</li>
+                                                        <li>Carga y descarga de fotos o videos fuera de la aplicación, aun y cuando estos hayan sido compartidos a través de la misma.</li>
                                                         <li>
                                                             Compartir fotos o videos a través de otras aplicaciones distintas a
                                                             <a href='https://www.snapchat.com/es' target='_blank' className='fw-bold privacy-snapchat-subtitle text-decoration-none mx-1'>
@@ -727,7 +727,7 @@ function TerminosCondiciones () {
                                                         </li>
                                                         <li>
                                                             Redireccionamiento a cualquier link o URL externo a la aplicación, 
-                                                            aún cuando este haya sido compartido utilizándola a través de un mensaje, 
+                                                            aun cuando este haya sido compartido utilizándola a través de un mensaje, 
                                                             publicación, historia o video en tiempo real.
                                                         </li>
                                                         <li>Cualquier otra funcionalidad no enlistada como incluida.</li>
@@ -782,11 +782,11 @@ function TerminosCondiciones () {
                                                         </li>
                                                         <li>
                                                             Redireccionamiento a cualquier link o URL externo a la aplicación, 
-                                                            aún cuando este haya sido compartido utilizándola a través de la 
+                                                            aun cuando este haya sido compartido utilizándola a través de la 
                                                             línea de tiempo o mensaje directo.
                                                         </li>
                                                         <li>Transmisión de video en tiempo real; la reproducción de video en tiempo real.</li>
-                                                        <li>Compartir una ubicación, propia en vivo o seguir ubicación de cualquier contacto en vivo.</li>
+                                                        <li>Compartir una ubicación, propia en vivo o seguir la ubicación de cualquier contacto en vivo.</li>
                                                         <li>Cualquier otra funcionalidad no enlistada como incluida.</li>
                                                     </ul>
                                                 </div>
@@ -841,7 +841,7 @@ function TerminosCondiciones () {
                                                         </li>
                                                         <li>
                                                             Para el establecimiento de accesos a contenidos (archivos, documentos,
-                                                            imágenes, fotos, audios, videos y/o combinación de éstos), de forma permanente
+                                                            imágenes, fotos, audios, videos y/o combinación de estos), de forma permanente
                                                             y/o en vivo a manera de streaming;
                                                         </li>
                                                         <li>
@@ -866,18 +866,18 @@ function TerminosCondiciones () {
                                                     civiles y/o penales que conforme a derecho correspondan, incluyendo las
                                                     correspondientes a la reparación de daños y perjuicios ocasionados a Altán; pudiendo,
                                                     en su caso, suspender o cancelar de forma parcial, total, definitiva o temporal la
-                                                    prestacio n de los servicios y/o beneficios de uso sin límite o ilimitados.
+                                                    prestación de los servicios y/o beneficios de uso sin límite o ilimitados.
                                                 </p>
                                                 <p className='text-body-secondary fs-6 text-justify'>
-                                                    Cuando Altán o Tuis detecte alguna de las conductas mencionadas, se le notificara al
-                                                    Cliente la conducta detectada y las acciones a tomarse. Tuis esperara la aclaracio n de lo
-                                                    sucedido con el(los) usuario final, previo a la implementacio n efectiva de las medidas a
+                                                    Cuando Altán o Tuis detecte alguna de las conductas mencionadas, se le notificará  al
+                                                    Cliente la conducta detectada y las acciones a tomarse. Tuis esperará la aclaración  de lo
+                                                    sucedido con el(los) usuario final, previo a la implementación  efectiva de las medidas a
                                                     tomarse.
                                                 </p>
                                                 <p className='text-body-secondary fs-6 text-justify'>
-                                                    El uso del servicio de telefoní a Tuis es para uso personal y no comercial, si cuentas con
+                                                    El uso del servicio de telefonía Tuis es para uso personal y no comercial, si cuentas con
                                                     un plan tarifario que incluye el uso de Datos ilimitados, en relación a los datos navegarás
-                                                    con el mayor ancho de banda disponible (en funcio n de la tecnología instalada en la
+                                                    con el mayor ancho de banda disponible (en función de la tecnología instalada en la
                                                     zona de cobertura donde te encuentres y de la concentración de tráfico principalmente)
                                                     en velocidad Best Effort, hasta llegar a una cuota de gigabytes (GB) determinada por la
                                                     oferta comercial del plan tarifario o de datos que tengas contratado; En caso de que el
@@ -921,7 +921,7 @@ function TerminosCondiciones () {
                                     <p className='text-body-secondary fs-5 mt-3 text-justify'>
                                         <span className='fw-bold'>Generales:</span> Con el objetivo de reconocer a nuestros Clientes, apoyar la economía
                                         individual y familiar, así como de promover el crecimiento de nuestra red de
-                                        telecomunicaciones en Me xico, brindamos nuestra promoción “DOBLE DE GIGAS”.
+                                        telecomunicaciones en México , brindamos nuestra promoción “DOBLE DE GIGAS”.
                                     </p>
                                     <p className='text-body-secondary fs-5 mt-3 text-justify'>
                                         <span className='fw-bold'>Zona Geográfica:</span> Dentro de toda la República Mexicana.
@@ -978,7 +978,7 @@ function TerminosCondiciones () {
                                         marcas de Altán.
                                     </p>
                                     <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                        El beneficio se podra ver reflejado en un plazo de 48 horas ha biles desde el momento
+                                        El beneficio se podrá ver reflejado en un plazo de 48 horas hábiles desde el momento
                                         en que se realice la portabilidad de su línea y realice la primera recarga del plan
                                         seleccionado.
                                     </p>
@@ -991,7 +991,7 @@ function TerminosCondiciones () {
                                         través del Portal.
                                     </p>
                                     <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                        Esta promoción es aplicable u nicamente para usuarios nuevos que realicen recargas
+                                        Esta promoción es aplicable únicamente para usuarios nuevos que realicen recargas
                                         dentro de la aplicación móvil, en la página web y/o en los puntos de venta físicos
                                         mencionados en la página web.
                                     </p>
@@ -1021,7 +1021,7 @@ function TerminosCondiciones () {
                                                 </p>
                                                 <p className='text-body-secondary fs-6 text-justify'>
                                                     Por todo lo anterior, el Usuario queda obligado en todo momento a cumplir los
-                                                    presentes te rminos y condiciones, así como los Términos y Condiciones Generales, la
+                                                    presentes términos y condiciones, así como los Términos y Condiciones Generales, la
                                                     Política de Uso Justo, el Código de Prácticas Comerciales, el Aviso de Privacidad, y demás
                                                     apartados que se encuentren en la página de internet de Tuis.
                                                 </p>
