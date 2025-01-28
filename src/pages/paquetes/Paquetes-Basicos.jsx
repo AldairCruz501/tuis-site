@@ -6,6 +6,7 @@ import HeroTuisty from "../../components/Hero-Tuisty";
 import PlanesSection from "../../components/Planes-Section";
 import { heroData, planesData } from "../../data";
 import Loading from '../../components/Loading';
+import ShippingTerms from '../../components/Shipping-Terms';
 
 
 function PaquetesBasicos () {
@@ -37,6 +38,7 @@ function PaquetesBasicos () {
                 <PlanesSection
                     plans={plans}
                 />
+                <ShippingTerms/>
                 <FooterComponent></FooterComponent>
             </>
         )}

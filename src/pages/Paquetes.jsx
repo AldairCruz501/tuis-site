@@ -6,6 +6,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import { useNavigate, Link } from 'react-router-dom';
 import { Fade, JackInTheBox } from "react-awesome-reveal";
 import Loading from '../components/Loading';
+import ShippingTerms from '../components/Shipping-Terms';
 
 
 
@@ -211,6 +212,7 @@ function Paquetes() {
                             </div>
                         </Container>
                     </section>
+                    <ShippingTerms/>
                 </main>
                 <FooterComponent></FooterComponent>
             </>

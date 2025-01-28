@@ -7,6 +7,7 @@ import HeroTuistyXL from '../../components/Hero-Tuisty-XL';
 import { heroData, planesData } from "../../data";
 import Loading from '../../components/Loading';
 import PlanesSection from '../../components/Planes-Section';
+import ShippingTerms from '../../components/Shipping-Terms';
 
 function PaquetesSemestrales () {
     const { title, subtitle, paragraph, backgroundImage } = heroData.heroPaqueteSemestral;
@@ -37,6 +38,7 @@ function PaquetesSemestrales () {
                 <PlanesSection
                     plans={plans}
                 />
+                <ShippingTerms/>
                     <FooterComponent></FooterComponent>
                 </>
             )}
