@@ -139,14 +139,14 @@ const socialMediaIcons = {
                                                 </Accordion.Body>
                                             </Accordion.Item>
                                         </Accordion>
-                                        {/* <Button 
+                                        <Button 
                                             className="plan-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill border-light fs-4"
                                             onClick={() => {
                                                 //Este botón redirecciona al carrito de compras
                                             }}
                                             >
                                             Comprar
-                                        </Button>*/}
+                                        </Button>
                                     </Card.Body>
                                 </Card>
                             </Col>
