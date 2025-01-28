@@ -143,14 +143,14 @@ function Home() {
                             <FontAwesomeIcon icon={faTelegram} className="fs-5" />
                           </span>
                         </div>
-                        <Button 
+                        {/*<Button 
                           className="contract-button border border-3 fs-5 text-uppercase fw-bold fst-italic p-2"
                           onClick={() => {
                             //Este botón redirecciona al carrito de compras
                           }}
                         >
                           Contratar
-                        </Button>
+                        </Button>*/}
                       </Col>
                       <Col xs={12} lg={6} className="text-center">
                         <img
@@ -181,14 +181,14 @@ function Home() {
                         />
                         </div>
                         <div className='mx-0 mx-md-5'>
-                          <Button 
+                          {/*<Button 
                             className="buy-button border border-3 fs-5 text-uppercase fw-bold fst-italic p-2 rounded-pill"
                             onClick={() => {
                               //Este botón redirecciona al carrito de compras
                             }}
                           >
                             Comprar sim
-                          </Button>
+                          </Button>*/}
                         </div>
                         <div className='mx-0 mx-md-1 mt-5'>
                           <p className='fst-italic'>
