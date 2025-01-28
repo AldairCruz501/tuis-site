@@ -170,7 +170,7 @@ function Home() {
                   <Container>
                     <Row>
                       <Col lg={6}>
-                        <h3 className='fs-4 fw-bold'>Recibe tu SIM directamente en la <br className='d-none d-md-block'/> puerta de tu casa</h3>
+                        <h3 className='fs-4 fw-bold'>Recibe tu SIM directamente en la <br className='d-none d-md-block'/> puerta de tu casa<span className='fw-bold'>*</span></h3>
                         <p className='fs-5 pt-2'>Tiempo de entrega de 2 a 5 días hábiles</p>
                         <p className='fs-5 pt-2'>Métodos de pago:</p>
                         <div className='pt-2 pb-2'>
@@ -181,14 +181,19 @@ function Home() {
                         />
                         </div>
                         <div className='mx-0 mx-md-5'>
-                        <Button 
-                          className="buy-button border border-3 fs-5 text-uppercase fw-bold fst-italic p-2 rounded-pill"
-                          onClick={() => {
-                            //Este botón redirecciona al carrito de compras
-                          }}
-                        >
-                          Comprar sim
-                        </Button>
+                          <Button 
+                            className="buy-button border border-3 fs-5 text-uppercase fw-bold fst-italic p-2 rounded-pill"
+                            onClick={() => {
+                              //Este botón redirecciona al carrito de compras
+                            }}
+                          >
+                            Comprar sim
+                          </Button>
+                        </div>
+                        <div className='mx-0 mx-md-1 mt-5'>
+                          <p className='fst-italic'>
+                            *Los envíos solo se realizan en domicilios de la Zona Conurbada de Tamaulipas (Altamira, Ciudad Madero y Tampico).
+                          </p>
                         </div>
                       </Col>
                       <Col lg={6}>
