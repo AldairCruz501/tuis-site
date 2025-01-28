@@ -84,6 +84,14 @@ const socialMediaIcons = {
                                                     <img src="/img/mexico.png" alt="mx-flag" className='w-25 mx-1'/>
                                                 </div>
                                             </div>
+                                            <Button 
+                                                className="plan-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill border-light fs-4 mb-3"
+                                                onClick={() => {
+                                                    //Este botón redirecciona al carrito de compras
+                                                }}
+                                                >
+                                                Comprar
+                                            </Button>
                                             <Accordion defaultActiveKey={null} flush>
                                                 <Accordion.Item eventKey='0'>
                                                     <Accordion.Header>
@@ -138,20 +146,26 @@ const socialMediaIcons = {
                                                     </Accordion.Body>
                                                 </Accordion.Item>
                                             </Accordion>
-                                            <Button 
-                                            className="plan-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill border-light fs-4"
-                                            onClick={() => {
-                                                //Este botón redirecciona al carrito de compras
-                                            }}
-                                            >
-                                            Comprar
-                                        </Button>
                                     </Card.Body>
                                 </Card>
                             </Col>
                         </Fade>
                     ))}
                 </Row>
+                <div className="p-3 pb-md-4 mx-auto text-center">
+                    <div className="mb-3"> 
+                        <p className='fs-5 text-white fw-bold'>
+                        Para más información sobre nuestras tarifas, puedes consultar el Buscador de tarifas del Registro Público de
+                        Telecomunicaciones <a href='https://tarifas.ift.org.mx/ift_visor/' target='_blank' className="fs-6 fw-bold text-decoration-none link-ift">https://tarifas.ift.org.mx/ift_visor/</a>
+                        </p>
+                    </div>
+                    <div className="mb-1">
+                        <Link to="/terminos-y-condiciones" className="fs-6 text-white fw-bold text-decoration-none link-btn" target="_blank">Conoce Términos y condiciones</Link>
+                    </div>
+                    <div className="mb-1">
+                        <Link to="/politica-uso-justo" className="fs-6 text-white fw-bold text-decoration-none link-btn" target="_blank">Políticas de uso justo</Link>
+                    </div>
+                </div>
             </Container>
         </section>
     );

@@ -85,6 +85,14 @@ const socialMediaIcons = {
                                                 <img src="/img/mexico.png" alt="mx-flag" className='w-25 mx-1'/>
                                             </div>
                                         </div>
+                                        <Button 
+                                            className="plan-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill border-light fs-4 mb-3"
+                                            onClick={() => {
+                                                //Este botón redirecciona al carrito de compras
+                                            }}
+                                            >
+                                            Comprar
+                                        </Button>
                                         <Accordion defaultActiveKey={null} flush>
                                             <Accordion.Item eventKey='0'>
                                                 <Accordion.Header>
@@ -139,14 +147,6 @@ const socialMediaIcons = {
                                                 </Accordion.Body>
                                             </Accordion.Item>
                                         </Accordion>
-                                        <Button 
-                                            className="plan-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill border-light fs-4"
-                                            onClick={() => {
-                                                //Este botón redirecciona al carrito de compras
-                                            }}
-                                            >
-                                            Comprar
-                                        </Button>
                                     </Card.Body>
                                 </Card>
                             </Col>
