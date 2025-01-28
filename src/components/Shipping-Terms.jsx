@@ -1,12 +1,11 @@
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Slide } from 'react-awesome-reveal';
-import '/Shpping-Terms.css';
+import './Shipping-Terms.css';
 
 
 const ShippingTerms = () => {
     return (
-        <section>
-        <div className="tuisty-container-white p-4">
+      <section className='tuisty-container-blue p-4 pt-5 text-white'>
         <Container>
           <Row>
             <Col lg={6}>
@@ -15,7 +14,7 @@ const ShippingTerms = () => {
               <p className='fs-5 pt-2'>Métodos de pago:</p>
               <div className='pt-2 pb-2'>
               <img
-                src="img/metodos-de-pago.png"
+                src="/img/metodos-de-pago.png"
                 alt="Metodos-de-pago"
                 className="img-fluid w-50"
               />
@@ -29,7 +28,7 @@ const ShippingTerms = () => {
             <Col lg={6}>
             <Slide direction="right">
               <img
-                  src="img/mapache-delivery.png"
+                  src="/img/mapache-delivery.png"
                   alt="Mapache-Delivery"
                   className="img-fluid pt-3 pt-md-0"
                 />
@@ -37,7 +36,6 @@ const ShippingTerms = () => {
             </Col>
           </Row>
         </Container>
-        </div>
       </section>
     )
 }
