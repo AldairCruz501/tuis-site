@@ -1,6 +1,7 @@
 import axios from "axios";
 import Swal from "sweetalert2";
 
+
 export const verifyImei = async (imei, setLoading) => {
     // Validación del IMEI
     if (!/^\d*$/.test(imei)) {
@@ -24,8 +25,8 @@ export const verifyImei = async (imei, setLoading) => {
     // Mostrar estado de carga
     setLoading(true);
   
-    const DISTRIBUTOR_ID = "e9aa9301-10bf-4fab-b8d7-0e8e8e57ab24";
-    const WALLET_ID = "18cc18c0-ee24-4185-9b1c-e4ae9520b665";
+    const DISTRIBUTOR_ID = import.meta.env.VITE_DISTRIBUTOR_ID;
+    const WALLET_ID = import.meta.env.VITE_WALLET_ID;
   
     try {
       const url = "/imeis";
