@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import './Navbar.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons/faCartShopping';
+import { getToken, removeToken } from "./storage/SaveUser";
 
 export default function NavbarComponent() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -11,6 +12,17 @@ export default function NavbarComponent() {
   const handleMouseEnter = () => setShowDropdown(true);
   const handleMouseLeave = () => setShowDropdown(false);
   const navigate = useNavigate()
+  const [userLoggedIn, setUserLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const user = getToken(); // Ajusta la clave según cómo guardes los datos del usuario
+    setUserLoggedIn(!!user);
+  }, []);
+
+  const handleLogout = () => {
+    removeToken();
+    setUserLoggedIn(false);
+  };
 
   return (
     <header className="header-color">
@@ -71,9 +83,17 @@ export default function NavbarComponent() {
                 <Nav.Link as={Link} to="/nosotros" className="mx-2 mx-lg-3">
                   Nosotros
                 </Nav.Link>
-                <Nav.Link as={Link} to="/acceder" className="mx-2 mx-lg-3">
-                  Acceder
-                </Nav.Link>
+                <Nav>
+                  {userLoggedIn ? (
+                    <Nav.Link as={Link} to="/" className="mx-2 mx-lg-3" onClick={handleLogout}>
+                      Cerrar sesión
+                    </Nav.Link>
+                  ) : (
+                    <Nav.Link as={Link} to="/acceder" className="mx-2 mx-lg-3">
+                      Acceder
+                    </Nav.Link>
+                  )}
+                </Nav> 
                 {/*<Nav.Link as={Link} to="/" className='d-block fs-4 text-decoration-none text-white'>
                 <FontAwesomeIcon  icon={faCartShopping}/>
                 </Nav.Link>*/}

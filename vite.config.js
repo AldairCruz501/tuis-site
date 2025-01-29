@@ -15,6 +15,18 @@ export default defineConfig({
         secure: false, // Si la API es HTTPS, usa true
         rewrite: (path) => path.replace(/^\/imeis/, ""), // Eliminar '/imeis' de la URL antes de enviarla
       },
+      "/login": {
+        target: "https://api.cero208.mx/Auth/login", // URL de tu servidor local
+        changeOrigin: true,
+        secure: false, // Si el servidor es HTTPS, establece en true
+        rewrite: (path) => path.replace(/^\/login/, ""), // Ajusta según el nuevo endpoint
+      },
+      "/createAccount": {
+        target: "https://api.cero208.mx/Auth/create", // URL de tu servidor local
+        changeOrigin: true,
+        secure: false, // Si el servidor es HTTPS, establece en true
+        rewrite: (path) => path.replace(/^\/createAccount/, ""), // Ajusta según el nuevo endpoint
+      },
     },
   },
   build: {

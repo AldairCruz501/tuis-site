@@ -5,10 +5,26 @@ import { Col, Container, Nav, Row, Tab } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Loading from '../components/Loading';
+import { AuthLogin } from "../components/peticiones/login";
+import { Account } from "../components/peticiones/account";
+
 
 export default function LoginRegistro () {
     const [activeTab, setActiveTab] = useState(null);
     const [loading, setLoading] = useState(true);
+
+    //almacenar la informacion por sus estados
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [address, setAddress] = useState('');
+    const [between_Streets, setBetween_Streets] = useState('');
+    const [CP, setCP] = useState('');
+    const [description, setDescription] = useState('');
+    const [phone, setPhone] = useState('');
+    const [repetPassword, setRepetPassword] = useState('');
 
         useEffect(() => {
           const fetchData = async () => {
@@ -18,6 +34,67 @@ export default function LoginRegistro () {
     
           fetchData();
         }, []);
+
+        // Manejar el cambio en los inputs
+        const handleInputChange = (event) => {
+            const { name, value } = event.target;
+            if (name === "email") {
+                setEmail(value);
+            } else if (name === "password") {
+                setPassword(value);
+            }
+        };
+
+        // Manejar el envío del formulario
+        const handleSubmit = (event) => {
+            event.preventDefault();
+            AuthLogin(email, password);
+        };
+
+        // Manejar el cambio en los inputs en Registro
+        const handleInputChangeReg = (event) => {
+            const { name, value } = event.target;
+            switch (name) {
+              case 'firstName':
+                setFirstName(value);
+                break;
+              case 'lastName':
+                setLastName(value);
+                break;
+              case 'address':
+                setAddress(value);
+                break;
+              case 'between_Streets':
+                setBetween_Streets(value);
+                break;
+              case 'CP':
+                setCP(value);
+                break;
+              case 'description':
+                setDescription(value);
+                break;
+              case 'phone':
+                setPhone(value);
+                break;
+              case 'email':
+                setEmail(value);
+                break;
+              case 'password':
+                setPassword(value);
+                break;
+              case 'repetPassword':
+                setRepetPassword(value);
+                break;
+              default:
+                break;
+            }
+          };
+
+          // Manejar el envío del formulario en Registro
+          const handleSubmitReg = (event) => {
+            event.preventDefault();
+            Account(firstName, lastName, address, between_Streets, CP, description, phone, email, password, repetPassword);
+          };
 
     return (
         <>
@@ -75,15 +152,20 @@ export default function LoginRegistro () {
                                         >
                                             <Tab.Pane eventKey="login" active={activeTab === 'login' || activeTab === null }>
                                                 <h4 className='text-center fw-bold fs-1 ' onClick={() => setActiveTab('login')}>Iniciar Sesión</h4>
-                                                <form>
+                                                <form id="FormLogin" onSubmit={handleSubmit} autoComplete="off">
                                                     <div className="mb-3" onClick={() => setActiveTab('login')}>
                                                         <label htmlFor="emailLogin" className="form-label fw-bold">
                                                             Correo electrónico
                                                         </label>
                                                         <input
-                                                            type="email"
-                                                            className="form-control"
-                                                            id="emailLogin"
+                                                            className='form-control'
+                                                            type="text"
+                                                            name="email"
+                                                            id='emailLogin'
+                                                            placeholder="tuisty_elmapache@tuis.com.mx"
+                                                            autoComplete="off"
+                                                            value={email}
+                                                            onChange={handleInputChange}
                                                         />
                                                     </div>
                                                     <div className="mb-3" onClick={() => setActiveTab('login')}>
@@ -91,16 +173,21 @@ export default function LoginRegistro () {
                                                             Contraseña
                                                         </label>
                                                         <input
+                                                            className='form-control'
                                                             type="password"
-                                                            className="form-control"
-                                                            id="passwordLogin"
+                                                            name="password"
+                                                            id='passwordLogin'
+                                                            placeholder="*********"
+                                                            autoComplete="new-password"
+                                                            value={password}
+                                                            onChange={handleInputChange}
                                                         />
                                                     </div>
-                                                    <div className='mb-4' onClick={() => setActiveTab('login')}>
+                                                    {/*<div className='mb-4' onClick={() => setActiveTab('login')}>
                                                         <Link className='text-decoration-none ress-pass'>
                                                             ¿Olvidó su contraseña?
                                                         </Link>
-                                                    </div>
+                                                    </div>*/}
                                                     <button type="submit" className="btn btn-primary btn-lg w-100">
                                                         Ingresar
                                                     </button>
@@ -111,90 +198,38 @@ export default function LoginRegistro () {
                                             </Tab.Pane>
                                             <Tab.Pane eventKey="register" active={activeTab === 'register'}>
                                                 <h4 className='text-center fw-bold fs-1'>Registro</h4>
-                                                <form>
+                                                <form onSubmit={handleSubmitReg} autoComplete="off">
                                                     <Row>
                                                         <Col lg={6}>
                                                             <div className="mb-3">
                                                                 <label htmlFor="nameRegister" className="form-label fw-bold">
-                                                                    Nombre
+                                                                    Nombre(s)
                                                                 </label>
-                                                                <input
-                                                                    type="text"
-                                                                    className="form-control"
-                                                                    id="nameRegister"
-                                                                />
+                                                                <input className="form-control" type="text" name="firstName" id='nameRegister' placeholder="Tuisty" autoComplete="off" value={firstName} onChange={handleInputChangeReg}/>
                                                             </div>
                                                         </Col>
                                                         <Col lg={6}>
                                                             <div className="mb-3">
-                                                                <label htmlFor="telRegister" className="form-label fw-bold">
-                                                                    Telefono
+                                                                <label htmlFor="lastNameRegister" className="form-label fw-bold">
+                                                                    Apellidos
                                                                 </label>
-                                                                <input
-                                                                    type="number"
-                                                                    className="form-control"
-                                                                    id="telRegister"
-                                                                />
-                                                            </div>
-                                                        </Col>
-                                                        <Col sm={12}>
-                                                            <div className="mb-3">
-                                                                <label htmlFor="emailRegister" className="form-label fw-bold">
-                                                                    Correo electrónico
-                                                                </label>
-                                                                <input
-                                                                    type="email"
-                                                                    className="form-control"
-                                                                    id="emailRegister"
-                                                                />
-                                                            </div>
-                                                        </Col>
-                                                        <Col lg={6}>
-                                                            <div className="mb-3">
-                                                                <label htmlFor="passwordRegister" className="form-label fw-bold">
-                                                                    Contraseña
-                                                                </label>
-                                                                <input
-                                                                    type="password"
-                                                                    className="form-control"
-                                                                    id="passwordRegister"
-                                                                />
-                                                            </div>
-                                                        </Col>
-                                                        <Col lg={6}>
-                                                            <div className="mb-3">
-                                                                <label htmlFor="confPasswordRegister" className="form-label fw-bold">
-                                                                    Confirmar Contraseña
-                                                                </label>
-                                                                <input
-                                                                    type="password"
-                                                                    className="form-control"
-                                                                    id="confPasswordRegister"
-                                                                />
+                                                                <input className="form-control" type="text" name="lastName" id='lastNameRegister' placeholder="Mapache Inbtel" autoComplete="off" value={lastName} onChange={handleInputChangeReg}/>
                                                             </div>
                                                         </Col>
                                                         <Col sm={12}>
                                                             <div className="mb-3">
                                                                 <label htmlFor="adressRegister" className="form-label fw-bold">
-                                                                    Dirección
+                                                                    Dirección (incluya la colonia)
                                                                 </label>
-                                                                <input
-                                                                    type="text"
-                                                                    className="form-control"
-                                                                    id="adressRegister"
-                                                                />
+                                                                <input className="form-control" type="text" name="address" id='adressRegister' placeholder="Encino 204 Col. Bosque Bonito" autoComplete="off" value={address} onChange={handleInputChangeReg}/>
                                                             </div>
                                                         </Col>
                                                         <Col sm={6} lg={8}>
                                                             <div className="mb-3">
-                                                                <label htmlFor="colonyRegister" className="form-label fw-bold">
-                                                                    Colonia
+                                                                <label htmlFor="betweenStreetsRegister" className="form-label fw-bold">
+                                                                    Entre Calles
                                                                 </label>
-                                                                <input
-                                                                    type="text"
-                                                                    className="form-control"
-                                                                    id="colonyRegister"
-                                                                />
+                                                                <input className="form-control" type="text" name="between_Streets" id='betweenStreetsRegister' placeholder="Entre Calle Pino y Cedro" autoComplete="off" value={between_Streets} onChange={handleInputChangeReg}/>
                                                             </div>
                                                         </Col>
                                                         <Col sm={6} lg={4}>
@@ -202,35 +237,7 @@ export default function LoginRegistro () {
                                                                 <label htmlFor="cpRegister" className="form-label fw-bold">
                                                                     Código Postal
                                                                 </label>
-                                                                <input
-                                                                    type="text"
-                                                                    className="form-control"
-                                                                    id="cpRegister"
-                                                                />
-                                                            </div>
-                                                        </Col>
-                                                        <Col md={6}>
-                                                            <div className="mb-3">
-                                                                <label htmlFor="cityRegister" className="form-label fw-bold">
-                                                                    Ciudad
-                                                                </label>
-                                                                <input
-                                                                    type="text"
-                                                                    className="form-control"
-                                                                    id="cityRegister"
-                                                                />
-                                                            </div>
-                                                        </Col>
-                                                        <Col md={6}>
-                                                            <div className="mb-3">
-                                                                <label htmlFor="stateRegister" className="form-label fw-bold">
-                                                                    Estado
-                                                                </label>
-                                                                <input
-                                                                    type="email"
-                                                                    className="form-control"
-                                                                    id="stateRegister"
-                                                                />
+                                                                <input className="form-control" type="text" name="CP" id='cpRegister' placeholder="12345" autoComplete="off" value={CP} onChange={handleInputChangeReg}/>
                                                             </div>
                                                         </Col>
                                                         <Col>
@@ -238,7 +245,39 @@ export default function LoginRegistro () {
                                                                 <label htmlFor="refRegister" className="form-label fw-bold">
                                                                     Referencias de su domicilio
                                                                 </label>
-                                                                <textarea className="form-control" name="" id="refRegister" cols="30"></textarea>
+                                                                <textarea className="form-control" cols="10" type="text" name="description" id='refRegister' placeholder="En frente de la tienda del señor Búho" autoComplete="off" value={description} onChange={handleInputChangeReg}></textarea>
+                                                            </div>
+                                                        </Col>
+                                                        <Col sm={12}>
+                                                            <div className="mb-3">
+                                                                <label htmlFor="telRegister" className="form-label fw-bold">
+                                                                    Telefono
+                                                                </label>
+                                                                <input className="form-control" type="number" name="phone" id='telRegister' placeholder="1234567890" autoComplete="off" value={phone} onChange={handleInputChangeReg}/>
+                                                            </div>
+                                                        </Col>
+                                                        <Col sm={12}>
+                                                            <div className="mb-3">
+                                                                <label htmlFor="emailRegister" className="form-label fw-bold">
+                                                                    Correo electrónico
+                                                                </label>
+                                                                <input className="form-control" type="text" name="email" id='emailRegister' placeholder="tuisty_elmapache@tuis.com.mx" autoComplete="off" value={email} onChange={handleInputChangeReg}/>
+                                                            </div>
+                                                        </Col>
+                                                        <Col lg={6}>
+                                                            <div className="mb-3">
+                                                                <label htmlFor="passwordRegister" className="form-label fw-bold">
+                                                                    Contraseña
+                                                                </label>
+                                                                <input className="form-control" type="password" name="password" id='passwordRegister' placeholder="**********" autoComplete="new-password" value={password} onChange={handleInputChangeReg}/>
+                                                            </div>
+                                                        </Col>
+                                                        <Col lg={6}>
+                                                            <div className="mb-3">
+                                                                <label htmlFor="confPasswordRegister" className="form-label fw-bold">
+                                                                    Confirmar Contraseña
+                                                                </label>
+                                                                <input className="form-control" type="password" name="repetPassword" id='confPasswordRegister' placeholder="**********" autoComplete="new-password" value={repetPassword} onChange={handleInputChangeReg}/>
                                                             </div>
                                                         </Col>
                                                     </Row>
