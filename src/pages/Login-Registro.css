@@ -17,6 +17,12 @@
     transition: all 0.3s ease-in-out; /* Efecto suave */
 }
 
+@media (min-width: 769px) and (max-width: 991px) {
+    .tuisty-divider-expanded {
+        padding: 33rem; /* Mayor altura cuando está en Registro */
+    }
+}
+
 .tuisty-login {
     background-color: #6149B7;
     position: absolute; 
@@ -60,6 +66,12 @@
 .tuisty-login-expanded {
     bottom: -42rem; /* Mayor altura cuando está en Registro */
     transition: all 0.3s ease-in-out; /* Efecto suave */
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .tuisty-login-expanded {
+        bottom: -51rem;
+    }
 }
 
 

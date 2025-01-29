@@ -149,13 +149,13 @@ export default function LoginRegistro () {
                                             </Col>
                                             <Col lg={6}>
                                                 <div className="mb-3">
-                                                    <label htmlFor="passwordRegister" className="form-label fw-bold">
+                                                    <label htmlFor="confPasswordRegister" className="form-label fw-bold">
                                                         Confirmar Contraseña
                                                     </label>
                                                     <input
                                                         type="password"
                                                         className="form-control"
-                                                        id="passwordRegister"
+                                                        id="confPasswordRegister"
                                                     />
                                                 </div>
                                             </Col>
