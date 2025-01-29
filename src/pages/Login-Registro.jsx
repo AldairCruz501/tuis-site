@@ -188,8 +188,8 @@ export default function LoginRegistro () {
                                                             ¿Olvidó su contraseña?
                                                         </Link>
                                                     </div>*/}
-                                                    <button type="submit" className="btn btn-primary btn-lg w-100">
-                                                        Ingresar
+                                                    <button type="submit" className="btn btn-login btn-lg w-100">
+                                                        Iniciar Sesión
                                                     </button>
                                                     <div className=' mt-3 mb-1 text-center'>
                                                         ¿Todavía no estás registrado? <Link onClick={() => setActiveTab('register')}  className='text-decoration-none ress-pass fw-bold'>Registarse</Link>
@@ -281,7 +281,7 @@ export default function LoginRegistro () {
                                                             </div>
                                                         </Col>
                                                     </Row>
-                                                    <button type="submit" className="btn btn-primary btn-lg w-100">
+                                                    <button type="submit" className="btn btn-register btn-lg w-100">
                                                         Registrarse
                                                     </button>
                                                     <div className=' mt-3 mb-1 text-center'>

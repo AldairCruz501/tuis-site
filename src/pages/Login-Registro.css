@@ -79,6 +79,15 @@ textarea::placeholder{
     color: #c9c9c9 !important;
 }
 
+.btn-login {
+    background-color: #FF8500 !important;
+    color: #FFFFFF;
+}
+
+.btn-register {
+    background-color: #29B8C9 !important;
+    color: #FFFFFF;
+}
 
 .tab-cont {
     border: 5px !important;
