@@ -14,7 +14,7 @@ import Nosotros from './pages/Nosotros';
 import AvisoPrivacidad from './pages/Aviso-Privacidad';
 import TerminosCondiciones from './pages/Terminos-Condiciones';
 import LoginRegistro from './pages/Login-Registro';
-
+import usePageTitle from './hooks/usePageTitle';
 const PdfViewer = ({ pdfPath }) => {
   return (
     <iframe
@@ -30,6 +30,7 @@ const PdfViewer = ({ pdfPath }) => {
 function App() {
   return (
     <Router>
+      <PageTitleUpdater />
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/paquetes' element={<Paquetes />}/>
@@ -54,5 +55,11 @@ function App() {
     </Router>
   );
 }
+
+const PageTitleUpdater = () => {
+  usePageTitle();
+  return null;
+};
+
 
 export default App
