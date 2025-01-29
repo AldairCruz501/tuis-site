@@ -4,7 +4,8 @@ import './Navbar.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons/faCartShopping';
-import { getToken, removeToken } from "./storage/SaveUser";
+import { getToken } from "./storage/SaveUser";
+import { AuthLogout } from './peticiones/login';
 
 export default function NavbarComponent() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -19,10 +20,6 @@ export default function NavbarComponent() {
     setUserLoggedIn(!!user);
   }, []);
 
-  const handleLogout = () => {
-    removeToken();
-    setUserLoggedIn(false);
-  };
 
   return (
     <header className="header-color">
@@ -85,7 +82,7 @@ export default function NavbarComponent() {
                 </Nav.Link>
                 <Nav>
                   {userLoggedIn ? (
-                    <Nav.Link as={Link} to="/" className="mx-2 mx-lg-3" onClick={handleLogout}>
+                    <Nav.Link as={Link} to="/" className="mx-2 mx-lg-3" onClick={(e) => { e.preventDefault(); AuthLogout(); }}>
                       Cerrar sesión
                     </Nav.Link>
                   ) : (

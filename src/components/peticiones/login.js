@@ -1,6 +1,6 @@
 import axios from "axios";
 import Swal from "sweetalert2";
-import { saveToken } from "../storage/SaveUser";
+import { saveToken, removeToken } from "../storage/SaveUser";
 
 export const AuthLogin = async (email, password) => {
   try {
@@ -30,4 +30,29 @@ export const AuthLogin = async (email, password) => {
       text: `Ocurrió un problema al comunicarse con el servidor. Detalle: ${error.message}`,
     });
   }
+};
+
+export const AuthLogout = () => {
+  Swal.fire({
+    title: "¿Estás seguro?",
+    text: "¿Quieres cerrar sesión?",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#6149B7",
+    cancelButtonColor: "#FF8500 ",
+    confirmButtonText: "Sí, cerrar sesión",
+    cancelButtonText: "Cancelar",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      removeToken(); // Elimina el token almacenado
+      Swal.fire({
+        icon: "success",
+        title: "Sesión cerrada",
+        text: "Has cerrado sesión correctamente.",
+        confirmButtonText: "OK",
+      }).then(() => {
+        window.location.href = "/"; 
+      });
+    }
+  });
 };
