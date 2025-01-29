@@ -71,10 +71,10 @@ export default function NavbarComponent() {
                 <Nav.Link as={Link} to="/nosotros" className="mx-2 mx-lg-3">
                   Nosotros
                 </Nav.Link>
-                {/*<Nav.Link as={Link} to="/" className="mx-2 mx-lg-3">
+                <Nav.Link as={Link} to="/acceder" className="mx-2 mx-lg-3">
                   Acceder
                 </Nav.Link>
-                <Nav.Link as={Link} to="/" className='d-block fs-4 text-decoration-none text-white'>
+                {/*<Nav.Link as={Link} to="/" className='d-block fs-4 text-decoration-none text-white'>
                 <FontAwesomeIcon  icon={faCartShopping}/>
                 </Nav.Link>*/}
               </Nav>

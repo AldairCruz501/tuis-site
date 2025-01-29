@@ -1,0 +1,143 @@
+.hero-login {
+    background-image: url("/img/fondo-tuis-login.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+
+
+.tuisty-divider{
+    padding: 17rem;
+    background-color: #438dc9;
+}
+
+.tuisty-divider-expanded {
+    padding: 28rem; /* Mayor altura cuando está en Registro */
+    transition: all 0.3s ease-in-out; /* Efecto suave */
+}
+
+.tuisty-login {
+    background-color: #6149B7;
+    position: absolute; 
+    top: 40rem;
+    left: 0;
+    right: 0;
+    bottom: -15.5rem;
+    z-index: 2;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra suave */
+}
+
+/* Ajustes para pantallas medianas (tablets) */
+@media (max-width: 1700px) {
+    .tuisty-login {
+        top: 35rem;
+        bottom: -17rem;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .tuisty-login {
+        bottom: -15rem;
+    }
+}
+
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .tuisty-login {
+        position: relative;
+        top: 0;
+        bottom: -15rem;
+        padding: 1.5rem;
+    }
+    .tuisty-divider {
+        padding: 0px;
+    }
+}
+
+.tuisty-login-expanded {
+    bottom: -42rem; /* Mayor altura cuando está en Registro */
+    transition: all 0.3s ease-in-out; /* Efecto suave */
+}
+
+
+.tab-cont {
+    border: 5px !important;
+    border-radius: 5px;
+    border-color: #FF8500 !important;
+}
+
+
+.bg-link-login {
+    background-color:#FF8500 !important;
+}
+
+.bg-normal {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+.bg-login {
+    background-color:#FFFFFF !important;
+    color: #FF8500 !important;
+}
+
+.bg-register {
+    background-color:#FFFFFF !important;
+    color: #29B8C9!important;
+}
+
+.bg-link-login:hover{
+    background-color: #FFFFFF !important;
+}
+
+.bg-link-register {
+    background-color:#29B8C9!important;
+}
+
+.bg-link-register:hover{
+    background-color: #FFFFFF !important;
+}
+
+.bg-link-login.active {
+    background-color: #FFFFFF!important;
+    color: #FF8500 !important;
+}
+
+.bg-link-register.active {
+    background-color: #FFFFFF !important;
+    color: #29B8C9 !important;
+}
+
+
+.nav-link-login {
+    color: #FFFFFF !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link-login:hover{
+    color: #FF8500 !important;
+  }
+
+  .nav-link-register {
+    color: #FFFFFF !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link-register:hover{
+    color: #29B8C9 !important;
+  }
+
+  .ress-pass{
+    color: #29B8C9 !important;
+  }
+
+  .ress-log{
+    color: #FF8500 !important;
+  }
+
+

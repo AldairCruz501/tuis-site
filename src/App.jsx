@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import {  BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import {  BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Paquetes from './pages/Paquetes';
 import PaquetesBasicos from './pages/paquetes/Paquetes-Basicos';
@@ -13,6 +13,7 @@ import Compatibilidad from './pages/Compatibilidad';
 import Nosotros from './pages/Nosotros';
 import AvisoPrivacidad from './pages/Aviso-Privacidad';
 import TerminosCondiciones from './pages/Terminos-Condiciones';
+import LoginRegistro from './pages/Login-Registro';
 
 const PdfViewer = ({ pdfPath }) => {
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route path='/cobertura' element={<Cobertura/>}/>
         <Route path='/compatibilidad' element={<Compatibilidad/>}/>
         <Route path='/nosotros' element={<Nosotros/>}/>
+        <Route path ='/acceder' element={<LoginRegistro/>}/>
         <Route path='/aviso-de-privacidad' element={<AvisoPrivacidad/>}/>
         <Route path='/terminos-y-condiciones' element={<TerminosCondiciones/>}/>
         <Route path="/portabilidad-ift" element={<PdfViewer pdfPath="/pdf/Portabilidad-IFT.pdf" />} />

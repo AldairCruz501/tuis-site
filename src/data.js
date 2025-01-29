@@ -10,6 +10,11 @@ export const heroData = {
         subtitle: "Tuisty",
         backgroundImage: "/img/banner-paquetes-Mensuales.jpg",
     },
+    heroLoginRegister: {
+      title: "",
+      subtitle: "Bienvenido",
+      backgroundImage: "/",
+    },
     heroPaqueteTrimestral: {
         title: "Paqutes",
         subtitle: "Tuisty",
