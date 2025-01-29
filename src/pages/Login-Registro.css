@@ -74,9 +74,11 @@
     }
 }
 
-input::placeholder{
-    color: #e6e6e6 !important;
+input::placeholder,
+textarea::placeholder{
+    color: #c9c9c9 !important;
 }
+
 
 .tab-cont {
     border: 5px !important;
