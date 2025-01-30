@@ -251,7 +251,7 @@ export default function LoginRegistro () {
                                                         <Col sm={12}>
                                                             <div className="mb-3">
                                                                 <label htmlFor="telRegister" className="form-label fw-bold">
-                                                                    Telefono
+                                                                    Teléfono
                                                                 </label>
                                                                 <input className="form-control" type="number" name="phone" id='telRegister' placeholder="1234567890" autoComplete="off" value={phone} onChange={handleInputChangeReg}/>
                                                             </div>
