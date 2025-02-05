@@ -39,11 +39,14 @@ export const planesData = {
   planesTuistyMainPage: {
     plans: [
         {
+          id: 1,
+          imgPlan: "/img/esencial-idea.png",
+          dataPlan:"Plan",
           name: "Tuisty",
           dataType: "Semanal",
           data: "3GB",
           usage: "Navegación",
-          price: "$59",
+          price: 59,
           internet:"Si Comparte Internet",
           showSocialMedia: true,
           socialMedia: [
@@ -65,11 +68,14 @@ export const planesData = {
           iftfolio: "1640092"
         },
         {
+          id: 2,
+          imgPlan: "/img/esencial-idea.png",
+          dataPlan:"Plan",
           name: "Tuisty",
           dataType: "Estándar",
           data: "6GB",
           usage: "Navegación",
-          price: "$129",
+          price: 129,
           internet:"Si Comparte Internet",
           showSocialMedia: true,
           socialMedia: [
@@ -91,11 +97,14 @@ export const planesData = {
           iftfolio: "1640110"
         },
         {
+            id: 3,
+            imgPlan: "/img/esencial-idea.png",
+            dataPlan:"Plan",
             name: "Tuisty",
             dataType: "Escencial",
             data: "20GB",
             usage: "Navegación",
-            price: "$149",
+            price: 149,
             internet:"Si Comparte Internet",
             showSocialMedia: true,
             socialMedia: [
@@ -117,11 +126,14 @@ export const planesData = {
             iftfolio: "1640123"
           },
           {
+            id: 4,
+            imgPlan: "/img/esencial-idea.png",
+            dataPlan:"Plan",
             name: "Tuisty",
             dataType: "Prime",
             data: "40GB",
             usage: "Navegación",
-            price: "$229",
+            price: 229,
             internet:"Si Comparte Internet",
             showSocialMedia: true,
             socialMedia: [
@@ -147,11 +159,14 @@ export const planesData = {
     planesBasicosPage: {
       plans: [
         {
+          id: 5,
+          imgPlan: "/img/basicos.png",
+          dataPlan:"Plan Básico",
           name: "Tuisty",
           dataPlus: "4GB",
           data: "4GB",
           usage: "Navegación",
-          price: "$39",
+          price: 39,
           internet:"No Comparte Internet",
           showSocialMedia: true,
           socialMedia: [
@@ -174,11 +189,14 @@ export const planesData = {
           iftfolio: "1346921"
         },
         {
+          id: 6,
+          imgPlan: "/img/basicos.png",
+          dataPlan:"Plan Básico",
           name: "Tuisty",
           dataPlus: "3GB",
           data: "3GB",
           usage: "Navegación",
-          price: "$59",
+          price: 59,
           internet:"Si Comparte Internet",
           showSocialMedia: true,
           socialMedia: [
@@ -205,11 +223,14 @@ export const planesData = {
     planesTuistyPage: {
         plans: [
             {
+              id: 7,
+              dataPlan:"Plan Tuisty",
+              imgPlan: "/img/mensuales.png",
               name: "Tuisty",
               dataPlus: "3GB",
               data: "3GB",
               usage: "Navegación",
-              price: "$129",
+              price: 129,
               internet:"Si Comparte Internet",
               showSocialMedia: true,
               socialMedia: [
@@ -232,11 +253,14 @@ export const planesData = {
               iftfolio: "1346925"
             },
             {
+              id: 8,
+              dataPlan:"Plan Tuisty",
+              imgPlan: "/img/mensuales.png",
               name: "Tuisty",
               dataPlus: "5GB",
               data: "5GB",
               usage: "Navegación",
-              price: "$149",
+              price: 149,
               internet:"Si Comparte Internet",
               showSocialMedia: true,
               socialMedia: [
@@ -259,38 +283,44 @@ export const planesData = {
               iftfolio: "1346926"
             },
             {
-                name: "Tuisty",
-                dataPlus: "40GB",
-                data: "40GB",
-                usage: "Navegación",
-                price: "$279",
-                internet:"Si Comparte Internet",
-                showSocialMedia: true,
-                socialMedia: [
-                  "whatsapp",
-                  "facebook",
-                  "messenger",
-                  "twitter",
-                  "instagram",
-                  "snapchat",
-                  "telegram",
-                ],
-                showSocialMediaInter: true,
-                socialMediaInter: [
-                  "whatsapp",
-                  "messenger",
-                  "telegram",
-                ],
-                duration: "30 días",
-                durationPlus: "Mensual",
-                iftfolio: "1346929"
+              id: 9,
+              dataPlan:"Plan Tuisty",
+              imgPlan: "/img/mensuales.png",
+              name: "Tuisty",
+              dataPlus: "40GB",
+              data: "40GB",
+              usage: "Navegación",
+              price: 279,
+              internet:"Si Comparte Internet",
+              showSocialMedia: true,
+              socialMedia: [
+                "whatsapp",
+                "facebook",
+                "messenger",
+                "twitter",
+                "instagram",
+                "snapchat",
+                "telegram",
+              ],
+              showSocialMediaInter: true,
+              socialMediaInter: [
+                "whatsapp",
+                "messenger",
+                "telegram",
+              ],
+              duration: "30 días",
+              durationPlus: "Mensual",
+              iftfolio: "1346929"
               },
               {
+                id: 10,
+                dataPlan:"Plan Tuisty",
+                imgPlan: "/img/mensuales.png",
                 name: "Tuisty",
                 dataPlus: "40GB+",
                 data: "40GB",
                 usage: "Navegación",
-                price: "$349",
+                price: 349,
                 minutes: "44,700",
                 sms: "1,500",
                 internet:"Si Comparte Internet",
@@ -319,11 +349,14 @@ export const planesData = {
     planesTrimestralesPage: {
       plans: [
           {
+            id: 11,
+            dataPlan:"Plan Trimestral",
+            imgPlan: "/img/trimestrales.png",
             name: "Tuisty",
             dataPlus: "3GB",
             data: "3GB",
             usage: "Navegación",
-            price: "$334",
+            price: 334,
             minutes: "44,700",
             sms: "1,500",
             internet:"Si Comparte Internet",
@@ -348,11 +381,14 @@ export const planesData = {
             iftfolio: "0"
           },
           {
+            id: 12,
+            dataPlan:"Plan Trimestral",
+            imgPlan: "/img/trimestrales.png",
             name: "Tuisty",
             dataPlus: "5GB",
             data: "5GB",
             usage: "Navegación",
-            price: "$399",
+            price: 399,
             minutes: "44,700",
             sms: "1,500",
             internet:"Si Comparte Internet",
@@ -377,11 +413,14 @@ export const planesData = {
             iftfolio: "1346936"
           },
           {
+            id: 13,
+            dataPlan:"Plan Trimestral",
+            imgPlan: "/img/trimestrales.png",
             name: "Tuisty",
             dataPlus: "15GB",
             data: "15GB",
             usage: "Navegación",
-            price: "$649",
+            price: 649,
             minutes: "44,700",
             sms: "1,500",
             internet:"Si Comparte Internet",
@@ -406,11 +445,14 @@ export const planesData = {
             iftfolio: "1346938"
           },
           {
+            id: 14,
+            dataPlan:"Plan Trimestral",
             name: "Tuisty",
+            imgPlan: "/img/trimestrales.png",
             dataPlus: "40GB",
             data: "40GB",
             usage: "Navegación",
-            price: "$749",
+            price: 749,
             minutes: "44,700",
             sms: "1,500",
             internet:"Si",
@@ -433,11 +475,14 @@ export const planesData = {
     planesSemestralesPage: {
       plans: [
           {
+            id: 15,
+            dataPlan:"Plan Semestral",
+            imgPlan: "/img/semestrales.png",
             name: "Tuisty",
             dataPlus: "3GB",
             data: "3GB",
             usage: "Navegación",
-            price: "$669",
+            price: 669,
             minutes: "44,700",
             sms: "1,500",
             internet:"Si",
@@ -456,11 +501,14 @@ export const planesData = {
             iftfolio: "0"
           },
           {
+            id: 16,
+            dataPlan:"Plan Semestral",
+            imgPlan: "/img/semestrales.png",
             name: "Tuisty",
             data: "5GB",
             dataPlus:"5GB",
             usage: "Navegación",
-            price: "$779",
+            price: 779,
             minutes: "44,700",
             sms: "1,500",
             internet:"Si",
@@ -479,11 +527,14 @@ export const planesData = {
             iftfolio: "1346946"
           },
           {
+            id: 17,
+            dataPlan:"Plan Semestral",
+            imgPlan: "/img/semestrales.png",
             name: "Tuisty",
             data: "15GB",
             dataPlus: "15GB",
             usage: "Navegación",
-            price: "$1299",
+            price: 1299,
             minutes: "44,700",
             sms: "1,500",
             internet:"Si",
@@ -502,11 +553,14 @@ export const planesData = {
             iftfolio: "1346947"
           },
           {
+            id: 18,
+            dataPlan:"Plan Semestral",
+            imgPlan: "/img/semestrales.png",
             name: "Tuisty",
             data: "40GB",
             dataPlus: "40GB",
             usage: "Navegación",
-            price: "$1449",
+            price: 1449,
             minutes: "44,700",
             sms: "1,500",
             internet:"Si",
@@ -529,11 +583,14 @@ export const planesData = {
     planesAnualesPage: {
       plans: [
           {
+            id: 19,
+            dataPlan:"Plan Anual",
+            imgPlan: "/img/anuales.png",
             name: "Tuisty",
             data: "3GB",
             dataPlus: "3GB",
             usage: "Navegación",
-            price: "$1339",
+            price: 1339,
             minutes: "44,700",
             sms: "1,500",
             internet:"Si",
@@ -552,11 +609,14 @@ export const planesData = {
             iftfolio: "0"
           },
           {
+            id:20,
+            dataPlan:"Plan Anual",
+            imgPlan: "/img/anuales.png",
             name: "Tuisty",
             data: "5GB",
             dataPlus: "5GB",
             usage: "Navegación",
-            price: "$1599",
+            price: 1599,
             minutes: "44,700",
             sms: "1,500",
             internet:"Si",
@@ -575,11 +635,14 @@ export const planesData = {
             iftfolio: "1346954"
           },
           {
+            id: 21,
+            dataPlan:"Plan Anual",
+            imgPlan: "/img/anuales.png",
             name: "Tuisty",
             data: "15GB",
             dataPlus: "15GB",
             usage: "Navegación",
-            price: "$2199",
+            price: 2199,
             minutes: "44,700",
             sms: "1,500",
             internet:"Si",
@@ -598,11 +661,14 @@ export const planesData = {
             iftfolio: "1346956"
           },
           {
+            id: 22,
+            dataPlan:"Plan Anual",
+            imgPlan: "/img/anuales.png",
             name: "Tuisty",
             data: "40GB",
             dataPlus: "40GB",
             usage: "Navegación",
-            price: "$2669",
+            price: 2669,
             minutes: "44,700",
             sms: "1,500",
             internet:"Si",

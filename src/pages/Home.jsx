@@ -12,6 +12,7 @@ import { Slide } from 'react-awesome-reveal';
 import Loading from '../components/Loading';
 import PlanesMain from '../components/Planes-Main';
 import { planesData } from '../data';
+import FloatingWhatsAppButton from '../components/WhatsApp-Button';
 
 
 function Home() {
@@ -96,7 +97,8 @@ function Home() {
                         <Button
                           className="button-info border border-3 fs-5 text-uppercase fw-bold fst-italic p-2"
                           onClick={() => {
-                            //Este botón redirecciona a la página Acceder
+                            navigate("/acceder")
+                            window.scrollTo(0, 0);
                           }}
                         >
                           <div className="p-1">¡Únete a Tuis!</div>
@@ -143,14 +145,12 @@ function Home() {
                             <FontAwesomeIcon icon={faTelegram} className="fs-5" />
                           </span>
                         </div>
-                        {/*<Button 
+                        <Button 
                           className="contract-button border border-3 fs-5 text-uppercase fw-bold fst-italic p-2"
-                          onClick={() => {
-                            //Este botón redirecciona al carrito de compras
-                          }}
+                          href='#planes'
                         >
                           Contratar
-                        </Button>*/}
+                        </Button>
                       </Col>
                       <Col xs={12} lg={6} className="text-center">
                         <img
@@ -181,14 +181,14 @@ function Home() {
                         />
                         </div>
                         <div className='mx-0 mx-md-5'>
-                          {/*<Button 
+                          <Button 
                             className="buy-button border border-3 fs-5 text-uppercase fw-bold fst-italic p-2 rounded-pill"
                             onClick={() => {
-                              //Este botón redirecciona al carrito de compras
+                              navigate("/paquetes")
                             }}
                           >
                             Comprar sim
-                          </Button>*/}
+                          </Button>
                         </div>
                         <div className='mx-0 mx-md-1 mt-5'>
                           <p className='fst-italic'>
@@ -280,6 +280,9 @@ function Home() {
                 </div>
                 </section>
               </main>
+              <div>
+                  <FloatingWhatsAppButton></FloatingWhatsAppButton>
+              </div>
               <FooterComponent></FooterComponent>
             </>
           )}
