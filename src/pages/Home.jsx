@@ -3,17 +3,16 @@ import './Home.css'
 import { useEffect, useState } from "react";
 import NavbarComponent from '../components/Navbar';
 import FooterComponent from '../components/Footer';
-import { Carousel, Container, Button, Row, Col } from 'react-bootstrap';
+import { Carousel, Container, Button, Row, Col, Image } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faSnapchat, faTelegram, faWhatsapp, faXTwitter} from '@fortawesome/free-brands-svg-icons';
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate } from 'react-router-dom';
-import { Slide } from 'react-awesome-reveal';
+import { useNavigate, Link } from 'react-router-dom';
+import { Fade, Slide } from 'react-awesome-reveal';
 import Loading from '../components/Loading';
 import PlanesMain from '../components/Planes-Main';
 import { planesData } from '../data';
 import FloatingWhatsAppButton from '../components/WhatsApp-Button';
-
 
 function Home() {
   const navigate = useNavigate();
@@ -108,6 +107,22 @@ function Home() {
                   </div>
                 </Container>
               </section>
+              <section>
+                  <Fade>
+                    <Link to="/terminos-y-condiciones"
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                      }}
+                    className="fs-6 text-white fw-bold text-decoration-none link-btn">
+                      <Image 
+                        src="/img/banner_web_tuis.jpg" 
+                        alt="Banner-Tuis"
+                        fluid
+                        className="d-block w-100"
+                      />
+                    </Link>
+                  </Fade>
+                </section>
               <main>
                 <section>
                   <div className="tuisty-container">
