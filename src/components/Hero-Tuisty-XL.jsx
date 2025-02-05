@@ -8,7 +8,7 @@ const HeroTuistyXL = ( { title, subtitle, paragraph, backgroundImage } ) => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        minHeight: "50vh",
+        minHeight: "65vh",
       };
 
       return (

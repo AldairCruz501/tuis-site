@@ -9,7 +9,7 @@ const HeroTuisty = ( { title, subtitle, backgroundImage } ) => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        minHeight: "50vh",
+        minHeight: "65vh",
       };
 
       return (
