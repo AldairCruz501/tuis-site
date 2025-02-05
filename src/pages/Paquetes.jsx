@@ -204,7 +204,7 @@ function Paquetes() {
                                     </p>
                                 </div>
                                 <div className="mb-1">
-                                    <Link to="/terminos-y-condiciones" className="fs-6 text-white fw-bold text-decoration-none link-btn" target="_blank">Conoce Términos y condiciones</Link>
+                                    <Link to="/terminos-y-condiciones" className="fs-6 text-white fw-bold text-decoration-none link-btn">Conoce Términos y condiciones</Link>
                                 </div>
                                 <div className="mb-1">
                                     <Link to="/politica-uso-justo" className="fs-6 text-white fw-bold text-decoration-none link-btn" target="_blank">Políticas de uso justo</Link>
