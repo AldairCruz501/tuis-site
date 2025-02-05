@@ -36,7 +36,7 @@ export default function Cobertura () {
                         <Container fluid className='text-center'>
                             <Fade>
                                 <div className='pt-5 mt-5 mb-5 pb-5'>
-                                    <img src="./img/cobertura-tuis-1.jpg" alt=""  className='img-fluid'/>
+                                    <img src="./img/cobertura-tuis-1.jpg" alt=""  className='img-fluid w-100'/>
                                 </div>
                             </Fade>
                         </Container>
