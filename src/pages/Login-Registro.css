@@ -17,7 +17,7 @@
     transition: all 0.3s ease-in-out; /* Efecto suave */
 }
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 1439px) {
     .tuisty-divider-expanded {
         padding: 33rem; /* Mayor altura cuando está en Registro */
     }
@@ -68,7 +68,7 @@
     transition: all 0.3s ease-in-out; /* Efecto suave */
 }
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 1439px) {
     .tuisty-login-expanded {
         bottom: -51rem;
     }
@@ -87,6 +87,18 @@ textarea::placeholder{
 .btn-register {
     background-color: #29B8C9 !important;
     color: #FFFFFF;
+}
+
+.btn-login:hover {
+    background-color: #FFFFFF !important;
+    color: #FF8500;
+    border-color: #FF8500;
+}
+
+.btn-register:hover {
+    background-color: #FFFFFF !important;
+    color: #29B8C9;
+    border-color: #29B8C9;
 }
 
 .tab-cont {
