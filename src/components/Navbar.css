@@ -59,7 +59,119 @@
   .item-nav:hover {
     color: #FF8500 !important;
   }
+
+  .cart-badge {
+    position: absolute;
+    top: 110px;
+    right: 444px;
+    background: #FF8500;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 60%;
+    padding: 5px 11px;
+  }
+
+
+  @media (max-width: 1440px) {
+    .cart-badge {
+      position: absolute;
+      top: 110px;
+      right: 230px;
+      background: #FF8500;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 60%;
+      padding: 5px 11px;
+    }  
+  }
+
+  @media (max-width: 1024px) {
+    .cart-badge {
+      position: absolute;
+      top: 110px;
+      right: 20px;
+      background: #FF8500;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 60%;
+      padding: 5px 11px;
+    }  
+  }
+
   
+
+  @media (max-width: 991px) {
+    .cart-badge {
+      position: absolute;
+      top: 20px;
+      right: 2px;
+      background: #FF8500;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 60%;
+      padding: 5px 11px;
+    }  
+  }
+
+  .btn-home {
+    color: #FFFFFF;
+    background-color: #6149B7 !important;
+    border-color: #6149B7 !important;
+}
+
+.btn-home:hover {
+    color: #6149B7;
+    background-color: #FFFFFF !important;
+    border-color: #6149B7 !important;
+}
+
+.btn-buy {
+    color: #FFFFFF !important;
+    background-color: #FF8500;
+    border-color: #FF8500 !important;
+}
+
+.btn-buy:hover {
+    color: #FF8500 !important;
+    background-color: #FFFFFF;
+    border-color: #FF8500 !important;
+}
+
+.img-tmn {
+  height: 75px;
+  width: 75px;
+}
+
+.offcanvas-width {
+  width: 30% !important;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .offcanvas-width {
+    width: 50% !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .offcanvas-width {
+    width: 60% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .offcanvas-width {
+    width: 90% !important;
+  }
+  .img-tmn {
+    height: 100px;
+    width: 100px;
+  }
+}
+ 
   /* Dropdown (desplegable) */
   .navbar .dropdown-menu {
     background-color: #6149B7;

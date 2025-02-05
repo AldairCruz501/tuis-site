@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faXTwitter, faWhatsapp, faInstagram, faSnapchat, faTelegram, faFacebookMessenger } from '@fortawesome/free-brands-svg-icons';
 import { useNavigate, Link } from 'react-router-dom';
 import { JackInTheBox } from 'react-awesome-reveal';
+import { useCart } from '../Context/Context';
+import Swal from 'sweetalert2';
+
 
 const socialMediaIcons = {
     facebook: faFacebook,
@@ -20,6 +23,51 @@ const socialMediaIcons = {
     const handleScrollToTop = () => {
         window.scrollTo(0, 0);
       };
+
+      const { addToCart } = useCart();
+      
+      const handleBuyClick = async (plan) => {
+        const { value: isChecked, isConfirmed, isDismissed } = await Swal.fire({
+          title: "¿Haz verificado tu IMEI?",
+          icon: "question",
+          input: "checkbox",
+          inputPlaceholder: "He verificado el IMEI en mi dispositivo",
+          confirmButtonText: "Continuar",
+          cancelButtonText: "Validar mi IMEI",
+          inputValidator: (result) => {
+            return !result && "Debes verificar tu IMEI para continuar";
+          },
+          showCancelButton: true,
+          allowOutsideClick: false,
+        });
+      
+        // Si el usuario confirma y ha marcado el checkbox, agrega el producto al carrito
+        if (isConfirmed && isChecked) {
+          const Toast = Swal.mixin({
+            toast: true,
+            position: "bottom-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.onmouseenter = Swal.stopTimer;
+              toast.onmouseleave = Swal.resumeTimer;
+            },
+          });
+          Toast.fire({
+            icon: "success",
+            title: "Producto agregado al Carrito",
+          });
+          addToCart(plan); // Solo se ejecuta si el checkbox está marcado y el usuario confirmó
+        } 
+        // Si el usuario hace clic en Verificar Imei, redirige a compatibilidad sin agregar al carrito
+        else if (!isChecked) {
+          window.location.href = '/compatibilidad'; // Redirigir a la página de compatibilidad
+        }
+      };
+      
+
+
     
     return (
         <section id='planes' className='tuisty-container pt-5'>
@@ -48,7 +96,7 @@ const socialMediaIcons = {
                                     <Card.Body>
                                         <div className='border-tuisty border-2 border-bottom'>
                                             <h1 className='card-title pricing-card-title fw-bold display-3'>
-                                                {plan.price}
+                                                ${plan.price}
                                             </h1>
                                             <p>
                                                 <small className='text-body-secondary fw-light fs-4'>
@@ -60,7 +108,7 @@ const socialMediaIcons = {
                                             <>
                                                 <div className='text-center p-3'>
                                                     <h4 className='my-0 fw-bold text-dark fs-6'>
-                                                        Redes Sociales Nacionales Ilimitadas
+                                                        Redes Sociales Nacionales Ilimitadas:
                                                     </h4>
                                                 </div>
                                                 <div className='d-flex justify-content-center pt-3 pb-3 border-tuisty border-2 border-bottom'>
@@ -85,14 +133,12 @@ const socialMediaIcons = {
                                                 <img src="/img/mexico.png" alt="mx-flag" className='w-25 mx-1'/>
                                             </div>
                                         </div>
-                                        {/*<Button 
-                                            className="plan-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill border-light fs-4 mb-3"
-                                            onClick={() => {
-                                                //Este botón redirecciona al carrito de compras
-                                            }}
-                                            >
+                                        <Button
+                                        className="plan-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill border-light fs-4 mb-3"
+                                        onClick={() => handleBuyClick(plan)}
+                                        >
                                             Comprar
-                                        </Button>*/}
+                                        </Button>
                                         <Accordion defaultActiveKey={null} flush>
                                             <Accordion.Item eventKey='0'>
                                                 <Accordion.Header>
@@ -170,10 +216,10 @@ const socialMediaIcons = {
                         </p>
                     </div>
                     <div className="mb-1">
-                    <Link to="/terminos-y-condiciones" onClick={handleScrollToTop} className="fs-6 text-white fw-bold text-decoration-none link-btn">Conoce Términos y condiciones</Link>
+                        <Link to="/terminos-y-condiciones" onClick={handleScrollToTop} className="fs-6 text-white fw-bold text-decoration-none link-btn">Conoce Términos y condiciones</Link>
                     </div>
                     <div className="mb-1"> 
-                    <Link to="/politica-uso-justo" className="fs-6 text-white fw-bold text-decoration-none link-btn" target="_blank">Políticas de uso justo</Link>
+                        <Link to="/politica-uso-justo" className="fs-6 text-white fw-bold text-decoration-none link-btn" target="_blank">Políticas de uso justo</Link>
                     </div>
                 </div>
             </Container>

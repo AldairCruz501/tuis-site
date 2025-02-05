@@ -1,0 +1,49 @@
+.btn-home {
+    color: #FFFFFF;
+    background-color: #6149B7 !important;
+    border-color: #6149B7 !important;
+}
+
+.btn-home:hover {
+    color: #6149B7;
+    background-color: #FFFFFF !important;
+    border-color: #6149B7 !important;
+}
+
+.btn-buy {
+    color: #FFFFFF !important;
+    background-color: #FF8500;
+    border-color: #FF8500 !important;
+}
+
+.btn-buy:hover {
+    color: #FF8500 !important;
+    background-color: #FFFFFF;
+    border-color: #FF8500 !important;
+}
+
+.btn-pay {
+    color: #FFFFFF !important;
+    background-color: #29b9ca;
+    border-color: #29b9ca !important;
+}
+
+.btn-pay:hover {
+    color: #29b9ca !important;
+    background-color: #FFFFFF;
+    border-color: #29b9ca!important;
+}
+
+.img-plan {
+    height: 80px;
+    width: 80px;
+}
+
+.icon-out{
+    color: #dc3545;
+    cursor: auto;
+}
+
+.icon-out:hover{
+    color: #6149B7;
+}

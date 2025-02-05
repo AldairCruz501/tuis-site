@@ -1,0 +1,15 @@
+.pasarela-container {
+    text-align: center;
+    margin: 50px;
+  }
+  
+  .pasarela-container h1 {
+    font-size: 2rem;
+    color: #4caf50;
+  }
+  
+  .pasarela-container p {
+    font-size: 1rem;
+    color: #555;
+  }
+  

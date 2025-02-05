@@ -1,5 +1,5 @@
 import './Paquetes-Basicos.css'
-import { useEffect, useState } from "react";
+import {useEffect, useState } from "react";
 import NavbarComponent from "../../components/Navbar";
 import FooterComponent from "../../components/Footer";
 import HeroTuisty from "../../components/Hero-Tuisty";
@@ -7,7 +7,6 @@ import PlanesSection from "../../components/Planes-Section";
 import { heroData, planesData } from "../../data";
 import Loading from '../../components/Loading';
 import ShippingTerms from '../../components/Shipping-Terms';
-
 
 function PaquetesBasicos () {
     const { title, subtitle, backgroundImage, links } = heroData.heroPaqueteBasico;
