@@ -861,6 +861,7 @@ export const planesData = {
               "telegram",
             ],
             duration: "360 días",
+            ilimitado: "ilimitado",
             durationPlus: "Anual",
             iftfolio: "1644548"
           },
