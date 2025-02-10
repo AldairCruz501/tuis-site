@@ -76,9 +76,9 @@ function Home() {
                     </Carousel.Item>
                   </Carousel>
                   <div className='d-block d-lg-none pt-2 text-center'>
-                          <a href="#planes">
-                          <FontAwesomeIcon icon={faAngleDoubleDown} className='fs-3 pt-2 button-sm'></FontAwesomeIcon>
-                          </a>
+                    <a href="#planes">
+                    <FontAwesomeIcon icon={faAngleDoubleDown} className='fs-3 pt-2 button-sm'></FontAwesomeIcon>
+                    </a>
                   </div>
                 </Container>
                 <Container fluid className="carousel-info">
@@ -95,10 +95,10 @@ function Home() {
                       <Col xs={12} md={4} className="text-center text-md-end mt-3 mt-md-0">
                         <Button
                           className="button-info border border-3 fs-5 text-uppercase fw-bold fst-italic p-2"
-                          onClick={() => {
+                          /*onClick={() => {
                             navigate("/acceder")
                             window.scrollTo(0, 0);
-                          }}
+                          }}*/
                         >
                           <div className="p-1">¡Únete a Tuis!</div>
                         </Button>

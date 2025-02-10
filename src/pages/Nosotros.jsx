@@ -175,8 +175,8 @@ export default function Nosotros () {
                                         size="lg" 
                                         className="px-4"
                                         onClick={() => {
-                                            navigate("/acceder")
-                                            window.scrollTo(0, 0);
+                                            //navigate("/acceder")
+                                            //window.scrollTo(0, 0);
                                         }}
                                     >
                                         Dale Tuis

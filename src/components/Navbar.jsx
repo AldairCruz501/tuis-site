@@ -95,7 +95,7 @@ export default function NavbarComponent() {
                 <Nav.Link as={Link} to="/nosotros" className="mx-2 mx-lg-3">
                   Nosotros
                 </Nav.Link>
-                <Nav>
+                {/*<Nav>
                   {userLoggedIn ? (
                     <Nav.Link as={Link} to="/" className="mx-2 mx-lg-3" onClick={(e) => { e.preventDefault(); AuthLogout(); }}>
                       Cerrar sesión
@@ -105,11 +105,11 @@ export default function NavbarComponent() {
                       Acceder
                     </Nav.Link>
                   )}
-                </Nav> 
+                </Nav>
                 <Nav.Link className='d-none d-lg-block fs-4 text-decoration-none text-white' onClick={handleShow}>
                   <FontAwesomeIcon  icon={faCartShopping} className='fs-3'/>
                   {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
-                </Nav.Link>
+                </Nav.Link>*/} 
               </Nav>
             </div>
           </Navbar.Collapse>
