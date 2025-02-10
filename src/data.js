@@ -1,13 +1,13 @@
 
 export const heroData = {
     heroPaqueteBasico: {
-        title: "Paquetes",
-        subtitle: "Básicos",
+        title: "Tuisty",
+        subtitle: "Básico",
         backgroundImage: "/img/banner-paquetes-Mensuales.jpg",
     },
     heroPaqueteTuisty: {
-        title: "Paquetes",
-        subtitle: "Tuisty",
+        title: "Tuisty",
+        subtitle: "Mensual",
         backgroundImage: "/img/banner-paquetes-Mensuales.jpg",
     },
     heroLoginRegister: {
@@ -16,21 +16,18 @@ export const heroData = {
       backgroundImage: "/",
     },
     heroPaqueteTrimestral: {
-        title: "Paqutes",
-        subtitle: "Tuisty",
-        paragraph: "Trimestrales",
+        title: "Tuisty",
+        subtitle: "Trimestral",
         backgroundImage: "/img/banner-trimestrales.jpg",
     },
     heroPaqueteSemestral: {
-      title: "Paqutes",
-      subtitle: "Tuisty",
-      paragraph: "Semestrales",
+      title: "Tuisty",
+      subtitle: "Semestral",
         backgroundImage: "/img/banner-semestrales.jpg",
     },
     heroPaqueteAnual: {
-      title: "Paqutes",
-      subtitle: "Tuisty",
-      paragraph: "Anuales",
+      title: "Tuisty",
+      subtitle: "Anual",
         backgroundImage: "/img/banner-anual.jpg",
     },
   }

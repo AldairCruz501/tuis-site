@@ -21,7 +21,7 @@ const HeroTuisty = ( { title, subtitle, backgroundImage } ) => {
             >
               <Container className="col-md-6 p-lg-5 mx-auto my-5 text-start">
                 <h3 className="display-5 fst-italic text-light hero-title">{title}</h3>
-                <h1 className="display-1 fst-italic fw-bold text-light mb-3 hero-subtitle">{subtitle}</h1>
+                <h1 className="display-1 fst-italic fw-bold text-light mb-3 hero-subtitles">{subtitle}</h1>
               </Container>
             </div>
           </Fade>

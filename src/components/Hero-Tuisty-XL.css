@@ -25,9 +25,6 @@
 
   .hero-subtitle {
     font-size: 7rem;
+    color: #0C71C3 !important;
   }
 
-  .hero-paragraph {
-    font-size: 3rem;
-    color: #0C71C3;
-  }

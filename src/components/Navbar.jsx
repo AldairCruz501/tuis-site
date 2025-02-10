@@ -80,11 +80,11 @@ export default function NavbarComponent() {
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <NavDropdown.Item as={Link} to="/paquetes/paquetes-basicos">Paquetes Básicos</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/paquetes/paquetes-tuisty">Paquetes Tuisty</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/paquetes/paquetes-trimestrales">Paquetes Trimestrales</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/paquetes/paquetes-semestrales">Paquetes Semestrales</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/paquetes/paquetes-anuales">Paquetes Anuales</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/paquetes/tuisty-basico">Tuisty Básico</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/paquetes/tuisty-mensual">Tuisty Mensual</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/paquetes/tuisty-trimestral">Tuisty Trimestral</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/paquetes/tuisty-semestral">Tuisty Semestral</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/paquetes/tuisty-anual">Tuisty Anual</NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link as={Link} to="/cobertura" className="mx-2 mx-lg-3">
                   Cobertura

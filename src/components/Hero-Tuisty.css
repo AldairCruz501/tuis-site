@@ -24,8 +24,9 @@
     font-size: 3rem;
   }
 
-  .hero-subtitle {
+  .hero-subtitles {
     font-size: 7rem;
+    color: #6149B7 !important;
   }
 
   @media (max-width: 475px) {

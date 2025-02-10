@@ -41,11 +41,11 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/paquetes' element={<Paquetes />}/>
-          <Route path='/paquetes/paquetes-basicos' element={<PaquetesBasicos />}/>
-          <Route path='/paquetes/paquetes-tuisty' element={<PaquetesTuisty />}/>
-          <Route path='/paquetes/paquetes-trimestrales' element={<PaquetesTrimestrales/>}/>
-          <Route path='/paquetes/paquetes-semestrales' element={<PaquetesSemestrales/>}/>
-          <Route path='/paquetes/paquetes-anuales' element={<PaquetesAnuales/>}/>
+          <Route path='/paquetes/tuisty-basico' element={<PaquetesBasicos />}/>
+          <Route path='/paquetes/tuisty-mensual' element={<PaquetesTuisty />}/>
+          <Route path='/paquetes/tuisty-trimestral' element={<PaquetesTrimestrales/>}/>
+          <Route path='/paquetes/tuisty-semestral' element={<PaquetesSemestrales/>}/>
+          <Route path='/paquetes/tuisty-anual' element={<PaquetesAnuales/>}/>
           <Route path='/cobertura' element={<Cobertura/>}/>
           <Route path='/compatibilidad' element={<Compatibilidad/>}/>
           <Route path='/nosotros' element={<Nosotros/>}/>
