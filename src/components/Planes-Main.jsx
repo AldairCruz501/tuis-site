@@ -88,7 +88,7 @@ const socialMediaIcons = {
                         Descubre nuestros planes personalizados, diseñados exclusivamente para los <span className='fw-bold fst-italic fs-4'>tuisters</span>
                     </p>
                 </div>
-                <Row className='row-cols-1 row-cols-md-2 row-cols-lg-4 text-center'>
+                <Row className='row-cols-1 row-cols-md-2 row-cols-xl-4 text-center'>
                     {plans.map((plan, index) => (
                         <JackInTheBox key={index} delay={index * 500}>
                             <Col key={index} className='card-efect'>
