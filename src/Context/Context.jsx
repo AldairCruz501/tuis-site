@@ -34,7 +34,11 @@ export const CartProvider = ({ children }) => {
   };
 
   const removeFromCart = (id) => {
-    setCart(cart.filter(plan => plan.id !== id));
+    const updatedCart = cart.filter(plan => plan.id !== id);
+    setCart(updatedCart);
+  
+    // Actualiza localStorage después de eliminar el item
+    localStorage.setItem('cart', JSON.stringify(updatedCart));
   };
 
   const increaseQuantity = (id) => {
