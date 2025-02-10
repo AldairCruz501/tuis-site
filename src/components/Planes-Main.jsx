@@ -1,4 +1,5 @@
 import './Planes-Main.css'
+import { useState } from 'react';
 import { Container, Row, Col, Card, Button, Accordion } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faXTwitter, faWhatsapp, faInstagram, faSnapchat, faTelegram, faFacebookMessenger } from '@fortawesome/free-brands-svg-icons';
@@ -19,6 +20,7 @@ const socialMediaIcons = {
   };
 
   const PlanesMain = ({ plans }) => {
+    const [openAccordions, setOpenAccordions] = useState([]);
     const navigate = useNavigate();
     const handleScrollToTop = () => {
         window.scrollTo(0, 0);
@@ -26,6 +28,14 @@ const socialMediaIcons = {
 
       const { addToCart } = useCart();
       
+      const handleAccordionToggle = (index) => {
+        setOpenAccordions((prevState) =>
+          prevState.includes(index)
+            ? prevState.filter((item) => item !== index) // Si ya está abierto, lo cerramos
+            : [...prevState, index] // Si no está abierto, lo abrimos
+        );
+      };
+
       const handleBuyClick = async (plan) => {
         const { value: isChecked, isConfirmed, isDismissed } = await Swal.fire({
           title: "¿Haz verificado tu IMEI?",
@@ -133,23 +143,17 @@ const socialMediaIcons = {
                                                 <img src="/img/mexico.png" alt="mx-flag" className='w-25 mx-1'/>
                                             </div>
                                         </div>
-                                        <Button
-                                        className="plan-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill border-light fs-4 mb-3"
-                                        onClick={() => handleBuyClick(plan)}
-                                        >
-                                            Comprar
-                                        </Button>
-                                        <Accordion defaultActiveKey={null} flush>
+                                        <Accordion defaultActiveKey={null} flush className='border-tuisty border-2 border-bottom mt-2 pb-2'>
                                             <Accordion.Item eventKey='0'>
-                                                <Accordion.Header>
+                                                <Accordion.Header onClick={() => handleAccordionToggle(index)}>
                                                     <h4 className='fw-bold fs-6 text-center'>
-                                                        Mostrar Detalles
+                                                        {openAccordions.includes(index) ? 'Ocultar Detalles' : 'Mostrar Detalles'}
                                                     </h4>
                                                 </Accordion.Header>
                                                 <Accordion.Body>
                                                     {plan.socialMediaInter && (
                                                         <>
-                                                            <div className='border-tuisty-in border-2 border-bottom border-top mt-4 p-2'>
+                                                            <div className='border-tuisty-in border-2 border-bottom border-top'>
                                                                 <div className="text-center p-3">
                                                                     <h4 className="my-0 fw-bold text-dark fs-6">
                                                                         Redes Sociales Internacionales Ilimitadas:
@@ -185,7 +189,7 @@ const socialMediaIcons = {
                                                             <li>eSIM</li>
                                                         </ul>
                                                     </div>
-                                                    <div className='border-tuisty-in border-2 border-bottom pt-4 pb-3'>
+                                                    <div className='pt-4'>
                                                         <h4 className="fw-bold fs-6 text-uppercase folio-title">
                                                             Folio: <span className='text-secondary fw-bold'>{plan.iftfolio}</span>
                                                         </h4>
@@ -193,6 +197,12 @@ const socialMediaIcons = {
                                                 </Accordion.Body>
                                             </Accordion.Item>
                                         </Accordion>
+                                        <Button
+                                        className="plan-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill border-light fs-4 mb-3"
+                                        onClick={() => handleBuyClick(plan)}
+                                        >
+                                            Comprar
+                                        </Button>
                                     </Card.Body>
                                 </Card>
                             </Col>
