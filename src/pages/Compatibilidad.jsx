@@ -5,6 +5,7 @@ import FooterComponent from "../components/Footer";
 import "./Compatibilidad.css";
 import { verifyImei } from "../components/alertas";
 import Loading from "../components/Loading";
+import FloatingWhatsAppButton from "../components/WhatsApp-Button";
 
 export default function Compatibilidad() {
   const [imei, setImei] = useState("");
@@ -82,6 +83,7 @@ export default function Compatibilidad() {
               </Row>
             </Container>
           </section>
+          <FloatingWhatsAppButton/>
           <FooterComponent />
         </>
       )}

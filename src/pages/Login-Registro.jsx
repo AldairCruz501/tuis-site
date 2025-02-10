@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import Loading from '../components/Loading';
 import { AuthLogin } from "../components/peticiones/login";
 import { Account } from "../components/peticiones/account";
+import FloatingWhatsAppButton from '../components/WhatsApp-Button';
 
 export default function LoginRegistro () {
     const [activeTab, setActiveTab] = useState(null);
@@ -387,6 +388,7 @@ export default function LoginRegistro () {
                             </Col>
                         </Row>
                     </Container>
+                    <FloatingWhatsAppButton/>
                     <FooterComponent />
                 </>
             )}

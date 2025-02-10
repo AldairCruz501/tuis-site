@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRectangleXmark } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import FloatingWhatsAppButton from '../../components/WhatsApp-Button';
 
 const Carrito = () => {
   const { cart, removeFromCart, increaseQuantity, decreaseQuantity, totalPrice } = useCart();
@@ -138,7 +139,7 @@ const Carrito = () => {
           </>
         )}
       </Container>
-
+      <FloatingWhatsAppButton/>
       <FooterComponent />
     </>
   );

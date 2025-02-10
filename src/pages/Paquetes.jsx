@@ -7,7 +7,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { Fade, JackInTheBox } from "react-awesome-reveal";
 import Loading from '../components/Loading';
 import ShippingTerms from '../components/Shipping-Terms';
-
+import FloatingWhatsAppButton from '../components/WhatsApp-Button';
 
 
 function Paquetes() {
@@ -28,7 +28,7 @@ function Paquetes() {
         <Loading loading={loading} />
         {!loading && (
             <>
-                <NavbarComponent></NavbarComponent>
+                <NavbarComponent/>
                 <Fade>
                 <section className='position-relative overflow-hidden text-center hero-bg carousel-fade'>
                     <Container className='col-md-6 p-lg-5 mx-auto my-auto'>
@@ -214,7 +214,8 @@ function Paquetes() {
                     </section>
                     <ShippingTerms/>
                 </main>
-                <FooterComponent></FooterComponent>
+                <FloatingWhatsAppButton/>
+                <FooterComponent/>
             </>
         )}
         </>

@@ -7,6 +7,7 @@ import PlanesSection from "../../components/Planes-Section";
 import { heroData, planesData } from "../../data";
 import Loading from '../../components/Loading';
 import ShippingTerms from '../../components/Shipping-Terms';
+import FloatingWhatsAppButton from '../../components/WhatsApp-Button';
 
 function PaquetesBasicos () {
     const { title, subtitle, backgroundImage, links } = heroData.heroPaqueteBasico;
@@ -27,18 +28,21 @@ function PaquetesBasicos () {
         <Loading loading={loading} />
         {!loading && (
             <>
-                <NavbarComponent></NavbarComponent>
+                <NavbarComponent/>
                 <HeroTuisty
                     title={title}
                     subtitle={subtitle}
                     backgroundImage={backgroundImage}
                     links={links}
                 />
-                <PlanesSection
-                    plans={plans}
-                />
-                <ShippingTerms/>
-                <FooterComponent></FooterComponent>
+                <main>
+                    <PlanesSection
+                        plans={plans}
+                    />
+                    <ShippingTerms/>
+                </main>
+                <FloatingWhatsAppButton/>
+                <FooterComponent/>
             </>
         )}
         </>

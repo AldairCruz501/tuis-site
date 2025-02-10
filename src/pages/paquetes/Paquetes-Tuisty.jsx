@@ -8,6 +8,7 @@ import PlanesSection from "../../components/Planes-Section";
 import { heroData,planesData } from "../../data";
 import Loading from '../../components/Loading';
 import ShippingTerms from '../../components/Shipping-Terms';
+import FloatingWhatsAppButton from '../../components/WhatsApp-Button';
 
 function PaquetesTuisty () {
     const { title, subtitle, backgroundImage} = heroData.heroPaqueteTuisty;
@@ -28,17 +29,20 @@ function PaquetesTuisty () {
             <Loading loading={loading} />
             {!loading && (
                 <>
-                    <NavbarComponent></NavbarComponent>
+                    <NavbarComponent/>
                     <HeroTuisty
                         title={title}
                         subtitle={subtitle}
                         backgroundImage={backgroundImage}
                     />
-                <PlanesSection
-                    plans={plans}
-                />
-                <ShippingTerms/>
-                    <FooterComponent></FooterComponent>
+                    <main>
+                        <PlanesSection
+                            plans={plans}
+                        />
+                        <ShippingTerms/>
+                    </main>
+                    <FloatingWhatsAppButton/>
+                    <FooterComponent/>
                 </>
             )}
         </>

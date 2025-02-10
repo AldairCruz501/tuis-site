@@ -33,7 +33,7 @@ function Home() {
         <Loading loading={loading} />
           {!loading && (
             <>
-              <NavbarComponent></NavbarComponent>
+              <NavbarComponent/>
               <section>
                 <Container fluid className="pt-4 pb-5 pb-lg-0">
                   <Carousel>
@@ -295,10 +295,8 @@ function Home() {
                 </div>
                 </section>
               </main>
-              <div>
-                  <FloatingWhatsAppButton></FloatingWhatsAppButton>
-              </div>
-              <FooterComponent></FooterComponent>
+              <FloatingWhatsAppButton/>
+              <FooterComponent/>
             </>
           )}
         </>
