@@ -25,9 +25,9 @@ const PlanesSection = ({ plans }) => {
         window.scrollTo(0, 0);
       };
 
-  const rowColsClass = plans.length === 2
-    ? "row-cols-1 row-cols-md-2 row-cols-lg-3"
-    : "row-cols-1 row-cols-md-2 row-cols-lg-4";
+  const rowColsClass = plans.length === 4
+    ? "row-cols-1 row-cols-md-2 row-cols-xl-4"
+    : "row-cols-1 row-cols-md-2 row-cols-lg-3";
 
   const { addToCart } = useCart();
 
@@ -90,8 +90,8 @@ const PlanesSection = ({ plans }) => {
               <Col key={index} className='card-efect'>
                 <Card className='mb-4 rounded-3 shadow-sm card'>
                   <Card.Header className='py-3'>
-                    <h4 className="my-0 fw-bold plan-title text-uppercase fs-4">
-                      {plan.name} <span className='tuisty-gb'>{plan.dataPlus}</span><br />Ilimitado {plan.durationPlus}
+                    <h4 className="my-0 fw-bold plan-title text-uppercase fs-3">
+                      {plan.name} <span className='tuisty-gb'>{plan.dataPlus}</span> {plan.ilimitado} {plan.durationPlus}
                     </h4>
                   </Card.Header>
                   <div className='text-center p-3 bg-gb'>
@@ -107,13 +107,13 @@ const PlanesSection = ({ plans }) => {
                         <small className="text-body-secondary fw-light fs-4">{plan.duration}</small>
                       </p>
                     </div>
+                    <div className="text-center pt-3 pb-2">
+                        <h4 className="my-0 fw-bold text-dark fs-6">
+                          {plan.socialText}
+                        </h4>
+                    </div>
                     {plan.socialMedia && (
                       <>
-                        <div className="text-center p-3">
-                          <h4 className="my-0 fw-bold text-dark fs-6">
-                            Redes Sociales Nacionales Ilimitadas:
-                          </h4>
-                        </div>
                         <div className="d-flex justify-content-center pt-3 pb-3 border-tuisty border-2 border-bottom">
                           {plan.socialMedia.map((platform, idx) => (
                             <span
@@ -131,7 +131,7 @@ const PlanesSection = ({ plans }) => {
                     )}
                     <div className='border-tuisty border-2 border-bottom mt-4 pb-3'>
                       <h4 className="fw-bold fs-6">
-                        Llamadas y SMS Ilimitados a:
+                        {plan.llamadas}
                       </h4>
                       <div className='d-flex justify-content-center pt-3 mb-3'>
                         <img src="/img/canada.png" alt="can-flag" className='w-25 mx-1' />
@@ -139,7 +139,13 @@ const PlanesSection = ({ plans }) => {
                         <img src="/img/mexico.png" alt="mx-flag" className='w-25 mx-1' />
                       </div>
                     </div>
-                    <Accordion defaultActiveKey={null} flush className='border-tuisty border-2 border-bottom mt-2 pb-2'>
+                    <Button
+                      className="plan-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill border-light fs-4 mb-3"
+                      onClick={() => handleBuyClick(plan)}
+                    >
+                      Comprar
+                    </Button>
+                    <Accordion defaultActiveKey={null} flush>
                       <Accordion.Item eventKey='0'>
                         <Accordion.Header onClick={() => handleAccordionToggle(index)}>
                           <h4 className="fw-bold fs-6 text-center">
@@ -147,31 +153,31 @@ const PlanesSection = ({ plans }) => {
                           </h4>
                         </Accordion.Header>
                         <Accordion.Body>
+                          <div className='border-tuisty-in border-2 border-top mt-4'>
+                              <div className="text-center p-3">
+                                <h4 className="my-0 fw-bold text-dark fs-6">
+                                    {plan.socialInterText}
+                                </h4>
+                              </div>
+                            </div>
                           {plan.socialMediaInter && (
                             <>
-                              <div className='border-tuisty-in border-2 border-bottom border-top mt-4 p-2'>
-                                <div className="text-center p-3">
-                                  <h4 className="my-0 fw-bold text-dark fs-6">
-                                    Redes Sociales Internacionales Ilimitadas:
-                                  </h4>
-                                </div>
-                                <div className="d-flex justify-content-center pt-3 mb-3">
-                                  {plan.socialMediaInter.map((platform, idx) => (
-                                    <span
-                                      key={idx}
-                                      className={`rounded mx-1 social-icon-${platform}`}
-                                    >
-                                      <FontAwesomeIcon
-                                        icon={socialMediaIcons[platform]}
-                                        className="fs-3"
-                                      />
-                                    </span>
-                                  ))}
-                                </div>
+                              <div className="d-flex justify-content-center border-tuisty-in border-2 border-bottom pb-3">
+                                {plan.socialMediaInter.map((platform, idx) => (
+                                  <span
+                                    key={idx}
+                                    className={`rounded mx-1 social-icon-${platform}`}
+                                  >
+                                    <FontAwesomeIcon
+                                      icon={socialMediaIcons[platform]}
+                                      className="fs-3"
+                                    />
+                                  </span>
+                                ))}
                               </div>
                             </>
                           )}
-                          <div className='border-tuisty-in border-2 border-bottom pt-4 pb-3'>
+                          <div className='border-tuisty-in border-2 border-bottom pt-3 pb-3'>
                             <h4 className="fw-bold fs-6 internet-title text-uppercase">
                               {plan.internet}
                             </h4>
@@ -185,7 +191,7 @@ const PlanesSection = ({ plans }) => {
                               <li>eSIM</li>
                             </ul>
                           </div>
-                          <div className='pt-4'>
+                          <div className='border-tuisty-in border-2 border-bottom pt-3 pb-2'>
                             <h4 className="fw-bold fs-6 text-uppercase folio-title">
                               Folio: <span className='text-secondary fw-bold'>{plan.iftfolio}</span>
                             </h4>
@@ -193,12 +199,6 @@ const PlanesSection = ({ plans }) => {
                         </Accordion.Body>
                       </Accordion.Item>
                     </Accordion>
-                    <Button
-                      className="plan-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill border-light fs-4 mb-3"
-                      onClick={() => handleBuyClick(plan)}
-                    >
-                      Comprar
-                    </Button>
                   </Card.Body>
                 </Card>
               </Col>
