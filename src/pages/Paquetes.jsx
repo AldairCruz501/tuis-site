@@ -33,7 +33,7 @@ function Paquetes() {
                 <section className='position-relative overflow-hidden text-center hero-bg carousel-fade'>
                     <Container className='col-md-6 p-lg-5 mx-auto my-auto'>
                         <div className='pt-5 mt-5'>
-                            <h1 className='display-1 fw-bold text-uppercase text-white hero-tuis-title'>Paquetes Tuis</h1>
+                            <h1 className='display-1 fw-bold text-uppercase text-white hero-tuis-title'>Paquetes Tuisty</h1>
                             <Button className='fst-italic p-1 px-4 rounded-pill fs-4 btn-hero border-2' href='#planes'>
                                 Ver Paquetes
                             </Button>
