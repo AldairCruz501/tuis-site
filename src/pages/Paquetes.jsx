@@ -115,7 +115,7 @@ function Paquetes() {
                                         <Button 
                                             className='paq-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill mt-4 mb-4 border-light fs-5'
                                             onClick={() => {
-                                                navigate("/paquetes/paquetes-basicos");
+                                                navigate("/paquetes/tuisty-basico");
                                                 window.scrollTo(0, 0);
                                             }}
                                         >
@@ -133,7 +133,7 @@ function Paquetes() {
                                         <Button 
                                             className='paq-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill mt-4 mb-4 border-light fs-5'
                                             onClick={() => {
-                                                navigate("/paquetes/paquetes-tuisty");
+                                                navigate("/paquetes/tuisty-mensual");
                                                 window.scrollTo(0, 0);
                                             }}
                                         >
@@ -151,7 +151,7 @@ function Paquetes() {
                                         <Button 
                                             className='paq-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill mt-4 mb-4 border-light fs-5'
                                             onClick={() => {
-                                                navigate("/paquetes/paquetes-trimestrales");
+                                                navigate("/paquetes/tuisty-trimestral");
                                                 window.scrollTo(0, 0);
                                             }}
                                         >
@@ -169,7 +169,7 @@ function Paquetes() {
                                         <Button 
                                             className='paq-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill mt-4 mb-4 border-light fs-5'
                                             onClick={() => {
-                                                navigate("/paquetes/paquetes-semestrales");
+                                                navigate("/paquetes/tuisty-semestral");
                                                 window.scrollTo(0, 0);
                                             }}
                                         >
@@ -187,7 +187,7 @@ function Paquetes() {
                                         <Button 
                                             className='paq-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill mt-4 mb-4 border-light fs-5'
                                             onClick={() => {
-                                                navigate("/paquetes/paquetes-anuales");
+                                                navigate("/paquetes/tuisty-anual");
                                                 window.scrollTo(0, 0);
                                             }}
                                         >
