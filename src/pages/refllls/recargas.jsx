@@ -6,7 +6,7 @@ import FloatingWhatsAppButton from "../../components/WhatsApp-Button";
 import Swal from "sweetalert2";
 import { getToken } from '../../components/storage/SaveUser';
 import { loadStripe } from '@stripe/stripe-js';
-import "./Recargas.css";
+import "./recargas.css";
 
 export function Recargas() {
     const [showModal, setShowModal] = useState(false);
