@@ -63,7 +63,7 @@ function App() {
           <Route path="/colaboracion-justicia" element={<PdfViewer pdfPath="/pdf/DATOS-PARA-COLABORACION-CON-LA-JUSTICIA.pdf" />} />
           <Route path="/cod-practicas-comerciales" element={<PdfViewer pdfPath="/pdf/20240912-INBTEL-codigo-de-practicas-comerciales-MVNO-v1.pdf" />} />
           <Route path='/success' element={<Success />} />
-          <Route path='/Recargas' element={<Recargas />} />
+          <Route path='/recargas' element={<Recargas />} />
         </Routes>
       </Router>
     </CartProvider>

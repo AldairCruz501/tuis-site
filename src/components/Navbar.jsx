@@ -95,7 +95,7 @@ export default function NavbarComponent() {
                 <Nav.Link as={Link} to="/nosotros" className="mx-2 mx-lg-3">
                   Nosotros
                 </Nav.Link>
-                <Nav.Link as={Link} to="/Recargas" className="mx-2 mx-lg-3">
+                <Nav.Link as={Link} to="/recargas" className="mx-2 mx-lg-3">
                   Recargas
                 </Nav.Link>
                 <Nav>
