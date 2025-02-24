@@ -4,33 +4,81 @@ import NavbarComponent from '../../components/Navbar';
 import { useCart } from '../../Context/Context';
 import './Carrito.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRectangleXmark } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpAZ, faRectangleXmark } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import FloatingWhatsAppButton from '../../components/WhatsApp-Button';
+import { useState } from 'react';
+import { stripeRedirect } from '../../components/peticiones/stripe';
+import { loadStripe } from '@stripe/stripe-js';
+import Stripe from 'stripe';
+import { getToken } from '../../components/storage/SaveUser';
 
 const Carrito = () => {
   const { cart, removeFromCart, increaseQuantity, decreaseQuantity, totalPrice } = useCart();
   const navigate = useNavigate();
-  
-  const handleProceedToCheckout = () => {
-    navigate("/proceder-a-pagar");
-    
-  };
 
   const handleConfirmPurchase = () => {
     Swal.fire({
-      title: '¿Estás seguro que deseas proceder con la compra?',
+      title: `¿Estás seguro que deseas proceder con la compra? `,
       icon: 'warning',
       showCancelButton: true,
       confirmButtonText: 'Sí',
       cancelButtonText: 'No',
     }).then((result) => {
       if (result.isConfirmed) {
-        handleProceedToCheckout();
+        makePayment();
       }
     });
   };
+
+  const makePayment = async () => {
+    const token = getToken();
+
+    const stripe = await loadStripe("pk_test_51Qn3cLQWugqDHVyU7OIqQ8T0JMU3fcVmuZ63JUJCMK3p2Tjc17QbyCyPe7JPyUNpU2xj3IrRuZ620VE03ptcpZyo00wuwgJ8Mg");
+
+    const body = {
+      products: cart.map(plan => ({
+        name: ` ${plan.name} ${plan.name} ${plan.dataPlus} Ilimitado ${plan.duration}`,
+        image: plan.imgPlan,
+        price: plan.price * 100,
+        quantity: plan.quantity
+      })),
+      type: 1
+    };
+
+    const headers = {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+
+    };
+
+    try {
+      const response = await fetch(`/create-checkout-session`, {
+        method: "POST",
+        headers: headers,
+        body: JSON.stringify(body)
+      });
+
+      if (!response.ok) {
+        throw new Error("Error al crear la sesión de pago");
+      }
+
+      const session = await response.json();
+
+      const result = await stripe.redirectToCheckout({
+        sessionId: session.id
+      });
+
+      if (result.error) {
+        console.error(result.error);
+      }
+    } catch (error) {
+      console.error("Error en la solicitud de pago:", error);
+      Swal.fire("Error", "Hubo un problema con el pago. Inténtalo nuevamente.", "error");
+    }
+  };
+
 
   return (
     <>
@@ -84,7 +132,9 @@ const Carrito = () => {
                 {cart.map((plan, id) => (
                   <tr key={id}>
                     <td className="text-center m-0"><img src={plan.imgPlan} alt="img-plan" className="img-plan" /></td>
+                    {/* name plan */}
                     <td>{plan.name} {plan.dataPlus} Ilimitado {plan.duration}</td>
+                    {/* price plan */}
                     <td>${plan.price.toFixed(2)}</td>
                     <td>
                       <Button variant="outline-secondary" size="sm" onClick={() => decreaseQuantity(plan.id)}>-</Button>{' '}
@@ -94,7 +144,7 @@ const Carrito = () => {
                     <td>${(plan.price * plan.quantity).toFixed(2)}</td>
                     <td className="text-center m-0">
                       <span variant="danger" size="sm" onClick={() => removeFromCart(plan.id)}>
-                        <FontAwesomeIcon icon={faRectangleXmark} className='fs-3 icon-out'/>
+                        <FontAwesomeIcon icon={faRectangleXmark} className='fs-3 icon-out' />
                       </span>
                     </td>
                   </tr>
@@ -123,7 +173,7 @@ const Carrito = () => {
             </Container>
           </>
         )}
-
+        {/* pagar cuenta  */}
         {cart.length > 0 && (
           <>
             <div className="text-end">
@@ -139,7 +189,7 @@ const Carrito = () => {
           </>
         )}
       </Container>
-      <FloatingWhatsAppButton/>
+      <FloatingWhatsAppButton />
       <FooterComponent />
     </>
   );

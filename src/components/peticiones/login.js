@@ -1,12 +1,21 @@
 import axios from "axios";
 import Swal from "sweetalert2";
 import { saveToken, removeToken } from "../storage/SaveUser";
+const token = import.meta.env.VITE_TOKE;
 
 export const AuthLogin = async (email, password) => {
   try {
     const url = "/login";
-
-    const response = await axios.post(url, { email, password });
+    const data = {
+      email,
+      password,
+    };
+    const response = await axios.post(url, data, {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`, // Enviar el Bearer token en los encabezados
+      },
+    });
 
     const responseBody = response.data.message;
 
@@ -16,10 +25,10 @@ export const AuthLogin = async (email, password) => {
       icon: "success",
       title: "Inicio de sesión exitoso",
       text: `¡Login hecho satisfactoriamente!`,
-      confirmButtonText: 'OK',
+      confirmButtonText: "OK",
     }).then((result) => {
       if (result.isConfirmed) {
-        window.location.href = "/";  // Asegúrate de que esta sea la URL correcta de tu página de inicio
+        window.location.href = "/"; // Asegúrate de que esta sea la URL correcta de tu página de inicio
       }
     });
   } catch (error) {
@@ -51,7 +60,7 @@ export const AuthLogout = () => {
         text: "Has cerrado sesión correctamente.",
         confirmButtonText: "OK",
       }).then(() => {
-        window.location.href = "/"; 
+        window.location.href = "/";
       });
     }
   });

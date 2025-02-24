@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import {  BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Paquetes from './pages/Paquetes';
 import PaquetesBasicos from './pages/paquetes/Paquetes-Basicos';
@@ -19,6 +19,8 @@ import Carrito from './pages/Cart/Carrito';
 import { CartProvider } from './Context/Context';
 import { useEffect } from 'react';
 import Pasarela from './pages/Pasarela/Pasarela';
+import Success from './pages/Cart/success';
+import { Recargas } from './pages/refllls/recargas';
 
 const PdfViewer = ({ pdfPath }) => {
   return (
@@ -39,27 +41,29 @@ function App() {
       <Router>
         <PageTitleUpdater />
         <Routes>
-          <Route path='/' element={<Home />}/>
-          <Route path='/paquetes' element={<Paquetes />}/>
-          <Route path='/paquetes/tuisty-basico' element={<PaquetesBasicos />}/>
-          <Route path='/paquetes/tuisty-mensual' element={<PaquetesTuisty />}/>
-          <Route path='/paquetes/tuisty-trimestral' element={<PaquetesTrimestrales/>}/>
-          <Route path='/paquetes/tuisty-semestral' element={<PaquetesSemestrales/>}/>
-          <Route path='/paquetes/tuisty-anual' element={<PaquetesAnuales/>}/>
-          <Route path='/cobertura' element={<Cobertura/>}/>
-          <Route path='/compatibilidad' element={<Compatibilidad/>}/>
-          <Route path='/nosotros' element={<Nosotros/>}/>
-          <Route path ='/acceder' element={<LoginRegistro/>}/>
-          <Route path ='/carrito' element={<Carrito/>}/>
-          <Route path ='/proceder-a-pagar' element={<Pasarela/>}/>
-          <Route path='/aviso-de-privacidad' element={<AvisoPrivacidad/>}/>
-          <Route path='/terminos-y-condiciones' element={<TerminosCondiciones/>}/>
+          <Route path='/' element={<Home />} />
+          <Route path='/paquetes' element={<Paquetes />} />
+          <Route path='/paquetes/tuisty-basico' element={<PaquetesBasicos />} />
+          <Route path='/paquetes/tuisty-mensual' element={<PaquetesTuisty />} />
+          <Route path='/paquetes/tuisty-trimestral' element={<PaquetesTrimestrales />} />
+          <Route path='/paquetes/tuisty-semestral' element={<PaquetesSemestrales />} />
+          <Route path='/paquetes/tuisty-anual' element={<PaquetesAnuales />} />
+          <Route path='/cobertura' element={<Cobertura />} />
+          <Route path='/compatibilidad' element={<Compatibilidad />} />
+          <Route path='/nosotros' element={<Nosotros />} />
+          <Route path='/acceder' element={<LoginRegistro />} />
+          <Route path='/carrito' element={<Carrito />} />
+          <Route path='/proceder-a-pagar' element={<Pasarela />} />
+          <Route path='/aviso-de-privacidad' element={<AvisoPrivacidad />} />
+          <Route path='/terminos-y-condiciones' element={<TerminosCondiciones />} />
           <Route path="/portabilidad-ift" element={<PdfViewer pdfPath="/pdf/Portabilidad-IFT.pdf" />} />
           <Route path="/contrato-adhesion-profeco" element={<PdfViewer pdfPath="/pdf/20240711-INBTEL-oficio-registro-contrato-de-adhesion.pdf" />} />
           <Route path="/carta-derechos-min" element={<PdfViewer pdfPath="/pdf/Carta-Derechos-Minimos-IFT.pdf" />} />
           <Route path="/politica-uso-justo" element={<PdfViewer pdfPath="/pdf/20240912-INBTEL-politica-de-uso-justo-MVNO-v1.pdf" />} />
           <Route path="/colaboracion-justicia" element={<PdfViewer pdfPath="/pdf/DATOS-PARA-COLABORACION-CON-LA-JUSTICIA.pdf" />} />
           <Route path="/cod-practicas-comerciales" element={<PdfViewer pdfPath="/pdf/20240912-INBTEL-codigo-de-practicas-comerciales-MVNO-v1.pdf" />} />
+          <Route path='/success' element={<Success />} />
+          <Route path='/Recargas' element={<Recargas />} />
         </Routes>
       </Router>
     </CartProvider>

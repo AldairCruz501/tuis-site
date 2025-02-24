@@ -180,4 +180,15 @@ textarea::placeholder{
     color: #FF8500 !important;
   }
 
+  .g-recaptcha {
+    transform: scale(0.95); /* Ajusta este valor según el tamaño deseado */
+    transform-origin: 0 0; /* Asegura que el origen del escalado sea desde la esquina superior izquierda */
+  }
+
+  @media (max-width: 768px) { /* Para pantallas pequeñas */
+    .g-recaptcha {
+      transform: scale(0.75); /* Escala para dispositivos más pequeños */
+      transform-origin: 0 0;
+    }
+  }
 

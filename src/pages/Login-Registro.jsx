@@ -1,4 +1,5 @@
 import './Login-Registro.css'
+import 'react-google-recaptcha'
 import NavbarComponent from '../components/Navbar';
 import FooterComponent from '../components/Footer';
 import { Col, Container, Nav, Row, Tab, Form, Button } from 'react-bootstrap';
@@ -8,10 +9,12 @@ import Loading from '../components/Loading';
 import { AuthLogin } from "../components/peticiones/login";
 import { Account } from "../components/peticiones/account";
 import FloatingWhatsAppButton from '../components/WhatsApp-Button';
+import ReCAPTCHA from 'react-google-recaptcha';
 
-export default function LoginRegistro () {
+export default function LoginRegistro() {
     const [activeTab, setActiveTab] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [captchaToken, setCaptchaToken] = useState(null);
 
     //almacenar la informacion por sus estados
     const [email, setEmail] = useState("");
@@ -26,13 +29,17 @@ export default function LoginRegistro () {
     const [repetPassword, setRepetPassword] = useState('');
     const [validatedLogin, setValidatedLogin] = useState(false);
     const [validatedReg, setValidatedReg] = useState(false);
-
+    const onChange = (value) => {
+        console.log("Usuario verificado");
+        console.log(value);
+        setCaptchaToken(value);
+    };
     useEffect(() => {
         const fetchData = async () => {
             await new Promise((resolve) => setTimeout(resolve, 2000));
             setLoading(false);
         };
-    
+
         fetchData();
     }, []);
 
@@ -101,11 +108,21 @@ export default function LoginRegistro () {
     const handleSubmitReg = (event) => {
         event.preventDefault();
         const form = event.currentTarget;
+
+        if (!captchaToken) {
+            alert("Por favor, completa el reCAPTCHA.");
+            return;
+        }
+
         if (form.checkValidity() === false) {
             event.stopPropagation();
+        } else if (password !== repetPassword) {
+            alert("Las contraseñas no coinciden.");
+            return;
         } else {
             Account(firstName, lastName, address, between_Streets, CP, description, phone, email, password, repetPassword);
         }
+
         setValidatedReg(true);
     };
 
@@ -132,40 +149,40 @@ export default function LoginRegistro () {
                                 <Tab.Container activeKey={activeTab} onSelect={setActiveTab}>
                                     <Nav variant="tabs" className='border-1 pb-0'>
                                         <Nav.Item>
-                                            <Nav.Link 
-                                                eventKey="login" 
-                                                className={`nav-link-login mx-1 ${activeTab === 'login' || activeTab === null || activeTab === 'register' ? 'bg-link-login' : ''}`} 
+                                            <Nav.Link
+                                                eventKey="login"
+                                                className={`nav-link-login mx-1 ${activeTab === 'login' || activeTab === null || activeTab === 'register' ? 'bg-link-login' : ''}`}
                                                 onClick={() => setActiveTab('login')}
                                             >
                                                 Iniciar Sesión
                                             </Nav.Link>
                                         </Nav.Item>
                                         <Nav.Item>
-                                            <Nav.Link 
-                                                eventKey="register" 
-                                                className={`nav-link-register mx-auto ${activeTab === 'register' || activeTab === null || activeTab === 'login'  ? 'bg-link-register' : ''}`} 
+                                            <Nav.Link
+                                                eventKey="register"
+                                                className={`nav-link-register mx-auto ${activeTab === 'register' || activeTab === null || activeTab === 'login' ? 'bg-link-register' : ''}`}
                                                 onClick={() => setActiveTab('register')}
                                             >
                                                 Registro
                                             </Nav.Link>
                                         </Nav.Item>
                                     </Nav>
-                                    <Tab.Content 
+                                    <Tab.Content
                                         className={`mt-1 p-3 rounded bg-normal ${activeTab === "login" ? "bg-login text-log" : activeTab === "register" ? "bg-register" : ""}`}
                                     >
-                                        <Tab.Pane eventKey="login" active={activeTab === 'login' || activeTab === null }>
+                                        <Tab.Pane eventKey="login" active={activeTab === 'login' || activeTab === null}>
                                             <h4 className='text-center fw-bold fs-1' onClick={() => setActiveTab('login')}>Iniciar Sesión</h4>
                                             <form id="FormLogin" onSubmit={handleSubmit} noValidate autoComplete="off">
                                                 <Form.Group className="mb-3" controlId="emailLogin">
                                                     <Form.Label className="fw-bold">Correo electrónico</Form.Label>
-                                                    <Form.Control 
-                                                        type="text" 
-                                                        name="email" 
-                                                        placeholder="tuisty_elmapache@tuis.com.mx" 
-                                                        autoComplete="off" 
-                                                        value={email} 
-                                                        onChange={handleInputChange} 
-                                                        required 
+                                                    <Form.Control
+                                                        type="text"
+                                                        name="email"
+                                                        placeholder="tuisty_elmapache@tuis.com.mx"
+                                                        autoComplete="off"
+                                                        value={email}
+                                                        onChange={handleInputChange}
+                                                        required
                                                         isInvalid={validatedLogin && !email}
                                                     />
                                                     <Form.Control.Feedback type="invalid">
@@ -174,14 +191,14 @@ export default function LoginRegistro () {
                                                 </Form.Group>
                                                 <Form.Group className="mb-3" controlId="passwordLogin">
                                                     <Form.Label className="fw-bold">Contraseña</Form.Label>
-                                                    <Form.Control 
-                                                        type="password" 
-                                                        name="password" 
-                                                        placeholder="*********" 
-                                                        autoComplete="new-password" 
-                                                        value={password} 
-                                                        onChange={handleInputChange} 
-                                                        required 
+                                                    <Form.Control
+                                                        type="password"
+                                                        name="password"
+                                                        placeholder="*********"
+                                                        autoComplete="new-password"
+                                                        value={password}
+                                                        onChange={handleInputChange}
+                                                        required
                                                         isInvalid={validatedLogin && !password}
                                                     />
                                                     <Form.Control.Feedback type="invalid">
@@ -203,13 +220,13 @@ export default function LoginRegistro () {
                                                     <Col lg={6}>
                                                         <Form.Group className="mb-3" controlId="nameRegister">
                                                             <Form.Label className="fw-bold">Nombre(s)</Form.Label>
-                                                            <Form.Control 
-                                                                type="text" 
-                                                                name="firstName" 
-                                                                placeholder="Tuisty" 
-                                                                value={firstName} 
-                                                                onChange={handleInputChangeReg} 
-                                                                required 
+                                                            <Form.Control
+                                                                type="text"
+                                                                name="firstName"
+                                                                placeholder="Tuisty"
+                                                                value={firstName}
+                                                                onChange={handleInputChangeReg}
+                                                                required
                                                                 isInvalid={validatedReg && !firstName}
                                                             />
                                                             <Form.Control.Feedback type="invalid">
@@ -220,13 +237,13 @@ export default function LoginRegistro () {
                                                     <Col lg={6}>
                                                         <Form.Group className="mb-3" controlId="lastNameRegister">
                                                             <Form.Label className="fw-bold">Apellidos</Form.Label>
-                                                            <Form.Control 
-                                                                type="text" 
-                                                                name="lastName" 
-                                                                placeholder="Mapache Inbtel" 
-                                                                value={lastName} 
-                                                                onChange={handleInputChangeReg} 
-                                                                required 
+                                                            <Form.Control
+                                                                type="text"
+                                                                name="lastName"
+                                                                placeholder="Mapache Inbtel"
+                                                                value={lastName}
+                                                                onChange={handleInputChangeReg}
+                                                                required
                                                                 isInvalid={validatedReg && !lastName}
                                                             />
                                                             <Form.Control.Feedback type="invalid">
@@ -237,13 +254,13 @@ export default function LoginRegistro () {
                                                     <Col sm={12}>
                                                         <Form.Group className="mb-3" controlId="adressRegister">
                                                             <Form.Label className="fw-bold">Dirección (incluya la colonia)</Form.Label>
-                                                            <Form.Control 
-                                                                type="text" 
-                                                                name="address" 
-                                                                placeholder="Encino 204 Col. Bosque Bonito" 
-                                                                value={address} 
-                                                                onChange={handleInputChangeReg} 
-                                                                required 
+                                                            <Form.Control
+                                                                type="text"
+                                                                name="address"
+                                                                placeholder="Encino 204 Col. Bosque Bonito"
+                                                                value={address}
+                                                                onChange={handleInputChangeReg}
+                                                                required
                                                                 isInvalid={validatedReg && !address}
                                                             />
                                                             <Form.Control.Feedback type="invalid">
@@ -254,13 +271,13 @@ export default function LoginRegistro () {
                                                     <Col sm={6} lg={8}>
                                                         <Form.Group className="mb-3" controlId="betweenStreetsRegister">
                                                             <Form.Label className="fw-bold">Entre Calles</Form.Label>
-                                                            <Form.Control 
-                                                                type="text" 
-                                                                name="between_Streets" 
-                                                                placeholder="Entre Calle Pino y Cedro" 
-                                                                value={between_Streets} 
-                                                                onChange={handleInputChangeReg} 
-                                                                required 
+                                                            <Form.Control
+                                                                type="text"
+                                                                name="between_Streets"
+                                                                placeholder="Entre Calle Pino y Cedro"
+                                                                value={between_Streets}
+                                                                onChange={handleInputChangeReg}
+                                                                required
                                                                 isInvalid={validatedReg && !between_Streets}
                                                             />
                                                             <Form.Control.Feedback type="invalid">
@@ -271,13 +288,13 @@ export default function LoginRegistro () {
                                                     <Col sm={6} lg={4}>
                                                         <Form.Group className="mb-3" controlId="cpRegister">
                                                             <Form.Label className="fw-bold">Código Postal</Form.Label>
-                                                            <Form.Control 
-                                                                type="text" 
-                                                                name="CP" 
-                                                                placeholder="12345" 
-                                                                value={CP} 
-                                                                onChange={handleInputChangeReg} 
-                                                                required 
+                                                            <Form.Control
+                                                                type="text"
+                                                                name="CP"
+                                                                placeholder="12345"
+                                                                value={CP}
+                                                                onChange={handleInputChangeReg}
+                                                                required
                                                                 isInvalid={validatedReg && !CP}
                                                             />
                                                             <Form.Control.Feedback type="invalid">
@@ -288,14 +305,14 @@ export default function LoginRegistro () {
                                                     <Col>
                                                         <Form.Group className="mb-3" controlId="refRegister">
                                                             <Form.Label className="fw-bold">Referencias de su domicilio</Form.Label>
-                                                            <Form.Control 
-                                                                as="textarea" 
-                                                                rows={3} 
-                                                                name="description" 
-                                                                placeholder="En frente de la tienda del señor Búho" 
-                                                                value={description} 
-                                                                onChange={handleInputChangeReg} 
-                                                                required 
+                                                            <Form.Control
+                                                                as="textarea"
+                                                                rows={3}
+                                                                name="description"
+                                                                placeholder="En frente de la tienda del señor Búho"
+                                                                value={description}
+                                                                onChange={handleInputChangeReg}
+                                                                required
                                                                 isInvalid={validatedReg && !description}
                                                             />
                                                             <Form.Control.Feedback type="invalid">
@@ -306,13 +323,13 @@ export default function LoginRegistro () {
                                                     <Col sm={12}>
                                                         <Form.Group className="mb-3" controlId="telRegister">
                                                             <Form.Label className="fw-bold">Teléfono</Form.Label>
-                                                            <Form.Control 
-                                                                type="number" 
-                                                                name="phone" 
-                                                                placeholder="1234567890" 
-                                                                value={phone} 
-                                                                onChange={handleInputChangeReg} 
-                                                                required 
+                                                            <Form.Control
+                                                                type="number"
+                                                                name="phone"
+                                                                placeholder="1234567890"
+                                                                value={phone}
+                                                                onChange={handleInputChangeReg}
+                                                                required
                                                                 isInvalid={validatedReg && !phone}
                                                             />
                                                             <Form.Control.Feedback type="invalid">
@@ -323,13 +340,13 @@ export default function LoginRegistro () {
                                                     <Col sm={12}>
                                                         <Form.Group className="mb-3" controlId="emailRegister">
                                                             <Form.Label className="fw-bold">Correo electrónico</Form.Label>
-                                                            <Form.Control 
-                                                                type="text" 
-                                                                name="email" 
-                                                                placeholder="tuisty_elmapache@tuis.com.mx" 
-                                                                value={email} 
-                                                                onChange={handleInputChangeReg} 
-                                                                required 
+                                                            <Form.Control
+                                                                type="text"
+                                                                name="email"
+                                                                placeholder="tuisty_elmapache@tuis.com.mx"
+                                                                value={email}
+                                                                onChange={handleInputChangeReg}
+                                                                required
                                                                 isInvalid={validatedReg && !email}
                                                             />
                                                             <Form.Control.Feedback type="invalid">
@@ -340,13 +357,13 @@ export default function LoginRegistro () {
                                                     <Col lg={6}>
                                                         <Form.Group className="mb-3" controlId="passwordRegister">
                                                             <Form.Label className="fw-bold">Contraseña</Form.Label>
-                                                            <Form.Control 
-                                                                type="password" 
-                                                                name="password" 
-                                                                placeholder="**********" 
-                                                                value={password} 
-                                                                onChange={handleInputChangeReg} 
-                                                                required 
+                                                            <Form.Control
+                                                                type="password"
+                                                                name="password"
+                                                                placeholder="**********"
+                                                                value={password}
+                                                                onChange={handleInputChangeReg}
+                                                                required
                                                                 isInvalid={validatedReg && !password}
                                                             />
                                                             <Form.Control.Feedback type="invalid">
@@ -357,13 +374,13 @@ export default function LoginRegistro () {
                                                     <Col lg={6}>
                                                         <Form.Group className="mb-3" controlId="confPasswordRegister">
                                                             <Form.Label className="fw-bold">Confirmar Contraseña</Form.Label>
-                                                            <Form.Control 
-                                                                type="password" 
-                                                                name="repetPassword" 
-                                                                placeholder="**********" 
-                                                                value={repetPassword} 
-                                                                onChange={handleInputChangeReg} 
-                                                                required 
+                                                            <Form.Control
+                                                                type="password"
+                                                                name="repetPassword"
+                                                                placeholder="**********"
+                                                                value={repetPassword}
+                                                                onChange={handleInputChangeReg}
+                                                                required
                                                                 isInvalid={validatedReg && repetPassword !== password}
                                                             />
                                                             <Form.Control.Feedback type="invalid">
@@ -372,6 +389,7 @@ export default function LoginRegistro () {
                                                         </Form.Group>
                                                     </Col>
                                                 </Row>
+                                                <ReCAPTCHA sitekey='6Lc5lNYqAAAAANUoVubFJ1tgqQBgU-e3hGFgbg6H' onChange={onChange} className='mb-2 g-recaptcha'/>
                                                 <Button type="submit" className="btn btn-register btn-lg w-100">
                                                     Registrarse
                                                 </Button>
@@ -388,7 +406,7 @@ export default function LoginRegistro () {
                             </Col>
                         </Row>
                     </Container>
-                    <FloatingWhatsAppButton/>
+                    <FloatingWhatsAppButton />
                     <FooterComponent />
                 </>
             )}

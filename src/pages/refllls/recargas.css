@@ -1,0 +1,64 @@
+
+/* Card Styles */
+.card-sl {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card-image img {
+    max-height: 80%;
+    max-width: 60%;
+    padding-top: 1rem;
+}
+
+.card-heading {
+    background: #fff;
+    color: #6149B7;
+}
+
+.card-text {
+    padding: 10px 15px;
+    background: #fff;
+    font-size: 16px;
+    color: #636262;
+}
+
+.card-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    width: 80%;
+    margin: 10px auto;
+    background-color: #6149B7;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.card-button:hover {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #6149B7;
+    border: 3px solid #6149B7;
+}
+
+.title-recargas{
+  color: #0C71C3;
+}
+
+.modal-btn-shop {
+    background-color: #6149B7;
+    border: 1px solid #6149B7;
+}
+
+.modal-btn-shop:hover {
+    background-color: #ffffff;
+    color: #6149B7;
+    border: 2px solid #6149B7;
+}
+

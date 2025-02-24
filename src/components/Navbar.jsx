@@ -33,26 +33,26 @@ export default function NavbarComponent() {
   return (
     <header className="header-color">
       {/* Navigation Bar */}
-      <Navbar expand="lg" className="border-bottom border-nav py-3">
+      <Navbar expand="xl" className="border-bottom border-nav py-3">
         <Container fluid>
-          <Navbar.Brand as={Link} to="/" className="d-block d-lg-none logo-left">
+          <Navbar.Brand as={Link} to="/" className="d-block d-xl-none logo-left">
             <img
               className="logo-header"
               src="/img/Tuis-Logotipo-Blanco.png"
               alt="logo-tuis"
             />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarSupportedContent" className='toggle-color'/>
-          <div className='d-block d-lg-none'>
+          <Navbar.Toggle aria-controls="navbarSupportedContent" className='toggle-color' />
+          <div className='d-block d-xl-none'>
             <Nav.Link className='d-block fs-4 text-decoration-none text-white' onClick={handleShow}>
-              <FontAwesomeIcon  icon={faCartShopping} className='fs-3'/>
+              <FontAwesomeIcon icon={faCartShopping} className='fs-3' />
               {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
             </Nav.Link>
           </div>
           <Navbar.Collapse id="navbarSupportedContent" className='m-0'>
             <div className="d-lg-flex flex-column align-items-center align-items-lg-start m-lg-auto pt-3">
               {/* Logo visible en tamaños grandes */}
-              <Navbar.Brand as={Link} to="/" className=" d-none d-lg-block logo-header">
+              <Navbar.Brand as={Link} to="/" className=" d-none d-xl-block logo-header">
                 <img
                   className="logo-header"
                   src="/img/Tuis-Logotipo-Blanco.png"
@@ -95,7 +95,10 @@ export default function NavbarComponent() {
                 <Nav.Link as={Link} to="/nosotros" className="mx-2 mx-lg-3">
                   Nosotros
                 </Nav.Link>
-                {/*<Nav>
+                <Nav.Link as={Link} to="/Recargas" className="mx-2 mx-lg-3">
+                  Recargas
+                </Nav.Link>
+                <Nav>
                   {userLoggedIn ? (
                     <Nav.Link as={Link} to="/" className="mx-2 mx-lg-3" onClick={(e) => { e.preventDefault(); AuthLogout(); }}>
                       Cerrar sesión
@@ -106,10 +109,10 @@ export default function NavbarComponent() {
                     </Nav.Link>
                   )}
                 </Nav>
-                <Nav.Link className='d-none d-lg-block fs-4 text-decoration-none text-white' onClick={handleShow}>
-                  <FontAwesomeIcon  icon={faCartShopping} className='fs-3'/>
+                <Nav.Link className='d-none d-xl-block fs-4 text-decoration-none text-white' onClick={handleShow}>
+                  <FontAwesomeIcon icon={faCartShopping} className='fs-3' />
                   {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
-                </Nav.Link>*/} 
+                </Nav.Link>
               </Nav>
             </div>
           </Navbar.Collapse>
@@ -120,7 +123,7 @@ export default function NavbarComponent() {
           <Offcanvas.Title className='fs-2 fw-bold'> Carrito {cartCount > 0 && <span className='fs-5 fw-normal'>{cartCount} producto(s)</span>}</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          {cart.length ===0 ? (
+          {cart.length === 0 ? (
             <>
               <div className='p-3 text-center'>
                 <Container className='p-2'>
@@ -133,21 +136,21 @@ export default function NavbarComponent() {
                 <p className="fw-bold fs-5">El carrito esta vacío</p>
                 <div className='pt-1'>
                   <Button className="text-uppercase mx-2 mb-1 btn-home"
-                  onClick={() => {
-                    navigate("/")
-                    window.scrollTo(0, 0);
-                  }}
-                >
-                  Ir a inicio
-                </Button>
-                <Button className="text-uppercase mx-2 mb-1 btn-buy"
-                  onClick={() => {
-                    navigate("/paquetes")
-                    window.scrollTo(0, 0);
-                  }}
-                >
-                  Comprar Sim
-                </Button>
+                    onClick={() => {
+                      navigate("/")
+                      window.scrollTo(0, 0);
+                    }}
+                  >
+                    Ir a inicio
+                  </Button>
+                  <Button className="text-uppercase mx-2 mb-1 btn-buy"
+                    onClick={() => {
+                      navigate("/paquetes")
+                      window.scrollTo(0, 0);
+                    }}
+                  >
+                    Comprar Sim
+                  </Button>
                 </div>
               </div>
             </>
@@ -167,7 +170,7 @@ export default function NavbarComponent() {
                         </div>
                         <div className='col-md-3 col-lg-3 col-xl-2 d-flex'>
                           <Button variant="outline-light" size="sm" onClick={() => decreaseQuantity(plan.id)} className='mx-1 fw-bold text-dark'>-</Button>{' '}
-                            {plan.quantity}{' '}
+                          {plan.quantity}{' '}
                           <Button variant="outline-light" size="sm" onClick={() => increaseQuantity(plan.id)} className='mx-1 fw-bold text-dark'>+</Button>
                         </div>
                         <div className='col-md-3 col-lg-2 col-xl-2 offset-lg-1'>
@@ -175,7 +178,7 @@ export default function NavbarComponent() {
                         </div>
                         <div className='col-md-1 col-lg-1 col-xl-1 text-end'>
                           <span variant="danger" size="sm" onClick={() => removeFromCart(plan.id)}>
-                            <FontAwesomeIcon icon={faRectangleXmark} className='fs-3 icon-out'/>
+                            <FontAwesomeIcon icon={faRectangleXmark} className='fs-3 icon-out' />
                           </span>
                         </div>
                       </div>
@@ -184,24 +187,24 @@ export default function NavbarComponent() {
                 </Container>
               ))}
             </>
-        )}
-        {cart.length > 0 && (
-          <>
-            <div className="text-end">
-              <h3 className="mt-2">Total: ${totalPrice.toFixed(2)}</h3>
-              <div className="pt-1 pb-4">
-                <Button size="lg" className="text-uppercase btn-pay"
-                  onClick={() => {
-                    navigate("/carrito")
-                    window.scrollTo(0, 0);
-                  }}
-                >
-                  Ir al carrito
-                </Button>
+          )}
+          {cart.length > 0 && (
+            <>
+              <div className="text-end">
+                <h3 className="mt-2">Total: ${totalPrice.toFixed(2)}</h3>
+                <div className="pt-1 pb-4">
+                  <Button size="lg" className="text-uppercase btn-pay"
+                    onClick={() => {
+                      navigate("/carrito")
+                      window.scrollTo(0, 0);
+                    }}
+                  >
+                    Ir al carrito
+                  </Button>
+                </div>
               </div>
-            </div>
-          </>
-        )}
+            </>
+          )}
         </Offcanvas.Body>
       </Offcanvas>
     </header>

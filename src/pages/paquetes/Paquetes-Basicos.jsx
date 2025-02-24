@@ -1,5 +1,5 @@
 import './Paquetes-Basicos.css'
-import {useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import NavbarComponent from "../../components/Navbar";
 import FooterComponent from "../../components/Footer";
 import HeroTuisty from "../../components/Hero-Tuisty";
@@ -9,42 +9,42 @@ import Loading from '../../components/Loading';
 import ShippingTerms from '../../components/Shipping-Terms';
 import FloatingWhatsAppButton from '../../components/WhatsApp-Button';
 
-function PaquetesBasicos () {
+function PaquetesBasicos() {
     const { title, subtitle, backgroundImage, links } = heroData.heroPaqueteBasico;
     const { plans } = planesData.planesBasicosPage;
     const [loading, setLoading] = useState(true);
 
-        useEffect(() => {
+    useEffect(() => {
         const fetchData = async () => {
             await new Promise((resolve) => setTimeout(resolve, 2000));
             setLoading(false);
         };
 
         fetchData();
-        }, []);
+    }, []);
 
     return (
         <>
-        <Loading loading={loading} />
-        {!loading && (
-            <>
-                <NavbarComponent/>
-                <HeroTuisty
-                    title={title}
-                    subtitle={subtitle}
-                    backgroundImage={backgroundImage}
-                    links={links}
-                />
-                <main>
-                    <PlanesSection
-                        plans={plans}
+            <Loading loading={loading} />
+            {!loading && (
+                <>
+                    <NavbarComponent />
+                    <HeroTuisty
+                        title={title}
+                        subtitle={subtitle}
+                        backgroundImage={backgroundImage}
+                        links={links}
                     />
-                    <ShippingTerms/>
-                </main>
-                <FloatingWhatsAppButton/>
-                <FooterComponent/>
-            </>
-        )}
+                    <main>
+                        <PlanesSection
+                            plans={plans}
+                        />
+                        <ShippingTerms />
+                    </main>
+                    <FloatingWhatsAppButton />
+                    <FooterComponent />
+                </>
+            )}
         </>
     );
 }
