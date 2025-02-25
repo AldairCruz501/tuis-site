@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Paquetes from './pages/Paquetes';
 import PaquetesBasicos from './pages/paquetes/Paquetes-Basicos';
@@ -17,7 +17,6 @@ import LoginRegistro from './pages/Login-Registro';
 import usePageTitle from './hooks/usePageTitle';
 import Carrito from './pages/Cart/Carrito';
 import { CartProvider } from './Context/Context';
-import { useEffect } from 'react';
 import Pasarela from './pages/Pasarela/Pasarela';
 import Success from './pages/Cart/success';
 import { Recargas } from './pages/refllls/recargas';

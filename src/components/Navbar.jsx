@@ -12,7 +12,7 @@ import { useCart } from '../Context/Context';
 export default function NavbarComponent() {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showOffcanvas, setShowOffcanvas] = useState(false);
-  const [imeiVerified, setImeiVerified] = useState(false);
+  //const [imeiVerified, setImeiVerified] = useState(false);
 
   const handleMouseEnter = () => setShowDropdown(true);
   const handleMouseLeave = () => setShowDropdown(false);
