@@ -9,6 +9,7 @@ import { heroData,planesData } from "../../data";
 import Loading from '../../components/Loading';
 import ShippingTerms from '../../components/Shipping-Terms';
 import FloatingWhatsAppButton from '../../components/WhatsApp-Button';
+import AppStoreTuis from '../../components/AppStoreTuis';
 
 function PaquetesTuisty () {
     const { title, subtitle, backgroundImage} = heroData.heroPaqueteTuisty;
@@ -40,6 +41,7 @@ function PaquetesTuisty () {
                             plans={plans}
                         />
                         <ShippingTerms/>
+                        <AppStoreTuis/>
                     </main>
                     <FloatingWhatsAppButton/>
                     <FooterComponent/>

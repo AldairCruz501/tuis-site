@@ -8,6 +8,7 @@ import Loading from '../../components/Loading';
 import PlanesSection from '../../components/Planes-Section';
 import ShippingTerms from '../../components/Shipping-Terms';
 import FloatingWhatsAppButton from '../../components/WhatsApp-Button';
+import AppStoreTuis from '../../components/AppStoreTuis';
 
 function PaquetesAnuales () {
     const { title, subtitle, paragraph, backgroundImage } = heroData.heroPaqueteAnual;
@@ -40,6 +41,7 @@ function PaquetesAnuales () {
                             plans={plans}
                         />
                         <ShippingTerms/>
+                        <AppStoreTuis/>
                     </main>
                     <FloatingWhatsAppButton/>
                     <FooterComponent/>

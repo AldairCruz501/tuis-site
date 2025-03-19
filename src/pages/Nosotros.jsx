@@ -8,6 +8,8 @@ import { Fade, Slide } from 'react-awesome-reveal';
 import Loading from '../components/Loading';
 import { useNavigate } from 'react-router-dom';
 import FloatingWhatsAppButton from '../components/WhatsApp-Button';
+import ShippingTerms from '../components/Shipping-Terms';
+import AppStoreTuis from '../components/AppStoreTuis';
 
 export default function Nosotros () {
 
@@ -186,6 +188,8 @@ export default function Nosotros () {
                         </Row>
                     </Container>
                 </section>
+                <ShippingTerms/>
+                <AppStoreTuis/>
                 <FloatingWhatsAppButton/>
                 <FooterComponent/>
             </>

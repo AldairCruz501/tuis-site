@@ -8,6 +8,8 @@ import { Fade, JackInTheBox } from "react-awesome-reveal";
 import Loading from '../components/Loading';
 import ShippingTerms from '../components/Shipping-Terms';
 import FloatingWhatsAppButton from '../components/WhatsApp-Button';
+import AppStoreTuis from '../components/AppStoreTuis';
+
 
 
 function Paquetes() {
@@ -213,6 +215,7 @@ function Paquetes() {
                         </Container>
                     </section>
                     <ShippingTerms/>
+                    <AppStoreTuis/>
                 </main>
                 <FloatingWhatsAppButton/>
                 <FooterComponent/>

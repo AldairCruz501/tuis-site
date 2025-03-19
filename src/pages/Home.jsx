@@ -13,6 +13,9 @@ import Loading from '../components/Loading';
 import PlanesMain from '../components/Planes-Main';
 import { planesData } from '../data';
 import FloatingWhatsAppButton from '../components/WhatsApp-Button';
+import AppStoreTuis from '../components/AppStoreTuis';
+
+
 
 function Home() {
   const navigate = useNavigate();
@@ -294,6 +297,7 @@ function Home() {
                   </Container>
                 </div>
                 </section>
+                <AppStoreTuis/>
               </main>
               <FloatingWhatsAppButton/>
               <FooterComponent/>

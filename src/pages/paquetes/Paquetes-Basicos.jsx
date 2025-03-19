@@ -8,6 +8,8 @@ import { heroData, planesData } from "../../data";
 import Loading from '../../components/Loading';
 import ShippingTerms from '../../components/Shipping-Terms';
 import FloatingWhatsAppButton from '../../components/WhatsApp-Button';
+import AppStoreTuis from '../../components/AppStoreTuis';
+
 
 function PaquetesBasicos() {
     const { title, subtitle, backgroundImage, links } = heroData.heroPaqueteBasico;
@@ -40,6 +42,7 @@ function PaquetesBasicos() {
                             plans={plans}
                         />
                         <ShippingTerms />
+                        <AppStoreTuis/>
                     </main>
                     <FloatingWhatsAppButton />
                     <FooterComponent />

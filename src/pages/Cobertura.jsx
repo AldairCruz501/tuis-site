@@ -6,6 +6,8 @@ import { Container } from 'react-bootstrap';
 import { Fade } from 'react-awesome-reveal';
 import Loading from '../components/Loading';
 import FloatingWhatsAppButton from "../components/WhatsApp-Button";
+import ShippingTerms from "../components/Shipping-Terms";
+import AppStoreTuis from "../components/AppStoreTuis";
 
 
 export default function Cobertura () {
@@ -40,6 +42,8 @@ export default function Cobertura () {
                                 </div>
                             </Fade>
                         </Container>
+                        <ShippingTerms/>
+                        <AppStoreTuis/>
                     </main>
                     <FloatingWhatsAppButton/>
                     <FooterComponent/>
