@@ -1,6 +1,5 @@
 import axios from "axios";
 import Swal from "sweetalert2";
-const token = import.meta.env.VITE_TOKE;
 
 export const verifyImei = async (imei, setLoading) => {
   // Validación del IMEI
@@ -35,7 +34,7 @@ export const verifyImei = async (imei, setLoading) => {
     const response = await axios.post(url, params, {
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`, // Enviar el Bearer token en los encabezados
+        // Authorization: Bearer ${token},
       },
     });
 
@@ -75,7 +74,7 @@ export const verifyImei = async (imei, setLoading) => {
     Swal.fire({
       icon: "error",
       title: "Error de conexión",
-      text: `Ocurrió un problema al comunicarse con el servidor. \nIMEI ingresado: ${imei}\nDetalle: ${error.message}`,
+      text: "Ocurrió un problema al comunicarse con el servidor. \nIMEI ingresado: ${imei}\nDetalle: ${error.message}",
     });
   }
 };

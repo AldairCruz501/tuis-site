@@ -43,7 +43,7 @@ export default function NavbarComponent() {
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarSupportedContent" className='toggle-color' />
-          <div className='d-block d-xl-none'>
+          <div className='d-none'>
             <Nav.Link className='d-block fs-4 text-decoration-none text-white' onClick={handleShow}>
               <FontAwesomeIcon icon={faCartShopping} className='fs-3' />
               {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
@@ -95,7 +95,7 @@ export default function NavbarComponent() {
                 <Nav.Link as={Link} to="/nosotros" className="mx-2 mx-lg-3">
                   Nosotros
                 </Nav.Link>
-                <Nav.Link as={Link} to="/recargas" className="mx-2 mx-lg-3">
+                {/*<Nav.Link as={Link} to="/recargas" className="mx-2 mx-lg-3">
                   Recargas
                 </Nav.Link>
                 <Nav>
@@ -112,7 +112,7 @@ export default function NavbarComponent() {
                 <Nav.Link className='d-none d-xl-block fs-4 text-decoration-none text-white' onClick={handleShow}>
                   <FontAwesomeIcon icon={faCartShopping} className='fs-3' />
                   {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
-                </Nav.Link>
+                </Nav.Link>*/}
               </Nav>
             </div>
           </Navbar.Collapse>
