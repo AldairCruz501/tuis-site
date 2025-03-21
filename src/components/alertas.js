@@ -40,39 +40,33 @@ export const verifyImei = async (imei, setLoading) => {
 
     setLoading(false);
 
-    // Mostrar alertas dependiendo de la respuesta
+    // Procesar respuesta
     const data = response.data;
-    if (data.result?.homologated) {
+    const homologated = data.result?.homologated || "";
+    const volteSupport = data.result?.volte_support === "SI" ? "Sí" : "No";
+    const band28Support = data.result?.band28_support === "SI" ? "Sí" : "No";
+
+    if (homologated === "COMPATIBLE PROBADO" || homologated === "COMPATIBLE HOMOLOGADO") {
       Swal.fire({
-        icon:
-          data.result.homologated === "COMPATIBLE PROBADO"
-            ? "success"
-            : "warning",
-        title:
-          data.result.homologated === "COMPATIBLE PROBADO"
-            ? "¡Compatible!"
-            : "No compatible",
-        text: `IMEI ingresado: ${imei}\n`,
+        icon: "success",
+        title: "¡Compatible!",
+        html: `<b>IMEI:</b> ${imei} <br> <b>Banda 28:</b> ${band28Support} <br> <b>VoLTE:</b> ${volteSupport}`, // Utiliza la plantilla de HTML con etiquetas <b> para resaltar el textoVoLTE: ${volteSupport}`,
       });
     } else {
       Swal.fire({
         icon: "error",
-        title: "Error",
-        text: `IMEI ingresado: ${imei}\n${
-          data.message || "El IMEI no es compatible."
-        }`,
+        title: "No compatible",
+        html: `<b>IMEI:</b> ${imei} <br> <b> Banda 28: </b> ${band28Support} <br> <b>VoLTE:</b> ${volteSupport}`, // Utiliza la plantilla de HTML con etiquetas <b> para resaltar el textoVoLTE: ${volteSupport}`,
       });
     }
   } catch (error) {
     console.error("Error en la solicitud:", error);
-
     setLoading(false);
 
-    // Mostrar mensaje de error
     Swal.fire({
       icon: "error",
       title: "Error de conexión",
-      text: "Ocurrió un problema al comunicarse con el servidor. \nIMEI ingresado: ${imei}\nDetalle: ${error.message}",
+      html: `Ocurrió un problema al comunicarse con el servidor. <br> <b>IMEI ingresado:</b> ${imei} <br> <b> Detalle: </b> ${error.message}`,
     });
   }
 };
