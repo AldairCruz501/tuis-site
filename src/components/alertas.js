@@ -1,6 +1,7 @@
 import axios from "axios";
 import Swal from "sweetalert2";
 
+
 export const verifyImei = async (imei, setLoading) => {
   // Validación del IMEI
   if (!/^\d*$/.test(imei)) {
@@ -24,17 +25,14 @@ export const verifyImei = async (imei, setLoading) => {
   // Mostrar estado de carga
   setLoading(true);
   try {
-    const url = "/imeis";
+    const url = "https://tuis.cero208.mx/imeis";
     const params = {
       imei,
     };
 
-    console.log("Enviando solicitud con los siguientes parámetros:", params);
-
     const response = await axios.post(url, params, {
       headers: {
         "Content-Type": "application/json",
-        // Authorization: Bearer ${token},
       },
     });
 
