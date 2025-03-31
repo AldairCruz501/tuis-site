@@ -3,7 +3,7 @@ import './Home.css'
 import { useEffect, useState } from "react";
 import NavbarComponent from '../components/Navbar';
 import FooterComponent from '../components/Footer';
-import { Carousel, Container, Button, Row, Col, Image } from 'react-bootstrap';
+import { Carousel, Container, Button, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faSnapchat, faTelegram, faWhatsapp, faXTwitter} from '@fortawesome/free-brands-svg-icons';
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
@@ -111,21 +111,41 @@ function Home() {
                 </Container>
               </section>
               <section>
-                  <Fade>
-                    <Link to="/terminos-y-condiciones"
-                      onClick={() => {
-                        window.scrollTo(0, 0);
-                      }}
-                    className="fs-6 text-white fw-bold text-decoration-none link-btn">
-                      <Image 
-                        src="/img/banner_web_tuis.jpg" 
-                        alt="Banner-Tuis"
-                        fluid
-                        className="d-block w-100"
-                      />
-                    </Link>
-                  </Fade>
-                </section>
+                <Fade>
+                  <Carousel fade controls={false} indicators={false}>
+                    <Carousel.Item interval={6000}>
+                      <Link
+                        to="/terminos-y-condiciones"
+                        onClick={() => {
+                          window.scrollTo(0, 0);
+                        }}
+                        className="fs-6 text-white fw-bold text-decoration-none link-btn"
+                      >
+                        <img
+                          src="/img/eSim5GB.jpg"
+                          alt="Banner-Tuis"
+                          className="d-block w-100"
+                        />
+                      </Link>
+                    </Carousel.Item >
+                    <Carousel.Item interval={6000}>
+                      <Link
+                          to="/terminos-y-condiciones"
+                          onClick={() => {
+                            window.scrollTo(0, 0);
+                          }}
+                          className="fs-6 text-white fw-bold text-decoration-none link-btn"
+                        >
+                          <img
+                            src="/img/eSim15GB.jpg"
+                            alt="Banner-Tuis"
+                            className="d-block w-100"
+                          />
+                        </Link>
+                    </Carousel.Item>
+                  </Carousel>
+                </Fade>
+              </section>
               <main>
                 <section>
                   <div className="tuisty-container">
