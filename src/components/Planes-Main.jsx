@@ -137,9 +137,9 @@ const PlanesMain = ({ plans }) => {
                                                 Llamadas y SMS Ilimitados a:
                                             </h4>
                                             <div className=' d-flex justify-content-center pt-3 mb-3'>
-                                                <img src="/img/canada.png" alt="can-flag" className='w-25 mx-1' />
-                                                <img src="/img/estados-unidos.png" alt="usa-flag" className='w-25 mx-1' />
-                                                <img src="/img/mexico.png" alt="mx-flag" className='w-25 mx-1' />
+                                                <img src="/img/canada.png" alt="can-flag" className='w-25 mx-1' loading="lazy" />
+                                                <img src="/img/estados-unidos.png" alt="usa-flag" className='w-25 mx-1' loading="lazy" />
+                                                <img src="/img/mexico.png" alt="mx-flag" className='w-25 mx-1' loading="lazy" />
                                             </div>
                                         </div>
                                         {/*<Button

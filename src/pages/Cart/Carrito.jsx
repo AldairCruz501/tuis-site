@@ -92,6 +92,7 @@ const Carrito = () => {
                   src="/img/carrito-vacio.png"
                   className="img-fluid rounded-3"
                   alt="carrito-vacio"
+                  loading="lazy"
                 />
               </Container>
               <p className="fw-bold fs-5">El carrito esta vacío</p>
@@ -131,7 +132,7 @@ const Carrito = () => {
               <tbody>
                 {cart.map((plan, id) => (
                   <tr key={id}>
-                    <td className="text-center m-0"><img src={plan.imgPlan} alt="img-plan" className="img-plan" /></td>
+                    <td className="text-center m-0"><img src={plan.imgPlan} alt="img-plan" className="img-plan" loading="lazy" /></td>
                     {/* name plan */}
                     <td>{plan.name} {plan.dataPlus} Ilimitado {plan.duration}</td>
                     {/* price plan */}

@@ -56,11 +56,13 @@ function Home() {
                         className="d-none d-lg-block w-75 m-auto"
                         src="img/banner-tuis1.png"
                         alt="Slide 1"
+                        loading="lazy"
                         />
                         <img
                           className="d-block d-lg-none w-100 m-auto"
                           src="img/banner_carrusel_1.png"
                           alt="Slide 1"
+                          loading="lazy"
                         />
                         <Carousel.Caption>
                         <div className='animated-button-container'>
@@ -81,11 +83,13 @@ function Home() {
                         className="d-none d-lg-block w-75 m-auto"
                         src="img/banner-tuis3.png"
                         alt="Slide 2"
+                        loading="lazy"
                       />
                       <img
                         className="d-block d-lg-none w-100 m-auto"
                         src="img/banner_carrusel_3.png"
                         alt="Slide 2"
+                        loading="lazy"
                       />
                     </Carousel.Item>
                   </Carousel>
@@ -136,6 +140,7 @@ function Home() {
                           src="/img/eSim5GB.jpg"
                           alt="Banner-Tuis"
                           className="d-block w-100"
+                          loading="lazy"
                         />
                       </Link>
                     </Carousel.Item >
@@ -151,6 +156,7 @@ function Home() {
                             src="/img/eSim15GB.jpg"
                             alt="Banner-Tuis"
                             className="d-block w-100"
+                            loading="lazy"
                           />
                         </Link>
                     </Carousel.Item>
@@ -206,6 +212,7 @@ function Home() {
                           src="img/chica-cel.png"
                           alt="Chica feliz"
                           className="img-fluid pt-5"
+                          loading="lazy"
                         />
                       </Col>
                     </Row>
@@ -227,6 +234,7 @@ function Home() {
                           src="img/metodos-de-pago.png"
                           alt="Metodos-de-pago"
                           className="img-fluid w-50"
+                          loading="lazy"
                         />
                         </div>
                         <div className='mx-0 mx-md-5'>
@@ -251,6 +259,7 @@ function Home() {
                             src="img/mapache-delivery.png"
                             alt="Mapache-Delivery"
                             className="img-fluid pt-3 pt-md-0"
+                            loading="lazy"
                           />
                       </Slide>
                       </Col>
@@ -273,6 +282,7 @@ function Home() {
                             src="img/Tuisty.png"
                             alt="Mapache-Delivery"
                             className="img-fluid"
+                            loading="lazy"
                           />
                       </Slide>
                       </Col>
@@ -284,6 +294,7 @@ function Home() {
                               src="img/Tuis-logotipo.png"
                               className="w-25"
                               alt="tuis-log"
+                              loading="lazy"
                             />
                           </h3>
                         </div>
@@ -301,6 +312,7 @@ function Home() {
                               src="img/mapa-mexico.png"
                               alt="mapa-mexico"
                               className="w-50"
+                              loading="lazy"
                             />
                             <p className="pt-2 tuisty-text">Cobertura Nacional</p>
                           </Col>
@@ -309,6 +321,7 @@ function Home() {
                               src="img/precios.png"
                               alt="precios"
                               className="w-50"
+                              loading="lazy"
                             />
                             <p className="pt-2 tuisty-text">
                               Excelentes ofertas y precios competitivos
@@ -319,6 +332,7 @@ function Home() {
                               src="img/portabilidad.png"
                               alt="portabilidad"
                               className="w-50"
+                              loading="lazy"
                             />
                             <p className="pt-2 tuisty-text">Porta tu número con nosotros</p>
                           </Col>

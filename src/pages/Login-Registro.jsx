@@ -143,7 +143,7 @@ export default function LoginRegistro() {
                     <Container className={`mt-4 mb-4 p-4 tuisty-login ${activeTab === 'register' ? 'tuisty-login-expanded' : ''}`}>
                         <Row>
                             <Col md={3} className="d-flex align-items-center">
-                                <img src="/img/Tuisty.png" alt="tuisty-login" className="img-fluid" />
+                                <img src="/img/Tuisty.png" alt="tuisty-login" className="img-fluid" loading="lazy" />
                             </Col>
                             <Col md={6}>
                                 <Tab.Container activeKey={activeTab} onSelect={setActiveTab}>
@@ -402,7 +402,7 @@ export default function LoginRegistro() {
                                 </Tab.Container>
                             </Col>
                             <Col md={3} className="d-flex align-items-center">
-                                <img src="/img/Tuisty.png" alt="tuisty-register" className="img-fluid rounded" />
+                                <img src="/img/Tuisty.png" alt="tuisty-register" className="img-fluid rounded" loading="lazy" />
                             </Col>
                         </Row>
                     </Container>

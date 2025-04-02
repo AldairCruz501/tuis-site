@@ -104,7 +104,7 @@ export function Recargas() {
                         <div key={plan.id} className="mb-4 col-md-4">
                             <div className="card-sl">
                                 <div className="card-image">
-                                    <img src="img/esencial-idea.png" className="m-auto" alt={plan.name} />
+                                    <img src="img/esencial-idea.png" className="m-auto" alt={plan.name} loading="lazy" />
                                 </div>
                                 <div className="card-heading fs-2 fw-bold p-2">{plan.name}</div>
                                 <div className="card-text">{plan.description}</div>
@@ -124,6 +124,7 @@ export function Recargas() {
                         alt={selectedPlan?.name}
                         className="position-absolute top-0 start-50 translate-middle"
                         style={{ width: "100px", height: "100px" }} 
+                        loading="lazy"
                     />
                 </Modal.Header>
                 <div className="modal-content border-0 w-75 mx-auto text-center">

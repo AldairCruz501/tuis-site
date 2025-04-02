@@ -22,12 +22,12 @@ const AppStoreTuis = () => {
               <div className='mt-5 d-flex pb-4'>
                 <div className='m-auto w-50'>
                     <a href="https://play.google.com/store/apps/details?id=io.ionic.inbtel&hl=es_MX" target='_blank' className='m-0 p-0'>
-                        <img src="/img/google-play-badge.png" alt="" className='img-fluid me-3' />
+                        <img src="/img/google-play-badge.png" alt="" className='img-fluid me-3' loading="lazy" />
                     </a>
                 </div>
                 <div className='m-auto w-50'>
                     <a href="https://apps.apple.com/mx/app/inbtel-movil/id6478967808" target='_blank'>
-                        <img src="/img/Apple-App-Store-Logo.png" alt="" className='img-fluid mx-3' />
+                        <img src="/img/Apple-App-Store-Logo.png" alt="" className='img-fluid mx-3' loading="lazy" />
                     </a>
                 </div>
               </div>
@@ -39,6 +39,7 @@ const AppStoreTuis = () => {
                     src="/img/App-Tuis.png"
                     alt="Mapache-Delivery"
                     className="img-fluid"
+                    loading="lazy"
                     />
                 </div>
             </Fade>

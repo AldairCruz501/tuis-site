@@ -68,6 +68,7 @@ function Paquetes() {
                                                 src="img/mapa-mexico.png"
                                                 alt="mapa-mexico"
                                                 className="w-75"
+                                                loading="lazy"
                                             />
                                             <p className="pt-2 fs-6 fw-bold">
                                                 Cobertura extendida para que 
@@ -80,6 +81,7 @@ function Paquetes() {
                                                 src="img/precios.png"
                                                 alt="precios"
                                                 className="w-50"
+                                                loading="lazy"
                                             />
                                             <p className="pt-2 fs-6 fw-bold">
                                                 Planes personalizados que se ajustan
@@ -113,6 +115,7 @@ function Paquetes() {
                                             src="img/basicos.png"
                                             alt="basicos"
                                             className="w-75"
+                                            loading="lazy"
                                         />
                                         <Button 
                                             className='paq-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill mt-4 mb-4 border-light fs-5'
@@ -131,6 +134,7 @@ function Paquetes() {
                                             src="img/mensuales.png"
                                             alt="mensaules"
                                             className="w-75"
+                                            loading="lazy"
                                         />
                                         <Button 
                                             className='paq-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill mt-4 mb-4 border-light fs-5'
@@ -149,6 +153,7 @@ function Paquetes() {
                                             src="img/trimestrales.png"
                                             alt="trimestrales"
                                             className="w-75"
+                                            loading="lazy"
                                         />
                                         <Button 
                                             className='paq-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill mt-4 mb-4 border-light fs-5'
@@ -167,6 +172,7 @@ function Paquetes() {
                                             src="img/semestrales.png"
                                             alt="semestrales"
                                             className="w-75"
+                                            loading="lazy"
                                         />
                                         <Button 
                                             className='paq-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill mt-4 mb-4 border-light fs-5'
@@ -185,6 +191,7 @@ function Paquetes() {
                                             src="img/anuales.png"
                                             alt="anuales"
                                             className="w-75"
+                                            loading="lazy"
                                         />
                                         <Button 
                                             className='paq-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill mt-4 mb-4 border-light fs-5'

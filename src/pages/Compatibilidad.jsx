@@ -78,6 +78,7 @@ export default function Compatibilidad() {
                       height: "auto",
                       objectFit: "contain",
                     }}
+                    loading="lazy"
                   />
                 </Col>
               </Row>

@@ -20,6 +20,7 @@ export default function FooterComponent () {
                   className="footer-logo mt-5"
                   src="/img/Tuis-Logotipo-Blanco.png"
                   alt="logo-tuis"
+                  loading="lazy"
                 />
               </Link>
               <div className="social-icons">

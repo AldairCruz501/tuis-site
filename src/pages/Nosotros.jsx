@@ -41,6 +41,7 @@ export default function Nosotros () {
                                             src="img/tuis-nosotros.png"
                                             alt="basicos"
                                             className="img-fluid w-75"
+                                            loading="lazy"
                                         />
                                     </Col>
                                 </Fade>
@@ -98,6 +99,7 @@ export default function Nosotros () {
                                             src="img/precios.png"
                                             alt="precios"
                                             className="w-75"
+                                            loading="lazy"
                                         />
                                         <div className="pt-3 text-start">
                                             <h4 className='fw-bold fs-5'>Paquetes de Datos Accesibles</h4>
@@ -112,6 +114,7 @@ export default function Nosotros () {
                                             src="img/linea-mundial.png"
                                             alt="linea-mundial"
                                             className="w-75"
+                                            loading="lazy"
                                         />
                                         <div className="pt-3 text-start">
                                             <h4 className='fw-bold fs-5'>Cobertura Nacional e Internacional</h4>
@@ -125,6 +128,7 @@ export default function Nosotros () {
                                             src="img/telefonia-movil-rural.png"
                                             alt="telefonia-movil-rural"
                                             className="w-75"
+                                            loading="lazy"
                                         />
                                         <div className="pt-3 text-start">
                                             <h4 className='fw-bold fs-5'>Conectividad en Zonas Rurales</h4>
@@ -140,6 +144,7 @@ export default function Nosotros () {
                                             src="img/cropped-esencial-idea.png"
                                             alt="semestrales"
                                             className="w-75"
+                                            loading="lazy"
                                         />
                                         <div className="pt-3 text-start">
                                             <h4 className='fw-bold fs-5'>Paquetes de Datos Accesibles</h4>
@@ -163,6 +168,7 @@ export default function Nosotros () {
                                     alt="dale-tuis" 
                                     className='d-block mx-lg-auto img-fluid' 
                                     width="80%"
+                                    loading="lazy"
                                 />
                             </Col>
                             <Col lg={6}>
