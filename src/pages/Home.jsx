@@ -6,7 +6,7 @@ import FooterComponent from '../components/Footer';
 import { Carousel, Container, Button, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faSnapchat, faTelegram, faWhatsapp, faXTwitter} from '@fortawesome/free-brands-svg-icons';
-import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faChevronRight, faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate, Link } from 'react-router-dom';
 import { Fade, Slide } from 'react-awesome-reveal';
 import Loading from '../components/Loading';
@@ -39,7 +39,18 @@ function Home() {
               <NavbarComponent/>
               <section>
                 <Container fluid className="pt-4 pb-5 pb-lg-0">
-                  <Carousel>
+                  <Carousel
+                    prevIcon={
+                      <span className='btn-prev'>
+                        <FontAwesomeIcon icon={faChevronLeft}/>
+                      </span>
+                    }
+                    nextIcon={
+                      <span className='btn-next'>
+                        <FontAwesomeIcon icon={faChevronRight} />
+                      </span>
+                    } 
+                  >
                     <Carousel.Item>
                         <img
                         className="d-none d-lg-block w-75 m-auto"
@@ -68,12 +79,12 @@ function Home() {
                     <Carousel.Item>
                       <img
                         className="d-none d-lg-block w-75 m-auto"
-                        src="img/banner-tuis2.jpg"
+                        src="img/banner-tuis3.png"
                         alt="Slide 2"
                       />
                       <img
                         className="d-block d-lg-none w-100 m-auto"
-                        src="img/banner_carrusel_2.png"
+                        src="img/banner_carrusel_3.png"
                         alt="Slide 2"
                       />
                     </Carousel.Item>
@@ -113,7 +124,7 @@ function Home() {
               <section>
                 <Fade>
                   <Carousel fade controls={false} indicators={false}>
-                    <Carousel.Item interval={6000}>
+                    <Carousel.Item interval={5000}>
                       <Link
                         to="/terminos-y-condiciones"
                         onClick={() => {
@@ -128,7 +139,7 @@ function Home() {
                         />
                       </Link>
                     </Carousel.Item >
-                    <Carousel.Item interval={6000}>
+                    <Carousel.Item interval={5000}>
                       <Link
                           to="/terminos-y-condiciones"
                           onClick={() => {
