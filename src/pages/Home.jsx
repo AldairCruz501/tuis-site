@@ -160,6 +160,22 @@ function Home() {
                           />
                         </Link>
                     </Carousel.Item>
+                    <Carousel.Item interval={5000}>
+                      <Link
+                          to="/terminos-y-condiciones"
+                          onClick={() => {
+                            window.scrollTo(0, 0);
+                          }}
+                          className="fs-6 text-white fw-bold text-decoration-none link-btn"
+                        >
+                          <img
+                            src="/img/Promocion-Abril-Tuis.jpg"
+                            alt="Banner-Tuis"
+                            className="d-block w-100"
+                            loading="lazy"
+                          />
+                        </Link>
+                    </Carousel.Item>
                   </Carousel>
                 </Fade>
               </section>
