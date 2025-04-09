@@ -128,7 +128,7 @@ function Home() {
               <section>
                 <Fade>
                   <Carousel fade controls={false} indicators={false}>
-                    <Carousel.Item interval={5000}>
+                    <Carousel.Item interval={6000}>
                       <Link
                         to="/terminos-y-condiciones"
                         onClick={() => {
@@ -144,7 +144,7 @@ function Home() {
                         />
                       </Link>
                     </Carousel.Item >
-                    <Carousel.Item interval={5000}>
+                    <Carousel.Item interval={6000}>
                       <Link
                           to="/terminos-y-condiciones"
                           onClick={() => {
@@ -160,7 +160,7 @@ function Home() {
                           />
                         </Link>
                     </Carousel.Item>
-                    <Carousel.Item interval={5000}>
+                    <Carousel.Item interval={6000}>
                       <Link
                           to="/terminos-y-condiciones"
                           onClick={() => {
@@ -170,6 +170,22 @@ function Home() {
                         >
                           <img
                             src="/img/Promocion-Abril-Tuis.jpg"
+                            alt="Banner-Tuis"
+                            className="d-block w-100"
+                            loading="lazy"
+                          />
+                        </Link>
+                    </Carousel.Item>
+                    <Carousel.Item interval={6000}>
+                      <Link
+                          to="/terminos-y-condiciones"
+                          onClick={() => {
+                            window.scrollTo(0, 0);
+                          }}
+                          className="fs-6 text-white fw-bold text-decoration-none link-btn"
+                        >
+                          <img
+                            src="/img/2GB- EXTRAS-TUIS-WEB.jpg"
                             alt="Banner-Tuis"
                             className="d-block w-100"
                             loading="lazy"
