@@ -64,7 +64,7 @@ function TerminosCondiciones () {
                                                     </p>
                                                     <p className='text-body-secondary fs-6 text-justify'>
                                                         Las presentes Condiciones generan obligaciones entre Usted y Tuis. Por ello, Usted
-                                                        deberá  de leer detenidamente su contenido.Si usted no está  de acuerdo con cualquiera
+                                                        deberá  de leer detenidamente su contenido. Si usted no está  de acuerdo con cualquiera
                                                         de las condiciones o disposiciones establecidas en las presentes Condiciones, deberá 
                                                         abstenerse de utilizar la Plataforma, dar de baja su Usuario o cuenta y/o eliminar la
                                                         aplicación, según sea el caso.
@@ -77,7 +77,7 @@ function TerminosCondiciones () {
                                                             <li>
                                                                 Los Términos estipulados en el Contrato de Adhesión y el Aviso de Privacidad,
                                                                 los cuales se encuentran disponibles para su consulta en la página de internet de
-                                                                <a href="http://www.tuis.com.mx" target='_blank' className='link-conditions-tuis text-decoration-none'>Tuis</a>.
+                                                                <a href="http://www.tuis.com.mx" target='_blank' className='link-conditions-tuis text-decoration-none'> Tuis</a>.
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -134,16 +134,16 @@ function TerminosCondiciones () {
                                                         </p>
                                                         <ul className='text-body-secondary fs-6 list-style text-justify'>
                                                             <li>
-                                                                A través de la Plataforma,
+                                                                A través de la Plataforma.
                                                             </li>
                                                             <li>
-                                                                Aplicación Móvil,
+                                                                Aplicación Móvil.
                                                             </li>
                                                             <li>
-                                                                En los puntos de venta señalados,
+                                                                En los puntos de venta señalados.
                                                             </li>
                                                             <li>
-                                                                Distribuidor autorizado,
+                                                                Distribuidor autorizado.
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -254,7 +254,7 @@ function TerminosCondiciones () {
                                                             Al contratar los Servicios y/o Servicios Adicionales proporcionados por Tuis y, a su vez,
                                                             aceptar las presentes Condiciones, usted reconoce que el servicio de
                                                             telecomunicaciones es un servicio concesionado y regulado por los Estados Unidos
-                                                            Mexicanos a través por el Instituto Federal de Telecomunicaciones. Por ello, usted
+                                                            Mexicanos a través del Instituto Federal de Telecomunicaciones. Por ello, usted
                                                             reconoce y libera a Tuis de cualquier tipo de responsabilidad civil, mercantil,
                                                             administrativa, laboral, penal, contractual, extracontractual o cualquier otra que
                                                             pudiera surgir en virtud de alguna falla, suspensión, cancelación o interrupción en la
