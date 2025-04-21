@@ -919,7 +919,7 @@ function TerminosCondiciones () {
                                         </Accordion>
                                     </section>
                                     <section className='pt-5'>
-                                        <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Términos y Condiciones "DOBLE DE GIGAS"</h2>
+                                        <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Términos y Condiciones &quot;DOBLE DE GIGAS&quot;</h2>
                                         <p className='text-body-secondary fs-5 mt-3 text-justify'>
                                             <span className='fw-bold'>Generales:</span> Con el objetivo de reconocer a nuestros Clientes, apoyar la economía
                                             individual y familiar, así como de promover el crecimiento de nuestra red de
@@ -1031,8 +1031,338 @@ function TerminosCondiciones () {
                                             </Accordion.Item>
                                         </Accordion>
                                     </section>
+                                    <section className='pt-5'>
+                                        <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Términos y Condiciones de Contratación y Recargas</h2>
+                                        <Accordion defaultActiveKey={null} flush>
+                                            <Accordion.Item eventKey="0">
+                                                <Accordion.Header>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Afiliación de TUIS a INBTEL</h4>
+                                                </Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        TUIS es una marca registrada y una unidad de negocio de INBTEL COMUNICACIONES. En virtud
+                                                        de esta vinculación, los productos y servicios de TUIS podrán ser contratados exclusivamente a
+                                                        través de las sucursales autorizadas de INBTEL COMUNICACIONES, así como en los canales
+                                                        oficiales habilitados por INBTEL para la promoción y distribución.
+                                                    </p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="1">
+                                                <Accordion.Header>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Canales Oficiales de Contratación y Recarga</h4>
+                                                </Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        La contratación y/o recarga de servicios TUIS solo podrá realizarse por medio de los canales oficiales
+                                                        autorizados:
+                                                    </p>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        <ul className='text-body-secondary fs-6 list-style text-justify'>
+                                                            <li>
+                                                                Sucursales autorizadas de INBTEL COMUNICACIONES.
+                                                            </li>
+                                                            <li>
+                                                                Chat oficial de atención al cliente.
+                                                            </li>
+                                                            <li>
+                                                                Aplicación móvil “TUIS by INBTEL”.
+                                                            </li>
+                                                        </ul>
+                                                    </p>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        Todas las operaciones estarán sujetas a los términos, condiciones y precios vigentes al momento de
+                                                        su realización.
+                                                    </p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="2">
+                                                <Accordion.Header>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Formas de Pago</h4>
+                                                </Accordion.Header>
+                                                <Accordion.Body>
+                                                    <div>
+                                                        <p className='text-body-secondary fs-6 text-justify'>
+                                                            Las formas de pago aceptadas varían según el canal utilizado y pueden incluir:
+                                                        </p>
+                                                        <ul className='text-body-secondary fs-6 list-style text-justify'>
+                                                            <li>
+                                                                Tarjetas de débito/crédito.
+                                                            </li>
+                                                            <li>
+                                                                Transferencias electrónicas.
+                                                            </li>
+                                                            <li>
+                                                                Pagos en efectivo.
+                                                            </li>
+                                                            <li>
+                                                                Otros métodos disponibles en tiendas participantes.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="3">
+                                                <Accordion.Header>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Política de Reembolsos</h4>
+                                                </Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        Todas las contrataciones y recargas son no reembolsables y no transferibles, salvo disposición legal
+                                                        en contrario.
+                                                    </p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="4">
+                                                <Accordion.Header>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Promociones y Descuentos</h4>
+                                                </Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                    Las promociones y descuentos estarán sujetos a términos y condiciones específicos, los cuales
+                                                    podrán ser modificados o cancelados sin previo aviso. Es responsabilidad del usuario consultar las
+                                                    condiciones vigentes antes de su aplicación.
+                                                    </p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="5">
+                                                <Accordion.Header>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Modificación de Precios</h4>
+                                                </Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        TUIS se reserva el derecho de modificar, actualizar o ajustar los precios de sus servicios en cualquier
+                                                        momento y sin previo aviso. Los cambios serán efectivos desde su publicación en los medios
+                                                        oficiales. El usuario acepta que es su responsabilidad consultar dicha información antes de efectuar
+                                                        cualquier contratación o recarga.
+                                                    </p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="6">
+                                                <Accordion.Header>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4'>Vigencia del Servicio</h4>
+                                                </Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        Cada paquete o recarga cuenta con una vigencia determinada, la cual comienza a correr a partir de
+                                                        su activación. Al término de dicho periodo, el servicio será suspendido automáticamente hasta que
+                                                        se realice una nueva recarga o contratación. En caso de no efectuarse ninguna recarga dentro de
+                                                        un plazo de sesenta (60) días naturales contados desde la última activación, la línea podrá ser
+                                                        suspendida indefinidamente y sujeta a cancelación definitiva, conforme a la normativa vigente en
+                                                        materia de telecomunicaciones. TUIS no garantiza la recuperación del número telefónico ni la
+                                                        continuidad del servicio en caso de inactividad prolongada.
+                                                    </p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="7">
+                                                <Accordion.Header>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Entrega y Envío de SIM Físico</h4>
+                                                </Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        El SIM físico de TUIS podrá ser enviado a domicilio sin costo adicional dentro de la zona conurbada
+                                                        de Tampico, Ciudad Madero y Altamira, siempre y cuando el cliente haya cubierto previamente el
+                                                        costo total del servicio. Una vez confirmado el pago, el envío será autorizado y gestionado conforme
+                                                        a la dirección previamente acordada con el cliente. El plazo de entrega será de dos (2) a cinco (5)
+                                                        días hábiles, sujeto a disponibilidad y condiciones logísticas. Los envíos dentro del territorio nacional
+                                                        serán realizados conforme a las políticas de paquetería aplicables. En el caso de solicitudes fuera
+                                                        de la zona conurbada, se aplicará un costo adicional, el cual será informado y acordado con el cliente
+                                                        antes de la realización del envío. El tiempo de entrega dependerá exclusivamente de los tiempos y
+                                                        condiciones establecidos por la empresa de mensajería seleccionada, por lo que cualquier estimado
+                                                        proporcionado por TUIS será meramente informativo y no vinculante.
+                                                    </p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="8">
+                                                <Accordion.Header>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4'>Envío de eSIM</h4>
+                                                </Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        En el caso de la eSIM, esta será enviada al cliente mediante correo electrónico o por el medio de
+                                                        contacto proporcionado, en formato digital (PDF, JPG, u otros equivalentes), siempre y cuando el
+                                                        cliente haya cubierto previamente el costo total del servicio.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        El archivo incluirá:
+                                                    </p>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        <ul className='text-body-secondary fs-6 list-style text-justify'>
+                                                            <li>
+                                                                Código QR para activación del servicio.
+                                                            </li>
+                                                            <li>
+                                                                Guía detallada de instalación.
+                                                            </li>
+                                                        </ul>
+                                                    </p>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        Además, el cliente contará con asesoría remota para la instalación y configuración de su eSIM.
+                                                    </p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="9">
+                                                <Accordion.Header>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4'>Compatibilidad del Dispositivo y Condiciones del Equipo</h4>
+                                                </Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        Es responsabilidad exclusiva del cliente verificar previamente que::
+                                                    </p>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        <ul className='text-body-secondary fs-6 list-style text-justify'>
+                                                            <li>
+                                                                El equipo móvil sea compatible con las redes y tecnologías utilizadas por TUIS.
+                                                            </li>
+                                                            <li>
+                                                                El equipo se encuentre liberado de fábrica o desbloqueado.
+                                                            </li>
+                                                            <li>
+                                                                La línea telefónica anterior (en caso de portabilidad) no presente adeudos ni restricciones
+                                                                contractuales con otro operador.
+                                                            </li>
+                                                        </ul>
+                                                    </p>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        TUIS no será responsable por fallas en la activación, operación o desempeño del servicio derivadas
+                                                        del incumplimiento de estas condiciones por parte del usuario.
+                                                    </p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="10">
+                                                <Accordion.Header>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4'>Beneficio por portabilidad</h4>
+                                                </Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        Los usuarios que realicen una portabilidad numérica a TUIS podrán obtener el chip de manera
+                                                        gratuita, siempre y cuando cumplan con los requisitos establecidos y gestionen el trámite a través
+                                                        de los canales oficiales.
+                                                    </p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="11">
+                                                <Accordion.Header>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4'>Responsabilidad del Usuario</h4>
+                                                </Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        El usuario será el único responsable de:
+                                                    </p>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        <ul className='text-body-secondary fs-6 list-style text-justify'>
+                                                            <li>
+                                                                Verificar que los datos proporcionados durante la contratación o recarga sean correctos.
+                                                            </li>
+                                                            <li>
+                                                                Seleccionar el paquete adecuado a sus necesidades.
+                                                            </li>
+                                                        </ul>
+                                                    </p>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        Cualquier error derivado de información incorrecta será responsabilidad del cliente.
+                                                    </p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="12">
+                                                <Accordion.Header>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4'>Limitaciones del Servicio y Política de Uso Justo</h4>
+                                                </Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        La calidad, velocidad y disponibilidad del servicio TUIS pueden variar en función de diversos factores,
+                                                        incluyendo:
+                                                    </p>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        <ul className='text-body-secondary fs-6 list-style text-justify'>
+                                                            <li>
+                                                                Uso de datos: El consumo intensivo de datos puede afectar la velocidad y estabilidad del
+                                                                servicio.
+                                                            </li>
+                                                            <li>
+                                                                Condiciones de red: Congestiones, mantenimiento o fallas en la red pueden impactar la
+                                                                calidad del servicio.
+                                                            </li>
+                                                            <li>
+                                                                Ubicación geográfica: La cobertura y calidad del servicio pueden variar según la región o
+                                                                zona en la que se encuentre el usuario.
+                                                            </li>
+                                                            <li>
+                                                                Factores técnicos: Características del dispositivo, interferencias o configuraciones
+                                                                específicas pueden influir en el desempeño del servicio.
+                                                            </li>
+                                                        </ul>
+                                                    </p>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        Algunos paquetes y planes de TUIS están sujetos a una Política de Uso Justo, la cual tiene como
+                                                        objetivo garantizar un servicio equitativo y de calidad para todos los usuarios. Esta política puede
+                                                        incluir, entre otras medidas:
+                                                    </p>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        <ul className='text-body-secondary fs-6 list-style text-justify'>
+                                                            <li>
+                                                                Reducción de velocidad: Al alcanzar ciertos umbrales de consumo de datos, la velocidad de
+                                                                navegación puede ser disminuida temporalmente.
+                                                            </li>
+                                                            <li>
+                                                                Limitaciones temporales o técnicas: En casos de uso excesivo o no conforme, se pueden
+                                                                aplicar restricciones adicionales para preservar la integridad de la red.
+                                                            </li>
+                                                        </ul>
+                                                    </p>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        Los detalles específicos de la Política de Uso Justo aplicable a cada paquete o plan estarán
+                                                        claramente informados en la descripción correspondiente. Al contratar o recargar un servicio, el
+                                                        usuario acepta y se compromete a cumplir con las condiciones establecidas en dicha política.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        Para obtener información más detallada sobre la Política de Uso Justo de TUIS, se recomienda
+                                                        consultar el sitio oficial: 
+                                                        <Link to="/politica-uso-justo" onClick={handleScrollToTop} className='link-conditions-tuis text-decoration-none'> https://tuis.com.mx/politica-uso-justo</Link>
+                                                    </p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="13">
+                                                <Accordion.Header>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4'>Uso Indebido del Servicio</h4>
+                                                </Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        TUIS se reserva el derecho de suspender o cancelar el servicio si se detecta:
+                                                    </p>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        <ul className='text-body-secondary fs-6 list-style text-justify'>
+                                                            <li>
+                                                                Uso indebido o fraudulento.
+                                                            </li>
+                                                            <li>
+                                                                Reventa del servicio.
+                                                            </li>
+                                                            <li>
+                                                                Empleo de herramientas que alteren el tráfico de datos. 
+                                                            </li>
+                                                        </ul>
+                                                    </p>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        Dichas acciones serán consideradas como incumplimiento de los presentes términos y condiciones.
+                                                    </p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="14">
+                                                <Accordion.Header>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4'>Consulta de Información Oficial</h4>
+                                                </Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        Para obtener información más detallada sobre la Política de Uso Justo de TUIS, se recomienda
+                                                        consultar el sitio oficial: 
+                                                        <a href="https://tarifas.ift.org.mx/ift_visor/" target="_blank" className='link-conditions-tuis text-decoration-none'> https://tarifas.ift.org.mx/ift_visor/</a>
+                                                    </p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                        </Accordion>
+                                    </section>
                                     <p className='text-body-secondary fs-6 mt-5 pt-5 text-end'>
-                                        <span className='fw-bold'>Última actualización:</span> Enero 2025 
+                                        <span className='fw-bold'>Última actualización:</span> Abril 2025 
                                     </p>
                                 </main>
                             </Col>
