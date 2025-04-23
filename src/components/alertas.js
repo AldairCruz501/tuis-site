@@ -45,18 +45,20 @@ export const verifyImei = async (imei, setLoading) => {
     const homologated = data.result?.homologated || "";
     const volteSupport = data.result?.volte_support === "SI" ? "Sí" : "No";
     const band28Support = data.result?.band28_support === "SI" ? "Sí" : "No";
+    const esimSupport = data.result?.esim === "SI" ? "Compatible" : "No Compatible";
+    ;
 
     if (homologated === "COMPATIBLE PROBADO" || homologated === "COMPATIBLE HOMOLOGADO") {
       Swal.fire({
         icon: "success",
         title: "¡Compatible!",
-        html: `<b>IMEI:</b> ${imei} <br> <b>Banda 28:</b> ${band28Support} <br> <b>VoLTE:</b> ${volteSupport}`, // Utiliza la plantilla de HTML con etiquetas <b> para resaltar el textoVoLTE: ${volteSupport}`,
+        html: `<b>IMEI:</b> ${imei} <br> <b>Banda 28:</b> ${band28Support} <br> <b>VoLTE:</b> ${volteSupport} <br> <b>ESIM:</b> ${esimSupport}` , // Utiliza la plantilla de HTML con etiquetas <b> para resaltar el textoVoLTE: ${volteSupport}`,
       });
     } else {
       Swal.fire({
         icon: "error",
         title: "No compatible",
-        html: `<b>IMEI:</b> ${imei} <br> <b> Banda 28: </b> ${band28Support} <br> <b>VoLTE:</b> ${volteSupport}`, // Utiliza la plantilla de HTML con etiquetas <b> para resaltar el textoVoLTE: ${volteSupport}`,
+        html: `<b>IMEI:</b> ${imei} <br> <b> Banda 28: </b> ${band28Support} <br> <b>VoLTE:</b> ${volteSupport} <br> <b>ESIM:</b> ${esimSupport}`, // Utiliza la plantilla de HTML con etiquetas <b> para resaltar el textoVoLTE: ${volteSupport}`,
       });
     }
   } catch (error) {
