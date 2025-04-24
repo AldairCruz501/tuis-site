@@ -65,7 +65,7 @@ function Paquetes() {
                                     <Row className='row-cols-1 row-cols-sm-2 g-4'>
                                         <Col className="text-center">
                                             <img
-                                                src="img/mapa-mexico.png"
+                                                src="/img/mapa-mexico.png"
                                                 alt="mapa-mexico"
                                                 className="w-75"
                                                 loading="lazy"
@@ -78,7 +78,7 @@ function Paquetes() {
                                         </Col>
                                         <Col className="text-center">
                                             <img
-                                                src="img/precios.png"
+                                                src="/img/precios.png"
                                                 alt="precios"
                                                 className="w-50"
                                                 loading="lazy"
@@ -112,15 +112,15 @@ function Paquetes() {
                                 <JackInTheBox>
                                     <Col className="text-center">
                                         <img
-                                            src="img/basicos.png"
-                                            alt="basicos"
+                                            src="/img/express.png"
+                                            alt="express"
                                             className="w-75"
                                             loading="lazy"
                                         />
                                         <Button 
                                             className='paq-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill mt-4 mb-4 border-light fs-5'
                                             onClick={() => {
-                                                navigate("/paquetes/tuisty-basico");
+                                                navigate("/paquetes/tuisty-express");
                                                 window.scrollTo(0, 0);
                                             }}
                                         >
@@ -131,7 +131,7 @@ function Paquetes() {
                                 <JackInTheBox delay={500}>
                                     <Col className="text-center">
                                         <img
-                                            src="img/mensuales.png"
+                                            src="/img/mensuales.png"
                                             alt="mensaules"
                                             className="w-75"
                                             loading="lazy"
@@ -150,7 +150,7 @@ function Paquetes() {
                                 <JackInTheBox delay={1000}>
                                     <Col className="text-center">
                                         <img
-                                            src="img/trimestrales.png"
+                                            src="/img/trimestrales.png"
                                             alt="trimestrales"
                                             className="w-75"
                                             loading="lazy"
@@ -169,7 +169,7 @@ function Paquetes() {
                                 <JackInTheBox delay={1500}>
                                     <Col className="text-center">
                                         <img
-                                            src="img/semestrales.png"
+                                            src="/img/semestrales.png"
                                             alt="semestrales"
                                             className="w-75"
                                             loading="lazy"
@@ -188,7 +188,7 @@ function Paquetes() {
                                 <JackInTheBox delay={2000}>
                                     <Col className="text-center">
                                         <img
-                                            src="img/anuales.png"
+                                            src="/img/anuales.png"
                                             alt="anuales"
                                             className="w-75"
                                             loading="lazy"

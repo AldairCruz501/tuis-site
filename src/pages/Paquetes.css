@@ -17,7 +17,8 @@
     }
   }
 
-  .hero-tuis-subtitle {
+  .hero-tuis-subtitle,
+  .icon-sms {
     color: #0C71C3 !important;
   }
 
