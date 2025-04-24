@@ -3,10 +3,14 @@ import { useState } from 'react';
 import { Container, Row, Col, Card, Button, Accordion } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faXTwitter, faWhatsapp, faInstagram, faSnapchat, faTelegram, faFacebookMessenger } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate, Link } from 'react-router-dom';
 import { JackInTheBox } from 'react-awesome-reveal';
 import { useCart } from '../Context/Context';
 import Swal from 'sweetalert2';
+
+
 
 
 const socialMediaIcons = {
@@ -93,9 +97,12 @@ const PlanesMain = ({ plans }) => {
                         <JackInTheBox key={index} delay={index * 500}>
                             <Col key={index} className='card-efect'>
                                 <Card className='mb-4 rounded-3 shadow-sm card'>
+                                    <div className="pricing-badge">
+                                        <span className="badge text-uppercase">{plan.new}</span>
+                                    </div>
                                     <Card.Header className='py-3'>
                                         <h4 className=' my-0 fw-bold plan-title text-uppercase fs-4'>
-                                            {plan.name} <span className='tuisty-gb'>{plan.dataType}</span> Ilimitado
+                                            {plan.name} <span className='tuisty-gb'>{plan.dataType}</span>
                                         </h4>
                                     </Card.Header>
                                     <div className='text-center p-3 bg-gb'>
@@ -117,7 +124,7 @@ const PlanesMain = ({ plans }) => {
                                             <>
                                                 <div className='text-center p-3'>
                                                     <h4 className='my-0 fw-bold text-dark fs-6'>
-                                                        Redes Sociales Nacionales Ilimitadas:
+                                                        Redes Sociales Ilimitadas:
                                                     </h4>
                                                 </div>
                                                 <div className='d-flex justify-content-center pt-3 pb-3 border-tuisty border-2 border-bottom'>
@@ -132,15 +139,19 @@ const PlanesMain = ({ plans }) => {
                                                 </div>
                                             </>
                                         )}
-                                        <div className='border-tuisty border-2 border-bottom mt-4 pb-3'>
-                                            <h4 className='fw-bold fs-6'>
-                                                Llamadas y SMS Ilimitados a:
+                                        <div className='border-tuisty border-2 border-bottom pt-4 pb-3'>
+                                            <h4 className="fw-bold fs-3 text-uppercase">
+                                            <span className="icon-sms mx-2">
+                                                <FontAwesomeIcon icon={faEnvelope} className='fs-3' />
+                                            </span>
+                                            <span className='tuisty-gb'>{plan.sms}</span> SMS
                                             </h4>
-                                            <div className=' d-flex justify-content-center pt-3 mb-3'>
-                                                <img src="/img/canada.png" alt="can-flag" className='w-25 mx-1' loading="lazy" />
-                                                <img src="/img/estados-unidos.png" alt="usa-flag" className='w-25 mx-1' loading="lazy" />
-                                                <img src="/img/mexico.png" alt="mx-flag" className='w-25 mx-1' loading="lazy" />
-                                            </div>
+                                            <p className='fw-bold fs-5 text-uppercase'>
+                                            <span className="icon-sms mx-2">
+                                                <FontAwesomeIcon icon={faPhone} />
+                                            </span>
+                                                Llamadas <span className='tuisty-gb'>{plan.call}</span>
+                                            </p>
                                         </div>
                                         {/*<Button
                                             className="plan-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill border-light fs-4 mb-3"
@@ -156,30 +167,16 @@ const PlanesMain = ({ plans }) => {
                                                     </h4>
                                                 </Accordion.Header>
                                                 <Accordion.Body>
-                                                    {plan.socialMediaInter && (
-                                                        <>
-                                                            <div className='border-tuisty-in border-2 border-bottom border-top'>
-                                                                <div className="text-center p-3">
-                                                                    <h4 className="my-0 fw-bold text-dark fs-6">
-                                                                        Redes Sociales Internacionales Ilimitadas:
-                                                                    </h4>
-                                                                </div>
-                                                                <div className="d-flex justify-content-center pt-3 mb-3">
-                                                                    {plan.socialMediaInter.map((platform, idx) => (
-                                                                        <span
-                                                                            key={idx}
-                                                                            className={`rounded mx-1 social-icon-${platform}`}
-                                                                        >
-                                                                            <FontAwesomeIcon
-                                                                                icon={socialMediaIcons[platform]}
-                                                                                className="fs-3"
-                                                                            />
-                                                                        </span>
-                                                                    ))}
-                                                                </div>
-                                                            </div>
-                                                        </>
-                                                    )}
+                                                    <div className='border-tuisty-in border-2 border-top border-bottom pt-3 mt-2 pb-3'>
+                                                        <h4 className='fw-bold fs-6'>
+                                                            Llamadas a:
+                                                        </h4>
+                                                        <div className=' d-flex justify-content-center pt-3 mb-3'>
+                                                            <img src="/img/canada.png" alt="can-flag" className='w-25 mx-1' loading="lazy" />
+                                                            <img src="/img/estados-unidos.png" alt="usa-flag" className='w-25 mx-1' loading="lazy" />
+                                                            <img src="/img/mexico.png" alt="mx-flag" className='w-25 mx-1' loading="lazy" />
+                                                        </div>
+                                                    </div>
                                                     <div className='border-tuisty-in border-2 border-bottom pt-4 pb-3'>
                                                         <h4 className="fw-bold fs-6 internet-title text-uppercase">
                                                             {plan.internet}
@@ -194,11 +191,11 @@ const PlanesMain = ({ plans }) => {
                                                             <li>eSIM</li>
                                                         </ul>
                                                     </div>
-                                                    <div className='border-tuisty-in border-2 border-bottom pt-3 pb-2'>
+                                                    {/*<div className='border-tuisty-in border-2 border-bottom pt-3 pb-2'>
                                                         <h4 className="fw-bold fs-6 text-uppercase folio-title">
-                                                            Folio: <span className='text-secondary fw-bold'>{plan.iftfolio}</span>
+                                                        Folio: <span className='text-secondary fw-bold'>{plan.iftfolio}</span>
                                                         </h4>
-                                                    </div>
+                                                    </div>*/}
                                                 </Accordion.Body>
                                             </Accordion.Item>
                                         </Accordion>

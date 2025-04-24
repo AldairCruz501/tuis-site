@@ -7,6 +7,8 @@ import { Fade } from 'react-awesome-reveal';
 import { useCart } from '../Context/Context';
 import { useNavigate, Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons/faPhone';
 
 const socialMediaIcons = {
   whatsapp: faWhatsapp,
@@ -89,6 +91,9 @@ const PlanesSection = ({ plans }) => {
             <Fade key={index} delay={index * 600}>
               <Col key={index} className='card-efect'>
                 <Card className='mb-4 rounded-3 shadow-sm card'>
+                  <div className="pricing-badge-section">
+                    <span className="badge text-uppercase">{plan.new}</span>
+                  </div>
                   <Card.Header className='py-3'>
                     <h4 className="my-0 fw-bold plan-title text-uppercase fs-3">
                       {plan.name} <span className='tuisty-gb'>{plan.dataPlus}</span> {plan.ilimitado} {plan.durationPlus}
@@ -129,15 +134,19 @@ const PlanesSection = ({ plans }) => {
                         </div>
                       </>
                     )}
-                    <div className='border-tuisty border-2 border-bottom mt-4 pb-3'>
-                      <h4 className="fw-bold fs-6">
-                        {plan.llamadas}
-                      </h4>
-                      <div className='d-flex justify-content-center pt-3 mb-3'>
-                        <img src="/img/canada.png" alt="can-flag" className='w-25 mx-1' />
-                        <img src="/img/estados-unidos.png" alt="usa-flag" className='w-25 mx-1' />
-                        <img src="/img/mexico.png" alt="mx-flag" className='w-25 mx-1' />
-                      </div>
+                    <div className='border-tuisty border-2 border-bottom pt-4 pb-3'>
+                        <h4 className="fw-bold fs-3 text-uppercase">
+                        <span className="icon-sms mx-2">
+                            <FontAwesomeIcon icon={faEnvelope} className='fs-3' />
+                        </span>
+                        <span className='tuisty-gb'>{plan.sms}</span> SMS
+                        </h4>
+                        <p className='fw-bold fs-5 text-uppercase'>
+                        <span className="icon-sms mx-2">
+                            <FontAwesomeIcon icon={faPhone} />
+                        </span>
+                            Llamadas <span className='tuisty-gb'>{plan.call}</span>
+                        </p>
                     </div>
                     {/*<Button
                       className="plan-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill border-light fs-4 mb-3"
@@ -153,30 +162,16 @@ const PlanesSection = ({ plans }) => {
                           </h4>
                         </Accordion.Header>
                         <Accordion.Body>
-                          <div className='border-tuisty-in border-2 border-top mt-4'>
-                            <div className="text-center p-3">
-                              <h4 className="my-0 fw-bold text-dark fs-6">
-                                {plan.socialInterText}
+                          <div className='border-tuisty-in border-2 border-top border-bottom pt-3 mt-2 pb-3'>
+                              <h4 className='fw-bold fs-6'>
+                                  Llamadas a:
                               </h4>
-                            </div>
-                          </div>
-                          {plan.socialMediaInter && (
-                            <>
-                              <div className="d-flex justify-content-center border-tuisty-in border-2 border-bottom pb-3">
-                                {plan.socialMediaInter.map((platform, idx) => (
-                                  <span
-                                    key={idx}
-                                    className={`rounded mx-1 social-icon-${platform}`}
-                                  >
-                                    <FontAwesomeIcon
-                                      icon={socialMediaIcons[platform]}
-                                      className="fs-3"
-                                    />
-                                  </span>
-                                ))}
+                              <div className=' d-flex justify-content-center pt-3 mb-3'>
+                                  <img src="/img/canada.png" alt="can-flag" className='w-25 mx-1' loading="lazy" />
+                                  <img src="/img/estados-unidos.png" alt="usa-flag" className='w-25 mx-1' loading="lazy" />
+                                  <img src="/img/mexico.png" alt="mx-flag" className='w-25 mx-1' loading="lazy" />
                               </div>
-                            </>
-                          )}
+                          </div>
                           <div className='border-tuisty-in border-2 border-bottom pt-3 pb-3'>
                             <h4 className="fw-bold fs-6 internet-title text-uppercase">
                               {plan.internet}
@@ -191,11 +186,11 @@ const PlanesSection = ({ plans }) => {
                               <li>eSIM</li>
                             </ul>
                           </div>
-                          <div className='border-tuisty-in border-2 border-bottom pt-3 pb-2'>
+                          {/*<div className='border-tuisty-in border-2 border-bottom pt-3 pb-2'>
                             <h4 className="fw-bold fs-6 text-uppercase folio-title">
                               Folio: <span className='text-secondary fw-bold'>{plan.iftfolio}</span>
                             </h4>
-                          </div>
+                          </div>*/}
                         </Accordion.Body>
                       </Accordion.Item>
                     </Accordion>
