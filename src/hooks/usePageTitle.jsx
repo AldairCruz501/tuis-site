@@ -9,7 +9,7 @@ const usePageTitle = () => {
     const titles = {
       "/": "Tuis | Telefonía Móvil",
       "/paquetes": "Paquetes | Tuis",
-      "/paquetes/tuisty-basico": "Tuisty Básico | Tuis",
+      "/paquetes/tuisty-express": "Tuisty Express | Tuis",
       "/paquetes/tuisty-mensual": "Tuisty Mensual | Tuis",
       "/paquetes/tuisty-trimestral": "Tuisty Trimestral | Tuis",
       "/paquetes/tuisty-semestral": "Tuisty Semestral | Tuis",

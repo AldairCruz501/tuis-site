@@ -43,7 +43,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/paquetes' element={<Paquetes />} />
-          <Route path='/paquetes/tuisty-basico' element={<PaquetesBasicos />} />
+          <Route path='/paquetes/tuisty-express' element={<PaquetesBasicos />} />
           <Route path='/paquetes/tuisty-mensual' element={<PaquetesTuisty />} />
           <Route path='/paquetes/tuisty-trimestral' element={<PaquetesTrimestrales />} />
           <Route path='/paquetes/tuisty-semestral' element={<PaquetesSemestrales />} />

@@ -80,7 +80,7 @@ export default function NavbarComponent() {
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <NavDropdown.Item as={Link} to="/paquetes/tuisty-basico">Tuisty Básico</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/paquetes/tuisty-express">Tuisty Express</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/paquetes/tuisty-mensual">Tuisty Mensual</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/paquetes/tuisty-trimestral">Tuisty Trimestral</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/paquetes/tuisty-semestral">Tuisty Semestral</NavDropdown.Item>
@@ -143,7 +143,7 @@ export default function NavbarComponent() {
                   >
                     Ir a inicio
                   </Button>
-                  <Button className="text-uppercase mx-2 mb-1 btn-buy"
+                  <Button className="text-uppercase mx-1 mb-1 btn-buy"
                     onClick={() => {
                       navigate("/paquetes")
                       window.scrollTo(0, 0);
