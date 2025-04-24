@@ -125,76 +125,6 @@ function Home() {
                   </div>
                 </Container>
               </section>
-              <section>
-                <Fade>
-                  <Carousel fade controls={false} indicators={false}>
-                    <Carousel.Item interval={6000}>
-                      <Link
-                        to="/terminos-y-condiciones"
-                        onClick={() => {
-                          window.scrollTo(0, 0);
-                        }}
-                        className="fs-6 text-white fw-bold text-decoration-none link-btn"
-                      >
-                        <img
-                          src="/img/eSim5GB.jpg"
-                          alt="Banner-Tuis"
-                          className="d-block w-100"
-                          loading="lazy"
-                        />
-                      </Link>
-                    </Carousel.Item >
-                    <Carousel.Item interval={6000}>
-                      <Link
-                          to="/terminos-y-condiciones"
-                          onClick={() => {
-                            window.scrollTo(0, 0);
-                          }}
-                          className="fs-6 text-white fw-bold text-decoration-none link-btn"
-                        >
-                          <img
-                            src="/img/eSim15GB.jpg"
-                            alt="Banner-Tuis"
-                            className="d-block w-100"
-                            loading="lazy"
-                          />
-                        </Link>
-                    </Carousel.Item>
-                    <Carousel.Item interval={6000}>
-                      <Link
-                          to="/terminos-y-condiciones"
-                          onClick={() => {
-                            window.scrollTo(0, 0);
-                          }}
-                          className="fs-6 text-white fw-bold text-decoration-none link-btn"
-                        >
-                          <img
-                            src="/img/Promocion-Abril-Tuis.jpg"
-                            alt="Banner-Tuis"
-                            className="d-block w-100"
-                            loading="lazy"
-                          />
-                        </Link>
-                    </Carousel.Item>
-                    <Carousel.Item interval={6000}>
-                      <Link
-                          to="/terminos-y-condiciones"
-                          onClick={() => {
-                            window.scrollTo(0, 0);
-                          }}
-                          className="fs-6 text-white fw-bold text-decoration-none link-btn"
-                        >
-                          <img
-                            src="/img/2GB- EXTRAS-TUIS-WEB.jpg"
-                            alt="Banner-Tuis"
-                            className="d-block w-100"
-                            loading="lazy"
-                          />
-                        </Link>
-                    </Carousel.Item>
-                  </Carousel>
-                </Fade>
-              </section>
               <main>
                 <section>
                   <div className="tuisty-container">
@@ -202,7 +132,7 @@ function Home() {
                     <Row className="align-items-center">
                       <Col xs={12} lg={6} className="text-center text-lg-start">
                         <h1 className="plan-title display-4 display-lg-3 fst-italic text-white">
-                          Plan Tuisty <br className="d-none d-md-block" /> Prime Ilimitado
+                          Plan Tuisty Prime
                         </h1>
                         <ul className="features-list text-white text-start mt-3 p-4 px-4 p-lg-0 px-lg-0">
                           <li>Tarjeta SIM incluida</li>
@@ -269,20 +199,13 @@ function Home() {
                           loading="lazy"
                         />
                         </div>
-                        <div className='mx-0 mx-md-5'>
+                        <div className='mx-1 mx-md-4 mt-md-4'>
                           <Button 
-                            className="buy-button border border-3 fs-5 text-uppercase fw-bold fst-italic p-2 rounded-pill"
-                            onClick={() => {
-                              navigate("/paquetes")
-                            }}
+                            className="buy-button border border-3 fs-5 text-uppercase fw-bold fst-italic p-3 rounded-pill"
+                            href='https://wa.link/8ixi0l' target='_blank'
                           >
-                            Comprar sim
+                            Consulta otros envíos
                           </Button>
-                        </div>
-                        <div className='mx-0 mx-md-1 mt-5'>
-                          <p className='fst-italic'>
-                            *Los envíos solo se realizan en domicilios de la Zona Conurbada de Tamaulipas (Altamira, Ciudad Madero y Tampico).
-                          </p>
                         </div>
                       </Col>
                       <Col lg={6}>
