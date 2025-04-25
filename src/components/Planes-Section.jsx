@@ -153,7 +153,13 @@ const PlanesSection = ({ plans }) => {
                       onClick={() => handleBuyClick(plan)}
                     >
                       Comprar
-                    </Button>*/}
+                    </Button>*/} 
+                    <Button
+                      className="plan-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill border-light fs-4 mb-3"
+                      href='https://wa.link/8ixi0l' target='_blank'
+                    >
+                      Comprar
+                    </Button>
                     <Accordion defaultActiveKey={null} flush>
                       <Accordion.Item eventKey='0'>
                         <Accordion.Header onClick={() => handleAccordionToggle(index)}>
@@ -209,6 +215,12 @@ const PlanesSection = ({ plans }) => {
             }}
           >
             Más Paquetes
+          </Button>
+          <Button
+            className="paq-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill fs-4 mt-3 mb-5 border-3 mx-3"
+            href='https://byplus.io/inbtel' target='_blank'
+          >
+            Recargas
           </Button>
           <div className="mb-3">
             <p className='fs-5 text-white fw-bold'>
