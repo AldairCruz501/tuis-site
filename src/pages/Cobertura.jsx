@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import NavbarComponent from '../components/Navbar';
 import FooterComponent from '../components/Footer';
 import "./Cobertura.css"
-import { Container } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
 import { Fade } from 'react-awesome-reveal';
 import Loading from '../components/Loading';
 import FloatingWhatsAppButton from "../components/WhatsApp-Button";
@@ -37,10 +37,18 @@ export default function Cobertura () {
                     <main>
                         <Container fluid className='text-center'>
                             <Fade>
-                                <div className='pt-5 mt-5 mb-5 pb-5'>
+                                <div className='pt-5 mt-5 mb-3'>
                                     <img src="./img/cobertura-tuis-1.jpg" alt="cobertura" className='img-fluid w-100' loading="lazy" />
                                 </div>
                             </Fade>
+                            <div className="pb-4">
+                            <Button 
+                                className="buy-button border border-3 fs-5 text-uppercase fw-bold fst-italic p-3 rounded-pill"
+                                href='https://wa.link/8ixi0l' target='_blank'
+                            >
+                                Consultar cobertura
+                            </Button>
+                            </div>
                         </Container>
                         <ShippingTerms/>
                         <AppStoreTuis/>
