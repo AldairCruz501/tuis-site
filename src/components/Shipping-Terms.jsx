@@ -1,4 +1,4 @@
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Slide } from 'react-awesome-reveal';
 import './Shipping-Terms.css';
 
@@ -19,11 +19,12 @@ const ShippingTerms = () => {
                 className="img-fluid w-50"
               />
               </div>
-              <div className='mx-0 mx-md-1 mt-5'>
-                <p className='fst-italic'>
-                  *Los envíos solo se realizan en domicilios de la Zona Conurbada de Tamaulipas (Altamira, Ciudad Madero y Tampico).
-                </p>
-              </div>
+              <Button 
+                className="buy-button border border-3 fs-5 text-uppercase fw-bold fst-italic p-3 rounded-pill"
+                href='https://wa.link/8ixi0l' target='_blank'
+              >
+                Consulta otros envíos
+              </Button>
             </Col>
             <Col lg={6}>
             <Slide direction="right">
