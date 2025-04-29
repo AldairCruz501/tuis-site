@@ -42,12 +42,12 @@ export default function Cobertura () {
                                 </div>
                             </Fade>
                             <div className="pb-4">
-                            <Button 
-                                className="buy-button border border-3 fs-5 text-uppercase fw-bold fst-italic p-3 rounded-pill"
-                                href='https://wa.link/8ixi0l' target='_blank'
-                            >
-                                Consultar cobertura
-                            </Button>
+                                <Button 
+                                    className="buy-button border border-3 fs-5 text-uppercase fw-bold fst-italic p-3 rounded-pill"
+                                    href='https://wa.link/8ixi0l' target='_blank'
+                                >
+                                    Consultar cobertura
+                                </Button>
                             </div>
                         </Container>
                         <ShippingTerms/>

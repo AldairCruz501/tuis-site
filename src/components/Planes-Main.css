@@ -10,9 +10,13 @@
     -webkit-transform:scale(-1);transform:scale(0.95);
   }
 
+  .bg-main-card-header {
+    background-color: #443285;
+  }
+
   .internet-title,
-  .plan-title {
-    color: #6149B7;
+  .plan-title-main {
+    color: #FFFFFF;
   }
 
   .border-tuisty {
@@ -23,12 +27,25 @@
     border-color: #FF8500 !important;
   }
 
-  .tuisty-gb {
-    color: #0C71C3;
+  .tuisty-gb-main {
+    color: #29B8C9;
   }
 
-  .bg-gb{
-    background-color: #FF8500;
+  .bg-gb-main{
+    background-color: #3B0F82;
+  }
+  .bg-main-gb {
+    background-color: #6149B7;
+  }
+
+  .bg-price {
+    background-color: #29B8C9;
+  }
+
+  .bg-body-card,
+  .accordion-button {
+    background-color: #FF8500 !important;
+    box-shadow: none !important;
   }
 
   .social-icon-facebook {
@@ -118,6 +135,6 @@
     padding: 7px 10px;
     font-weight: 500;
     color: #ffffff;
-    background: #6149B7;
+    background: #29B8C9;
   }
 

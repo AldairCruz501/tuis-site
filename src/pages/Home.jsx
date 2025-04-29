@@ -65,17 +65,6 @@ function Home() {
                           loading="lazy"
                         />
                         <Carousel.Caption>
-                        <div className='animated-button-container'>
-                          <Button
-                          className='border button fs-3 fw-bold p-3'
-                          onClick={() => {
-                            navigate("/paquetes")
-                            window.scrollTo(0, 0);
-                          }}
-                        >
-                          Ver Paquetes
-                        </Button>
-                        </div>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -125,7 +114,53 @@ function Home() {
                   </div>
                 </Container>
               </section>
+              <PlanesMain
+                  plans={plans}
+                />
               <main>
+                <div className="wave">
+                </div>
+                <section>
+                  <div className="tuisty-container-white p-4">
+                  <Container>
+                    <Row>
+                      <Col lg={6}>
+                        <h3 className='fs-4 fw-bold'>Recibe tu SIM directamente en la <br className='d-none d-md-block'/> puerta de tu casa<span className='fw-bold'>*</span></h3>
+                        <p className='fs-5 pt-2'>Tiempo de entrega de 2 a 5 días hábiles</p>
+                        <p className='fs-5 pt-2'>Métodos de pago:</p>
+                        <div className='pt-2 pb-2'>
+                        <img
+                          src="img/metodos-de-pago.png"
+                          alt="Metodos-de-pago"
+                          className="img-fluid w-50"
+                          loading="lazy"
+                        />
+                        </div>
+                        <div className='mx-1 mx-md-4 mt-md-4'>
+                          <Button 
+                            className="buy-button border border-3 fs-5 text-uppercase fw-bold fst-italic p-3 rounded-pill"
+                            href='https://wa.link/8ixi0l' target='_blank'
+                          >
+                            Consulta otros envíos
+                          </Button>
+                        </div>
+                      </Col>
+                      <Col lg={6}>
+                      <Slide direction="right">
+                        <img
+                            src="img/mapache-delivery.png"
+                            alt="Mapache-Delivery"
+                            className="img-fluid pt-3 pt-md-0"
+                            loading="lazy"
+                          />
+                      </Slide>
+                      </Col>
+                    </Row>
+                  </Container>
+                  </div>
+                </section>
+                <div className="wave-two">
+                </div>
                 <section>
                   <div className="tuisty-container">
                   <Container className="py-5">
@@ -181,52 +216,6 @@ function Home() {
                   </Container>
                   </div>
                 </section>
-                <div className="wave">
-                </div>
-                <section>
-                  <div className="tuisty-container-white p-4">
-                  <Container>
-                    <Row>
-                      <Col lg={6}>
-                        <h3 className='fs-4 fw-bold'>Recibe tu SIM directamente en la <br className='d-none d-md-block'/> puerta de tu casa<span className='fw-bold'>*</span></h3>
-                        <p className='fs-5 pt-2'>Tiempo de entrega de 2 a 5 días hábiles</p>
-                        <p className='fs-5 pt-2'>Métodos de pago:</p>
-                        <div className='pt-2 pb-2'>
-                        <img
-                          src="img/metodos-de-pago.png"
-                          alt="Metodos-de-pago"
-                          className="img-fluid w-50"
-                          loading="lazy"
-                        />
-                        </div>
-                        <div className='mx-1 mx-md-4 mt-md-4'>
-                          <Button 
-                            className="buy-button border border-3 fs-5 text-uppercase fw-bold fst-italic p-3 rounded-pill"
-                            href='https://wa.link/8ixi0l' target='_blank'
-                          >
-                            Consulta otros envíos
-                          </Button>
-                        </div>
-                      </Col>
-                      <Col lg={6}>
-                      <Slide direction="right">
-                        <img
-                            src="img/mapache-delivery.png"
-                            alt="Mapache-Delivery"
-                            className="img-fluid pt-3 pt-md-0"
-                            loading="lazy"
-                          />
-                      </Slide>
-                      </Col>
-                    </Row>
-                  </Container>
-                  </div>
-                </section>
-                <div className="wave-two">
-                </div>
-                <PlanesMain
-                  plans={plans}
-                />
                 <section>
                 <div className="tuisty-container-white p-5">
                   <Container>

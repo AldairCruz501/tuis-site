@@ -100,34 +100,20 @@ const PlanesMain = ({ plans }) => {
                                     <div className="pricing-badge">
                                         <span className="badge text-uppercase">{plan.new}</span>
                                     </div>
-                                    <Card.Header className='py-3'>
-                                        <h4 className=' my-0 fw-bold plan-title text-uppercase fs-4'>
-                                            {plan.name} <span className='tuisty-gb'>{plan.dataType}</span>
+                                    <Card.Header className='py-3 bg-main-card-header rounded-top'>
+                                        <h4 className=' my-0 fw-bold plan-title-main text-uppercase fs-4'>
+                                            {plan.name} <span className='tuisty-gb-main'>{plan.dataType}</span>
                                         </h4>
                                     </Card.Header>
-                                    <div className='text-center p-3 bg-gb'>
-                                        <h4 className='my-0 fw-bold text-white text-uppercase display-5'>{plan.data}</h4>
-                                        <h5 className='my-0 fw-bold text-white text-uppercase fs-4'>{plan.usage}</h5>
+                                    <div className='text-center p-3 bg-main-gb'>
+                                        <h4 className='my-0 fw-bold text-white text-uppercase display-4'>{plan.data}</h4>
+                                        <small className='text-white fw-light fs-5 text-uppercase'>
+                                            {plan.duration}
+                                        </small>
                                     </div>
-                                    <Card.Body>
-                                        <div className='border-tuisty border-2 border-bottom'>
-                                            <h1 className='card-title pricing-card-title fw-bold display-3'>
-                                                ${plan.price}
-                                            </h1>
-                                            <p>
-                                                <small className='text-body-secondary fw-light fs-4'>
-                                                    {plan.duration}
-                                                </small>
-                                            </p>
-                                        </div>
-                                        {plan.socialMedia && (
+                                    {plan.socialMedia && (
                                             <>
-                                                <div className='text-center p-3'>
-                                                    <h4 className='my-0 fw-bold text-dark fs-6'>
-                                                        Redes Sociales Ilimitadas:
-                                                    </h4>
-                                                </div>
-                                                <div className='d-flex justify-content-center pt-3 pb-3 border-tuisty border-2 border-bottom'>
+                                                <div className='d-flex justify-content-center p-3'>
                                                     {plan.socialMedia.map((platform, idx) => (
                                                         <span key={idx} className={`rounded mx-1 social-icon-${platform}`}>
                                                             <FontAwesomeIcon
@@ -137,9 +123,14 @@ const PlanesMain = ({ plans }) => {
                                                         </span>
                                                     ))}
                                                 </div>
+                                                <div className='text-center pb-3 border-tuisty border-2 border-bottom'>
+                                                    <h4 className='my-0 fw-bold text-dark fs-6 text-uppercase'>
+                                                        Redes Sociales Ilimitadas:
+                                                    </h4>
+                                                </div>
                                             </>
                                         )}
-                                        <div className='border-tuisty border-2 border-bottom pt-4 pb-3'>
+                                        <div className='pt-4 pb-3 border-tuisty border-2 border-bottom'>
                                             <h4 className="fw-bold fs-3 text-uppercase">
                                             <span className="icon-sms mx-2">
                                                 <FontAwesomeIcon icon={faEnvelope} className='fs-3' />
@@ -153,6 +144,12 @@ const PlanesMain = ({ plans }) => {
                                                 Llamadas <span className='tuisty-gb'>{plan.call}</span>
                                             </p>
                                         </div>
+                                        <div className='p-4 bg-price'>
+                                            <h3 className='text-white fw-bold display-3'>
+                                                ${plan.price}
+                                            </h3>
+                                        </div>
+                                    <Card.Body className='bg-body-card '>
                                         {/*<Button
                                             className="plan-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill border-light fs-4 mb-3"
                                             onClick={() => handleBuyClick(plan)}
@@ -166,15 +163,15 @@ const PlanesMain = ({ plans }) => {
                                             Comprar
                                         </Button>
                                         <Accordion defaultActiveKey={null} flush>
-                                            <Accordion.Item eventKey='0'>
+                                            <Accordion.Item eventKey='0' className='bg-body-card'>
                                                 <Accordion.Header onClick={() => handleAccordionToggle(index)}>
-                                                    <h4 className='fw-bold fs-6 text-center'>
+                                                    <h4 className='fw-bold fs-6 text-center text-white'>
                                                         {openAccordions.includes(index) ? 'Ocultar Detalles' : 'Mostrar Detalles'}
                                                     </h4>
                                                 </Accordion.Header>
                                                 <Accordion.Body>
-                                                    <div className='border-tuisty-in border-2 border-top border-bottom pt-3 mt-2 pb-3'>
-                                                        <h4 className='fw-bold fs-6'>
+                                                    <div className=' border-light border-2 border-top border-bottom pt-3 mt-2 pb-3'>
+                                                        <h4 className='fw-bold fs-6 text-white'>
                                                             Llamadas a:
                                                         </h4>
                                                         <div className=' d-flex justify-content-center pt-3 mb-3'>
@@ -183,12 +180,12 @@ const PlanesMain = ({ plans }) => {
                                                             <img src="/img/mexico.png" alt="mx-flag" className='w-25 mx-1' loading="lazy" />
                                                         </div>
                                                     </div>
-                                                    <div className='border-tuisty-in border-2 border-bottom pt-4 pb-3'>
-                                                        <h4 className="fw-bold fs-6 internet-title text-uppercase">
+                                                    <div className='border-light border-2 border-bottom pt-4 pb-3'>
+                                                        <h4 className="fw-bold fs-6 text-white text-uppercase">
                                                             {plan.internet}
                                                         </h4>
                                                     </div>
-                                                    <div className='border-tuisty-in border-2 border-bottom pt-4 pb-1'>
+                                                    <div className='border-light border-2 border-bottom pt-4 pb-1 text-white'>
                                                         <h4 className="fw-bold fs-6">
                                                             Formato de Chip:
                                                         </h4>
