@@ -44,7 +44,7 @@
 
   .bg-body-card,
   .accordion-button {
-    background-color: #FF8500 !important;
+    background-color: #FF8500;
     box-shadow: none !important;
   }
 
@@ -138,3 +138,8 @@
     background: #29B8C9;
   }
 
+  .bg-body-card,
+  .accordion-main .accordion-button {
+    background-color: #FF8500 !important;
+    box-shadow: none !important;
+  }

@@ -121,5 +121,9 @@
     background: #6149B7;
   }
 
-
-
+  .bg-body-card,
+  .accordion-section .accordion-button {
+    background-color: #FF8500 !important;
+    box-shadow: none !important;
+    color: white;
+  }

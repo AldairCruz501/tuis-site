@@ -156,46 +156,48 @@ const PlanesSection = ({ plans }) => {
                         >
                             Comprar
                         </Button>
-                        <Accordion defaultActiveKey={null} flush>
-                            <Accordion.Item eventKey='0' className='bg-body-card'>
-                                <Accordion.Header onClick={() => handleAccordionToggle(index)}>
-                                    <h4 className='fw-bold fs-6 text-center text-white'>
-                                        {openAccordions.includes(index) ? 'Ocultar Detalles' : 'Mostrar Detalles'}
-                                    </h4>
-                                </Accordion.Header>
-                                <Accordion.Body>
-                                    <div className=' border-light border-2 border-top border-bottom pt-3 mt-2 pb-3'>
-                                        <h4 className='fw-bold fs-6 text-white'>
-                                            Llamadas a:
-                                        </h4>
-                                        <div className=' d-flex justify-content-center pt-3 mb-3'>
-                                            <img src="/img/canada.png" alt="can-flag" className='w-25 mx-1' loading="lazy" />
-                                            <img src="/img/estados-unidos.png" alt="usa-flag" className='w-25 mx-1' loading="lazy" />
-                                            <img src="/img/mexico.png" alt="mx-flag" className='w-25 mx-1' loading="lazy" />
-                                        </div>
-                                    </div>
-                                    <div className='border-light border-2 border-bottom pt-4 pb-3'>
-                                        <h4 className="fw-bold fs-6 text-white text-uppercase">
-                                            {plan.internet}
-                                        </h4>
-                                    </div>
-                                    <div className='border-light border-2 border-bottom pt-4 pb-1 text-white'>
-                                        <h4 className="fw-bold fs-6">
-                                            Formato de Chip:
-                                        </h4>
-                                        <ul className="list-unstyled mt-0">
-                                            <li>SIM</li>
-                                            <li>eSIM</li>
-                                        </ul>
-                                    </div>
-                                    {/*<div className='border-tuisty-in border-2 border-bottom pt-3 pb-2'>
-                                        <h4 className="fw-bold fs-6 text-uppercase folio-title">
-                                        Folio: <span className='text-secondary fw-bold'>{plan.iftfolio}</span>
-                                        </h4>
-                                    </div>*/}
-                                </Accordion.Body>
-                            </Accordion.Item>
-                        </Accordion>
+                        <div className='accordion-section'>
+                          <Accordion defaultActiveKey={null} flush>
+                              <Accordion.Item eventKey='0' className='bg-body-card'>
+                                  <Accordion.Header onClick={() => handleAccordionToggle(index)}>
+                                      <h4 className='fw-bold fs-6 text-center text-white'>
+                                          {openAccordions.includes(index) ? 'Ocultar Detalles' : 'Mostrar Detalles'}
+                                      </h4>
+                                  </Accordion.Header>
+                                  <Accordion.Body>
+                                      <div className=' border-light border-2 border-top border-bottom pt-3 mt-2 pb-3'>
+                                          <h4 className='fw-bold fs-6 text-white'>
+                                              Llamadas a:
+                                          </h4>
+                                          <div className=' d-flex justify-content-center pt-3 mb-3'>
+                                              <img src="/img/canada.png" alt="can-flag" className='w-25 mx-1' loading="lazy" />
+                                              <img src="/img/estados-unidos.png" alt="usa-flag" className='w-25 mx-1' loading="lazy" />
+                                              <img src="/img/mexico.png" alt="mx-flag" className='w-25 mx-1' loading="lazy" />
+                                          </div>
+                                      </div>
+                                      <div className='border-light border-2 border-bottom pt-4 pb-3'>
+                                          <h4 className="fw-bold fs-6 text-white text-uppercase">
+                                              {plan.internet}
+                                          </h4>
+                                      </div>
+                                      <div className='border-light border-2 border-bottom pt-4 pb-1 text-white'>
+                                          <h4 className="fw-bold fs-6">
+                                              Formato de Chip:
+                                          </h4>
+                                          <ul className="list-unstyled mt-0">
+                                              <li>SIM</li>
+                                              <li>eSIM</li>
+                                          </ul>
+                                      </div>
+                                      {/*<div className='border-tuisty-in border-2 border-bottom pt-3 pb-2'>
+                                          <h4 className="fw-bold fs-6 text-uppercase folio-title">
+                                          Folio: <span className='text-secondary fw-bold'>{plan.iftfolio}</span>
+                                          </h4>
+                                      </div>*/}
+                                  </Accordion.Body>
+                              </Accordion.Item>
+                          </Accordion>
+                        </div>
                     </Card.Body>
                 </Card>
               </Col>

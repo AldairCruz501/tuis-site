@@ -38,7 +38,7 @@ function Home() {
             <>
               <NavbarComponent/>
               <section>
-                <Container fluid className="pt-4 pb-5 pb-lg-0">
+                <Container fluid className="pt-4 pb-5 pt-lg-3 pb-lg-3">
                   <Carousel
                     prevIcon={
                       <span className='btn-prev'>
@@ -51,6 +51,20 @@ function Home() {
                       </span>
                     } 
                   >
+                    <Carousel.Item>
+                      <img
+                        className="d-none d-lg-block w-75 m-auto"
+                        src="img/Portada_TUIS_1920x1080.jpg"
+                        alt="Slide 2"
+                        loading="lazy"
+                      />
+                      <img
+                        className="d-block d-lg-none w-100 m-auto"
+                        src="img/Portada_TUIS_1024x768.jpg"
+                        alt="Slide 2"
+                        loading="lazy"
+                      />
+                    </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-none d-lg-block w-75 m-auto"
@@ -66,6 +80,20 @@ function Home() {
                         />
                         <Carousel.Caption>
                         </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img
+                        className="d-none d-lg-block w-75 m-auto"
+                        src="img/banner-tuis3.png"
+                        alt="Slide 2"
+                        loading="lazy"
+                      />
+                      <img
+                        className="d-block d-lg-none w-100 m-auto"
+                        src="img/banner_carrusel_3.png"
+                        alt="Slide 2"
+                        loading="lazy"
+                      />
                     </Carousel.Item>
                     <Carousel.Item>
                       <img

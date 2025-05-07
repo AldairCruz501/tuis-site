@@ -98,3 +98,8 @@
 .text-justify {
     text-align: justify;
   }
+
+  .accordion-button {
+    background-color: #FFFFFF;
+    box-shadow: none !important;
+  }
