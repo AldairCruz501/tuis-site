@@ -66,6 +66,20 @@ function Home() {
                       />
                     </Carousel.Item>
                     <Carousel.Item>
+                      <img
+                        className="d-none d-lg-block w-75 m-auto"
+                        src="img/HOT-SALE-TUIS-TV.jpg"
+                        alt="Slide 2"
+                        loading="lazy"
+                      />
+                      <img
+                        className="d-block d-lg-none w-100 m-auto"
+                        src="img/HOT-SALE-TUIS-WEB.jpg"
+                        alt="Slide 2"
+                        loading="lazy"
+                      />
+                    </Carousel.Item>
+                    <Carousel.Item>
                         <img
                         className="d-none d-lg-block w-75 m-auto"
                         src="img/banner-tuis1.png"
