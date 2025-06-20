@@ -65,7 +65,7 @@ function Home() {
                         loading="lazy"
                       />
                     </Carousel.Item>
-                    <Carousel.Item>
+                    {/* <Carousel.Item>
                       <img
                         className="d-none d-lg-block w-75 m-auto"
                         src="img/HOT-SALE-TUIS-TV.jpg"
@@ -78,7 +78,7 @@ function Home() {
                         alt="Slide 2"
                         loading="lazy"
                       />
-                    </Carousel.Item>
+                    </Carousel.Item> */}
                     <Carousel.Item>
                         <img
                         className="d-none d-lg-block w-75 m-auto"
