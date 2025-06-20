@@ -54,6 +54,20 @@ function Home() {
                     <Carousel.Item>
                       <img
                         className="d-none d-lg-block w-75 m-auto"
+                        src="img/TRIPLE-GIGAS-1920x1080.jpg"
+                        alt="Slide 2"
+                        loading="lazy"
+                      />
+                      <img
+                        className="d-block d-lg-none w-100 m-auto"
+                        src="img/TRIPLE-GIGAS-768x1024.jpg"
+                        alt="Slide 2"
+                        loading="lazy"
+                      />
+                    </Carousel.Item>
+                    {/* <Carousel.Item>
+                      <img
+                        className="d-none d-lg-block w-75 m-auto"
                         src="img/Portada_TUIS_1920x1080.jpg"
                         alt="Slide 2"
                         loading="lazy"
@@ -64,7 +78,7 @@ function Home() {
                         alt="Slide 2"
                         loading="lazy"
                       />
-                    </Carousel.Item>
+                    </Carousel.Item> */}
                     {/* <Carousel.Item>
                       <img
                         className="d-none d-lg-block w-75 m-auto"
