@@ -1428,7 +1428,7 @@ function TerminosCondiciones () {
                                                     </p>
                                                 </Accordion.Body>
                                             </Accordion.Item>
-                                            
+
                                             <Accordion.Item eventKey="2">
                                                 <Accordion.Header>
                                                     <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Forma de pago</h4>
@@ -1442,6 +1442,15 @@ function TerminosCondiciones () {
                                                 </Accordion.Body>
                                             </Accordion.Item>
                                         </Accordion>
+                                    </section>
+
+
+                                    <section className='pt-5'>
+                                        <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Carta de Derechos Mínimos.</h2>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                           ---- 
+                                        </p>
+                                        
                                     </section>
                                     
 
