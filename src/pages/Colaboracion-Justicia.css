@@ -1,0 +1,15 @@
+
+.privacy-title,
+.privacy-subtitle,
+.link-privacy {
+    color: #0C71C3;
+    text-decoration: none;
+}
+
+.list-style {
+    list-style-type: decimal;
+}
+
+.link-privacy:hover {
+    color: #FF8500;
+}

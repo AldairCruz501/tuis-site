@@ -145,8 +145,8 @@ const PlanesMain = ({ plans }) => {
                                             </p>
                                         </div>
                                         <div className='p-4 bg-price'>
-                                            <h3 className='text-white fw-bold display-3'>
-                                                ${plan.price}
+                                            <h3 className='text-white fw-bold display-5'>
+                                                ${plan.price} MXN
                                             </h3>
                                         </div>
                                     <Card.Body className='bg-body-card '>

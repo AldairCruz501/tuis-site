@@ -13,6 +13,7 @@ import Compatibilidad from './pages/Compatibilidad';
 import Nosotros from './pages/Nosotros';
 import AvisoPrivacidad from './pages/Aviso-Privacidad';
 import TerminosCondiciones from './pages/Terminos-Condiciones';
+import ColaboracionJusticia from './pages/Colaboracion-Justicia';
 import LoginRegistro from './pages/Login-Registro';
 import usePageTitle from './hooks/usePageTitle';
 import Carrito from './pages/Cart/Carrito';
@@ -54,6 +55,7 @@ function App() {
           <Route path='/acceder' element={<LoginRegistro />} />
           <Route path='/carrito' element={<Carrito />} />
           <Route path='/proceder-a-pagar' element={<Pasarela />} />
+          <Route path='/colaboracion-con-la-justicia' element={<ColaboracionJusticia />} />
           <Route path='/aviso-de-privacidad' element={<AvisoPrivacidad />} />
           <Route path='/terminos-y-condiciones' element={<TerminosCondiciones />} />
           <Route path="/portabilidad-ift" element={<PdfViewer pdfPath="/pdf/Portabilidad-IFT.pdf" />} />
