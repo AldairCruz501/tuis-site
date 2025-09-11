@@ -139,8 +139,8 @@ const PlanesSection = ({ plans }) => {
                             </p>
                         </div>
                         <div className='p-4 bg-price'>
-                            <h3 className='text-white fw-bold display-1'>
-                                ${plan.price}
+                            <h3 className='text-white fw-bold display-4'>
+                                ${plan.price} MXN
                             </h3>
                         </div>
                     <Card.Body className='bg-body-card '>
