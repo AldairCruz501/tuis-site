@@ -1361,6 +1361,78 @@ function TerminosCondiciones () {
                                             </Accordion.Item>
                                         </Accordion>
                                     </section>
+
+                                    <section className='pt-5'>
+                                        <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Requisitos de Contratación</h2>
+                                        <Accordion defaultActiveKey={null} flush>
+                                            <Accordion.Item eventKey="0">
+                                                <Accordion.Header>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Proceso de compra</h4>
+                                                </Accordion.Header>
+                                                
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        <ul className='text-body-secondary fs-6 list-style text-justify'>
+                                                            <li>
+                                                                Usuario verifica compatibilidad de su equipo con nuestra red.
+                                                            </li>
+                                                            <li>
+                                                                Elige tarjeta SIM o E-SIM.
+                                                            </li>
+                                                            <li>
+                                                                Si escoge SIM física el proceso de compra es el siguiente:
+                                                            </li><br/>
+                                                            Datos de envío<br/> 
+                                                            -Nombre completo de cliente.<br/>
+                                                            -Correo electronico.<br/> 
+                                                            -Número de contacto.<br/> 
+                                                            -Direccion.<br/> 
+                                                            -Portabilidad dar dos opciones Si – No, si es <strong>si</strong> se abre un apartado de nip, en caso contrario no es necesario ese apartado.<br/> 
+                                                            -Forma de pago.<br/> 
+                                                            <br/> <li>
+                                                                El usuario desea adquirir un E-SIM. 
+                                                            </li>
+                                                        </ul>
+                                                    </p>
+                                                </Accordion.Body>
+
+
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="1">
+                                                <Accordion.Header>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Proceso de compra de E-ESIM</h4>
+                                                </Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        Datos de envío<br/> 
+                                                            -Nombre completo de cliente.<br/>
+                                                            -Correo electronico.<br/> 
+                                                            -Número de contacto.<br/> 
+                                                            -Portabilidad dar dos opciones Si – No, si es <strong>si</strong> se abre un apartado de nip, en caso contrario no es necesario ese apartado.<br/> 
+                                                        <br/>La portabilidad puede tardar hasta 48 horas hábiles para que se realice el cambio, mientras tanto, tu servicio
+                                                        telefónico continuará funcionando con el número provisional
+
+                                                            
+                                                    </p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="2">
+                                                <Accordion.Header>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Forma de pago</h4>
+                                                </Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        Te invitamos que revises <a href="#">contrato de adhesión con Profeco</a>
+
+                                                            
+                                                    </p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                        </Accordion>
+                                    </section>
+                                    
+
+
                                     <p className='text-body-secondary fs-6 mt-5 pt-5 text-end'>
                                         <span className='fw-bold'>Última actualización:</span> Abril 2025 
                                     </p>
