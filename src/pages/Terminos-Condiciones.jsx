@@ -1409,18 +1409,26 @@ function TerminosCondiciones () {
                                                 </Accordion.Header>
                                                 <Accordion.Body>
                                                     <p className='text-body-secondary fs-6 text-justify'>
-                                                        Datos de envío<br/> 
-                                                            -Nombre completo de cliente.<br/>
-                                                            -Correo electronico.<br/> 
-                                                            -Número de contacto.<br/> 
-                                                            -Portabilidad dar dos opciones Si – No, si es <strong>si</strong> se abre un apartado de nip, en caso contrario no es necesario ese apartado.<br/> 
-                                                        <br/>La portabilidad puede tardar hasta 48 horas hábiles para que se realice el cambio, mientras tanto, tu servicio
-                                                        telefónico continuará funcionando con el número provisional
+                                                        <ul className='text-body-secondary fs-6 text-justify'>
+                                                            <li>
+                                                                Datos de envío:
+                                                                <ul>
+                                                                    <li>Nombre completo de cliente.</li>
+                                                                    <li>Correo electronico.</li>
+                                                                    <li>Número de contacto.</li>
+                                                                    <li>Portabilidad dar dos opciones Si – No, si es <span className="fw-bold">si</span> se abre un apartado de nip, en caso contrario no es necesario ese apartado.</li>
 
-                                                            
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            La portabilidad puede tardar hasta 48 horas hábiles para que se realice el cambio, mientras tanto, tu servicio
+                                                            telefónico continuará funcionando con el número provisional
+                                                        </p>
                                                     </p>
                                                 </Accordion.Body>
                                             </Accordion.Item>
+                                            
                                             <Accordion.Item eventKey="2">
                                                 <Accordion.Header>
                                                     <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Forma de pago</h4>
