@@ -1372,7 +1372,7 @@ function TerminosCondiciones () {
                                                 
                                                 <Accordion.Body>
                                                     <p className='text-body-secondary fs-6 text-justify'>
-                                                        <ul className='text-body-secondary fs-6 list-style text-justify'>
+                                                        <ul className='text-body-secondary fs-6 text-justify'>
                                                             <li>
                                                                 Usuario verifica compatibilidad de su equipo con nuestra red.
                                                             </li>
@@ -1381,15 +1381,20 @@ function TerminosCondiciones () {
                                                             </li>
                                                             <li>
                                                                 Si escoge SIM física el proceso de compra es el siguiente:
-                                                            </li><br/>
-                                                            Datos de envío<br/> 
-                                                            -Nombre completo de cliente.<br/>
-                                                            -Correo electronico.<br/> 
-                                                            -Número de contacto.<br/> 
-                                                            -Direccion.<br/> 
-                                                            -Portabilidad dar dos opciones Si – No, si es <strong>si</strong> se abre un apartado de nip, en caso contrario no es necesario ese apartado.<br/> 
-                                                            -Forma de pago.<br/> 
-                                                            <br/> <li>
+                                                            </li>
+                                                            <li>
+                                                                Datos de envío:
+                                                                <ul>
+                                                                    <li>Datos de envío.</li>
+                                                                    <li>Nombre completo de cliente.</li>
+                                                                    <li>Correo electronico.</li>
+                                                                    <li>Número de contacto.</li>
+                                                                    <li>Direccion.</li>
+                                                                    <li>Portabilidad dar dos opciones Si – No, si es <span className="fw-bold">si</span> se abre un apartado de nip, en caso contrario no es necesario ese apartado.</li>
+                                                                    <li>Forma de pago.</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
                                                                 El usuario desea adquirir un E-SIM. 
                                                             </li>
                                                         </ul>
