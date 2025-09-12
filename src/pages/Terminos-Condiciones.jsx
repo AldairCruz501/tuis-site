@@ -1362,7 +1362,7 @@ function TerminosCondiciones () {
                                         </Accordion>
                                     </section>
 
-                                    {/* <section className='pt-5'>
+                                    <section className='pt-5'>
                                         <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Requisitos de Contratación</h2>
                                         <Accordion defaultActiveKey={null} flush>
                                             <Accordion.Item eventKey="0">
@@ -1423,7 +1423,7 @@ function TerminosCondiciones () {
                                                         </ul>
                                                         <p>
                                                             La portabilidad puede tardar hasta 48 horas hábiles para que se realice el cambio, mientras tanto, tu servicio
-                                                            telefónico continuará funcionando con el número provisional
+                                                            telefónico continuará funcionando con el número provisional.
                                                         </p>
                                                     </p>
                                                 </Accordion.Body>
@@ -1435,7 +1435,7 @@ function TerminosCondiciones () {
                                                 </Accordion.Header>
                                                 <Accordion.Body>
                                                     <p className='text-body-secondary fs-6 text-justify'>
-                                                        Te invitamos que revises <a href="#">contrato de adhesión con Profeco</a>
+                                                        Te invitamos que revises <a href="#">contrato de adhesión con Profeco.</a>
 
                                                             
                                                     </p>
@@ -1450,37 +1450,13 @@ function TerminosCondiciones () {
                                          <Accordion defaultActiveKey={null} flush>
                                             <Accordion.Item eventKey="0">
                                                 <Accordion.Header>
-                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Cancelacion del Servicio</h4>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Cancelación del servicio</h4>
                                                 </Accordion.Header>
                                                 
                                                 <Accordion.Body>
                                                     <p className='text-body-secondary fs-6 text-justify'>
-                                                        <ul className='text-body-secondary fs-6 text-justify'>
-                                                            <li>
-                                                                Usuario verifica compatibilidad de su equipo con nuestra red.
-                                                            </li>
-                                                            <li>
-                                                                Elige tarjeta SIM o E-SIM.
-                                                            </li>
-                                                            <li>
-                                                                Si escoge SIM física el proceso de compra es el siguiente:
-                                                            </li>
-                                                            <li>
-                                                                Datos de envío:
-                                                                <ul>
-                                                                    <li>Datos de envío.</li>
-                                                                    <li>Nombre completo de cliente.</li>
-                                                                    <li>Correo electronico.</li>
-                                                                    <li>Número de contacto.</li>
-                                                                    <li>Direccion.</li>
-                                                                    <li>Portabilidad dar dos opciones Si – No, si es <span className="fw-bold">si</span> se abre un apartado de nip, en caso contrario no es necesario ese apartado.</li>
-                                                                    <li>Forma de pago.</li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>
-                                                                El usuario desea adquirir un E-SIM. 
-                                                            </li>
-                                                        </ul>
+                                                        
+                                                    En TUIS nuestros planes no son forzosos. Si deseas cancelar comunícate con uno de nuestros asesores para solicitar la baja del servicio. Contacto TUIS enlace WhatsApp horario de atencion lun-viernes de 9-6pm - Sabado de 9am a 2pm.
                                                     </p>
                                                 </Accordion.Body>
 
@@ -1492,43 +1468,121 @@ function TerminosCondiciones () {
                                                 </Accordion.Header>
                                                 <Accordion.Body>
                                                     <p className='text-body-secondary fs-6 text-justify'>
-                                                        <ul className='text-body-secondary fs-6 text-justify'>
-                                                            <li>
-                                                                Datos de envío:
-                                                                <ul>
-                                                                    <li>Nombre completo de cliente.</li>
-                                                                    <li>Correo electronico.</li>
-                                                                    <li>Número de contacto.</li>
-                                                                    <li>Portabilidad dar dos opciones Si – No, si es <span className="fw-bold">si</span> se abre un apartado de nip, en caso contrario no es necesario ese apartado.</li>
-
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                        <p>
-                                                            La portabilidad puede tardar hasta 48 horas hábiles para que se realice el cambio, mientras tanto, tu servicio
-                                                            telefónico continuará funcionando con el número provisional
-                                                        </p>
+                                                        Estamos para apoyarte Contacto TUIS enlace WhatsApp horario de atencion lun-viernes de 9-6pm - Sabado de 9am a 2pm.
                                                     </p>
                                                 </Accordion.Body>
                                             </Accordion.Item>
 
                                             <Accordion.Item eventKey="2">
                                                 <Accordion.Header>
-                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Forma de pago</h4>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Suspensión de linea en caso de robo o extravió </h4>
                                                 </Accordion.Header>
                                                 <Accordion.Body>
                                                     <p className='text-body-secondary fs-6 text-justify'>
-                                                        Te invitamos que revises <a href="#">contrato de adhesión con Profeco</a>
+                                                        En caso de robo y extravió se recomienda ejecutar lo antes posible la suspensión de la linea para evitar el mal uso de esta. Para suspender tu línea contáctanos: Contacto TUIS enlace WhatsApp horario de atencion lun-viernes de 9-6pm Sabado de 9am a 2pm.
+                                                    </p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
 
+                                            <Accordion.Item eventKey="3">
+                                                <Accordion.Header>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Recuperación de número por robo, daño o extravió </h4>
+                                                </Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                       <ul className='text-body-secondary fs-6 text-justify'>
+                                                            <li>
+                                                                Adquiere un chip nuevo TUIS sin activarla. 
+                                                            </li>
+                                                            <li>
+                                                                Proceso de recuperación de linea.  
+                                                            </li>     
+                                                                <ul>
+                                                                    <li>Numero a recuperar.</li>
+                                                                    <li>ICCID de la nueva SIM.</li>
+                                                                </ul>
+                                                            <li>
+                                                                Después de efectuar esta operación, es necesario esperar 1 hora para que se realice el cambio, mientras tanto se
+                                                                recomienda no usar el servicio. En caso requerir ayuda contáctanos.
+                                                            </li> 
                                                             
+                                                        </ul>
                                                     </p>
                                                 </Accordion.Body>
                                             </Accordion.Item>
                                         </Accordion>                      
                                         
                                     </section>
-                                     */}
+                                    
+                                    <section className='pt-5'>
+                                        <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Términos y Condiciones &quot;TRIPLE DE GIGAS&quot;</h2>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            <span className='fw-bold'>Generales:</span> Con el objetivo de reconocer a nuestros Clientes, apoyar la economía individual y familiar, así como
+                                        de promover el crecimiento de nuestra red de telecomunicaciones en México, brindamos nuestra promoción “TRIPLE DE GIGAS”.
+                                        </p>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            <span className='fw-bold'>Zona Geográfica:</span> Dentro de toda la República Mexicana.
+                                        </p>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            <span className='fw-bold'>Vigencia:</span> Hasta el 31 de octubre de 2025.
+                                        </p>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            <span className='fw-bold'>Beneficio:</span> El Triple de datos de navegación libre durante doce meses exclusivamente en los Planes Mensuales
+                                            de Tuis (Tuisty Ready 2 GB ilimitados, Tuisty Nova 3G Ilimitado, Tuisty Boost 12G, Tuisty prime 15 GB ilimitado, Tuisty
+                                            prime 24 GB)
 
+                                        </p>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            Los usuarios que realicen la portabilidad de su número desde otra compañía telefónica por primera vez deberán
+                                            adquirir y/o recargar cualquiera de los planes mensuales antes mencionados y posteriormente cada vez que
+                                            recarguen el plan inicial contratado recibirán el triple de datos.
+                                        </p>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            No se otorgará el beneficio si el usuario recarga un plan diferente al inicialmente contratado.
+                                        </p>
+                                        <div>
+                                            <p className='text-body-secondary fs-5 text-justify'>
+                                                El uso de la Plataforma implica la aceptación de:
+                                            </p>
+                                            <ul className='text-body-secondary fs-5 list-style text-justify'>
+                                                <li>
+                                                    El usuario debe tener un número previamente asignado por cualquier compañía telefónica en México.<span className='fw-bold'>*</span>
+                                                </li>
+                                                <li>
+                                                    El usuario debe realizar la portabilidad de su número telefónico a Tuis.
+                                                </li>
+                                                <li>
+                                                    El usuario debe contratar o recargar el Paquete Mensual de su preferencia en la página web, en la
+                                                    aplicación móvil o en la sucursal autorizada. Para que el beneficio sea aplicable, el plan seleccionado
+                                                    al momento de la portabilidad debe ser recargado por el usuario durante doce meses continuos.
+                                                </li>
+                                                <li>
+                                                    El beneficio se asignará al finalizar el proceso de portabilidad (máximo hasta 5 días hábiles posteriores al
+                                                    alta del usuario final).
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            <span className='fw-bold'>Notas:</span> <span className='fw-bold'>*</span>Válido con cualquiera de las compañías de telefonía y datos con excepción de las marcas de Altán.
+                                        </p>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            Los planes mensuales son de prepago y no son forzosos, duran 30 días y no se pueden modificar durante ese
+                                            periodo.
+                                        </p>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            Es importante que el Usuario o Cliente verifique la compatibilidad de su dispositivo a través del Portal.
+                                        </p>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            Esta promoción es aplicable únicamente para usuarios nuevos que realicen recargas dentro de la aplicación
+                                            móvil, en la página web y/o en los puntos de venta físicos mencionados en la página web.
+
+                                        </p>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            <span className='fw-bold'>Usuario Nuevo:</span> significa la persona que contrata, adquiere o realiza su portabilidad por primera vez de o a una
+                                            línea telefónica a Tuis.
+                                        </p>
+
+                                    </section>   
 
                                     <p className='text-body-secondary fs-6 mt-5 pt-5 text-end'>
                                         <span className='fw-bold'>Última actualización:</span> Abril 2025 
