@@ -8,6 +8,7 @@ config();
 export default defineConfig({
   plugins: [react()],
   server: {
+    port: 5174,
     proxy: {
       "/imeis": {
         target: "https://tuis.cero208.mx/imeis",

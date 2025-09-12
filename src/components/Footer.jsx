@@ -66,7 +66,7 @@ export default function FooterComponent () {
                   <Link to="/politica-uso-justo" className="text-decoration-none text-white" target="_blank">Política de uso justo</Link>
                 </li>
                 <li className="fs-5">
-                  <Link to="/colaboracion-justicia" className="text-decoration-none text-white" target="_blank">Colaboración con la Justicia</Link>
+                  <Link to="/colaboracion-con-la-justicia" className="text-decoration-none text-white">Colaboración con la Justicia</Link>
                 </li>
                 <li className="fs-5">
                   <Link to="/cod-practicas-comerciales" className="text-decoration-none text-white" target="_blank">Código de prácticas comerciales</Link>
