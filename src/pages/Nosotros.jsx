@@ -119,7 +119,8 @@ export default function Nosotros () {
                                         <div className="pt-3 text-start">
                                             <h4 className='fw-bold fs-5'>Cobertura Nacional e Internacional</h4>
                                             <p className='mb-2'>
-                                                Mantente conectado en cualquier lugar de México, así como EE. UU y Canadá.
+                                                Mantente conectado en México, así como en EE. UU. y Canadá, con 
+                                                nuestra cobertura nacional y servicio de roaming internacional.
                                             </p>
                                         </div>
                                     </Col>
@@ -133,9 +134,9 @@ export default function Nosotros () {
                                         <div className="pt-3 text-start">
                                             <h4 className='fw-bold fs-5'>Conectividad en Zonas Rurales</h4>
                                             <p className='mb-2'>
-                                                Sabemos lo importante que es estar conectado, incluso en los lugares más remotos. 
-                                                Por eso, garantizamos una cobertura confiable en pueblos y rancherías donde el 
-                                                acceso a internet cableado no llega.
+                                                Sabemos lo importante que es estar conectado, incluso en los lugares más remotos. Por eso te
+                                                ofrecemos esta nueva opción, con cobertura que llega a pueblos y rancherías donde el internet 
+                                                por cable no tiene alcance.
                                             </p>
                                         </div>
                                     </Col>
@@ -147,10 +148,11 @@ export default function Nosotros () {
                                             loading="lazy"
                                         />
                                         <div className="pt-3 text-start">
-                                            <h4 className='fw-bold fs-5'>Paquetes de Datos Accesibles</h4>
+                                            <h4 className='fw-bold fs-5'>Asistencia Técnica</h4>
                                             <p className='mb-2'>
-                                                Ofrecemos planes de datos con muchos GB para que puedas navegar, trabajar y
-                                                navegar y disfrutar de tus contenidos sin preocupaciones.
+                                                Comunicate vía WhatsApp, en donde recibirás la ayuda que
+                                                necesites en cualquier
+                                                momento.
                                             </p>
                                         </div>
                                     </Col>
