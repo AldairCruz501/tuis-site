@@ -2,7 +2,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareFacebook, faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faSquareFacebook, faSquareInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faLocationDot, faSquareEnvelope, faSquarePhone } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
@@ -16,7 +16,7 @@ export default function FooterComponent () {
           <Row>
             <Col md={4} className="footer-section">
               <Link to="/" onClick={handleScrollToTop} className="text-decoration-none">
-                  <img
+                <img
                   className="footer-logo mt-5"
                   src="/img/Tuis-Logotipo-Blanco.png"
                   alt="logo-tuis"
@@ -31,6 +31,12 @@ export default function FooterComponent () {
                 <FontAwesomeIcon  icon={faSquareInstagram}/>
                 </a>
               </div>
+              <img
+                className="footer-logo"
+                src="/img/911.png"
+                alt="logo-tuis"
+                loading="lazy"
+              />
             </Col>
             <Col md={4} className="footer-section">
               <h3 className="fw-bold mb-4 mt-5 fs-2">Contáctanos</h3>
@@ -42,6 +48,10 @@ export default function FooterComponent () {
               <a href="mailto:ventas@tuis.com.mx" className="d-flex fs-5 text-decoration-none text-white">
                 <FontAwesomeIcon className="fs-3 me-2" icon={faSquareEnvelope} /> ventas@tuis.com.mx
               </a>
+              <p className="fs-5 mt-4"><FontAwesomeIcon  icon={faWhatsapp}/> Horario de atención (WhatsApp):<br/>
+               Lunes a Viernes 8:00am a 6:00pm <br />
+               Sábado: 8:00am a 2:00pm
+              </p>
               </div>
             </Col>
             <Col md={4} className="footer-section">
