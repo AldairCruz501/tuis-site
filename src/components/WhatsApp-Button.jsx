@@ -16,7 +16,7 @@ const FloatingWhatsAppButton = ({ position = "bottom-left" }) => {
 
     return (
       <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" style={positionStyles}>
-        <Button style={{ backgroundColor: "#25D366", borderColor: "#25D366" }} className="rounded-circle p-3 shadow-lg">
+        <Button style={{ backgroundColor: "rgb(76, 195, 112)", borderColor: "rgb(76, 195, 112)", width: "60px",height: "60px", borderRadius: "50%" }} className="shadow-lg">
           <FontAwesomeIcon icon={faWhatsapp} size="2x" />
         </Button>
       </a>
