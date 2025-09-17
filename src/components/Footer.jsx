@@ -33,7 +33,7 @@ export default function FooterComponent () {
               </div>
               <img
                 className="footer-logo"
-                src="/img/911.png"
+                src="/img/911.jpg"
                 alt="logo-tuis"
                 loading="lazy"
               />
