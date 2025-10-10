@@ -130,19 +130,23 @@ const PlanesMain = ({ plans }) => {
                                                 </div>
                                             </>
                                         )}
-                                        <div className='pt-4 pb-3 border-tuisty border-2 border-bottom'>
+                                        <div className='pt-4 pb-3 border-tuisty border-2'>
                                             <h4 className="fw-bold fs-3 text-uppercase">
                                             <span className="icon-sms mx-2">
                                                 <FontAwesomeIcon icon={faEnvelope} className='fs-3' />
                                             </span>
                                             <span className='tuisty-gb'>{plan.sms}</span> SMS
                                             </h4>
-                                            <p className='fw-bold fs-5 text-uppercase'>
-                                            <span className="icon-sms mx-2">
-                                                <FontAwesomeIcon icon={faPhone} />
-                                            </span>
-                                                Llamadas <span className='tuisty-gb'>{plan.call}</span>
-                                            </p>
+                                        </div>
+                                        <div className='border-tuisty border-2 border-top border-bottom pt-3 mt-2 pb-3'>
+                                            <h4 className='fw-bold fs-6 text-uppercase'>
+                                                Llamadas a:
+                                            </h4>
+                                            <div className='d-flex justify-content-center pt-3 mb-3'>
+                                                <img src="/img/canada.png" alt="can-flag" className='w-25 mx-1' loading="lazy" />
+                                                <img src="/img/estados-unidos.png" alt="usa-flag" className='w-25 mx-1' loading="lazy" />
+                                                <img src="/img/mexico.png" alt="mx-flag" className='w-25 mx-1' loading="lazy" />
+                                            </div>
                                         </div>
                                         <div className='p-4 bg-price'>
                                             <h3 className='text-white fw-bold display-5'>
@@ -171,17 +175,7 @@ const PlanesMain = ({ plans }) => {
                                                         </h4>
                                                     </Accordion.Header>
                                                     <Accordion.Body>
-                                                        <div className=' border-light border-2 border-top border-bottom pt-3 mt-2 pb-3'>
-                                                            <h4 className='fw-bold fs-6 text-white'>
-                                                                Llamadas a:
-                                                            </h4>
-                                                            <div className=' d-flex justify-content-center pt-3 mb-3'>
-                                                                <img src="/img/canada.png" alt="can-flag" className='w-25 mx-1' loading="lazy" />
-                                                                <img src="/img/estados-unidos.png" alt="usa-flag" className='w-25 mx-1' loading="lazy" />
-                                                                <img src="/img/mexico.png" alt="mx-flag" className='w-25 mx-1' loading="lazy" />
-                                                            </div>
-                                                        </div>
-                                                        <div className='border-light border-2 border-bottom pt-4 pb-3'>
+                                                        <div className='border-light border-top border-2 border-bottom pt-4 pb-3'>
                                                             <h4 className="fw-bold fs-6 text-white text-uppercase">
                                                                 {plan.internet}
                                                             </h4>

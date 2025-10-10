@@ -133,11 +133,8 @@ function Home() {
                     <Row className="align-items-center">
                       <Col xs={12} md={8} className="text-center text-md-start">
                         <h1 className="fw-bold text-white text-uppercase fs-3 fs-md-2 fst-italic">
-                          Llamadas y SMS ilimitados
+                          Llamadas y SMS a México | Usa | Canadá
                         </h1>
-                        <p className="fw-bold text-white text-uppercase fs-6 fs-md-5 fst-italic">
-                          México | Usa | Canadá
-                        </p>
                       </Col>
                       <Col xs={12} md={4} className="text-center text-md-end mt-3 mt-md-0">
                         <Button
@@ -212,8 +209,8 @@ function Home() {
                         <ul className="features-list text-white text-start mt-3 p-4 px-4 p-lg-0 px-lg-0">
                           <li>Tarjeta SIM incluida</li>
                           <li>15GB Datos móviles</li>
-                          <li>Llamadas ilimitadas</li>
-                          <li>Mensajes ilimitados</li>
+                          <li>Llamadas a México | Usa |Canadá</li>
+                          <li>Mensajes a México | Usa | Canadá</li>
                           <li>Redes sociales ilimitadas</li>
                           <li>30 Días de duración</li>
                         </ul>
@@ -288,7 +285,7 @@ function Home() {
                               <h3 className="display-5 fw-bold">4.5G</h3>
                             </Button>
                             <p className="pt-2 tuisty-text">
-                              Cobertura total con excelente red en México
+                              Planes a tu medida
                             </p>
                           </Col>
                           <Col className="text-center">
