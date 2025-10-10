@@ -209,8 +209,7 @@ function Home() {
                         <ul className="features-list text-white text-start mt-3 p-4 px-4 p-lg-0 px-lg-0">
                           <li>Tarjeta SIM incluida</li>
                           <li>15GB Datos móviles</li>
-                          <li>Llamadas a México | Usa |Canadá</li>
-                          <li>Mensajes a México | Usa | Canadá</li>
+                          <li>Llamadas y Mensajes a México | Usa | Canadá</li>
                           <li>Redes sociales ilimitadas</li>
                           <li>30 Días de duración</li>
                         </ul>
@@ -270,7 +269,7 @@ function Home() {
                       <Col lg={6}>
                         <div className="pt-3 text-center text-lg-start">
                           <h3 className="display-3 fw-bold text-uppercase tuisty-title">
-                            Razones para cambiarte a{" "}
+                            Planes a tu medida{" "}
                             <img
                               src="img/Tuis-logotipo.png"
                               className="w-25"
@@ -285,7 +284,7 @@ function Home() {
                               <h3 className="display-5 fw-bold">4.5G</h3>
                             </Button>
                             <p className="pt-2 tuisty-text">
-                              Planes a tu medida
+                              Cobertura total con excelente red en México
                             </p>
                           </Col>
                           <Col className="text-center">
