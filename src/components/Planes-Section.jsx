@@ -189,11 +189,11 @@ const PlanesSection = ({ plans }) => {
                                               <li>eSIM</li>
                                           </ul>
                                       </div>
-                                      {/*<div className='border-tuisty-in border-2 border-bottom pt-3 pb-2'>
-                                          <h4 className="fw-bold fs-6 text-uppercase folio-title">
-                                          Folio: <span className='text-secondary fw-bold'>{plan.iftfolio}</span>
-                                          </h4>
-                                      </div>*/}
+                                      <div className='border-tuisty-in border-2 border-bottom pt-3 pb-2'>
+                                          <a href={plan.linkfolio} className="fw-bold fs-6 text-uppercase folio-title text-decoration-none" target='_blank'>
+                                            Folio: <span className='text-secondary fw-bold'>{plan.iftfolio}</span>
+                                          </a>
+                                      </div>
                                   </Accordion.Body>
                               </Accordion.Item>
                           </Accordion>

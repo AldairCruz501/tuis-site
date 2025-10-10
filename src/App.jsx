@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useParams } from 'react-router-dom';
 import Home from './pages/Home';
 import Paquetes from './pages/Paquetes';
 import PaquetesBasicos from './pages/paquetes/Paquetes-Basicos';
@@ -23,6 +23,7 @@ import Success from './pages/Cart/success';
 import { Recargas } from './pages/refllls/recargas';
 
 
+// Componente genérico para PDFs fijos
 const PdfViewer = ({ pdfPath }) => {
   return (
     <iframe
@@ -33,6 +34,33 @@ const PdfViewer = ({ pdfPath }) => {
       style={{ border: "none", height: "100vh" }}
     />
   );
+};
+
+// Componente para PDFs de folios dinámicos
+const FolioPdfViewer = () => {
+  const { folioId } = useParams();
+
+  // Aquí defines el mapeo de folios -> PDF
+  const pdfMap = {
+    "1833634": "/pdf/folio/Tuisty-Nova-3-GB-x-30-dias.pdf",
+    "1833650": "/pdf/folio/Tuisty-Estelar-5-GB-x-360-dias.pdf",
+    "1833638": "/pdf/folio/Tuisty-Estelar-5-GB-x-90-dias.pdf",
+    "1833635": "/pdf/folio/Tuisty-Estelar-5-GB-x-30-dias.pdf",
+    "1833642": "/pdf/folio/Tuisty-Estelar-5-GB-x-180-dias.pdf",
+    "1833637": "/pdf/folio/Tuisty-Gamer-40-GB-x-30-dias.pdf",
+    "1833640": "/pdf/folio/Tuisty-Prime-15-GB-x-90-dias.pdf",
+    "1833645": "/pdf/folio/Tuisty-Prime-15-GB-x-180-dias.pdf",
+    "1833653": "/pdf/folio/Tuisty-Prime-15-GB-x-360-dias.pdf",
+    "1833636": "/pdf/folio/Tuisty-Prime-15-GB-x-30-dias.pdf",
+  };
+
+  const pdfPath = pdfMap[folioId];
+
+  if (!pdfPath) {
+    return <p className="text-center mt-5">No se encontró PDF para el folio {folioId}</p>;
+  }
+
+  return <PdfViewer pdfPath={pdfPath} />;
 };
 
 
@@ -58,12 +86,18 @@ function App() {
           <Route path='/colaboracion-con-la-justicia' element={<ColaboracionJusticia />} />
           <Route path='/aviso-de-privacidad' element={<AvisoPrivacidad />} />
           <Route path='/terminos-y-condiciones' element={<TerminosCondiciones />} />
+
+          {/* PDFs fijos */}
           <Route path="/portabilidad-ift" element={<PdfViewer pdfPath="/pdf/Portabilidad-IFT.pdf" />} />
           <Route path="/contrato-adhesion-profeco" element={<PdfViewer pdfPath="/pdf/20240711-INBTEL-oficio-registro-contrato-de-adhesion.pdf" />} />
           <Route path="/carta-derechos-min" element={<PdfViewer pdfPath="/pdf/Carta-Derechos-Minimos-IFT.pdf" />} />
           <Route path="/politica-uso-justo" element={<PdfViewer pdfPath="/pdf/20240912-INBTEL-politica-de-uso-justo-MVNO-v1.pdf" />} />
           <Route path="/colaboracion-justicia" element={<PdfViewer pdfPath="/pdf/DATOS-PARA-COLABORACION-CON-LA-JUSTICIA.pdf" />} />
           <Route path="/cod-practicas-comerciales" element={<PdfViewer pdfPath="/pdf/20240912-INBTEL-codigo-de-practicas-comerciales-MVNO-v1.pdf" />} />
+
+          {/* Ruta dinámica para folios */}
+          <Route path="/folio/:folioId" element={<FolioPdfViewer />} />
+
           <Route path='/success' element={<Success />} />
           <Route path='/recargas' element={<Recargas />} />
         </Routes>
@@ -77,5 +111,4 @@ const PageTitleUpdater = () => {
   return null;
 };
 
-
-export default App
+export default App;

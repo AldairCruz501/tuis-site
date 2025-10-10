@@ -336,7 +336,8 @@ export const planesData = {
                 "telegram",
               ],
               duration: "30 días",
-              iftfolio: ""
+              iftfolio: "1833634",
+              linkfolio: "/folio/1833634",
               },
               {
                 id: 12,
@@ -368,7 +369,8 @@ export const planesData = {
                   "telegram",
                 ],
                 duration: "30 días",
-                iftfolio: ""
+                iftfolio: "1833635",
+                linkfolio: "/folio/1833635"
               },
               {
                 id: 13,
@@ -433,7 +435,8 @@ export const planesData = {
                   "telegram",
                 ],
                 duration: "30 días",
-                iftfolio: ""
+                iftfolio: "1833636",
+                linkfolio: "/folio/1833636"
               },
               {
                 id: 15,
@@ -498,7 +501,8 @@ export const planesData = {
                   "telegram",
                 ],
                 duration: "30 días",
-                iftfolio: ""
+                iftfolio: "1833637",
+                linkfolio: "/folio/1833637"
               },
               {
                 id: 17,
@@ -567,7 +571,8 @@ export const planesData = {
               "telegram",
             ],
             duration: "90 días",
-            iftfolio: ""
+            iftfolio: "1833638",
+            linkfolio: "/folio/1833638"
           },
           {
             id: 19,
@@ -599,7 +604,8 @@ export const planesData = {
               "telegram",
             ],
             duration: "90 días",
-            iftfolio: ""
+            iftfolio: "1833640",
+            linkfolio: "/folio/1833640"
           },
           {
             id: 20,
@@ -668,7 +674,8 @@ export const planesData = {
               "telegram",
             ],
             duration: "180 días",
-            iftfolio: ""
+            iftfolio: "1833642",
+            linkfolio: "/folio/1833642"
           },
           {
             id: 22,
@@ -699,8 +706,8 @@ export const planesData = {
               "messenger",
               "telegram",
             ],
-            duration: "180 días",
-            iftfolio: ""
+            iftfolio: "1833645",
+            linkfolio: "/folio/1833645"
           },
           {
             id: 23,
@@ -769,7 +776,8 @@ export const planesData = {
               "telegram",
             ],
             duration: "360 días",
-            iftfolio: ""
+            iftfolio: "1833650",
+            linkfolio: "/folio/1833650"
           },
           {
             id:25,
@@ -801,7 +809,8 @@ export const planesData = {
               "telegram",
             ],
             duration: "360 días",
-            iftfolio: ""
+            iftfolio: "1833653",
+            linkfolio: "/folio/1833653"
           },
           {
             id: 26,
