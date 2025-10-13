@@ -125,13 +125,13 @@ const PlanesSection = ({ plans }) => {
                             </>
                         )}
                         <div className='pt-4 pb-3 border-tuisty border-2 '>
-                            <h4 className="fw-bold fs-3 text-uppercase">
+                            <h4 className="fw-bold fs-3 text-uppercase pb-2">
                             <span className="icon-sms mx-2">
                                 <FontAwesomeIcon icon={faEnvelope} className='fs-3' />
                             </span>
                             <span className='tuisty-gb'>{plan.sms}</span> SMS
                             </h4>
-                            <div className=' border-tuisty border-2 border-top border-bottom pt-3 mt-2 pb-3'>
+                            <div className='border-tuisty border-2 border-top pt-3 mt-2 pb-3'>
                                 <h4 className='fw-bold fs-6 text-uppercase'>
                                     Llamadas a:
                                 </h4>
@@ -141,12 +141,12 @@ const PlanesSection = ({ plans }) => {
                                     <img src="/img/mexico.png" alt="mx-flag" className='w-25 mx-1' loading="lazy" />
                                 </div>
                             </div>
-                            <p className='fw-bold fs-5 text-uppercase'>
+                            {/* <p className='fw-bold fs-5 text-uppercase'>
                             <span className="icon-sms mx-2">
                                 <FontAwesomeIcon icon={faPhone} />
                             </span>
                                 Llamadas <span className='tuisty-gb'>{plan.call}</span>
-                            </p>
+                            </p> */}
                         </div>
                         <div className='p-4 bg-price'>
                             <h3 className='text-white fw-bold display-4'>
