@@ -269,7 +269,7 @@ function Home() {
                       <Col lg={6}>
                         <div className="pt-3 text-center text-lg-start">
                           <h3 className="display-3 fw-bold text-uppercase tuisty-title">
-                            Planes a tu medida{" "}
+                            Razones para cambiarte a{" "}
                             <img
                               src="img/Tuis-logotipo.png"
                               className="w-25"
@@ -280,11 +280,14 @@ function Home() {
                         </div>
                         <Row className="row-cols-1 row-cols-md-2 g-4">
                           <Col className="text-center">
-                            <Button className="w-75 btn-tuisty rounded-4">
-                              <h3 className="display-5 fw-bold">4.5G</h3>
-                            </Button>
+                            <img
+                              src="img/planes-a-tu-medida.png"
+                              alt="planes-a-tu-medida"
+                              className="w-50"
+                              loading="lazy"
+                            />
                             <p className="pt-2 tuisty-text">
-                              Cobertura total con excelente red en México
+                              Planes a tu medida
                             </p>
                           </Col>
                           <Col className="text-center">
