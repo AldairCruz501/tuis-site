@@ -294,7 +294,7 @@ function Home() {
                             <img
                               src="img/mapa-mexico.png"
                               alt="mapa-mexico"
-                              className="w-50"
+                              className="w-75"
                               loading="lazy"
                             />
                             <p className="pt-2 tuisty-text">Cobertura Nacional</p>

@@ -158,6 +158,7 @@ export const planesData = {
           llamadas:"375 min en llamadas y SMS a:",
           internet:"Si Comparte Internet",
           showCountries: false, // Ocultamos las banderas para este plan
+          showLlamadas:true,
           socialText:"512 MB para Redes Sociales",
           // socialMedia: [
           //   "whatsapp",
@@ -186,6 +187,7 @@ export const planesData = {
           llamadas:"Llamadas y SMS Ilimitados a:",
           internet:"Si Comparte Internet",
           showCountries: true, // Mostramos las banderas
+          showLlamadas:false,
           socialText:"Redes Sociales Ilimitadas",
           socialMedia: [
             "whatsapp",
@@ -220,6 +222,7 @@ export const planesData = {
           llamadas:"Llamadas y SMS Ilimitados a:",
           internet:"Si Comparte Internet",
           showCountries: true, // Mostramos las banderas
+          showLlamadas:false,
           socialText:"Redes Sociales Ilimitadas",
           socialMedia: [
             "whatsapp",
@@ -258,6 +261,7 @@ export const planesData = {
               llamadas:"Llamadas y SMS Ilimitados a:",
               internet:"Si Comparte Internet",
               showCountries: false,
+              showLlamadas:true,
               socialText:"614 MB para Redes Sociales",
               socialMedia: [
                 "whatsapp",
@@ -292,6 +296,7 @@ export const planesData = {
               llamadas:"Llamadas y SMS Ilimitados a:",
               internet:"Si Comparte Internet",
               showCountries: true,
+              showLlamadas:false,
               socialText:"Redes Sociales Ilimitadas",
               socialMedia: [
                 "whatsapp",
@@ -325,6 +330,7 @@ export const planesData = {
               llamadas:"Llamadas y SMS Ilimitados a:",
               internet:"Si Comparte Internet",
               showCountries: true,
+              showLlamadas:false,
               socialText:"Redes Sociales Ilimitadas",
               socialMedia: [
                 "whatsapp",
@@ -359,6 +365,7 @@ export const planesData = {
                 llamadas:"Llamadas y SMS Ilimitados a:",
                 internet:"Si Comparte Internet",
                 showCountries: true,
+                showLlamadas:false,
                 socialText:"Redes Sociales Ilimitadas",
                 socialMedia: [
                   "whatsapp",
@@ -394,6 +401,7 @@ export const planesData = {
                 llamadas:"Llamadas y SMS Ilimitados a:",
                 internet:"Si Comparte Internet",
                 showCountries: true,
+                showLlamadas:false,
                 socialText:"Redes Sociales Ilimitadas",
                 socialMedia: [
                   "whatsapp",
@@ -427,6 +435,7 @@ export const planesData = {
                 llamadas:"Llamadas y SMS Ilimitados a:",
                 internet:"Si Comparte Internet",
                 showCountries: true,
+                showLlamadas:false,
                 socialText:"Redes Sociales Ilimitadas",
                 socialMedia: [
                   "whatsapp",
@@ -462,6 +471,7 @@ export const planesData = {
                 llamadas:"Llamadas y SMS Ilimitados a:",
                 internet:"Si Comparte Internet",
                 showCountries: true,
+                showLlamadas:false,
                 socialText:"Redes Sociales Ilimitadas",
                 socialMedia: [
                   "whatsapp",
@@ -495,6 +505,7 @@ export const planesData = {
                 llamadas:"Llamadas y SMS Ilimitados a:",
                 internet:"No Comparte Internet",
                 showCountries: true,
+                showLlamadas:false,
                 socialText:"Redes Sociales Ilimitadas",
                 socialMedia: [
                   "whatsapp",
@@ -529,6 +540,7 @@ export const planesData = {
                 llamadas:"Llamadas y SMS Ilimitados a:",
                 internet:"Si Comparte Internet",
                 showCountries: true,
+                showLlamadas:true,
                 /*socialText:"Redes Sociales Nacionales Ilimitadas",
                 socialMedia: [
                   "whatsapp",
@@ -567,6 +579,7 @@ export const planesData = {
             llamadas:"Llamadas y SMS Ilimitados a:",
             internet:"Si Comparte Internet",
             showCountries: true,
+            showLlamadas:false,
             socialText:"Redes Sociales Ilimitadas",
             socialMedia: [
               "whatsapp",
@@ -601,6 +614,7 @@ export const planesData = {
             llamadas:"Llamadas y SMS Ilimitados a:",
             internet:"Si Comparte Internet",
             showCountries: true,
+            showLlamadas:false,
             socialText:"Redes Sociales Ilimitadas",
             socialMedia: [
               "whatsapp",
@@ -636,6 +650,7 @@ export const planesData = {
             llamadas:"Llamadas y SMS Ilimitados a:",
             internet:"Si Comparte Internet",
             showCountries: true,
+            showLlamadas:false,
             socialText:"Redes Sociales Ilimitadas",
             socialMedia: [
               "whatsapp",
@@ -673,6 +688,7 @@ export const planesData = {
             llamadas:"Llamadas y SMS Ilimitados a:",
             internet:"Si Comparte Internet",
             showCountries: true,
+            showLlamadas:false,
             socialText:"Redes Sociales Ilimitadas",
             socialMedia: [
               "whatsapp",
@@ -707,6 +723,7 @@ export const planesData = {
             llamadas:"Llamadas y SMS Ilimitados a:",
             internet:"Si Comparte Internet",
             showCountries: true,
+            showLlamadas:false,
             socialText:"Redes Sociales Ilimitadas",
             socialMedia: [
               "whatsapp",
@@ -741,6 +758,7 @@ export const planesData = {
             llamadas:"Llamadas y SMS Ilimitados a:",
             internet:"Si Comparte Internet",
             showCountries: true,
+            showLlamadas:false,
             socialText:"Redes Sociales Ilimitadas",
             socialMedia: [
               "whatsapp",
@@ -778,6 +796,7 @@ export const planesData = {
             llamadas:"Llamadas y SMS Ilimitados a:",
             internet:"Si Comparte Internet",
             showCountries: true,
+            showLlamadas:false,
             socialText:"Redes Sociales Ilimitadas",
             socialMedia: [
               "whatsapp",
@@ -812,6 +831,7 @@ export const planesData = {
             llamadas:"Llamadas y SMS Ilimitados a:",
             internet:"Si Comparte Internet",
             showCountries: true,
+            showLlamadas:false,
             socialText:"Redes Sociales Ilimitadas",
             socialMedia: [
               "whatsapp",
@@ -847,6 +867,7 @@ export const planesData = {
             llamadas:"Llamadas y SMS Ilimitados a:",
             internet:"Si Comparte Internet",
             showCountries: true,
+            showLlamadas:false,
             socialText:"Redes Sociales Ilimitadas",
             socialMedia: [
               "whatsapp",

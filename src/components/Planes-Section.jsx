@@ -143,12 +143,14 @@ const PlanesSection = ({ plans }) => {
                                     </div>
                                 </div>
                             )}
-                            <p className='fw-bold fs-5 text-uppercase'>
-                            <span className="icon-sms mx-2">
-                                <FontAwesomeIcon icon={faPhone} />
-                            </span>
-                                Llamadas <span className='tuisty-gb'>{plan.call}</span>
-                            </p>
+                            {plan.showLlamadas !== false && (
+                                <p className='fw-bold fs-5 text-uppercase'>
+                                  <span className="icon-sms mx-2">
+                                      <FontAwesomeIcon icon={faPhone} />
+                                  </span>
+                                      Llamadas <span className='tuisty-gb'>{plan.call}</span>
+                                </p>
+                            )}
                         </div>
                         <div className='p-4 bg-price'>
                             <h3 className='text-white fw-bold display-4'>
