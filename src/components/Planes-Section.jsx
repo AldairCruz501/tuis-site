@@ -8,7 +8,7 @@ import { useCart } from '../Context/Context';
 import { useNavigate, Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons/faPhone';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const socialMediaIcons = {
   whatsapp: faWhatsapp,
@@ -131,22 +131,24 @@ const PlanesSection = ({ plans }) => {
                             </span>
                             <span className='tuisty-gb'>{plan.sms}</span> SMS
                             </h4>
-                            <div className='border-tuisty border-2 border-top pt-3 mt-2 pb-3'>
-                                <h4 className='fw-bold fs-6 text-uppercase'>
-                                    Llamadas a:
-                                </h4>
-                                <div className=' d-flex justify-content-center pt-3 mb-3'>
-                                    <img src="/img/canada.png" alt="can-flag" className='w-25 mx-1' loading="lazy" />
-                                    <img src="/img/estados-unidos.png" alt="usa-flag" className='w-25 mx-1' loading="lazy" />
-                                    <img src="/img/mexico.png" alt="mx-flag" className='w-25 mx-1' loading="lazy" />
+                            {plan.showCountries !== false && (
+                                <div className='border-tuisty border-2 border-top pt-3 mt-2 pb-3'>
+                                    <h4 className='fw-bold fs-6 text-uppercase'>
+                                        Llamadas a:
+                                    </h4>
+                                    <div className=' d-flex justify-content-center pt-3 mb-3'>
+                                        <img src="/img/canada.png" alt="can-flag" className='w-25 mx-1' loading="lazy" />
+                                        <img src="/img/estados-unidos.png" alt="usa-flag" className='w-25 mx-1' loading="lazy" />
+                                        <img src="/img/mexico.png" alt="mx-flag" className='w-25 mx-1' loading="lazy" />
+                                    </div>
                                 </div>
-                            </div>
-                            {/* <p className='fw-bold fs-5 text-uppercase'>
+                            )}
+                            <p className='fw-bold fs-5 text-uppercase'>
                             <span className="icon-sms mx-2">
                                 <FontAwesomeIcon icon={faPhone} />
                             </span>
                                 Llamadas <span className='tuisty-gb'>{plan.call}</span>
-                            </p> */}
+                            </p>
                         </div>
                         <div className='p-4 bg-price'>
                             <h3 className='text-white fw-bold display-4'>
