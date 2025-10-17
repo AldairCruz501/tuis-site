@@ -498,7 +498,7 @@ export const planesData = {
                 name: "Tuisty",
                 dataPlus: "Gamer",
                 data: "40GB",
-                sms: "1,500",
+                sms: "3,500",
                 call: "Ilimitadas",
                 usage: "Navegación",
                 price: 289,
