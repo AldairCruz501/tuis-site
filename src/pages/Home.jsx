@@ -107,7 +107,7 @@ function Home() {
                         loading="lazy"
                       />
                     </Carousel.Item> */}
-                    <Carousel.Item>
+                    {/* <Carousel.Item>
                         <img
                         className="d-none d-lg-block w-75 m-auto"
                         src="img/banner-tuis1.png"
@@ -120,8 +120,8 @@ function Home() {
                           alt="Slide 1"
                           loading="lazy"
                         />
-                    </Carousel.Item>
-                    <Carousel.Item>
+                    </Carousel.Item> */}
+                    {/* <Carousel.Item>
                       <img
                         className="d-none d-lg-block w-75 m-auto"
                         src="img/banner-tuis3.png"
@@ -134,7 +134,7 @@ function Home() {
                         alt="Slide 2"
                         loading="lazy"
                       />
-                    </Carousel.Item>
+                    </Carousel.Item> */}
                   </Carousel>
                   <div className='d-block d-lg-none pt-2 text-center'>
                     <a href="#planes">
