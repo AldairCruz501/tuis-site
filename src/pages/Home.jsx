@@ -79,6 +79,20 @@ function Home() {
                         loading="lazy"
                       />
                     </Carousel.Item>
+                    <Carousel.Item>
+                      <img
+                        className="d-none d-lg-block w-75 m-auto"
+                        src="img/registro-chip.jpg"
+                        alt="Slide 2"
+                        loading="lazy"
+                      />
+                      <img
+                        className="d-block d-lg-none w-100 m-auto"
+                        src="img/registro-chip-resp.jpg"
+                        alt="Slide 2"
+                        loading="lazy"
+                      />
+                    </Carousel.Item>
                     {/* <Carousel.Item>
                       <img
                         className="d-none d-lg-block w-75 m-auto"
