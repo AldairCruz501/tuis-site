@@ -89,9 +89,9 @@ const faqData = [
                 question: '¿Cómo hago mi portabilidad a Tuis?',
                 answer:  (
                     <>
-                        1. Desde tu línea actual, envía un SMS con la palabra NIP al 051️ o llama al mismo número.<br />
+                        1. Desde tu línea actual, envía un SMS con la palabra NIP al 051 o llama al mismo número.<br />
                        2. Recibirás un código de 4 dígitos (ese es tu NIP). <br />
-                       3. Compártenos tu NIP. <br /><br />🛠️ Nosotros nos encargamos del resto.
+                       3. <a href="https://wa.me/525595216000" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: '#6149B7', fontWeight: 'bold' }}>Compártenos tu NIP por WhatsApp aquí.</a> <br /><br />🛠️ Nosotros nos encargamos del resto.
                     </>
                 )
             },
