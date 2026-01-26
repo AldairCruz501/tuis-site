@@ -95,6 +95,10 @@ export default function NavbarComponent() {
                 <Nav.Link as={Link} to="/nosotros" className="mx-2 mx-lg-3">
                   Nosotros
                 </Nav.Link>
+                <Nav.Link as={Link} to="/faq" className="mx-2 mx-lg-3">
+                  TUIS te ayuda
+                </Nav.Link>
+
                 {/*<Nav.Link as={Link} to="/recargas" className="mx-2 mx-lg-3">
                   Recargas
                 </Nav.Link>

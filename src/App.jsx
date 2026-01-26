@@ -11,6 +11,8 @@ import PaquetesAnuales from './pages/paquetes/Paquetes-Anuales';
 import Cobertura from './pages/Cobertura';
 import Compatibilidad from './pages/Compatibilidad';
 import Nosotros from './pages/Nosotros';
+import FAQ from './pages/FAQ';
+
 import AvisoPrivacidad from './pages/Aviso-Privacidad';
 import TerminosCondiciones from './pages/Terminos-Condiciones';
 import ColaboracionJusticia from './pages/Colaboracion-Justicia';
@@ -80,6 +82,7 @@ function App() {
           <Route path='/cobertura' element={<Cobertura />} />
           <Route path='/compatibilidad' element={<Compatibilidad />} />
           <Route path='/nosotros' element={<Nosotros />} />
+          <Route path="/faq" element={<FAQ />} />
           <Route path='/acceder' element={<LoginRegistro />} />
           <Route path='/carrito' element={<Carrito />} />
           <Route path='/proceder-a-pagar' element={<Pasarela />} />
