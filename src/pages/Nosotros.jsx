@@ -1,7 +1,7 @@
 
 import NavbarComponent from '../components/Navbar';
 import FooterComponent from '../components/Footer';
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./Nosotros.css"
 import { Container, Row, Col, Button} from 'react-bootstrap';
 import { Fade, Slide } from 'react-awesome-reveal';
@@ -10,11 +10,133 @@ import { useNavigate } from 'react-router-dom';
 import FloatingWhatsAppButton from '../components/WhatsApp-Button';
 import ShippingTerms from '../components/Shipping-Terms';
 import AppStoreTuis from '../components/AppStoreTuis';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
+const reviewsData = [
+    {
+        id: 1,
+        img: "https://temalcode-agency-portfolio.netlify.app/images/review1.png",
+        title: "“Excellent Team with Creative Mindset”",
+        paragraphs: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare eu odio pretium sed amet, pulvinar nunc fringilla lectus.",
+            
+        ],
+        author: "CEO of SomeCompany"
+    },
+    {
+        id: 2,
+        img: "https://temalcode-agency-portfolio.netlify.app/images/review2.png",
+        title: "“Excellent Team with Creative Mindset”",
+        paragraphs: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare eu odio pretium sed amet, pulvinar nunc fringilla lectus.",
+            
+        ],
+        author: "CEO of SomeCompany"
+    },
+    {
+        id: 3,
+        img: "https://temalcode-agency-portfolio.netlify.app/images/review3.png",
+        title: "“Excellent Team with Creative Mindset”",
+        paragraphs: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare eu odio pretium sed amet, pulvinar nunc fringilla lectus.",
+            
+        ],
+        author: "CEO of SomeCompany"
+    },
+    {
+        id: 4,
+        img: "https://temalcode-agency-portfolio.netlify.app/images/review1.png",
+        title: "“Excellent Team with Creative Mindset”",
+        paragraphs: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare eu odio pretium sed amet, pulvinar nunc fringilla lectus.",
+            
+        ],
+        author: "CEO of SomeCompany"
+    },
+    {
+        id: 5,
+        img: "https://temalcode-agency-portfolio.netlify.app/images/review4.png",
+        title: "“Excellent Team with Creative Mindset”",
+        paragraphs: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare eu odio pretium sed amet, pulvinar nunc fringilla lectus.",
+            
+        ],
+        author: "CEO of SomeCompany"
+    },
+    {
+        id: 6,
+        img: "https://temalcode-agency-portfolio.netlify.app/images/review2.png",
+        title: "“Excellent Team with Creative Mindset”",
+        paragraphs: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare eu odio pretium sed amet, pulvinar nunc fringilla lectus.",
+            
+        ],
+        author: "CEO of SomeCompany"
+    },
+];
+
+// Duplicamos la data para el efecto infinito
+const extendedReviews = [...reviewsData, ...reviewsData];
+const singleSetWidth = reviewsData.length * (320 + 24); // 320px card + 24px gap (gap-4)
 
 export default function Nosotros () {
 
     const [loading, setLoading] = useState(true);
     const navigate = useNavigate();
+    const scrollRef = useRef(null);
+    const trackRefV3 = useRef(null);
+
+    const scroll = (direction) => {
+        if (scrollRef.current) {
+            const { current } = scrollRef;
+            const scrollAmount = 344; // Ancho tarjeta (320) + gap (24)
+
+            if (direction === 'left') {
+                // Si estamos al principio (o muy cerca), saltamos invisiblemente al final del primer set
+                if (current.scrollLeft <= 0) {
+                    current.scrollLeft = singleSetWidth;
+                }
+                current.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else {
+                // Si hemos pasado el primer set completo, saltamos invisiblemente al inicio
+                if (current.scrollLeft >= singleSetWidth) {
+                    current.scrollLeft = 0;
+                }
+                current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+    };
+
+    const handleScroll = () => {
+        if (scrollRef.current) {
+            const { current } = scrollRef;
+            if (current.scrollLeft >= singleSetWidth) {
+                current.scrollLeft -= singleSetWidth;
+            }
+        }
+    };
+
+    // Lógica para calcular la duración de la animación de la v3
+    useEffect(() => {
+        const calculateDuration = () => {
+            if (trackRefV3.current) {
+                const speed = 50; // Pixels por segundo
+                // Dividimos entre 2 porque duplicamos la data para el loop
+                const width = trackRefV3.current.scrollWidth / 2;
+                const duration = width / speed;
+                trackRefV3.current.style.setProperty('--duration', `${duration}s`);
+            }
+        };
+
+        // Pequeño timeout para asegurar que el DOM esté listo
+        const timeoutId = setTimeout(calculateDuration, 500);
+        window.addEventListener('resize', calculateDuration);
+        return () => {
+            clearTimeout(timeoutId);
+            window.removeEventListener('resize', calculateDuration);
+        };
+    }, [loading]);
 
     useEffect(() => {
       const fetchData = async () => {
@@ -158,6 +280,138 @@ export default function Nosotros () {
                                     </Col>
                                 </Row>
                             </Slide>
+                        </Container>
+                    </section>
+                    <section className='pt-5 pb-5 '>
+                        <Container fluid >
+                            <div className="p-3 pb-md-4 mx-auto text-center">
+                                <h1 className="display-6 fw-bold title-services text-uppercase">lo que dicen<br/> <span className=' display-1 fw-bold'>Nuestros Clientes v1</span></h1>
+                            </div>
+                            <div className="reviews-container overflow-hidden mt-4">
+                                <div className="reviews-row row-first d-flex gap-4 mb-4">
+                                    {reviewsData.slice(0, 3).map((review) => (
+                                        <div key={review.id} className="reviews-card shadow-sm rounded-3 overflow-hidden">
+                                            <img className="card-img-review object-fit-cover" src={review.img} alt="review" />
+                                            <div className="card-text-review bg-white p-4 p-md-5">
+                                                <div className="card-title-review">
+                                                    <p className="fw-bold fs-4 lh-sm">{review.title}</p>
+                                                </div>
+                                                <div className="card-para-review my-3 text-muted">
+                                                    {review.paragraphs.map((para, index) => (
+                                                        <p key={index}>{para}</p>
+                                                    ))}
+                                                </div>
+                                                <div className="card-author-review d-flex align-items-center gap-2 mt-3">
+                                                    <svg width="20" height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.526123 1.13867H8.25949" stroke="black" strokeWidth="0.822209" />
+                                                    </svg>
+                                                    <p className="m-0 fw-bold small">{review.author}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+
+                                <div className="reviews-row row-second d-flex gap-4">
+                                    {reviewsData.slice(3, 6).map((review) => (
+                                        <div key={review.id} className="reviews-card shadow-sm rounded-3 overflow-hidden">
+                                            <div className="card-img-review">
+                                                <img className="object-fit-cover w-100 h-100" src={review.img} alt="review" />
+                                            </div>
+                                            <div className="card-text-review bg-white p-4 p-md-5">
+                                                <div className="card-title-review">
+                                                    <p className="fw-bold fs-4 lh-sm">{review.title}</p>
+                                                </div>
+                                                <div className="card-para-review my-3 text-muted">
+                                                    {review.paragraphs.map((para, index) => (
+                                                        <p key={index}>{para}</p>
+                                                    ))}
+                                                </div>
+                                                <div className="card-author-review d-flex align-items-center gap-2 mt-3">
+                                                    <svg width="20" height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.526123 1.13867H8.25949" stroke="black" strokeWidth="0.822209" />
+                                                    </svg>
+                                                    <p className="m-0 fw-bold small">{review.author}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </Container>
+                    </section>
+                    <section className='pt-5 pb-5 '>
+                        <Container >
+                            <div className="p-3 pb-md-4 mx-auto text-center">
+                                <h1 className="display-6 fw-bold title-services text-uppercase">lo que dicen<br/> <span className=' display-1 fw-bold'>Nuestros Clientes v2</span></h1>
+                            </div>
+                            <div className="position-relative px-4 mt-4">
+                                <div 
+                                    className="reviews-scroll-container d-flex gap-4 overflow-auto py-4 px-2" 
+                                    ref={scrollRef}
+                                    onScroll={handleScroll}
+                                >
+                                    {extendedReviews.map((review, index) => (
+                                        <div key={`${review.id}-${index}`} className="reviews-card-v2 shadow-sm rounded-3 overflow-hidden flex-shrink-0">
+                                            <div className="card-img-review-v2">
+                                                <img className="object-fit-cover w-100 h-100" src={review.img} alt="review" />
+                                            </div>
+                                            <div className="card-text-review bg-white p-4 p-md-5">
+                                                <div className="card-title-review">
+                                                    <p className=" fs-4 lh-sm">{review.title}</p>
+                                                </div>
+                                                
+                                                <div className="card-author-review d-flex align-items-center gap-2 mt-3">
+                                                    <svg width="20" height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.526123 1.13867H8.25949" stroke="black" strokeWidth="0.822209" />
+                                                    </svg>
+                                                    <p className="m-0 fw-bold small">{review.author}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                                <button className="scroll-btn left d-none d-md-flex" onClick={() => scroll('left')}>
+                                    <FontAwesomeIcon icon={faChevronLeft} />
+                                </button>
+                                <button className="scroll-btn right d-none d-md-flex" onClick={() => scroll('right')}>
+                                    <FontAwesomeIcon icon={faChevronRight} />
+                                </button>
+                            </div>
+                        </Container>
+                    </section>
+                    <section className='pt-5 pb-5 reviews-v3-section'>
+                        <Container fluid>
+                            <div className="p-3 pb-md-4 mx-auto text-center">
+                                <h1 className="display-6 fw-bold title-services text-uppercase">lo que dicen<br/> <span className=' display-1 fw-bold'>Nuestros Clientes v3</span></h1>
+                            </div>
+                            <div className="marquee-v3">
+                                <div className="track-v3" ref={trackRefV3}>
+                                    {/* Renderizamos la lista dos veces para el efecto infinito */}
+                                    {[...reviewsData, ...reviewsData].map((review, index) => (
+                                        <article className="card-v3" key={`v3-${review.id}-${index}`}>
+                                            <div className="logo-v3" aria-hidden="true">
+                                                <svg viewBox="0 0 64 64" width="44" height="44" fill="currentColor">
+                                                    <path d="M56 16c-9 8-20 10-32 6-6-2-11-1-16 3 3-10 10-16 20-18 8-2 16 1 22 9zM8 36c7-6 16-8 26-5 7 2 13 1 18-3-3 9-10 15-19 17-9 2-17-1-25-9z"/>
+                                                </svg>
+                                            </div>
+                                            <div className="stat-v3">
+                                                
+                                                <p className="desc-v3">{review.title}</p>
+                                            </div>
+                                            <div className="author-v3">
+                                                <div className="who-v3">
+                                                    <div className="name-v3">{review.author}</div>
+                                                    <div className="title-v3">Cliente Tuis</div>
+                                                </div>
+                                                <div className="avatar-v3">
+                                                    <img src={review.img} alt="Avatar"/>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    ))}
+                                </div>
+                            </div>
                         </Container>
                     </section>
                 </main>

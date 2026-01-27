@@ -37,6 +37,224 @@
     z-index: 2;
 }
 
+/* Reviews Section Styles  PRIMERA VERSION*/
+.reviews-container {
+    width: 100%;
+    position: relative;
+}
+
+.reviews-row {
+    width: max-content; /* Permite que el contenido se extienda horizontalmente */
+}
+
+.reviews-card {
+    display: grid;
+    grid-template-columns: 1fr 480px;
+    width: 781px;
+    max-width: 90vw; /* Responsivo para pantallas pequeñas */
+    background-color: white;
+}
+
+.card-img-review {
+    width: 100%;
+    height: 100%;
+    min-height: 250px; /* Altura mínima para móviles */
+}
+
+@media (max-width: 768px) {
+    .reviews-card {
+        grid-template-columns: 1fr;
+        width: 320px;
+        height: auto;
+    }
+    
+    .card-text-review {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-img-review {
+        height: 300px;
+        height: auto;
+        min-height: auto;
+        object-fit: contain !important;
+    }
+}
+
+/* Animations */
+.row-first {
+    animation: move-first 30s linear infinite;
+}
+
+.row-second {
+    transform: translateX(-1000px);
+    animation: move-second 30s linear infinite;
+}
+
+@keyframes move-first {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+@keyframes move-second {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+/* Estilos para la Versión 2 (Carrusel Manual) */
+.reviews-scroll-container {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+    cursor: grab;
+}
+
+.reviews-scroll-container::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+.reviews-scroll-container:active {
+    cursor: grabbing;
+}
+
+.reviews-card-v2 {
+    display: flex;
+    flex-direction: column; /* Siempre vertical */
+    width: 320px;
+    height: 100%;
+    background-color: white;
+}
+
+.card-img-review-v2 {
+    width: 100%;
+    height: 350px;
+    min-height: 250px; /* Altura mínima para móviles */
+    object-fit: contain !important;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #6149B7;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.scroll-btn:hover {
+    opacity: 1;
+}
+
+.scroll-btn.left {
+    left: 0;
+}
+
+.scroll-btn.right {
+    right: 0;
+}
+
+/* Estilos para la Versión 3 (Marquee Infinito) */
+.reviews-v3-section {
+    --bg-start: #FFD2B5;
+    --bg-mid: #FFF6F0;
+    --bg-end: #E8EAF6;
+    --card-bg: rgba(255, 255, 255, 0.40);
+    --card-border: rgba(255, 255, 255, 1);
+    --radius: 20px;
+    --gap: 24px;
+    --blur: 7.5px;
+    --shadow: 0 1px 0 rgba(0, 0, 0, .02), 0 10px 30px rgba(0, 0, 0, .08);
+    --duration: 60s; /* Valor por defecto, se sobrescribe con JS */
+
+    
+    overflow: hidden;
+}
+
+.marquee-v3 {
+    width: 100%;
+    overflow: hidden;
+    padding: 32px 0;
+    position: relative;
+}
+
+.track-v3 {
+    display: flex;
+    gap: var(--gap);
+    width: max-content;
+    animation: scroll-v3 var(--duration) linear infinite;
+    will-change: transform;
+}
+
+@keyframes scroll-v3 {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.card-v3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    width: clamp(260px, 28vw, 390px);
+    padding: 32px;
+    border-radius: var(--radius);
+    border: 1px solid var(--card-border);
+    background: var(--card-bg);
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
+    box-shadow: var(--shadow);
+}
+
+.logo-v3 {
+    color: #000;
+    line-height: 0;
+}
+
+.stat-v3 .percent-v3 {
+    font-weight: 800;
+    letter-spacing: .5px;
+    font-size: clamp(40px, 7vw, 64px);
+    color: #6149B7; /* Color Tuis */
+}
+
+.stat-v3 .desc-v3 {
+    margin: 10px 0 0;
+    line-height: 1.35;
+    color: rgba(0,0,0,.75);
+    font-size: clamp(14px, 2.4vw, 18px);
+}
+
+.author-v3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.avatar-v3 {
+    width: 52px;
+    height: 52px;
+    flex: 0 0 52px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar-v3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 @media (max-width: 992px) {
     .nosotros-mission-shadow,
     .nosotros-history-shadow{
@@ -61,7 +279,7 @@
   }
 
   .title-services {
-    color: rgba(12, 113, 195, 0.1) !important;;
+    color: #6149B7!important;
   }
 
   .section-tuis {
