@@ -1431,7 +1431,7 @@ function TerminosCondiciones () {
                                         </Accordion>
                                     </section>
 
-                                    <section className='pt-5'>
+                                    {/* <section className='pt-5'>
                                         <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Requisitos de Contratación</h2>
                                         <Accordion defaultActiveKey={null} flush>
                                             <Accordion.Item eventKey="0">
@@ -1506,10 +1506,10 @@ function TerminosCondiciones () {
                                                 </Accordion.Body>
                                             </Accordion.Item>
                                         </Accordion>
-                                    </section>
+                                    </section> */}
 
 
-                                    <section className='pt-5'>
+                                    {/* <section className='pt-5'>
                                         <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Realización de Trámites</h2>
                                          <Accordion defaultActiveKey={null} flush>
                                             <Accordion.Item eventKey="0">
@@ -1577,7 +1577,7 @@ function TerminosCondiciones () {
                                             </Accordion.Item>
                                         </Accordion>                      
                                         
-                                    </section>
+                                    </section> */}
 
                                     <p className='text-body-secondary fs-6 mt-5 pt-5 text-end'>
                                         <span className='fw-bold'>Última actualización:</span> Septiembre 2025 
