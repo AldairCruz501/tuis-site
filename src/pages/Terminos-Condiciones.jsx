@@ -919,6 +919,111 @@ function TerminosCondiciones () {
                                         </Accordion>
                                     </section>
                                     <section className='pt-5'>
+                                        <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Términos y Condiciones del &quot; Doble y Triple de Gigas&quot;</h2>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            <span className='fw-bold'>Generales:</span> Con el objetivo de reconocer a nuestros Clientes, apoyar la economía individual y familiar, así como de promover el crecimiento de nuestra red de telecomunicaciones en México, brindamos nuestra promoción “DEL DOBLE Y TRIPLE DE DATOS”.
+                                        </p>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            <span className='fw-bold'>Zona Geográfica:</span> Dentro de toda la República Mexicana.
+                                        </p>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            <span className='fw-bold'>Vigencia:</span>Del 1 de febrero Hasta el 30 de abril 2026.
+                                        </p>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            <span className='fw-bold'>Beneficio:</span> El Bono de Datos otorgará el <span className='fw-bold'>doble o triple de Gigas</span>  de la cuota de Datos de la oferta comprada por el Usuario Final en los productos participantes dentro de esta promoción (Tusty Ready 2GB x 7 dias, Tuisty Estelar 5gb x 15 dias, Tusty Lite 1gb x 30 dias, Tuisty Ready 2 GB x 30 dias, Tuisty Nova 3G x 30 dias, Tuisty Boost 12G x 30 dias, Tuisty prime 15 GB x 30 dias, Tuisty prime 24 GB x 30 dias)
+                                        </p>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            Los usuarios que realicen la portabilidad de su número desde otra compañía telefónica por primera vez deberán adquirir y/o recargar cualquiera de los planes mensuales antes mencionados y posteriormente cada vez que recarguen el plan inicial contratado recibirán el doble o triple de datos durante 12 meses.
+                                        </p>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            El beneficio no aplica si el usuario recarga un plan diferente al contratado originalmente o que no sea un producto participante.
+                                        </p>
+                
+                                        <div>
+                                            <p className='text-body-secondary fs-5 text-justify'>
+                                                El uso de la Plataforma implica la aceptación de:
+                                            </p>
+                                            <ul className='text-body-secondary fs-5 list-style text-justify'>
+                                                <li>
+                                                    El usuario debe tener un número previamente asignado por cualquier compañía
+                                                    telefónica en México.<span className='fw-bold'>*</span>
+                                                </li>
+                                                <li>
+                                                    El usuario debe realizar la portabilidad de su número telefónico a Tuis.
+                                                </li>
+                                                <li>
+                                                    El usuario debe contratar o recargar el Paquete Mensual de su preferencia en la
+                                                    página web, en la aplicación móvil o en la sucursal autorizada. Para que el
+                                                    beneficio sea aplicable, el plan seleccionado al momento de la portabilidad debe
+                                                    ser recargado por el usuario durante doce meses continuos.
+                                                </li>
+                                                <li>
+                                                    El beneficio se asignará al finalizar el proceso de portabilidad (máximo hasta 5 días hábiles posteriores al alta del usuario final).
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            <span className='fw-bold'>Notas:</span> <span className='fw-bold'>*</span>Válido con cualquiera de las compañías de telefonía y datos con excepción de las
+                                            marcas de Altán.
+                                        </p>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            Los planes mensuales son de prepago y no son forzosos, duran 30 días y no se pueden modificar durante ese periodo.
+                                        </p>
+                                        
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            Es importante que el Usuario o Cliente verifique la compatibilidad de su dispositivo a
+                                            través del Portal.
+                                        </p>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            Esta promoción es aplicable únicamente para usuarios nuevos que realicen recargas
+                                            dentro de la aplicación móvil, en la página web y/o en los puntos de venta físicos
+                                            mencionados en la página web.
+                                        </p>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            <span className='fw-bold'>Usuario Nuevo:</span> significa la persona que contrata, adquiere o realiza su portabilidad
+                                            por primera vez de o a una línea telefónica a Tuis.
+                                        </p>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            Para efectos de este documento, el “Usuario” debe ser entendido como toda aquella persona que ingrese al portal mediante un equipo de cómputo y/o de comunicación (en adelante el Usuario), aceptando utilizar dispositivos, software, o cualquier otro medio tendiente a interferir en perjuicio de las actividades y/o de las operaciones del Portal o en las bases de datos y/o información que se contenga en el mismo.
+                                        </p>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            Altán y/o Tuis se reservan el derecho de efectuar, en cualquier momento, modificaciones o actualizaciones a los presentes Términos y Condiciones, ya sea como consecuencia de reformas legislativas, políticas internas, nuevos requerimientos para la prestación u ofrecimiento de nuestros servicios y/o productos, prácticas del mercado u otros.
+                                        </p>
+                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                            Por todo lo anterior, el Usuario queda obligado en todo momento a cumplir los presentes términos y condiciones, así como los Términos y Condiciones Generales, la Política de Uso Justo, el Código de Prácticas Comerciales, el Aviso de Privacidad, y demás apartados que se encuentren en la página de internet de Tuis.
+                                        </p>
+                                        
+                                        {/* <Accordion defaultActiveKey={null} flush>
+                                            <Accordion.Item eventKey="0">
+                                                <Accordion.Header>
+                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Modificaciones de “DOBLE DE GIGAS”</h4>
+                                                </Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        Para efectos de este documento, el “Usuario” debe ser entendido como toda aquella
+                                                        persona que ingrese al portal mediante un equipo de cómputo y/o de comunicación (en
+                                                        adelante el Usuario), aceptando utilizar dispositivos, software, o cualquier otro medio
+                                                        tendiente a interferir en perjuicio de las actividades y/o de las operaciones del Portal o
+                                                        en las bases de datos y/o información que se contenga en el mismo.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        Altán y/o Tuis se reservan el derecho de efectuar, en cualquier momento,
+                                                        modificaciones o actualizaciones a los presentes Términos y Condiciones, ya sea como
+                                                        consecuencia de reformas legislativas, políticas internas, nuevos requerimientos para
+                                                        la prestación u ofrecimiento de nuestros servicios y/o productos, prácticas del mercado
+                                                        u otros.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-6 text-justify'>
+                                                        Por todo lo anterior, el Usuario queda obligado en todo momento a cumplir los
+                                                        presentes términos y condiciones, así como los Términos y Condiciones Generales, la
+                                                        Política de Uso Justo, el Código de Prácticas Comerciales, el Aviso de Privacidad, y demás
+                                                        apartados que se encuentren en la página de internet de Tuis.
+                                                    </p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                        </Accordion> */}
+                                    </section>
+                                    {/* <section className='pt-5'>
                                         <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Términos y Condiciones &quot;DOBLE DE GIGAS&quot;</h2>
                                         <p className='text-body-secondary fs-5 mt-3 text-justify'>
                                             <span className='fw-bold'>Generales:</span> Con el objetivo de reconocer a nuestros Clientes, apoyar la economía
@@ -1031,6 +1136,7 @@ function TerminosCondiciones () {
                                             </Accordion.Item>
                                         </Accordion>
                                     </section>
+                                    
                                     <section className='pt-5'>
                                         <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Términos y Condiciones &quot;<span className="text-uppercase">Triple Gigas</span>&quot;</h2>
                                         <p className='text-body-secondary fs-5 mt-3 text-justify'>
@@ -1099,7 +1205,7 @@ function TerminosCondiciones () {
                                             línea telefónica a Tuis.
                                         </p>
 
-                                    </section>   
+                                    </section>    */}
                                     <section className='pt-5'>
                                         <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Términos y Condiciones de Contratación y Recargas</h2>
                                         <Accordion defaultActiveKey={null} flush>

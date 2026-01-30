@@ -282,7 +282,7 @@ export default function Nosotros () {
                             </Slide>
                         </Container>
                     </section>
-                    <section className='pt-5 pb-5 '>
+                    {/* <section className='pt-5 pb-5 '>
                         <Container fluid >
                             <div className="p-3 pb-md-4 mx-auto text-center">
                                 <h1 className="display-6 fw-bold title-services text-uppercase">lo que dicen<br/> <span className=' display-1 fw-bold'>Nuestros Clientes v1</span></h1>
@@ -339,8 +339,8 @@ export default function Nosotros () {
                                 </div>
                             </div>
                         </Container>
-                    </section>
-                    <section className='pt-5 pb-5 '>
+                    </section> */}
+                    {/* <section className='pt-5 pb-5 '>
                         <Container >
                             <div className="p-3 pb-md-4 mx-auto text-center">
                                 <h1 className="display-6 fw-bold title-services text-uppercase">lo que dicen<br/> <span className=' display-1 fw-bold'>Nuestros Clientes v2</span></h1>
@@ -379,15 +379,15 @@ export default function Nosotros () {
                                 </button>
                             </div>
                         </Container>
-                    </section>
-                    <section className='pt-5 pb-5 reviews-v3-section'>
+                    </section> */}
+                    {/* <section className='pt-5 pb-5 reviews-v3-section'>
                         <Container fluid>
                             <div className="p-3 pb-md-4 mx-auto text-center">
                                 <h1 className="display-6 fw-bold title-services text-uppercase">lo que dicen<br/> <span className=' display-1 fw-bold'>Nuestros Clientes v3</span></h1>
                             </div>
                             <div className="marquee-v3">
                                 <div className="track-v3" ref={trackRefV3}>
-                                    {/* Renderizamos la lista dos veces para el efecto infinito */}
+                                   
                                     {[...reviewsData, ...reviewsData].map((review, index) => (
                                         <article className="card-v3" key={`v3-${review.id}-${index}`}>
                                             <div className="logo-v3" aria-hidden="true">
@@ -413,7 +413,7 @@ export default function Nosotros () {
                                 </div>
                             </div>
                         </Container>
-                    </section>
+                    </section> */}
                 </main>
                 <section className='pt-5 pb-3 section-tuis'>
                     <Container className='px-4 py-5'>
