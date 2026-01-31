@@ -35,10 +35,10 @@ function TerminosCondiciones () {
                     <Container className='my-5 mx-auto'>
                         <Row>
                             <Col>
-                                <h1 className='fw-bold conditions-title display-3 mb-3 text-center text-lg-start'>Términos y Condiciones</h1>
+                                <h1 className='fw-bold conditions-title display-3 mb-3 text-center text-lg-start'>Términos y Condiciones Generales</h1>
                                 <main>
                                     <section className='pt-2'>
-                                        <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Términos y Condiciones Generales</h2>
+                                        {/* <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Términos y Condiciones Generales</h2> */}
                                         <p className='text-body-secondary fs-5 mt-3 mb-4 text-justify'>
                                             Tuis by INBTEL (En adelante, Tuis) es una marca registrada y licenciada en favor de Altán
                                             redes (en adelante Altán) quien es el Operador del Servicio de Telefonía Móvil y único
@@ -993,219 +993,214 @@ function TerminosCondiciones () {
                                             Por todo lo anterior, el Usuario queda obligado en todo momento a cumplir los presentes términos y condiciones, así como los Términos y Condiciones Generales, la Política de Uso Justo, el Código de Prácticas Comerciales, el Aviso de Privacidad, y demás apartados que se encuentren en la página de internet de Tuis.
                                         </p>
                                         
-                                        {/* <Accordion defaultActiveKey={null} flush>
-                                            <Accordion.Item eventKey="0">
-                                                <Accordion.Header>
-                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Modificaciones de “DOBLE DE GIGAS”</h4>
-                                                </Accordion.Header>
-                                                <Accordion.Body>
-                                                    <p className='text-body-secondary fs-6 text-justify'>
-                                                        Para efectos de este documento, el “Usuario” debe ser entendido como toda aquella
-                                                        persona que ingrese al portal mediante un equipo de cómputo y/o de comunicación (en
-                                                        adelante el Usuario), aceptando utilizar dispositivos, software, o cualquier otro medio
-                                                        tendiente a interferir en perjuicio de las actividades y/o de las operaciones del Portal o
-                                                        en las bases de datos y/o información que se contenga en el mismo.
-                                                    </p>
-                                                    <p className='text-body-secondary fs-6 text-justify'>
-                                                        Altán y/o Tuis se reservan el derecho de efectuar, en cualquier momento,
-                                                        modificaciones o actualizaciones a los presentes Términos y Condiciones, ya sea como
-                                                        consecuencia de reformas legislativas, políticas internas, nuevos requerimientos para
-                                                        la prestación u ofrecimiento de nuestros servicios y/o productos, prácticas del mercado
-                                                        u otros.
-                                                    </p>
-                                                    <p className='text-body-secondary fs-6 text-justify'>
-                                                        Por todo lo anterior, el Usuario queda obligado en todo momento a cumplir los
-                                                        presentes términos y condiciones, así como los Términos y Condiciones Generales, la
-                                                        Política de Uso Justo, el Código de Prácticas Comerciales, el Aviso de Privacidad, y demás
-                                                        apartados que se encuentren en la página de internet de Tuis.
-                                                    </p>
-                                                </Accordion.Body>
-                                            </Accordion.Item>
-                                        </Accordion> */}
-                                    </section>
-                                    {/* <section className='pt-5'>
-                                        <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Términos y Condiciones &quot;DOBLE DE GIGAS&quot;</h2>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            <span className='fw-bold'>Generales:</span> Con el objetivo de reconocer a nuestros Clientes, apoyar la economía
-                                            individual y familiar, así como de promover el crecimiento de nuestra red de
-                                            telecomunicaciones en México , brindamos nuestra promoción “DOBLE DE GIGAS”.
-                                        </p>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            <span className='fw-bold'>Zona Geográfica:</span> Dentro de toda la República Mexicana.
-                                        </p>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            <span className='fw-bold'>Vigencia:</span> Hasta el 31 de marzo de 2025.
-                                        </p>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            <span className='fw-bold'>Beneficio:</span> El doble de datos de navegación libre durante doce meses exclusivamente en 
-                                            los Planes Mensuales de Tuis (Tuisty 5 GB ilimitados, Tuisty Prime Ilimitado, Tuisty Esencial, Tuisty 40 GB ilimitado, 
-                                            Tuisty 40 GB Comparte, Tuisty 100 GB Comparte)
-                                        </p>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            Los usuarios que realicen la portabilidad de su número desde otra compañía telefónica
-                                            por primera vez deberán adquirir y/o recargar cualquiera de los planes mensuales
-                                            antes mencionados y posteriormente cada vez que recarguen el plan inicial contratado
-                                            recibirán el doble de datos.
-                                        </p>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            El doble de datos solo se aplicará a la bolsa rápida (Best Effort) de datos del plan inicial
-                                            contratado. No se aplicará a los datos con velocidad reducida a 512 Kbps.
-                                        </p>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            No se otorgará el beneficio si el usuario recarga un plan diferente al inicialmente
-                                            contratado.
-                                        </p>
-                                        <div>
-                                            <p className='text-body-secondary fs-5 text-justify'>
-                                                El uso de la Plataforma implica la aceptación de:
-                                            </p>
-                                            <ul className='text-body-secondary fs-5 list-style text-justify'>
-                                                <li>
-                                                    El usuario debe tener un número previamente asignado por cualquier compañía
-                                                    telefónica en México.<span className='fw-bold'>*</span>
-                                                </li>
-                                                <li>
-                                                    El usuario debe realizar la portabilidad de su número telefónico a Tuis.
-                                                </li>
-                                                <li>
-                                                    El usuario debe contratar o recargar el Paquete Mensual de su preferencia en la
-                                                    página web, en la aplicación móvil o en la sucursal autorizada. Para que el
-                                                    beneficio sea aplicable, el plan seleccionado al momento de la portabilidad debe
-                                                    ser recargado por el usuario durante doce meses continuos.
-                                                </li>
-                                                <li>
-                                                    Al confirmar la orden, el método de pago y realizar el pago del plan adquirido, el
-                                                    usuario podrá visualizar el beneficio del doble de datos en la bolsa rápida de
-                                                    datos (Best Effort) dentro de la web app o aplicación móvil.
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            <span className='fw-bold'>Notas:</span> <span className='fw-bold'>*</span>Válido con cualquiera de las compañías de telefonía y datos con excepción de las
-                                            marcas de Altán.
-                                        </p>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            El beneficio se podrá ver reflejado en un plazo de 48 horas hábiles desde el momento
-                                            en que se realice la portabilidad de su línea y realice la primera recarga del plan
-                                            seleccionado.
-                                        </p>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            Los planes mensuales son de prepago y no son forzosos, duran 30 días y no se pueden
-                                            modificar durante ese periodo.
-                                        </p>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            Es importante que el Usuario o Cliente verifique la compatibilidad de su dispositivo a
-                                            través del Portal.
-                                        </p>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            Esta promoción es aplicable únicamente para usuarios nuevos que realicen recargas
-                                            dentro de la aplicación móvil, en la página web y/o en los puntos de venta físicos
-                                            mencionados en la página web.
-                                        </p>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            <span className='fw-bold'>Usuario Nuevo:</span> significa la persona que contrata, adquiere o realiza su portabilidad
-                                            por primera vez de o a una línea telefónica a Tuis.
-                                        </p>
-                                        <Accordion defaultActiveKey={null} flush>
-                                            <Accordion.Item eventKey="0">
-                                                <Accordion.Header>
-                                                    <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Modificaciones de “DOBLE DE GIGAS”</h4>
-                                                </Accordion.Header>
-                                                <Accordion.Body>
-                                                    <p className='text-body-secondary fs-6 text-justify'>
-                                                        Para efectos de este documento, el “Usuario” debe ser entendido como toda aquella
-                                                        persona que ingrese al portal mediante un equipo de cómputo y/o de comunicación (en
-                                                        adelante el Usuario), aceptando utilizar dispositivos, software, o cualquier otro medio
-                                                        tendiente a interferir en perjuicio de las actividades y/o de las operaciones del Portal o
-                                                        en las bases de datos y/o información que se contenga en el mismo.
-                                                    </p>
-                                                    <p className='text-body-secondary fs-6 text-justify'>
-                                                        Altán y/o Tuis se reservan el derecho de efectuar, en cualquier momento,
-                                                        modificaciones o actualizaciones a los presentes Términos y Condiciones, ya sea como
-                                                        consecuencia de reformas legislativas, políticas internas, nuevos requerimientos para
-                                                        la prestación u ofrecimiento de nuestros servicios y/o productos, prácticas del mercado
-                                                        u otros.
-                                                    </p>
-                                                    <p className='text-body-secondary fs-6 text-justify'>
-                                                        Por todo lo anterior, el Usuario queda obligado en todo momento a cumplir los
-                                                        presentes términos y condiciones, así como los Términos y Condiciones Generales, la
-                                                        Política de Uso Justo, el Código de Prácticas Comerciales, el Aviso de Privacidad, y demás
-                                                        apartados que se encuentren en la página de internet de Tuis.
-                                                    </p>
-                                                </Accordion.Body>
-                                            </Accordion.Item>
-                                        </Accordion>
                                     </section>
                                     
                                     <section className='pt-5'>
-                                        <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Términos y Condiciones &quot;<span className="text-uppercase">Triple Gigas</span>&quot;</h2>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            <span className='fw-bold'>Generales:</span> Con el objetivo de reconocer a nuestros Clientes, apoyar la economía individual y familiar, así como
-                                        de promover el crecimiento de nuestra red de telecomunicaciones en México, brindamos nuestra promoción “TRIPLE DE GIGAS”.
-                                        </p>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            <span className='fw-bold'>Zona Geográfica:</span> Dentro de toda la República Mexicana.
-                                        </p>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            <span className='fw-bold'>Vigencia:</span> Hasta el 31 de octubre de 2025.
-                                        </p>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            <span className='fw-bold'>Beneficio:</span> El Triple de datos de navegación libre durante doce meses exclusivamente en los Planes Mensuales
-                                            de Tuis (Tuisty Ready 2 GB ilimitados, Tuisty Nova 3G Ilimitado, Tuisty Boost 12G, Tuisty prime 15 GB ilimitado, Tuisty
-                                            prime 24 GB)
+                                        <Accordion defaultActiveKey={null} flush>
+                                            <Accordion.Item eventKey="0">
+                                                <Accordion.Header>
+                                                   <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Términos y Condiciones &quot;DOBLE DE GIGAS&quot;</h2>         
+                                                </Accordion.Header>
 
-                                        </p>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            Los usuarios que realicen la portabilidad de su número desde otra compañía telefónica por primera vez deberán
-                                            adquirir y/o recargar cualquiera de los planes mensuales antes mencionados y posteriormente cada vez que
-                                            recarguen el plan inicial contratado recibirán el triple de datos.
-                                        </p>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            No se otorgará el beneficio si el usuario recarga un plan diferente al inicialmente contratado.
-                                        </p>
-                                        <div>
-                                            <p className='text-body-secondary fs-5 text-justify'>
-                                                El uso de la Plataforma implica la aceptación de:
-                                            </p>
-                                            <ul className='text-body-secondary fs-5 list-style text-justify'>
-                                                <li>
-                                                    El usuario debe tener un número previamente asignado por cualquier compañía telefónica en México.<span className='fw-bold'>*</span>
-                                                </li>
-                                                <li>
-                                                    El usuario debe realizar la portabilidad de su número telefónico a Tuis.
-                                                </li>
-                                                <li>
-                                                    El usuario debe contratar o recargar el Paquete Mensual de su preferencia en la página web, en la
-                                                    aplicación móvil o en la sucursal autorizada. Para que el beneficio sea aplicable, el plan seleccionado
-                                                    al momento de la portabilidad debe ser recargado por el usuario durante doce meses continuos.
-                                                </li>
-                                                <li>
-                                                    El beneficio se asignará al finalizar el proceso de portabilidad (máximo hasta 5 días hábiles posteriores al
-                                                    alta del usuario final).
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            <span className='fw-bold'>Notas:</span> <span className='fw-bold'>*</span>Válido con cualquiera de las compañías de telefonía y datos con excepción de las marcas de Altán.
-                                        </p>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            Los planes mensuales son de prepago y no son forzosos, duran 30 días y no se pueden modificar durante ese
-                                            periodo.
-                                        </p>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            Es importante que el Usuario o Cliente verifique la compatibilidad de su dispositivo a través del Portal.
-                                        </p>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            Esta promoción es aplicable únicamente para usuarios nuevos que realicen recargas dentro de la aplicación
-                                            móvil, en la página web y/o en los puntos de venta físicos mencionados en la página web.
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        <span className='fw-bold'>Generales:</span> Con el objetivo de reconocer a nuestros Clientes, apoyar la economía
+                                                        individual y familiar, así como de promover el crecimiento de nuestra red de
+                                                        telecomunicaciones en México , brindamos nuestra promoción “DOBLE DE GIGAS”.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        <span className='fw-bold'>Zona Geográfica:</span> Dentro de toda la República Mexicana.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        <span className='fw-bold'>Vigencia:</span> Hasta el 31 de marzo de 2025.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        <span className='fw-bold'>Beneficio:</span> El doble de datos de navegación libre durante doce meses exclusivamente en 
+                                                        los Planes Mensuales de Tuis (Tuisty 5 GB ilimitados, Tuisty Prime Ilimitado, Tuisty Esencial, Tuisty 40 GB ilimitado, 
+                                                        Tuisty 40 GB Comparte, Tuisty 100 GB Comparte)
+                                                    </p>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        Los usuarios que realicen la portabilidad de su número desde otra compañía telefónica
+                                                        por primera vez deberán adquirir y/o recargar cualquiera de los planes mensuales
+                                                        antes mencionados y posteriormente cada vez que recarguen el plan inicial contratado
+                                                        recibirán el doble de datos.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        El doble de datos solo se aplicará a la bolsa rápida (Best Effort) de datos del plan inicial
+                                                        contratado. No se aplicará a los datos con velocidad reducida a 512 Kbps.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        No se otorgará el beneficio si el usuario recarga un plan diferente al inicialmente
+                                                        contratado.
+                                                    </p>
+                                                    <div>
+                                                        <p className='text-body-secondary fs-5 text-justify'>
+                                                            El uso de la Plataforma implica la aceptación de:
+                                                        </p>
+                                                        <ul className='text-body-secondary fs-5 list-style text-justify'>
+                                                            <li>
+                                                                El usuario debe tener un número previamente asignado por cualquier compañía
+                                                                telefónica en México.<span className='fw-bold'>*</span>
+                                                            </li>
+                                                            <li>
+                                                                El usuario debe realizar la portabilidad de su número telefónico a Tuis.
+                                                            </li>
+                                                            <li>
+                                                                El usuario debe contratar o recargar el Paquete Mensual de su preferencia en la
+                                                                página web, en la aplicación móvil o en la sucursal autorizada. Para que el
+                                                                beneficio sea aplicable, el plan seleccionado al momento de la portabilidad debe
+                                                                ser recargado por el usuario durante doce meses continuos.
+                                                            </li>
+                                                            <li>
+                                                                Al confirmar la orden, el método de pago y realizar el pago del plan adquirido, el
+                                                                usuario podrá visualizar el beneficio del doble de datos en la bolsa rápida de
+                                                                datos (Best Effort) dentro de la web app o aplicación móvil.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        <span className='fw-bold'>Notas:</span> <span className='fw-bold'>*</span>Válido con cualquiera de las compañías de telefonía y datos con excepción de las
+                                                        marcas de Altán.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        El beneficio se podrá ver reflejado en un plazo de 48 horas hábiles desde el momento
+                                                        en que se realice la portabilidad de su línea y realice la primera recarga del plan
+                                                        seleccionado.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        Los planes mensuales son de prepago y no son forzosos, duran 30 días y no se pueden
+                                                        modificar durante ese periodo.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        Es importante que el Usuario o Cliente verifique la compatibilidad de su dispositivo a
+                                                        través del Portal.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        Esta promoción es aplicable únicamente para usuarios nuevos que realicen recargas
+                                                        dentro de la aplicación móvil, en la página web y/o en los puntos de venta físicos
+                                                        mencionados en la página web.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        <span className='fw-bold'>Usuario Nuevo:</span> significa la persona que contrata, adquiere o realiza su portabilidad
+                                                        por primera vez de o a una línea telefónica a Tuis.
+                                                    </p>
+                                                    <Accordion defaultActiveKey={null} flush>
+                                                        <Accordion.Item eventKey="0">
+                                                            <Accordion.Header>
+                                                                <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Modificaciones de “DOBLE DE GIGAS”</h4>
+                                                            </Accordion.Header>
+                                                            <Accordion.Body>
+                                                                <p className='text-body-secondary fs-6 text-justify'>
+                                                                    Para efectos de este documento, el “Usuario” debe ser entendido como toda aquella
+                                                                    persona que ingrese al portal mediante un equipo de cómputo y/o de comunicación (en
+                                                                    adelante el Usuario), aceptando utilizar dispositivos, software, o cualquier otro medio
+                                                                    tendiente a interferir en perjuicio de las actividades y/o de las operaciones del Portal o
+                                                                    en las bases de datos y/o información que se contenga en el mismo.
+                                                                </p>
+                                                                <p className='text-body-secondary fs-6 text-justify'>
+                                                                    Altán y/o Tuis se reservan el derecho de efectuar, en cualquier momento,
+                                                                    modificaciones o actualizaciones a los presentes Términos y Condiciones, ya sea como
+                                                                    consecuencia de reformas legislativas, políticas internas, nuevos requerimientos para
+                                                                    la prestación u ofrecimiento de nuestros servicios y/o productos, prácticas del mercado
+                                                                    u otros.
+                                                                </p>
+                                                                <p className='text-body-secondary fs-6 text-justify'>
+                                                                    Por todo lo anterior, el Usuario queda obligado en todo momento a cumplir los
+                                                                    presentes términos y condiciones, así como los Términos y Condiciones Generales, la
+                                                                    Política de Uso Justo, el Código de Prácticas Comerciales, el Aviso de Privacidad, y demás
+                                                                    apartados que se encuentren en la página de internet de Tuis.
+                                                                </p>
+                                                            </Accordion.Body>
+                                                        </Accordion.Item>
+                                                    </Accordion>
 
-                                        </p>
-                                        <p className='text-body-secondary fs-5 mt-3 text-justify'>
-                                            <span className='fw-bold'>Usuario Nuevo:</span> significa la persona que contrata, adquiere o realiza su portabilidad por primera vez de o a una
-                                            línea telefónica a Tuis.
-                                        </p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                        </Accordion>
+                                        
+                                    </section>
+                                    
+                                    
+                                    <section className='pt-5'>
+                                        <Accordion defaultActiveKey={null} flush>
+                                            <Accordion.Item eventKey="1">
+                                                <Accordion.Header>
+                                                   <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Términos y Condiciones &quot;<span className="text-uppercase">Triple Gigas</span>&quot;</h2>
+                                                </Accordion.Header>
 
-                                    </section>    */}
+                                                <Accordion.Body>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        <span className='fw-bold'>Generales:</span> Con el objetivo de reconocer a nuestros Clientes, apoyar la economía individual y familiar, así como
+                                                        de promover el crecimiento de nuestra red de telecomunicaciones en México, brindamos nuestra promoción “TRIPLE DE GIGAS”.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        <span className='fw-bold'>Zona Geográfica:</span> Dentro de toda la República Mexicana.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        <span className='fw-bold'>Vigencia:</span> Hasta el 31 de octubre de 2025.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        <span className='fw-bold'>Beneficio:</span> El Triple de datos de navegación libre durante doce meses exclusivamente en los Planes Mensuales
+                                                        de Tuis (Tuisty Ready 2 GB ilimitados, Tuisty Nova 3G Ilimitado, Tuisty Boost 12G, Tuisty prime 15 GB ilimitado, Tuisty
+                                                        prime 24 GB)
+
+                                                    </p>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        Los usuarios que realicen la portabilidad de su número desde otra compañía telefónica por primera vez deberán
+                                                        adquirir y/o recargar cualquiera de los planes mensuales antes mencionados y posteriormente cada vez que
+                                                        recarguen el plan inicial contratado recibirán el triple de datos.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        No se otorgará el beneficio si el usuario recarga un plan diferente al inicialmente contratado.
+                                                    </p>
+                                                    <div>
+                                                        <p className='text-body-secondary fs-5 text-justify'>
+                                                            El uso de la Plataforma implica la aceptación de:
+                                                        </p>
+                                                        <ul className='text-body-secondary fs-5 list-style text-justify'>
+                                                            <li>
+                                                                El usuario debe tener un número previamente asignado por cualquier compañía telefónica en México.<span className='fw-bold'>*</span>
+                                                            </li>
+                                                            <li>
+                                                                El usuario debe realizar la portabilidad de su número telefónico a Tuis.
+                                                            </li>
+                                                            <li>
+                                                                El usuario debe contratar o recargar el Paquete Mensual de su preferencia en la página web, en la
+                                                                aplicación móvil o en la sucursal autorizada. Para que el beneficio sea aplicable, el plan seleccionado
+                                                                al momento de la portabilidad debe ser recargado por el usuario durante doce meses continuos.
+                                                            </li>
+                                                            <li>
+                                                                El beneficio se asignará al finalizar el proceso de portabilidad (máximo hasta 5 días hábiles posteriores al
+                                                                alta del usuario final).
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        <span className='fw-bold'>Notas:</span> <span className='fw-bold'>*</span>Válido con cualquiera de las compañías de telefonía y datos con excepción de las marcas de Altán.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        Los planes mensuales son de prepago y no son forzosos, duran 30 días y no se pueden modificar durante ese
+                                                        periodo.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        Es importante que el Usuario o Cliente verifique la compatibilidad de su dispositivo a través del Portal.
+                                                    </p>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        Esta promoción es aplicable únicamente para usuarios nuevos que realicen recargas dentro de la aplicación
+                                                        móvil, en la página web y/o en los puntos de venta físicos mencionados en la página web.
+
+                                                    </p>
+                                                    <p className='text-body-secondary fs-5 mt-3 text-justify'>
+                                                        <span className='fw-bold'>Usuario Nuevo:</span> significa la persona que contrata, adquiere o realiza su portabilidad por primera vez de o a una
+                                                        línea telefónica a Tuis.
+                                                    </p>         
+                                                </Accordion.Body>
+                                            </Accordion.Item>    
+                                        </Accordion>
+                                         
+
+                                    </section>   
+                                    
                                     <section className='pt-5'>
                                         <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Términos y Condiciones de Contratación y Recargas</h2>
                                         <Accordion defaultActiveKey={null} flush>
