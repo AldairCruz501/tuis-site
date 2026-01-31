@@ -28,6 +28,14 @@ function TerminosCondiciones () {
 
     return (
         <>
+            <style type="text/css">
+                {`
+                .accordion-header-no-padding .accordion-button {
+                    padding-left: 0 !important;
+                    padding-right: 0 !important;
+                }
+                `}
+            </style>
             <Loading loading={loading} />
             {!loading && (
                 <>
@@ -994,15 +1002,16 @@ function TerminosCondiciones () {
                                         </p>
                                         
                                     </section>
-                                    
-                                    <section className='pt-5'>
-                                        <Accordion defaultActiveKey={null} flush>
+
+                                    <section className='pt-5  '>
+                                        <Accordion defaultActiveKey={null}  flush>
                                             <Accordion.Item eventKey="0">
-                                                <Accordion.Header>
+                                                
+                                                <Accordion.Header className="accordion-header-no-padding">
                                                    <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Términos y Condiciones &quot;DOBLE DE GIGAS&quot;</h2>         
                                                 </Accordion.Header>
 
-                                                <Accordion.Body>
+                                                <Accordion.Body >
                                                     <p className='text-body-secondary fs-5 mt-3 text-justify'>
                                                         <span className='fw-bold'>Generales:</span> Con el objetivo de reconocer a nuestros Clientes, apoyar la economía
                                                         individual y familiar, así como de promover el crecimiento de nuestra red de
@@ -1089,7 +1098,7 @@ function TerminosCondiciones () {
                                                             <Accordion.Header>
                                                                 <h4 className='mt-4 fw-bold privacy-subtitle fs-4 text-center text-lg-start'>Modificaciones de “DOBLE DE GIGAS”</h4>
                                                             </Accordion.Header>
-                                                            <Accordion.Body>
+                                                            <Accordion.Body className="px-0">
                                                                 <p className='text-body-secondary fs-6 text-justify'>
                                                                     Para efectos de este documento, el “Usuario” debe ser entendido como toda aquella
                                                                     persona que ingrese al portal mediante un equipo de cómputo y/o de comunicación (en
@@ -1124,11 +1133,10 @@ function TerminosCondiciones () {
                                     <section className='pt-5'>
                                         <Accordion defaultActiveKey={null} flush>
                                             <Accordion.Item eventKey="1">
-                                                <Accordion.Header>
-                                                   <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Términos y Condiciones &quot;<span className="text-uppercase">Triple Gigas</span>&quot;</h2>
-                                                </Accordion.Header>
-
-                                                <Accordion.Body>
+                                                <Accordion.Header className="accordion-header-no-padding">
+                                                   <h2 className='fw-bold conditions-title display-5 text-center text-lg-start'>Términos y Condiciones &quot;TRIPLE GIGAS&quot;</h2>         
+                                                </Accordion.Header>                        
+                                                <Accordion.Body >
                                                     <p className='text-body-secondary fs-5 mt-3 text-justify'>
                                                         <span className='fw-bold'>Generales:</span> Con el objetivo de reconocer a nuestros Clientes, apoyar la economía individual y familiar, así como
                                                         de promover el crecimiento de nuestra red de telecomunicaciones en México, brindamos nuestra promoción “TRIPLE DE GIGAS”.
