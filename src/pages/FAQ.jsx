@@ -24,7 +24,13 @@ const faqData = [
             {
                 id: 1,
                 question: '¿Cómo activo mi línea TUIS?',
-                answer: 'Inserta tu SIM o E-SIM en tu equipo, enciéndelo y sigue las instrucciones que recibirás por mensaje. Una vez completado el proceso, tu línea quedará activa.'
+                answer: (
+                    <>
+                    Inserta tu SIM o E-SIM en tu equipo, enciéndelo y sigue las instrucciones que recibirás por mensaje.<br /><br />
+                    Para completar la activación, es necesario realizar el registro de tu línea a través del siguiente enlace oficial: <br /> <a href="https://rnu.altanredes.com/addomv/vinculatulinea" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', fontWeight: 'bold' }}>👉  https://rnu.altanredes.com/altan/vinculatulinea </a> <br /> <br /> Para el registro deberás contar con tu INE y CURP vigentes. <br /> Una vez concluido correctamente el proceso de registro y validada la información, tu línea quedará activa.  
+
+                    </>
+                )
             },
             {
                 id: 2,
@@ -108,6 +114,20 @@ const faqData = [
                     </>
                 )
             },
+            {
+                id: 10,
+                question: '¿Debo registrar mi línea después de que termine la portabilidad?',
+                answer: (
+                    <>
+                        Sí. Una vez que el proceso de portabilidad haya concluido y tu número original haya sido transferido a Tuis, es necesario realizar nuevamente el registro de tu línea para completar la activación del servicio.
+                        <br /><br />
+                        El registro se realiza a través del enlace oficial: <br /> <a href="https://rnu.altanredes.com/addomv/vinculatulinea" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', fontWeight: 'bold' }}>👉  https://rnu.altanredes.com/altan/vinculatulinea </a> <br /> <br /> Para este proceso deberás contar con tu INE y CURP vigentes. Una vez concluido correctamente el registro y validada la información, tu línea quedará completamente activa.
+
+                    
+                    </>
+                )
+            },
+
         ]
     },
     {
@@ -115,7 +135,7 @@ const faqData = [
         title: 'Servicio y cobertura',
         items: [
             {
-                id: 10,
+                id: 11,
                 question: '📶 ¿Qué hago si no tengo señal o datos?',
                 answer:(
                     <>
@@ -125,7 +145,7 @@ const faqData = [
                 )  
             },
             {
-                id: 11,
+                id: 12,
                 question: '💳 ¿Dónde puedo hacer mi recarga?',
                 answer: (
                     <>
@@ -141,7 +161,7 @@ const faqData = [
         title: 'Soporte',
         items: [
             {
-                id: 7,
+                id: 13,
                 question: '📵 Mi línea no tiene servicio, ¿cómo me apoyan?',
                 answer:(
                     <>
@@ -152,7 +172,7 @@ const faqData = [
                 
             },
             {
-                id: 8,
+                id: 14,
                 question: '📞 ¿Cómo contacto a soporte TUIS?',
                 answer:(
                     <>
@@ -163,7 +183,7 @@ const faqData = [
                 
             },
              {
-                id: 9,
+                id: 15,
                 question: '🔒 ¿Qué hago en caso de robo o extravío de mi equipo o línea?',
                 answer:(
                     <>
@@ -174,7 +194,7 @@ const faqData = [
                 
             },
             {
-                id: 10,
+                id: 16,
                 question: '🔄 ¿Cómo recupero mi línea?',
                 answer:(
                     <>
@@ -185,7 +205,7 @@ const faqData = [
                 
             },
             {
-                id: 11,
+                id: 17,
                 question: '❌ ¿Qué hago si quiero cancelar mi servicio?',
                 answer:(
                     <>
