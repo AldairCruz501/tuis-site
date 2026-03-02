@@ -91,7 +91,7 @@ const reviewsData = [
     {
         id: 6,
         img: "img/img-6.1.png",
-        title: "",
+        title: "“Mi ruta cambia, mi señal se mantiene.”",
         paragraphs: [
             "“Paso todo el día manejando y necesito una conexión que vaya a mi ritmo. Con Tuis puedo trabajar tranquilo y sin interrupciones.”",
             
