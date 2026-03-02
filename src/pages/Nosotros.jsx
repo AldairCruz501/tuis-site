@@ -16,63 +16,92 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 const reviewsData = [
     {
         id: 1,
-        img: "https://temalcode-agency-portfolio.netlify.app/images/review1.png",
-        title: "“Excellent Team with Creative Mindset”",
+        img: "img/img-1.png",
+        title: "“A donde vaya, mi señal va conmigo.”",
         paragraphs: [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare eu odio pretium sed amet, pulvinar nunc fringilla lectus.",
+            "“Tengo un año con Tuis y siempre me ha mantenido conectada. Puedo viajar y comunicarme sin preocuparme por mi señal.”",
             
         ],
-        author: "CEO of SomeCompany"
+        paragraphsDos: [
+           "Jessica Macías utiliza Tuis desde hace un año para mantenerse comunicada con su familia, organizar sus actividades y viajar con tranquilidad.",
+            "Para ella, contar con una línea confiable significa poder estar conectada en cualquier lugar, incluso cuando está fuera de su ciudad."
+        ],
+        author: "Jessica Macías - Usuaria Tuis desde hace 1 año"
     },
     {
         id: 2,
-        img: "https://temalcode-agency-portfolio.netlify.app/images/review2.png",
-        title: "“Excellent Team with Creative Mindset”",
+        img: "img/img-2.1.png",
+        title: "“Mi contenido no se detiene. Mi señal tampoco.”",
         paragraphs: [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare eu odio pretium sed amet, pulvinar nunc fringilla lectus.",
+            "“Con Tuis tengo la señal y los gigas que necesito para crear contenido sin pausas. Donde esté, sigo conectado.”"
             
         ],
-        author: "CEO of SomeCompany"
+        paragraphsDos: [
+            "Cris Now es creador digital y vive conectado para grabar, editar y compartir contenido todos los días. Para él, tener buena señal y suficientes gigas no es un lujo, es parte de su trabajo.",
+            "Con Tuis, puede subir videos, hacer transmisiones y mantenerse en contacto con su comunidad sin interrupciones, desde cualquier lugar.",
+        ],
+        author: "Cris Now - Creador de contenido"
     },
     {
         id: 3,
-        img: "https://temalcode-agency-portfolio.netlify.app/images/review3.png",
-        title: "“Excellent Team with Creative Mindset”",
+        img: "img/img-3.png",
+        title: "“Si yo estoy en movimiento, mi señal también.”",
         paragraphs: [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare eu odio pretium sed amet, pulvinar nunc fringilla lectus.",
+            "“Con Tuis puedo trabajar sin preocuparme por quedarme sin datos o sin señal. Mi celular es mi herramienta principal.”",
             
         ],
-        author: "CEO of SomeCompany"
+        paragraphsDos: [
+           "Sebastián trabaja como repartidor y depende de su celular para recibir pedidos, usar GPS y mantenerse en contacto con sus clientes durante toda su jornada.",
+            "Para él, tener señal estable y datos suficientes no es opcional: es lo que le permite trabajar sin interrupciones.",
+            "Con Tuis, puede moverse por toda la ciudad con la tranquilidad de estar siempre conectado.",
+            
+        ],
+        author: "Sebastian González - Repartidor"
     },
     {
         id: 4,
-        img: "https://temalcode-agency-portfolio.netlify.app/images/review1.png",
-        title: "“Excellent Team with Creative Mindset”",
+        img: "img/img-4.1.png",
+        title: "“Mi oficina también está en mi celular.”",
         paragraphs: [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare eu odio pretium sed amet, pulvinar nunc fringilla lectus.",
+            "“Necesito estar comunicada todo el día. Con Tuis puedo trabajar tranquila sin preocuparme por mi conexión.”",
             
         ],
-        author: "CEO of SomeCompany"
+        paragraphsDos: [
+            "Nayeli  trabaja en oficina y pasa gran parte del día en llamadas, videollamadas y gestionando información desde su celular y computadora. Para ella, estar conectada no es solo comodidad, es parte esencial de su trabajo.",
+            "Con Tuis, puede mantenerse disponible para su equipo y clientes en todo momento, incluso cuando trabaja fuera de la oficina.",
+            
+        ],
+        author: "Nayeli Enríquez - Ejecutiva Administrativa"
     },
     {
         id: 5,
-        img: "https://temalcode-agency-portfolio.netlify.app/images/review4.png",
-        title: "“Excellent Team with Creative Mindset”",
+        img: "img/img-5.2.png",
+        title: "“Aprender no tiene horario ni lugar”",
         paragraphs: [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare eu odio pretium sed amet, pulvinar nunc fringilla lectus.",
+            "“Entre tareas, clases y trabajos en equipo, necesito internet todo el tiempo. Con Tuis puedo seguir estudiando desde cualquier lugar.”",
             
         ],
-        author: "CEO of SomeCompany"
+        paragraphsDos: [
+            "Violeta es estudiante universitaria y pasa gran parte del día entre clases, tareas y proyectos en equipo. Usa su celular para investigar, descargar material, comunicarse con sus compañeros y revisar plataformas escolares.",
+            "Con Tuis, puede mantenerse conectada dentro del campus, en el transporte y en casa, sin preocuparse por quedarse sin datos cuando tiene entregas importantes.",
+            
+        ],
+        author: "Violeta Beltran - Estudiante Universitaria"
     },
     {
         id: 6,
-        img: "https://temalcode-agency-portfolio.netlify.app/images/review2.png",
-        title: "“Excellent Team with Creative Mindset”",
+        img: "img/img-6.1.png",
+        title: "",
         paragraphs: [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare eu odio pretium sed amet, pulvinar nunc fringilla lectus.",
+            "“Paso todo el día manejando y necesito una conexión que vaya a mi ritmo. Con Tuis puedo trabajar tranquilo y sin interrupciones.”",
             
         ],
-        author: "CEO of SomeCompany"
+        paragraphsDos: [
+            "Hugo trabaja como conductor y pasa gran parte del día recorriendo la ciudad. Su celular es su principal herramienta para recibir viajes, seguir rutas y mantenerse en contacto con sus pasajeros.",
+            "Con Tuis, puede concentrarse en su trabajo sin preocuparse por perder señal mientras está en movimiento.",
+            
+        ],
+        author: "Hugo Arteaga - Conductor de plataforma "
     },
 ];
 
@@ -282,7 +311,7 @@ export default function Nosotros () {
                             </Slide>
                         </Container>
                     </section>
-                    {/* <section className='pt-5 pb-5 '>
+                    <section className='pt-5 pb-5 '>
                         <Container fluid >
                             <div className="p-3 pb-md-4 mx-auto text-center">
                                 <h1 className="display-6 fw-bold title-services text-uppercase">lo que dicen<br/> <span className=' display-1 fw-bold'>Nuestros Clientes v1</span></h1>
@@ -297,12 +326,19 @@ export default function Nosotros () {
                                                     <p className="fw-bold fs-4 lh-sm">{review.title}</p>
                                                 </div>
                                                 <div className="card-para-review my-3 text-muted">
+                                                    <p className='fw-bold mb-0 '>Testimonio</p>
                                                     {review.paragraphs.map((para, index) => (
-                                                        <p key={index}>{para}</p>
+                                                        <p key={index} className="mb-1">{para}</p>
+                                                    ))}
+                                                </div>
+                                                <div className="card-para-review my-3 text-muted">
+                                                    <p className='fw-bold mb-0 '>Historia</p>
+                                                    {review.paragraphsDos.map((para, index) => (
+                                                        <p key={index} className='mb-1'>{para}</p>
                                                     ))}
                                                 </div>
                                                 <div className="card-author-review d-flex align-items-center gap-2 mt-3">
-                                                    <svg width="20" height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <svg width="20" height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/sv">
                                                         <path d="M0.526123 1.13867H8.25949" stroke="black" strokeWidth="0.822209" />
                                                     </svg>
                                                     <p className="m-0 fw-bold small">{review.author}</p>
@@ -322,9 +358,16 @@ export default function Nosotros () {
                                                 <div className="card-title-review">
                                                     <p className="fw-bold fs-4 lh-sm">{review.title}</p>
                                                 </div>
-                                                <div className="card-para-review my-3 text-muted">
+                                                 <div className="card-para-review my-3 text-muted">
+                                                    <p className='fw-bold mb-0 '>Testimonio</p>
                                                     {review.paragraphs.map((para, index) => (
-                                                        <p key={index}>{para}</p>
+                                                        <p key={index} className="mb-1">{para}</p>
+                                                    ))}
+                                                </div>
+                                                <div className="card-para-review my-3 text-muted">
+                                                    <p className='fw-bold mb-0 '>Historia</p>
+                                                    {review.paragraphsDos.map((para, index) => (
+                                                        <p key={index} className='mb-1'>{para}</p>
                                                     ))}
                                                 </div>
                                                 <div className="card-author-review d-flex align-items-center gap-2 mt-3">
@@ -339,7 +382,7 @@ export default function Nosotros () {
                                 </div>
                             </div>
                         </Container>
-                    </section> */}
+                    </section>
                     {/* <section className='pt-5 pb-5 '>
                         <Container >
                             <div className="p-3 pb-md-4 mx-auto text-center">
