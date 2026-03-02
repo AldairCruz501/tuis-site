@@ -285,3 +285,7 @@
   .section-tuis {
     background-color: #6149B7;
   }
+
+.paused {
+    animation-play-state: paused !important;
+}

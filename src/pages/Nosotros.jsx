@@ -112,6 +112,7 @@ const singleSetWidth = reviewsData.length * (320 + 24); // 320px card + 24px gap
 export default function Nosotros () {
 
     const [loading, setLoading] = useState(true);
+    const [isPaused, setIsPaused] = useState(false);
     const navigate = useNavigate();
     const scrollRef = useRef(null);
     const trackRefV3 = useRef(null);
@@ -316,8 +317,13 @@ export default function Nosotros () {
                             <div className="p-3 pb-md-4 mx-auto text-center">
                                 <h1 className="display-6 fw-bold title-services text-uppercase">lo que dicen<br/> <span className=' display-1 fw-bold'>Nuestros Clientes</span></h1>
                             </div>
-                            <div className="reviews-container overflow-hidden mt-4">
-                                <div className="reviews-row row-first d-flex gap-4 mb-4">
+                            <div 
+                                className="reviews-container overflow-hidden mt-4"
+                                onClick={() => setIsPaused(!isPaused)}
+                                style={{ cursor: 'pointer' }}
+                                title={isPaused ? "Haz click para reanudar" : "Haz click para pausar"}
+                            >
+                                <div className={`reviews-row row-first d-flex gap-4 mb-4 ${isPaused ? 'paused' : ''}`}>
                                     {reviewsData.slice(0, 3).map((review) => (
                                         <div key={review.id} className="reviews-card shadow-sm rounded-3 overflow-hidden">
                                             <img className="card-img-review object-fit-cover" src={review.img} alt="review" />
@@ -348,7 +354,7 @@ export default function Nosotros () {
                                     ))}
                                 </div>
 
-                                <div className="reviews-row row-second d-flex gap-4">
+                                <div className={`reviews-row row-second d-flex gap-4 ${isPaused ? 'paused' : ''}`}>
                                     {reviewsData.slice(3, 6).map((review) => (
                                         <div key={review.id} className="reviews-card shadow-sm rounded-3 overflow-hidden">
                                             <div className="card-img-review">
