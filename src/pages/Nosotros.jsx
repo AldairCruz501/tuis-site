@@ -314,7 +314,7 @@ export default function Nosotros () {
                     <section className='pt-5 pb-5 '>
                         <Container fluid >
                             <div className="p-3 pb-md-4 mx-auto text-center">
-                                <h1 className="display-6 fw-bold title-services text-uppercase">lo que dicen<br/> <span className=' display-1 fw-bold'>Nuestros Clientes v1</span></h1>
+                                <h1 className="display-6 fw-bold title-services text-uppercase">lo que dicen<br/> <span className=' display-1 fw-bold'>Nuestros Clientes</span></h1>
                             </div>
                             <div className="reviews-container overflow-hidden mt-4">
                                 <div className="reviews-row row-first d-flex gap-4 mb-4">
