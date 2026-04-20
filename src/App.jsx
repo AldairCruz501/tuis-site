@@ -92,7 +92,7 @@ function App() {
 
           {/* PDFs fijos */}
           <Route path="/portabilidad-ift" element={<PdfViewer pdfPath="/pdf/Portabilidad-IFT.pdf" />} />
-          <Route path="/contrato-adhesion-profeco" element={<PdfViewer pdfPath="/pdf/20240711-INBTEL-oficio-registro-contrato-de-adhesion.pdf" />} />
+          <Route path="/contrato-adhesion-profeco" element={<PdfViewer pdfPath="/pdf/contrato-adhesion-2026.pdf" />} />
           <Route path="/carta-derechos-min" element={<PdfViewer pdfPath="/pdf/Carta-Derechos-Minimos-IFT.pdf" />} />
           <Route path="/politica-uso-justo" element={<PdfViewer pdfPath="/pdf/20240912-INBTEL-politica-de-uso-justo-MVNO-v1.pdf" />} />
           <Route path="/colaboracion-justicia" element={<PdfViewer pdfPath="/pdf/DATOS-PARA-COLABORACION-CON-LA-JUSTICIA.pdf" />} />
