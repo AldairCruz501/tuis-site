@@ -3,7 +3,9 @@ import './Home.css'
 import { useEffect, useState } from "react";
 import NavbarComponent from '../components/Navbar';
 import FooterComponent from '../components/Footer';
+
 import { Carousel, Container, Button, Row, Col } from 'react-bootstrap';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faSnapchat, faTelegram, faWhatsapp, faXTwitter} from '@fortawesome/free-brands-svg-icons';
 import { faChevronLeft, faChevronRight, faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';

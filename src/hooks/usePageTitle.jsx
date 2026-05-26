@@ -17,6 +17,7 @@ const usePageTitle = () => {
       "/cobertura": "Cobertura | Tuis",
       "/compatibilidad": "Compatibilidad | Tuis",
       "/nosotros": "Nosotros | Tuis",
+      "/vinculacion": "Vincula tu Línea | Tuis",
       "/acceder": "Acceder | Tuis",
       "/aviso-de-privacidad": "Aviso de Privacidad | Tuis",
       "/terminos-y-condiciones": "Términos y Condiciones | Tuis",

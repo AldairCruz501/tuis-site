@@ -1,0 +1,248 @@
+/* Variables adaptadas a Tuis */
+:root {
+    --vinc-primary-color: #6149B7; /* Color morado de Tuis */
+    --vinc-secondary-color: #50c878;
+    --vinc-tercer-color: #e9defa;
+    --vinc-text-color: #2d3436;
+    --vinc-light-text: #636e72;
+    --vinc-background-color: #f9f9f9;
+    --vinc-advert-color: #fdf7bf;
+    --vinc-white: #ffffff;
+    --vinc-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    --vinc-border-radius: 12px;
+    --vinc-transition: all 0.3s ease;
+}
+
+
+/* Header Section */
+.vinc-header {
+    padding: 130px 20px 0px 20px;
+    background:  var(--vinc-white);
+    color: var(--vinc-primary-color);
+    width: 75%;
+}
+
+.vinc-header p{
+    color: var(--vinc-text-color);
+}
+
+.vinc-header img{
+  width: 35%;
+}
+
+.vinc-buttons{
+  width: 75%;
+}
+
+.buy-button {
+    margin-top: 20px;
+    background-color: #6149B7 !important;
+  }
+
+.buy-button:hover {
+background-color: #FFFFFF !important;
+color: #6149B7 !important;
+border-color: #6149B7 !important;
+}
+
+.buy-button-2 {
+    margin-top: 20px;
+    border-color: #6149B7 !important;
+    background-color: transparent !important;
+    color: #6149B7
+  }
+
+.buy-button-2:hover {
+background-color: #6149B7 !important;
+color: white !important;
+
+}
+
+
+
+/*Que es la vinculacion*/
+
+.vinc-content {
+    padding: 60px 150px 60px 150px;
+    background:  var(--vinc-tercer-color);
+    color: var(--vinc-text-color);
+    width: 100%;
+    border-radius: var(--vinc-border-radius);
+    box-shadow: var(--vinc-shadow);
+    overflow: hidden;
+    
+}
+
+.queesvinc-container {
+    background-color: #6149B7;
+  }
+
+.vinc-content-img{
+  width: 120px;
+}
+
+
+/* Pasos para el registro */
+
+.pasos-number{
+  width: 60px; 
+  height: 60px; 
+  background-color: trasparent;
+  color: #6149B7; 
+  font-size: 2.5rem; 
+  font-weight: bold;
+}
+
+.pasos-img{
+  width: 120px;
+}
+
+/* Adevrtencia Content */
+.advert-content {
+    padding: 20px 150px 20px 150px;
+    background:  var(--vinc-advert-color);
+    color: var(--vinc-text-color);
+    width: 100%;
+    border-radius: var(--vinc-border-radius);
+    box-shadow: var(--vinc-shadow);
+    overflow: hidden;
+    
+}
+
+/* Porque necesito realizar mi vinculación */
+.porqueno-content-img{
+  width: 50px;
+}
+
+.porqueno-content-der{
+  padding: 20px 40px 20px 40px;
+    background:  var(--vinc-white);
+    color: var(--vinc-text-color);
+    border-radius: var(--vinc-border-radius);
+    box-shadow: var(--vinc-shadow);
+    overflow: hidden;
+    width: 45%;
+    margin: auto;
+    display:block;
+}
+
+.porqueno-content-der .buy-button-2 {
+  transform: scale(0.7);
+  transform-origin: left center;
+}
+
+
+/*Documentos que necesito*/
+.documentos-content{
+    padding: 20px 20px 20px 20px;
+    background:  var(--vinc-white);
+    color: var(--vinc-text-color);
+    border-radius: var(--vinc-border-radius);
+    box-shadow: var(--vinc-shadow);
+    overflow: hidden;
+}
+
+/*Preguntas frecuentes*/
+.whats-content {
+    padding: 25px 50px 25px 50px;
+    background:  var(--vinc-primary-color);
+    color: var(--vinc-white);
+    border-radius: var(--vinc-border-radius);
+    box-shadow: var(--vinc-shadow);
+    overflow: hidden;
+    
+}
+
+.whats-content-img{
+  width: 120px;
+}
+
+.buy-button-3 {
+    border-color: trasnparent !important;
+    background-color: #6149B7 !important;
+    color: trasnparent !important;
+  }
+ 
+  .buy-button-3:hover {
+    background-color: #8a74db !important;
+    color: #fff !important;
+
+}
+
+.avisopriv-content-der{
+  padding: 20px 40px 20px 40px;
+    background:  var(--vinc-white);
+    color: var(--vinc-text-color);
+    border-radius: var(--vinc-border-radius);
+    box-shadow: var(--vinc-shadow);
+    overflow: hidden;
+    margin: auto;
+    display:block;
+}
+ 
+.buy-button-4 {
+  border-color: #6149B7 !important;
+  background-color: transparent !important;
+  color: #6149B7
+}
+
+.buy-button-4:hover {
+  background-color: #6149B7 !important;
+  color: white !important;
+
+}
+
+  
+/*QUERYS*/
+@media (max-width: 768px){
+    .vinc-header {
+        padding: 50px 20px 0px 20px;
+        width: 100%;
+    }
+    .vinc-buttons{
+      width: 100%;
+    }
+
+    .vinc-content {
+      padding: 40px 20px 40px 20px;
+    }
+
+    .advert-content {
+      padding: 20px 20px 30px 20px;
+    }
+
+    .porqueno-content-der{
+      padding: 20px 30px 20px 30px;
+      width: 100%;
+    }
+    .porqueno-content-der .buy-button-2 {
+      transform: scale(0.7);
+      transform-origin: center;
+      margin-top: 0px;
+    }
+  
+    .whats-content-img{
+      width: 80px;
+    }
+}  
+
+@media (min-width: 768px) and (max-width: 800px){
+  .vinc-header-img{
+    width: 75%;
+    margin: auto;
+    display:block;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px){
+  .vinc-header {
+    width: 100%;
+  }
+  .vinc-header-img{
+    transform: scale(1.2);
+    margin: auto;
+    display:block;
+  }
+
+
+}

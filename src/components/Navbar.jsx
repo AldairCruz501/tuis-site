@@ -98,6 +98,9 @@ export default function NavbarComponent() {
                 <Nav.Link as={Link} to="/faq" className="mx-2 mx-lg-3">
                   TUIS te ayuda
                 </Nav.Link>
+                <Nav.Link as={Link} to="/vinculacion" className="mx-2 mx-lg-3">
+                  Vincula tu línea
+                </Nav.Link>
 
                 {/*<Nav.Link as={Link} to="/recargas" className="mx-2 mx-lg-3">
                   Recargas

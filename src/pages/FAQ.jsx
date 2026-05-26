@@ -1,16 +1,20 @@
+
+import './FAQ.css';
+import { useState, useEffect, useMemo } from 'react';
 import NavbarComponent from '../components/Navbar';
 import FooterComponent from '../components/Footer';
-import { useState, useEffect, useMemo } from 'react';
+
 import { Container, Collapse } from 'react-bootstrap';
-import './FAQ.css';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { useNavigate } from 'react-router-dom';
 import { Fade, Slide } from 'react-awesome-reveal';
 import Loading from '../components/Loading';
-import { useNavigate } from 'react-router-dom';
 import FloatingWhatsAppButton from '../components/WhatsApp-Button';
 import ShippingTerms from '../components/Shipping-Terms';
 import AppStoreTuis from '../components/AppStoreTuis';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import './FAQ.css';
 
