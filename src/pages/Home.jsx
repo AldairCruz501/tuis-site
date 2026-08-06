@@ -70,20 +70,20 @@ function Home() {
                       />
                     </Carousel.Item>
 
-                    {/* <Carousel.Item>
+                    <Carousel.Item>
                       <img
                         className="d-none d-lg-block w-75 m-auto"
-                        src="img/TUIS-MUNDIAL-1920x1080.jpeg"
+                        src="img/PORTABILIDADWEB-AGOSTO1080x1920.jpeg"
                         alt="Slide 2"
                         loading="lazy"
                       />
                       <img
                         className="d-block d-lg-none w-100 m-auto"
-                        src="img/TUIS-MUNDIAL-768x1024.jpeg"
+                        src="img/PORTABILIDADWEB-AGOSTO768x1024.jpeg"
                         alt="Slide 2"
                         loading="lazy"
                       />
-                    </Carousel.Item> */}
+                    </Carousel.Item>
                     
                     <Carousel.Item>
                       <img
