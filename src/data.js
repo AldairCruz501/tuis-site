@@ -188,7 +188,7 @@ export const planesData = {
           internet:"Si Comparte Internet",
           showCountries: true, // Mostramos las banderas
           showLlamadas:false,
-          socialText:"Redes Sociales Ilimitadas",
+          socialText:"Redes Sociales Incluidas",
           socialMedia: [
             "whatsapp",
             "facebook",
@@ -198,14 +198,16 @@ export const planesData = {
             "snapchat",
             "telegram",
           ],
-          socialInterText:"Redes Sociales Ilimitadas",
+          socialInterText:"Redes Sociales Incluidas",
           socialMediaInter: [
             "whatsapp",
             "messenger",
             "telegram",
           ],
           duration: "7 días",
-          iftfolio: "",
+          iftfolio: "2233540",
+          linkfolio: "/folio/2233540",
+         
         },
         {
           id: 7,
@@ -223,7 +225,7 @@ export const planesData = {
           internet:"Si Comparte Internet",
           showCountries: true, // Mostramos las banderas
           showLlamadas:false,
-          socialText:"Redes Sociales Ilimitadas",
+          socialText:"Redes Sociales Incluidas",
           socialMedia: [
             "whatsapp",
             "facebook",
@@ -233,14 +235,15 @@ export const planesData = {
             "snapchat",
             "telegram",
           ],
-          socialInterText:"Redes Sociales Ilimitadas",
+          socialInterText:"Redes Sociales Incluidas",
           socialMediaInter: [
             "whatsapp",
             "messenger",
             "telegram",
           ],
           duration: "15 días",
-          iftfolio: ""
+          iftfolio: "2232362",
+          linkfolio: "/folio/2232362",
         },
       ],
     },
@@ -279,7 +282,8 @@ export const planesData = {
                 "telegram",
               ],
               duration: "30 días",
-              iftfolio: ""
+              iftfolio: "",
+              linkfolio: "",
             },
             {
               id: 10,
@@ -297,7 +301,7 @@ export const planesData = {
               internet:"Si Comparte Internet",
               showCountries: true,
               showLlamadas:false,
-              socialText:"Redes Sociales Ilimitadas",
+              socialText:"Redes Sociales Incluidas",
               socialMedia: [
                 "whatsapp",
                 "facebook",
@@ -307,14 +311,15 @@ export const planesData = {
                 "snapchat",
                 "telegram",
               ],
-              socialInterText:"Redes Sociales Ilimitadas",
+              socialInterText:"Redes Sociales Incluidas",
               socialMediaInter: [
                 "whatsapp",
                 "messenger",
                 "telegram",
               ],
               duration: "30 días",
-              iftfolio: ""
+              iftfolio: "2233539",
+              linkfolio: "/folio/2233539",
             },
             {
               id: 11,
@@ -331,7 +336,7 @@ export const planesData = {
               internet:"Si Comparte Internet",
               showCountries: true,
               showLlamadas:false,
-              socialText:"Redes Sociales Ilimitadas",
+              socialText:"Redes Sociales Incluidas",
               socialMedia: [
                 "whatsapp",
                 "facebook",
@@ -341,15 +346,15 @@ export const planesData = {
                 "snapchat",
                 "telegram",
               ],
-              socialInterText:"Redes Sociales Ilimitadas",
+              socialInterText:"Redes Sociales Incluidas",
               socialMediaInter: [
                 "whatsapp",
                 "messenger",
                 "telegram",
               ],
               duration: "30 días",
-              iftfolio: "1833634",
-              linkfolio: "/folio/1833634",
+              iftfolio: "2232364",
+              linkfolio: "/folio/2232364",
               },
               {
                 id: 12,
@@ -366,7 +371,7 @@ export const planesData = {
                 internet:"Si Comparte Internet",
                 showCountries: true,
                 showLlamadas:false,
-                socialText:"Redes Sociales Ilimitadas",
+                socialText:"Redes Sociales Incluidas",
                 socialMedia: [
                   "whatsapp",
                   "facebook",
@@ -376,15 +381,15 @@ export const planesData = {
                   "snapchat",
                   "telegram",
                 ],
-                socialInterText:"Redes Sociales Ilimitadas",
+                socialInterText:"Redes Sociales Incluidas",
                 socialMediaInter: [
                   "whatsapp",
                   "messenger",
                   "telegram",
                 ],
                 duration: "30 días",
-                iftfolio: "1833635",
-                linkfolio: "/folio/1833635"
+                iftfolio: "2232365",
+                linkfolio: "/folio/2232365"
               },
               {
                 id: 13,
@@ -402,7 +407,7 @@ export const planesData = {
                 internet:"Si Comparte Internet",
                 showCountries: true,
                 showLlamadas:false,
-                socialText:"Redes Sociales Ilimitadas",
+                socialText:"Redes Sociales Incluidas",
                 socialMedia: [
                   "whatsapp",
                   "facebook",
@@ -412,14 +417,15 @@ export const planesData = {
                   "snapchat",
                   "telegram",
                 ],
-                socialInterText:"Redes Sociales Ilimitadas",
+                socialInterText:"Redes Sociales Incluidas",
                 socialMediaInter: [
                   "whatsapp",
                   "messenger",
                   "telegram",
                 ],
                 duration: "30 días",
-                iftfolio: "1644133"
+                iftfolio: "2232366",
+                linkfolio: "/folio/2232366"
               },
               {
                 id: 14,
@@ -436,7 +442,7 @@ export const planesData = {
                 internet:"Si Comparte Internet",
                 showCountries: true,
                 showLlamadas:false,
-                socialText:"Redes Sociales Ilimitadas",
+                socialText:"Redes Sociales Incluidas",
                 socialMedia: [
                   "whatsapp",
                   "facebook",
@@ -446,15 +452,15 @@ export const planesData = {
                   "snapchat",
                   "telegram",
                 ],
-                socialInterText:"Redes Sociales Ilimitadas",
+                socialInterText:"Redes Sociales Incluidas",
                 socialMediaInter: [
                   "whatsapp",
                   "messenger",
                   "telegram",
                 ],
                 duration: "30 días",
-                iftfolio: "1833636",
-                linkfolio: "/folio/1833636"
+                iftfolio: "2232367",
+                linkfolio: "/folio/2232367"
               },
               {
                 id: 15,
@@ -472,7 +478,7 @@ export const planesData = {
                 internet:"Si Comparte Internet",
                 showCountries: true,
                 showLlamadas:false,
-                socialText:"Redes Sociales Ilimitadas",
+                socialText:"Redes Sociales Incluidas",
                 socialMedia: [
                   "whatsapp",
                   "facebook",
@@ -482,14 +488,15 @@ export const planesData = {
                   "snapchat",
                   "telegram",
                 ],
-                socialInterText:"Redes Sociales Ilimitadas",
+                socialInterText:"Redes Sociales Incluidas",
                 socialMediaInter: [
                   "whatsapp",
                   "messenger",
                   "telegram",
                 ],
                 duration: "30 días",
-                iftfolio: ""
+                iftfolio: "2232368",
+                linkfolio: "/folio/2232368"
               },
               {
                 id: 16,
@@ -506,7 +513,7 @@ export const planesData = {
                 internet:"No Comparte Internet",
                 showCountries: true,
                 showLlamadas:false,
-                socialText:"Redes Sociales Ilimitadas",
+                socialText:"Redes Sociales Incluidas",
                 socialMedia: [
                   "whatsapp",
                   "facebook",
@@ -516,15 +523,15 @@ export const planesData = {
                   "snapchat",
                   "telegram",
                 ],
-                socialInterText:"Redes Sociales Ilimitadas",
+                socialInterText:"Redes Sociales Incluidas",
                 socialMediaInter: [
                   "whatsapp",
                   "messenger",
                   "telegram",
                 ],
                 duration: "30 días",
-                iftfolio: "1833637",
-                linkfolio: "/folio/1833637"
+                iftfolio: "2232369",
+                linkfolio: "/folio/2232369"
               },
               {
                 id: 17,
@@ -551,7 +558,7 @@ export const planesData = {
                   "snapchat",
                   "telegram",
                 ],*/
-                socialInterText:"Redes Sociales Internacionales Ilimitadas",
+                socialInterText:"Redes Sociales Internacionales Incluidas",
                 socialMediaInter: [
                   "whatsapp",
                   "messenger",
@@ -580,7 +587,7 @@ export const planesData = {
             internet:"Si Comparte Internet",
             showCountries: true,
             showLlamadas:false,
-            socialText:"Redes Sociales Ilimitadas",
+            socialText:"Redes Sociales Incluidas",
             socialMedia: [
               "whatsapp",
               "facebook",
@@ -590,15 +597,15 @@ export const planesData = {
               "snapchat",
               "telegram",
             ],
-            socialInterText:"Redes Sociales Ilimitadas",
+            socialInterText:"Redes Sociales Incluidas",
             socialMediaInter: [
               "whatsapp",
               "messenger",
               "telegram",
             ],
             duration: "90 días",
-            iftfolio: "1833638",
-            linkfolio: "/folio/1833638"
+            iftfolio: "2232370",
+            linkfolio: "/folio/2232370"
           },
           {
             id: 19,
@@ -615,7 +622,7 @@ export const planesData = {
             internet:"Si Comparte Internet",
             showCountries: true,
             showLlamadas:false,
-            socialText:"Redes Sociales Ilimitadas",
+            socialText:"Redes Sociales Incluidas",
             socialMedia: [
               "whatsapp",
               "facebook",
@@ -625,15 +632,15 @@ export const planesData = {
               "snapchat",
               "telegram",
             ],
-            socialInterText:"Redes Sociales Ilimitadas",
+            socialInterText:"Redes Sociales Incluidas",
             socialMediaInter: [
               "whatsapp",
               "messenger",
               "telegram",
             ],
             duration: "90 días",
-            iftfolio: "1833640",
-            linkfolio: "/folio/1833640"
+            iftfolio: "2232371",
+            linkfolio: "/folio/2232371"
           },
           {
             id: 20,
@@ -651,7 +658,7 @@ export const planesData = {
             internet:"Si Comparte Internet",
             showCountries: true,
             showLlamadas:false,
-            socialText:"Redes Sociales Ilimitadas",
+            socialText:"Redes Sociales Incluidas",
             socialMedia: [
               "whatsapp",
               "facebook",
@@ -661,14 +668,15 @@ export const planesData = {
               "snapchat",
               "telegram",
             ],
-            socialInterText:"Redes Sociales Ilimitadas",
+            socialInterText:"Redes Sociales Incluidas",
             socialMediaInter: [
               "whatsapp",
               "messenger",
               "telegram",
             ],
             duration: "90 días",
-            iftfolio: ""
+            iftfolio: "2232372",
+            linkfolio: "/folio/2232372",
           },
         ],
     },
@@ -689,7 +697,7 @@ export const planesData = {
             internet:"Si Comparte Internet",
             showCountries: true,
             showLlamadas:false,
-            socialText:"Redes Sociales Ilimitadas",
+            socialText:"Redes Sociales Incluidas",
             socialMedia: [
               "whatsapp",
               "facebook",
@@ -699,15 +707,15 @@ export const planesData = {
               "snapchat",
               "telegram",
             ],
-            socialInterText:"Redes Sociales Ilimitadas",
+            socialInterText:"Redes Sociales Incluidas",
             socialMediaInter: [
               "whatsapp",
               "messenger",
               "telegram",
             ],
             duration: "180 días",
-            iftfolio: "1833642",
-            linkfolio: "/folio/1833642"
+            iftfolio: "2232373",
+            linkfolio: "/folio/2232373"
           },
           {
             id: 22,
@@ -724,7 +732,7 @@ export const planesData = {
             internet:"Si Comparte Internet",
             showCountries: true,
             showLlamadas:false,
-            socialText:"Redes Sociales Ilimitadas",
+            socialText:"Redes Sociales Incluidas",
             socialMedia: [
               "whatsapp",
               "facebook",
@@ -734,14 +742,15 @@ export const planesData = {
               "snapchat",
               "telegram",
             ],
-            socialInterText:"Redes Sociales Ilimitadas",
+            socialInterText:"Redes Sociales Incluidas",
             socialMediaInter: [
               "whatsapp",
               "messenger",
               "telegram",
             ],
-            iftfolio: "1833645",
-            linkfolio: "/folio/1833645"
+            duration: "180 días",
+            iftfolio: "2232374",
+            linkfolio: "/folio/2232374"
           },
           {
             id: 23,
@@ -759,7 +768,7 @@ export const planesData = {
             internet:"Si Comparte Internet",
             showCountries: true,
             showLlamadas:false,
-            socialText:"Redes Sociales Ilimitadas",
+            socialText:"Redes Sociales Incluidas",
             socialMedia: [
               "whatsapp",
               "facebook",
@@ -769,14 +778,15 @@ export const planesData = {
               "snapchat",
               "telegram",
             ],
-            socialInterText:"Redes Sociales Ilimitadas",
+            socialInterText:"Redes Sociales Incluidas",
             socialMediaInter: [
               "whatsapp",
               "messenger",
               "telegram",
             ],
             duration: "180 días",
-            iftfolio: ""
+            iftfolio: "2232582",
+            linkfolio: "/folio/2232582"
           },
         ],
     },
@@ -797,7 +807,7 @@ export const planesData = {
             internet:"Si Comparte Internet",
             showCountries: true,
             showLlamadas:false,
-            socialText:"Redes Sociales Ilimitadas",
+            socialText:"Redes Sociales Incluidas",
             socialMedia: [
               "whatsapp",
               "facebook",
@@ -814,8 +824,8 @@ export const planesData = {
               "telegram",
             ],
             duration: "360 días",
-            iftfolio: "1833650",
-            linkfolio: "/folio/1833650"
+            iftfolio: "2232584",
+            linkfolio: "/folio/2232584"
           },
           {
             id:25,
@@ -832,7 +842,7 @@ export const planesData = {
             internet:"Si Comparte Internet",
             showCountries: true,
             showLlamadas:false,
-            socialText:"Redes Sociales Ilimitadas",
+            socialText:"Redes Sociales Incluidas",
             socialMedia: [
               "whatsapp",
               "facebook",
@@ -842,15 +852,15 @@ export const planesData = {
               "snapchat",
               "telegram",
             ],
-            socialInterText:"Redes Sociales Ilimitadas",
+            socialInterText:"Redes Sociales Incluidas",
             socialMediaInter: [
               "whatsapp",
               "messenger",
               "telegram",
             ],
             duration: "360 días",
-            iftfolio: "1833653",
-            linkfolio: "/folio/1833653"
+            iftfolio: "2232586",
+            linkfolio: "/folio/2232586"
           },
           {
             id: 26,
@@ -868,7 +878,7 @@ export const planesData = {
             internet:"Si Comparte Internet",
             showCountries: true,
             showLlamadas:false,
-            socialText:"Redes Sociales Ilimitadas",
+            socialText:"Redes Sociales Incluidas",
             socialMedia: [
               "whatsapp",
               "facebook",
@@ -878,14 +888,15 @@ export const planesData = {
               "snapchat",
               "telegram",
             ],
-            socialInterText:"Redes Sociales Ilimitadas",
+            socialInterText:"Redes Sociales Incluidas",
             socialMediaInter: [
               "whatsapp",
               "messenger",
               "telegram",
             ],
             duration: "360 días",
-            iftfolio: ""
+            iftfolio: "2232587",
+            linkfolio: "/folio/2232587"
           },
         ],
       },

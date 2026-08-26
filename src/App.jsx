@@ -45,16 +45,35 @@ const FolioPdfViewer = () => {
 
   // Aquí defines el mapeo de folios -> PDF
   const pdfMap = {
+    "2232366": "/pdf/folio/Tuisty-Boost-12-GB-x-30-dias-2232366.pdf",
+    "2233540": "/pdf/folio/Tuisty-Ready-2-GB-x-7-dias2233540.pdf",
+    "2233539": "/pdf/folio/Tuisty-Ready-2-GB-x-30-dias-2233539.pdf",
     "1833634": "/pdf/folio/Tuisty-Nova-3-GB-x-30-dias.pdf",
+    "2232364": "/pdf/folio/Tuisty-Nova-3-GB-x-30-dias-2232364.pdf",
+    "2232584": "/pdf/folio/Tuisty-Estelar-5-GB-x-360-dias-2232584.pdf",
     "1833650": "/pdf/folio/Tuisty-Estelar-5-GB-x-360-dias.pdf",
+    "2232370": "/pdf/folio/Tuisty-Estelar-5-GB-x-90-dias-2232370.pdf",
     "1833638": "/pdf/folio/Tuisty-Estelar-5-GB-x-90-dias.pdf",
+    "2232365": "/pdf/folio/Tuisty-Estelar-5-GB-x-30-dias-2232365.pdf",
     "1833635": "/pdf/folio/Tuisty-Estelar-5-GB-x-30-dias.pdf",
+    "2232373": "/pdf/folio/Tuisty-Estelar-5-GB-x-180-dias-2232373.pdf",
     "1833642": "/pdf/folio/Tuisty-Estelar-5-GB-x-180-dias.pdf",
+    "2232362": "/pdf/folio/Tuisty-Estelar-5-GB-x-15-dias_2232362.pdf",
     "1833637": "/pdf/folio/Tuisty-Gamer-40-GB-x-30-dias.pdf",
+    "2232369": "/pdf/folio/Tuisty-Gamer-40-GB-x-30-dias-2232369.pdf",
+    "2232371": "/pdf/folio/Tuisty-Prime-15-GB-x-90-dias-2232371.pdf",
     "1833640": "/pdf/folio/Tuisty-Prime-15-GB-x-90-dias.pdf",
+    "2232374": "/pdf/folio/Tuisty-Prime-15-GB-x-180-dias-2232374.pdf",
     "1833645": "/pdf/folio/Tuisty-Prime-15-GB-x-180-dias.pdf",
+    "2232586": "/pdf/folio/Tuisty-Prime-15-GB-x-360-dias-2232586.pdf",
     "1833653": "/pdf/folio/Tuisty-Prime-15-GB-x-360-dias.pdf",
+    "2232367": "/pdf/folio/Tuisty-Prime-15-GB-x-30-dias-2232367.pdf",
     "1833636": "/pdf/folio/Tuisty-Prime-15-GB-x-30-dias.pdf",
+    "2232368": "/pdf/folio/Tuisty-Epic-24-GB-x-30-dias_2232368.pdf",
+    "2232372": "/pdf/folio/Tuisty-Epic-24-GB-x-90-dias-2232372.pdf",
+    "2232582": "/pdf/folio/Tuisty-Epic-24-GB-x-180-dias-2232582.pdf",
+    "2232587": "/pdf/folio/Tuisty-Epic-24-GB-x-360-dias-2232587.pdf",
+    
   };
 
   const pdfPath = pdfMap[folioId];

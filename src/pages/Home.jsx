@@ -58,13 +58,13 @@ function Home() {
                     <Carousel.Item>
                       <img
                         className="d-none d-lg-block w-75 m-auto"
-                        src="img/registro-chip.jpg"
+                        src="img/limite-registro-escrit.jpeg"
                         alt="Slide 2"
                         loading="lazy"
                       />
                       <img
                         className="d-block d-lg-none w-100 m-auto"
-                        src="img/registro-chip-resp.jpg"
+                        src="img/limite-registro-tab.jpeg"
                         alt="Slide 2"
                         loading="lazy"
                       />
@@ -245,7 +245,7 @@ function Home() {
                           <li>Tarjeta SIM incluida</li>
                           <li>15GB Datos móviles</li>
                           <li>Llamadas y Mensajes a México | Usa | Canadá</li>
-                          <li>Redes sociales ilimitadas</li>
+                          <li>Redes sociales incluidas</li>
                           <li>30 Días de duración</li>
                         </ul>
                         <div className="d-flex justify-content-center justify-content-lg-start mt-4 mb-4 text-white">

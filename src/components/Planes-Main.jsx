@@ -125,7 +125,7 @@ const PlanesMain = ({ plans }) => {
                                                 </div>
                                                 <div className='text-center pb-3 border-tuisty border-2 border-bottom'>
                                                     <h4 className='my-0 fw-bold text-dark fs-6 text-uppercase'>
-                                                        Redes Sociales Ilimitadas:
+                                                        Redes Sociales Incluidas:
                                                     </h4>
                                                 </div>
                                             </>
