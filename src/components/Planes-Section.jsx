@@ -220,7 +220,7 @@ const PlanesSection = ({ plans }) => {
           </Button>
           <Button
             className="paq-button text-uppercase fw-bold fst-italic p-1 px-4 rounded-pill fs-4 mt-3 mb-5 border-3 mx-3"
-            href='https://byplus.io/inbtel' target='_blank'
+            href='https://omv-recargasmexico.com/' target='_blank'
           >
             Recargas
           </Button>
