@@ -88,13 +88,13 @@ function Home() {
                     <Carousel.Item>
                       <img
                         className="d-none d-lg-block w-75 m-auto"
-                        src="img/BannerWeb-Tuis-2-1920x1080.jpg"
+                        src="img/octubre-2026.jpeg"
                         alt="Slide 2"
                         loading="lazy"
                       />
                       <img
                         className="d-block d-lg-none w-100 m-auto"
-                        src="img/BannerWeb-Tuis-2-720x1024.jpg"
+                        src="img/octubre-2026-2.jpeg"
                         alt="Slide 2"
                         loading="lazy"
                       />
